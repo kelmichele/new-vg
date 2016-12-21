@@ -1,0 +1,277 @@
+<% content_for :title do %>
+Lunch Menu
+<% end %>
+<% content_for :description do %>
+Have lunch at Ginny Lane Bar &amp; Grill. Great food with a great view! Your first lunch martini is only $1!
+<% end %>
+
+<div id="menupage">
+    <div id="page-title" class="pt-bkg-image image-lunch">
+        <div class="title-container">
+            <section class="fancy-heading center">
+                <h1>Lunch Menu</h1>
+                <h4>Served Daily, from 11 a.m. - 6 p.m.</h4>
+                <%= link_to '/bar-specials#penny' do %>
+                    <h4>Ask your server about our Penny Martinis!</h4>
+                <% end %>
+            </section>
+        </div>
+    </div>
+
+
+    <div class="tabs">
+        <div class="page-content container">
+            <div class="col-md-10 col-md-offset-1 col-xs-12">
+                <div id="accordeon"> 
+                    <div class="cbp-item">      
+                        <%= render "shared/starters" %>
+                        <div class="cbp-caption fourth">
+                            <div class="cbp-caption-defaultWrap">         
+                                <h4>Lunch Plates</h4>
+                            </div>
+
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-body">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <h4>Crab Cake</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Crab cake, white rice, green beans, tartar sauce
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Pecan Encrusted Chicken</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Cheddar grits, Brussel Sprouts, lemon beurre blanc
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Shrimp Alfredo</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                               Sautéed Gulf Shrimp, Spinach, Peas, Alfredo Cream Sauce over Linguini
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Pan Seared Fish*</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                               Saffron Rice Pilaf, Green Beans, Lemon Beurre Blanc
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <h4>Chicken Picatta</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Thinly Sliced Chicken, Breaded and Pan Fried, Caramelized Onions, Lemon and Caper Beurre Blanc, over Linguini
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Shrimp n' Grits</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Sautèed Gulf Shrimp, Tomatoes, Bacon, Thyme, Rosemary, Green Onions, Shallots, Garlic, Chardonnay Cream Sauce, over Cheddar Grits
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Chicken Tortellini</h4>
+                                            <div class="menu-price">
+                                                <p>$14</p>
+                                            </div>
+                                            <p>
+                                               Grilled Chicken, Bell Peppers, Roasted Tomatoes, Tomato Cream Sauce over Ricotta Stuffed Tortellini
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>6oz Grilled New York Strip</h4>
+                                            <div class="menu-price">
+                                                <p>$14</p>
+                                            </div>
+                                            <p>
+                                               Butter Mashed Potatoes, Green Beans, Red Wine Demi Glace
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                   
+                                    <div class="menu-item text-center">
+                                        <p>*Consuming raw or undercooked meats, seafood or shellfish may cause potential health risks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cbp-caption fifth">
+                            <div class="cbp-caption-defaultWrap">
+                                <h4>$8 Specials</h4>
+                            </div>
+
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-body">
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <p><strong>
+                                                ** $8 specials do include a tea or coffee. **
+                                            </strong></p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Fried Shrimp</h4>
+                                            <p>
+                                               Fresh Gulf Shrimp, Cheddar Grits, Green Beans, Creole Remoulade
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Shrimp Scampi</h4>
+                                            <p>
+                                               Sautéed Gulf Shrimp in a White Wine, Butter, Garlic Sauce with Asparagus 
+                                                and Tomatoes over Linguini
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Homemade Meatloaf</h4>
+                                            <p>
+                                               Blend of Ground Beef, Mushrooms, &amp; Panko Bread Crumbs, Mashed Potatoes, Green Beans, Mushroom Gravy
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <h4>Hamburger Steak</h4>
+                                            <p>
+                                               Blend of Ground Beef, Mushrooms, &amp; Panko Bread Crumbs, Mashed Potatoes, Green Beans, Mushroom Gravy
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Red Beans &amp; Rice</h4>
+                                            <p>
+                                               Conecuh Sausage, Garlic, Celery, Bell Peppers, Kidney Beans over Steamed White Rice
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Country Fried Steak</h4>
+                                            <p>
+                                               Fried Strip Loin, Macaroni &amp; Cheese, Green Beans, Onion &amp; Mushroom Gravy
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cbp-caption sixth">
+                            <div class="cbp-caption-defaultWrap">
+                                <h4>Sandwiches</h4>
+                            </div>
+
+                            <div class="cbp-caption-activeWrap">
+                                <div class="cbp-l-caption-body">
+                                    <div class="menu-item text-center">
+                                        <p>*All sandwiches served with fries or coleslaw</p>
+                                    </div>
+
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <h4>Fish Sandwich*</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Fish of the day, lettuce, onion, tomato, tartar sauce, Ciabatta Bread
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Blackened Fish Tacos</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Blackened Fish, Romaine lettuce, Pico de Gallo, jalapeño cream
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>PoBoy Sandwich</h4>
+                                            <div class="menu-price">
+                                                <p>$10</p>
+                                            </div>
+                                            <p>
+                                               Fried Gulf Shrimp, Lettuce, Tomato, Tartar Sauce on Baguette
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-xs-12">
+                                        <div class="menu-item">
+                                            <h4>Asian Chicken Wrap</h4>
+                                            <div class="menu-price">
+                                                <p>$10</p>
+                                            </div>
+                                            <p>
+                                                Grilled Chicken, Lettuce, Red Cabbage,
+                                                Crispy Strips, Carrots, Green Onion,
+                                                Mandarin Oranges, Sesame Vinaigrette
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Shrimp BLT Panini</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                                Grilled shrimp, Applewood smoked bacon, Fresh spinach, tomatoes, Mozzarella, remoulade, Ciabatta bread
+                                            </p>
+                                        </div>
+
+                                        <div class="menu-item">
+                                            <h4>Ginny Lane Burger*</h4>
+                                            <div class="menu-price">
+                                                <p>$12</p>
+                                            </div>
+                                            <p>
+                                               Lettuce, Tomato, Onion, Mayonnaise on Brioche Bun<br>Your Choice of: Cheddar, Mozzarella, Goat Cheese 
+                                            </p>
+                                        </div>    
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-xs-12"><div class="hr-png-6"></div></div>

@@ -1,0 +1,61 @@
+@mixin center-block () {
+	float:none;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin sec-default () {
+	width: 100%;
+	float: left;
+}
+
+@mixin sec-bgimage () {
+	background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+}
+
+@mixin sec-parallax () {
+	background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+@mixin before () {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+@mixin ease() {
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+// Breakpoints
+@mixin bp($point) {
+    @if $point == tb {
+        @media (max-width: 992px)  { @content ; }
+    }
+
+    @else if $point == md {
+        @media (max-width: 768px)  { @content ; }
+    }
+
+    @else if $point == sm {
+        @media (max-width: 640px)  { @content ; }
+    }
+
+    @else if $point == xs {
+        @media (max-width: 320px)  { @content ; }
+    }
+
+    @else if $point == iv {
+        @media only screen and (min-width: 320px) and (max-width: 580px) { @content ; }
+    }
+}

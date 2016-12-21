@@ -1,0 +1,599 @@
+@import "variables";
+@import "mixins";
+
+.mobile-show { display: none; }
+.mobile-hide { display: block; }
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+	.page-content *[class*="col-"] {
+	    margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 768px) {
+    .mobile-show { display: block; }
+    .mobile-hide { display: none; }
+    
+    #header.header-type-1 .navbar-collapse { float:none; display: block; margin-left:auto; margin-right:auto; }
+	.xs-bmargin0 { margin-bottom: 0; }
+}
+
+.bpadding0 { padding-bottom: 0; }
+.tpadding0 { padding-top: 0; }
+.tmargin0 { margin-top: 0; }
+.bmargin0 { margin-bottom: 0; }
+.bmargin2 { margin-bottom: 20px; }
+.bmargin3 { margin-bottom: 30px; }
+.bmargin4 { margin-bottom: 40px; }
+
+
+.pleft-0 { padding-left: 0px; }
+.pleft-1 { padding-left: 10px; }
+.pleft-2 { padding-left: 20px; }
+.pleft-3 { padding-left: 30px; }
+.pleft-4 { padding-left: 40px; }
+.pleft-5 { padding-left: 50px; }
+
+.pright-0 { padding-right: 0px; }
+.pright-1 { padding-right: 10px; }
+.pright-2 { padding-right: 20px; }
+.pright-3 { padding-right: 30px; }
+.pright-4 { padding-right: 40px; }
+.pright-5 { padding-right: 50px; }
+
+.bpadding-1 { padding-bottom: 15px; }
+.bpadding-25 { padding-bottom: 25px; }
+.bpadding-50 { padding-bottom: 50px; }
+.p-top-1 { padding-top: 10px; }
+.p-top-2 { padding-top: 20px; }
+.p-top-3 { padding-top: 30px; }
+.p-top-4 { padding-top: 40px; }
+.p-top-5 { padding-top: 50px; }
+.extra-padding { padding: 35px; }
+.border-t { border-top: 2px solid #dfdfdf; }
+
+p.red,
+span.red,
+strong.red,
+h4.red,
+h3.red,
+h2.red,
+h1.red {color: #622622;}
+
+h1.raleway,
+h2.raleway,
+h3.raleway,
+h4.raleway,
+h5.raleway,
+h6.raleway,
+p.raleway,
+span.raleway { font-family: 'Raleway', 'Open Sans', Arial, sans-serif; }
+
+
+.l-2 { line-height: 25px; }
+.no-margin {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .no-padding-xs { padding: 0; }
+  .no-mb-xs { margin-bottom: 0; }
+}
+
+.normal { font-weight: normal; }
+.text-center{ text-align: center; }
+.section-gray { background-color: #e3e3e3; }
+.section-lgray { background-color: #ececec; }
+.section-c3 { background-color: #c3c3c3; }
+.section-dk { background-color: #3a3a3a; }
+.section-white { background-color: #fff; }
+.text-white { color: #fff; }
+.nobg { background-color: transparent;}
+.text-black { color: #000; }
+.seprator-border {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+
+
+
+footer h3.title { font-family: 'Raleway', Arial, sans-serif; color: #fcc820; margin-bottom: 5px; font-weight: 800; font-size: 17px; }
+footer h6, footer li strong, footer li a strong  { color: #fff; }
+footer h6 {margin-bottom: 8px;}
+footer .contact-info .btn.btn-small.yellow { margin-top: 15px; }
+
+@media (max-width: 768px) {
+  footer .partner-l, footer .partner-r { float: none; display: block; margin-left: auto; margin-right: auto; }
+  .xs-l2 { padding-left: 35px; }
+  .foot-sec {width: 48%;  display: inline-block;}
+  .foot-sec .no-padding { padding:10px; padding-left: 30px; }
+  .signup { width: 85%; margin-top:15px; float: none; display: block; margin-left: auto; margin-right: auto;}
+  #copyright-container .breadcrumb.footer-breadcrumb li a {color: #222;}
+} 
+@media (max-width: 640px) {
+  .foot-sec {width: 90%; float:none; display: block; margin-left: auto; margin-right: auto;}
+  .foot-sec .no-padding { padding:10px; margin-bottom: 20px; }
+}
+@media (max-width: 320px) {
+  .partner-l, .partner-r { width: 95%; float: none; display: block; margin-left: auto; margin-right: auto; }
+}
+
+
+
+
+.tp-caption .tp-big-heading {text-decoration: none;}
+h2.slide-head {
+  color: #fff;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 50px;
+  text-decoration: none;
+  background: rgba( 0, 0, 0, 0.6);
+  padding: 20px;
+}
+h2.slide-head span {
+  font-weight: bold;
+}
+
+.tp-big-heading::after {display: none;}
+
+.tp-caption h2 { 
+  color: #fff;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tp-caption h2 span.color-text { color: #f1ba11; }
+
+.tp-caption a {
+  display: inline-block;
+  background-color: #f1ba11;
+  color: #fff;
+  font-family: 'Raleway', Arial, sans-serif;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.tp-caption a.songwriter-link2 {
+  margin-left: 20px;
+}
+.tp-caption a:hover {
+  color: #696969;
+}
+
+@media (max-width: 768px) {
+
+  #dl-menu {
+    float: none;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+
+
+  .tp-caption  { position: relative; }
+  .tp-caption h2 { font-size:20px; line-height: 25px;}
+  .tp-caption a {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  h4.slide-head {
+    color: #fff;
+    font-weight: normal;
+    font-size: 15px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: #000;
+  }
+}
+
+@media (max-width: 640px) {
+  .tp-caption h2 { font-size:16px; line-height: 20px;}
+  .tp-caption a {
+    display: block;
+    font-size: 15px;
+  }
+  .tp-caption a.songwriter-link2 {margin-left: 0; margin-top:15px;}
+}
+
+.pt-bkg-image-v {
+    background-image: url('../img/easter-cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pt-bkg-image-truck {
+    background-image: url('../img/foodtruck.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pt-bkg-image-truck .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 45%;
+    padding: 20px;
+  }
+
+@media (max-width: 768px) {
+  .pt-bkg-image-truck .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 10px;
+  }
+  .pt-bkg-image-truck {
+      background-image: url('../img/foodtruck-sm.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+}
+
+
+
+
+
+.pt-bkg-cater {
+    background-image: url('../img/starfish.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-container a.tel {
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  font-size: 35px;
+}
+
+
+
+.wpcf7 .wpcf7-textarea {
+    width: 90%;
+    height: 100px;
+}
+.wpcf7 .wpcf7-form-control-wrap.your-message::before {
+    content: "\f003";
+    height: 98px;
+    top: 1px;
+    z-index: 1;
+}
+.wpcf7 .wpcf7-submit {
+    float: none;
+}
+
+.cater-menus {
+  margin-bottom: 40px;
+}
+.cater-menus p {
+  color: #000;
+  text-transform: none;
+  margin-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cater-menus .menu-info{
+  /*text-align: center;*/
+  margin-left: 20px;
+  color: #000;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+.cater-menus .menu-info span {
+  font-weight: bold;
+  color: #f1ba11;
+}
+
+.cater-menus .menu-items {
+  font-weight: normal;
+  font-size: 15px;
+  color: #f1ba11;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.cater-menus .menu-items span { 
+  color: #000; 
+  font-weight: normal;
+  text-transform: none;
+}
+ul.items {
+  list-style-type: none;
+}
+ul.items li {
+  padding-bottom: 10px;
+}
+
+.cater-menus .hdv-items {
+  font-weight: normal;
+  font-size: 14px;
+  color: #f1ba11;
+  text-transform: uppercase;
+}
+.cater-menus .hdv-items span { 
+  color: #000; 
+  font-weight: normal;
+  text-transform: none;
+}
+.cater-menus .hdv-items .fancy-heading {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.cater-menus .hdv-items .fancy-heading h4{
+  font-size: 18px;
+}
+
+
+
+
+
+/**********************************************************/
+/************************Happy Hour*************************/
+/**********************************************************/
+
+#happyhour-page.page-content {
+  /*padding-left: 15px;*/
+  padding-top:20px;
+}
+
+#happyhour-page.page-content h3 { font-weight: bold; color: #fcc820; font-size: 20px; margin-bottom: 5px; font-family: 'Raleway', Arial, sans-serif;}
+#happyhour-page.page-content h2 {  color: #622622; font-family: 'Raleway', Arial, sans-serif;}
+#happyhour-page.page-content p { font-size: 16px; color: #31393f; font-family: 'Raleway', Arial, sans-serif;}
+#happyhour-page.page-content .special { width: 100%; float: left; margin-bottom:10px; text-align: center; }
+#happyhour-page.page-content h4 { font-size: 20px; text-align: center; font-family: 'Raleway', Arial, sans-serif;}
+#happyhour-page.page-content h4 span { font-size: 16px; color: #fcc820; font-family: 'Raleway', Arial, sans-serif;}
+#happyhour-page.page-content h6 a { color: #fcc820; font-family: 'Raleway', Arial, sans-serif;}
+
+
+#happyhour-page .food-menus { width:100%; float: left; background-color: #f5f4f4; padding-left: 15px; }
+
+
+
+/**********************************************************/
+/************************EVENTS*************************/
+/**********************************************************/
+
+.events-listing-page {
+  width:100%;
+  float: left;
+  padding-bottom: 35px;
+}
+
+.events-listing-page .page-title-4 {padding: 0;}
+
+.events-listing-page #page-title {
+  width:100%;
+  float: left;
+  height:200px;
+  background-image: url('../img/wine-din.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.events-listing-page .overlay {
+  width: 100%;
+  height: 100%;
+  float: left;
+  background: rgba(0, 0, 0, .65);
+  padding: 30px 0;
+}
+
+
+.events-listing-page .page-title-4 h1, .events-listing-page .page-title-4 h3 { 
+  color: #fff; 
+  font-weight: 700; 
+  font-family: 'Raleway', Arial, sans-serif; 
+  text-shadow: 0px 2px 1px #000;
+}
+
+.events-listing-page #event-sec {
+  width:100%;
+  float: left;
+  padding-top: 30px;
+}
+
+.events-listing-page #event-sec .event-sec-box{
+  width:100%;
+  float: left;
+  text-align: center;
+  padding: 20px;
+  background-color: #f5f4f4;
+}
+.events-listing-page #event-sec .event-sec-box hr {
+  margin-top:5px;
+  margin-bottom:25px;
+  border-top: 1px solid #dfdfdf;
+}
+.events-listing-page #event-sec .event-sec-box h6 {font-family: 'Raleway', Arial, sans-serif;}
+.events-listing-page #event-sec .event-sec-box h6 span {
+  color: #622622;
+  font-weight: 700; 
+}
+
+.events-listing-page #event-sec .nye-date {
+  width: 100%;
+  float: left;
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.events-listing-page #event-sec .nye-date .top {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.events-listing-page #event-sec .nye-date .mid {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.events-listing-page #event-sec .nye-date .end {
+  width: 100%;
+  float: left;
+}
+
+.events-listing-page #event-sec .nye-date h3 { color: #fff; margin-bottom:0;font-family: 'Raleway', Arial, sans-serif; }
+.events-listing-page #event-sec .nye-date h3 span { font-style: italic; font-size: 15px; line-height: 1em; color:#f1ba11; }
+.events-listing-page #event-sec .nye-date p { color: #fff; font-weight: bold; font-size: 15px;font-family: 'Raleway', Arial, sans-serif; }
+.events-listing-page #event-sec .nye-date p span.yellow { color: #f1ba11; font-family: 'Raleway', Arial, sans-serif; }
+.events-listing-page #event-sec .nye-date .btn.btn-small.yellow a { color: #000; font-family: 'Raleway', Arial, sans-serif; }
+.events-listing-page #event-sec .nye-date img {padding-bottom:10px;}
+/*{ padding: 15px; width:80%; float:none; display: block; margin-left: auto; margin-right: auto; }*/
+
+/************************************************************************/
+/*****************************NYE****************************************/
+/************************************************************************/
+
+.nye-page {width: 100%; float: left; }
+.nye-page #page-title.pt-bkg-image-nye {background-image: url('../img/nye-xl.jpg'); background-size: cover; height:300px;}
+
+.nye-page #page-title h1,
+.nye-page #page-title h1 span,
+.nye-page #page-title h3,
+.nye-page #page-title h4 {color: #fff; font-weight: bold; font-family: 'Raleway', Arial, sans-serif;}
+.nye-page #page-title h4 span {color: #f1ba11; font-weight: bold; font-family: 'Raleway', Arial, sans-serif;}
+.nye-page #page-title h1 {color: #f1ba11;margin-bottom: 4px; padding-top:20px;}
+.nye-page #page-title h3 {font-weight: normal;font-size: 18px;}
+
+.nye-page .nye-menus {width: 100%; float: left; padding-top:20px;}
+.nye-page .nye-menus h3, .nye-page .nye-menus h3 span, .nye-page .nye-menus h4, .nye-page .nye-menus h5, .nye-page .nye-menus p {font-family: 'Raleway', Arial, sans-serif;}
+.nye-page .nye-menus h3 {font-weight: 700; margin-bottom: 4px;}
+.nye-page .nye-menus h3 span {font-size: 17px; font-style: italic; color: #f1ba11;}
+.nye-page .nye-menus h5 {font-size: 16px; margin-bottom: 3px;}
+.nye-page .nye-menus h4 span.seating {display: inline-block; margin-right: 10px; font-family: 'Raleway', Arial, sans-serif; color: #000; font-weight: bold;}
+.nye-page .nye-menus p {color: #000;}
+.nye-page .nye-menus h4.price {font-size: 17px; margin-bottom: 10px;}
+
+.nye-page .nye-box {
+  margin-top:15px;
+  width: 100%;
+  float: left;
+  background-image: url('../img/nye-blue.jpg');
+  background-size: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 25px 0;
+  text-align: center;
+}
+.nye-page .nye-box.early {
+  padding: 30px 0 40px;
+}
+
+.nye-page .nye-box a.link {width: auto; background-color: #622622; color: #fff; font-weight:bold; border-radius: 5px; font-family: 'Raleway', Arial, sans-serif; padding:10px 15px; text-align: center; position: relative;z-index: 10;}
+
+@media (max-width: 768px) {
+  .nye-page #page-title.pt-bkg-image-nye {background-color:#000; background-image: none; height: auto; padding-bottom: 10px;}
+  .nye-page #page-title h1 { padding-top:10px;}
+  .nye-page .p-top-4 {padding-top: 15px;}
+  .nye-page .n0-m-xs {margin-bottom:10px;}
+}
+@media (max-width: 640px) {
+  .nye-page .nye-menus h4 span.seating {display: block; margin-right: auto; margin-left: auto; }
+}
+@media only screen and (max-width: 767px) and (min-width: 480px){
+  .page-content *[class*="col-"] { margin-bottom: 15px; }
+}
+/************************************************************************/
+/*****************************NYE****************************************/
+/************************************************************************/
+
+#bike-night { width: 100%; float: left; padding-top: 50px; }
+#bike-night h3 { padding-top: 15px; font-family: 'Raleway', Arial, sans-serif; font-weight: 700; }
+#bike-night p { font-size: 16px; font-family: 'Raleway', Arial, sans-serif; font-weight: 700; text-align: center;}
+#bike-night p span { color:#622622;font-size: 16px; font-family: 'Raleway', Arial, sans-serif; font-weight: 700;}
+#bike-night img.two { margin-top: 20px;}
+
+.nye-booking { width: 100%; height: 100%; float: left; padding: 30px 0;}
+
+
+
+.tea-party { width: 100%; float: left; }
+.tea-party .page-content {
+  width: 100%; float: left; 
+  background-color: transparent;
+  background: url('../img/baked.jpg');
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: 55px 25px;
+}
+.tea-party .tea-box {
+  width: 100%; float: left; 
+  background-color: transparent;
+  text-align: center;
+}
+.tea-party .tea-box h1,
+.tea-party .tea-box h2,
+.tea-party .tea-box h5,
+.tea-party .tea-box h5 a,
+.tea-party .tea-box h4,
+.tea-party .tea-box h3,
+.tea-party .tea-box span,
+.tea-party .tea-box p { color: #fff; font-family: 'Raleway', Arial, sans-serif; text-shadow: 1px 1px 1px #000; }
+
+.tea-party .tea-box h4 { margin-bottom:0;}
+.tea-party .tea-box h1 { font-size: 35px;}
+.tea-party .tea-box h4 span { font-style: italic; }
+
+.tea-party .tea-box.head {
+  background-color: rgba(247,14,33, .6);
+  border-radius: 50%;
+  /*padding: 55px 60px 45px;*/
+  padding: 85px 20px 60px;
+}
+
+.tea-party .tea-box.menu {
+  background-color: rgba(0,128,0, .7);
+  border-radius: 50%;
+  padding: 55px 60px 60px;
+}
+.tea-party .tea-box.menu h3 { font-size: 20px; }
+.tea-party .tea-box.menu h3 span { font-style: italic; color: #ececec; font-size: 18px; }
+
+@media (max-width: 768px) {
+  .tea-party .page-content {
+    background: url('../img/baked-mobile.jpg');
+    padding-bottom: 10px;
+    margin-bottom:0px;
+  }
+
+  .tea-party .clearfix {display: none;}
+
+  .tea-party .tea-box.head {
+    border-radius: 0;
+    padding: 25px 10px;
+    width: 100%;
+    background-color: rgba(247,14,33, .8);
+  }
+
+  .tea-party .tea-box.menu {
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 0;
+    background-color: rgba(0,128,0, .85);
+  }
+}
+
+
+
+
+
+#page-title.pt-bkg-image-10 {
+    background-image: url('../img/wine-p3.jpg');
+  background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-title.pt-bkg-image-10 .title-container { width: 100%; float: left; text-align: center; padding: 60px 0;}
+#page-title.pt-bkg-image-10 .title-container h1, #page-title.pt-bkg-image-10 .title-container h3, #page-title.pt-bkg-image-10 .title-container h4, #page-title.pt-bkg-image-10 .title-container p { color: #fff; font-family: 'Raleway', 'Open Sans', Arial, sans-serif;}
+#page-title.pt-bkg-image-10 .title-container h1 {font-weight: 700;}
+h3.burg-text {margin-top:20px; color: #951000; font-family: 'Raleway', 'Open Sans', Arial, sans-serif; font-weight: 700;}
+
