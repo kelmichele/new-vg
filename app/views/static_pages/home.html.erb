@@ -1,0 +1,94 @@
+<% @page_title = "Villaggio Grille | Orange Beach Alabama" %>
+<% @page_description = "Villaggio Grille is one of the Alabama Gulf Coast's best restaurants. Italian fusion at its tastiest, Villaggio wants to prove that they live up to their reputation. Join us for lunch or dinner, and leave satisfied." %>
+
+
+
+        <div class="tp-banner-container fullwidthbanner">
+            <div id="rev-slider" class="tp-banner">
+                <ul>
+                    <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                        <%= link_to '/about' do %>
+                            <%=image_tag('togo.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive', :data => { bgposition:'center center', bgfit: 'cover', bgrepeat: 'no-repeat'})%> 
+                        <% end %>
+                    </li>
+
+                    <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                        <%= link_to '/about' do %>
+                            <%=image_tag('peju.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive', :data => { bgposition:'center center', bgfit: 'cover', bgrepeat: 'no-repeat'}) %> 
+                        <% end %>
+                    </li>
+
+                    <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                        <%=image_tag( 'wineglass.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive', :data => { bgposition:'center center', bgfit: 'cover', bgrepeat: 'no-repeat'}) %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+<div class='page-content'>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="intro-title centered">
+                    <h1><center>Villaggio Grille</center></h1>
+                    <h3> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-3 col-xs-6">
+                <%= image_tag( 'badge.jpg', alt: 'Villaggio Grille, Local Favorites Badge', class: 'img-responsive', style: 'padding-top:20px') %>
+            </div>
+            <div class="col-md-3 col-xs-6">
+                <%= image_tag( 'choice.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive') %>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 clearfix">
+                <ul>
+                    <li class="service-box-3">
+                        <i class="linecons-book-open"></i>
+                        <h4>Our Menus</h4>
+                        <p>
+                            Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!
+                        </p>
+                        <br>
+                        <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
+                            <span>View Menus</span>
+                        <% end %>
+                    </li>
+
+                    <li class="service-box-3">
+                        <i class="linecons-wine"></i>
+                        <h4>Wine List</h4>
+                        <p>
+                            We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it.
+                        </p>
+                        <br>
+                        <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
+                            <span>Wine List</span>
+                        <% end %>
+                    </li>
+
+                    <li class="service-box-3">
+                        <i class="linecons-wine"></i>
+                        <h4>Words Link</h4>
+                        <p>
+                            he wide range of our wine menu just confirms it.
+                            he wide range of our wine menu just confirms it.
+                        </p>
+                        <br>
+                        <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
+                            <span>Wine List</span>
+                        <% end %>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

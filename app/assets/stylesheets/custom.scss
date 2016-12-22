@@ -39,8 +39,8 @@ a:hover {text-decoration: none;}
 p,
 a,
 span {
-    color: #777;
-    font-family: 'Open Sans', Arial, sans-serif;
+    color: $font-color;
+    font-family: $open;
 }
 p {
     padding-bottom: 15px;
@@ -58,11 +58,11 @@ a:hover {
 }
 
 a.red {
-    color: #9e3221;
+    color: $red;
 }
 
 a.red:hover {
-    color: #777;
+    color: $font-color;
 }
 a.read-more {
     position: relative;
@@ -81,46 +81,54 @@ a.read-more::after {
     top: 2px;
 }
 
+ul { list-style-type: none; }
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: $raleway;
+    font-family: $play;
     font-weight: 500;
-    color: $hcolor;
+    color: #252525;
     margin-top: 0;
     margin-bottom: 15px;
 }
+
 h1 {
-    font-size: 31px;
+    font-size: 41px;
     line-height: 41px;
 }
+
 h2 {
     font-size: 28px;
     line-height: 38px;
 }
+
 h3 {
     font-size: 24px;
     line-height: 32px;
 }
+
 h4 {
     font-size: 21px;
     line-height: 30px;
 }
+
 h5 {
     font-size: 18px;
     line-height: 26px;
 }
+
 h6 {
     font-size: 15px;
     line-height: 23px;
 }
-strong { font-weight: 600; color: $blue; }
-ul { list-style-type: none; }
 
-
+strong {
+    font-weight: 600;
+    color: $yellow;
+}
 
 .scroll-up {
     width: 40px;
@@ -173,6 +181,7 @@ ul { list-style-type: none; }
 #footer-wrapper {
     @include sec-default (); background-color: $navy;
     padding: 30px 15px;
+    ul {padding-left: 0;}
 
     .btn {
         text-transform: uppercase;
@@ -180,13 +189,13 @@ ul { list-style-type: none; }
         position: relative;
         overflow: hidden;
         display: inline-block;
-        background-color: $burg;
+        background-color: $yellow;
         font-size: 14px;
         color: $white;
     }
     
     .btn:hover {
-        background-color: lighten($burg, 15%);
+        background-color: lighten($yellow, 15%);
         -webkit-transition: all 0.4s ease 0s;
         -moz-transition: all 0.4s ease 0s;
         -o-transition: all 0.4s ease 0s;
@@ -196,31 +205,46 @@ ul { list-style-type: none; }
 
        .signup {
         width: 90%;
-        border: 2px solid $burg;
+        border: 2px solid $yellow;
         background-color: $light;
         margin-top: 10px;
         padding-left: 10px;
 
-        label {color: $burg; margin-bottom: 0;}
+        label {color: $yellow; margin-bottom: 0;}
     }
     #mc_embed_signup input.email {width: 90%;}
-    #mc_embed_signup .button { background-color: $burg; }
+    #mc_embed_signup .button { background-color: $yellow; }
 
 
     h3, h6, h4, li, a { color: $white;}
     h3 {
         font-size: 15px;
         font-weight: bold;
-        text-transform: uppercase;
         margin-bottom: 20px;
     }
-    h6 {margin-bottom: 0;}
-    h6.name {margin-bottom: 0; font-weight: bold; color: $lt-burg;}
+    h3 {margin-bottom: 0;}
+    h3.title { font-family: $raleway; color: $yellow; margin-bottom: 5px; font-weight: 800; font-size: 17px; }
     .contact-info-list {padding-left: 0;
-        li {font-size: 15px; font-family: $raleway; margin-bottom: 10px;}
+        li {font-size: 15px; margin-bottom: 10px; font-family: $open;}
+        .btn.btn-small.yellow { margin-top: 15px; }
     }
 
     .fb-page { max-height: 200px;}
+
+    @include bp(md) {
+        footer .partner-l, footer .partner-r { float: none; display: block; margin-left: auto; margin-right: auto; }
+        .xs-l2 { padding-left: 35px; }
+        .foot-sec {width: 48%;  display: inline-block;}
+        .foot-sec .no-padding { padding:10px; padding-left: 30px; }
+        .signup { width: 85%; margin-top:15px; float: none; display: block; margin-left: auto; margin-right: auto;}
+    }   
+    @include bp(sm) {
+        .foot-sec {width: 90%; float:none; display: block; margin-left: auto; margin-right: auto;}
+        .foot-sec .no-padding { padding:10px; margin-bottom: 20px; }
+    }
+    @include bp(xs) {
+        .partner-l, .partner-r { width: 95%; float: none; display: block; margin-left: auto; margin-right: auto; }
+    }
 }
 #copyright-container {
     @include sec-default (); background-color: $gray2; padding: 20px 0;
@@ -230,33 +254,35 @@ ul { list-style-type: none; }
         padding: 0;
         margin: 0;
         background: none;
+        li a {color: $white; font-family: $play;}
+        li .btn {color: $hcolor; font-size: 12px;}
     }
 }
 
-@include bp(md) {
-    #footer-wrapper{ padding: 15px 0;
-        .footer-widget-container {width: 65%; @include center-block (); }
-        .hours {margin-bottom: 20px;}
-        .footer-widget-container.fb {@include center-block (); margin-bottom: 20px;}
-        .signup { width: 100%; @include center-block ();}
-        .btn.first { margin: 0 20px 0 5px; }
-    }
-    #copyright-container {text-align: center; .footer-breadcrumb {  float: none; } }
+// @include bp(md) {
+//     #footer-wrapper{ padding: 15px 0;
+//         .footer-widget-container {width: 65%; @include center-block (); }
+//         .hours {margin-bottom: 20px;}
+//         .footer-widget-container.fb {@include center-block (); margin-bottom: 20px;}
+//         .signup { width: 100%; @include center-block ();}
+//         .btn.first { margin: 0 20px 0 5px; }
+//     }
+//     #copyright-container {text-align: center; .footer-breadcrumb {  float: none; } }
 
-}
+// }
 
-@include bp(sm) {
-    #footer-wrapper{
-        .footer-widget-container {width: 95%;}
-        .signup { @include center-block ();}
-    }
-}
-@include bp(iv) {
-    #footer-wrapper {
-        .btn {display: block; width: 90%;
-            &.first {margin-bottom: 10px;}}
-    }
-}
+// @include bp(sm) {
+//     #footer-wrapper{
+//         .footer-widget-container {width: 95%;}
+//         .signup { @include center-block ();}
+//     }
+// }
+// @include bp(iv) {
+//     #footer-wrapper {
+//         .btn {display: block; width: 90%;
+//             &.first {margin-bottom: 10px;}}
+//     }
+// }
 [class^="linecons-"], [class*=" linecons-"] {
     font: normal normal normal 14px/1 linecons;
     speak: none;

@@ -10,7 +10,13 @@ Rails.application.routes.draw do
   	get '/menus', to: 'static_pages#menus'
   	get '/happy-hour', to: 'static_pages#happy-hour'
   	get '/contact', to: 'static_pages#contact'
-
+    
+    get '/opentable', to: 'links#opentable'
+    get '/gilbeys', to: 'links#gilbeys'
+    get '/ginny', to: 'links#ginny'
+    get '/directions', to: 'links#directions'
+    get '/fb', to: 'links#fb'
+    get '/insta', to: 'links#insta'
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

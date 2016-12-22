@@ -7,6 +7,7 @@
     box-shadow: 0 0 5px rgba($black, 0.2);
     -webkit-box-shadow: 0 0 5px rgba($black, 0.2);
     -moz-box-shadow: 0 0 5px rgba($black, 0.2);
+    border-bottom: 1px solid $gray2;
 }
 
 header {
@@ -16,15 +17,15 @@ header {
     .logo-img { padding: 5px;}
 }
 
-#top-bar-wrapper { @include sec-default (); background-color: $navy; padding:10px; padding-bottom: 0;
-    a {color: $white; }
+#top-bar-wrapper { @include sec-default (); background-color: $navy; padding:15px; padding-bottom: 0;
+    a {color: $font-color; font-size: 16px;}
     li a.tel { font-family: $play;}
     #social-links {
         float: right;
         margin-right: 3%;
         li { float: left; margin-left: 20px;}
     }
-    .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 14px; color: $white;}
+    .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 16px; color: $font-color;}
     .xs-l {padding-left: 20px; text-align: left; }
 }
 
@@ -32,8 +33,9 @@ header {
 .megamenu-parent {list-style:none;padding:0;margin:0;z-index:9;display:block;float:right;
     li{display:inline-block;position:relative;padding:0;border-top: 3px solid transparent; margin: 0 15px;
         &:last-child{margin-right: 5px;}
-        &:hover {border-top: 3px solid $blue;}
-        a{display:inline-block;font-size: 14px; color: $hcolor; font-weight: 600; text-transform: uppercase; line-height: 70px; padding-top:10px; }
+        a{display:inline-block;font-size: 16px; color: $hcolor; font-weight: 600; text-transform: uppercase; line-height: 70px; padding-top:10px; }
+        &:hover {border-top: 3px solid $yellow;
+            a{color: $yellow}}
     }
 
     // li.has-child>a:after{font-family:"FontAwesome";content:" \f107"}
@@ -46,7 +48,7 @@ header {
     .dropdown li.menu-item{margin-left:0;display:block;padding:0;position:relative;width: 100%; border-top: none;border-bottom: 1px dotted rgba($light, .3);
         &:last-child {border-bottom: none;}
         a{width:100%;display:block;padding:10px;color:$white;cursor:pointer;font-size:14px; line-height: 2em; 
-            &:hover{color:$lt-blue}
+            &:hover{color:$yellow}
         }
     }
 }

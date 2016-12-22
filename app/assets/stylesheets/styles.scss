@@ -11,7 +11,7 @@
     @include sec-default();
     content: '';
     height: 5px;
-    background-color: $blue;
+    background-color: $red;
 }
 
 .hr-png-6 {
@@ -52,16 +52,16 @@ body {
 
    .signup {
         width: 90%;
-        border: 2px solid $burg;
+        border: 2px solid $yellow;
         background-color: $light;
         margin-top: 10px;
         padding-left: 10px;
 
-        label {color: $burg; margin-bottom: 0;}
-        input.button{background-color: $burg;}
+        label {color: $yellow; margin-bottom: 0;}
+        input.button{background-color: $yellow;}
     }
     #mc_embed_signup input.email {width: 90%;}
-    #mc_embed_signup .button { background-color: $burg; }
+    #mc_embed_signup .button { background-color: $yellow; }
 
 
 .fancy-heading {
@@ -209,7 +209,7 @@ body {
     display: block;
     z-index: 2;
     width: 100%;
-    color: $white;
+    color: $black;
 }
 .btn.float-left {
     float: left;
@@ -236,7 +236,7 @@ body {
     float: none;
 }
 
-.btn.red { background-color: $burg; }
+.btn.yellow { background-color: $yellow; }
 
 /* ==========================================================================
     5.19. INTRO TITLE
@@ -285,7 +285,7 @@ body {
     padding: 30px;
     text-align: center;
     h3, h4, h6 { margin-bottom: 15px;}
-    h6 { color: $burg;}
+    h6 { color: $yellow;}
     h4 {font-size: 19px; line-height: 1.5em; margin-bottom: 20px; }
     h3 { text-transform: none; font-size: 15px; font-weight: 800; }
 }
@@ -306,7 +306,7 @@ body {
     margin-left: 2px;
     margin-right: 2px;
     margin-bottom: 4px;
-    background-color: #f6fcfe;
+    // background-color: #f6fcfe;
     padding: 30px;
     text-align: center;
     list-style: none;
@@ -316,13 +316,13 @@ body {
     -ms-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     cursor: pointer;
-
+    border: 1px solid $hcolor;
 }
 .service-box-3:hover {
-    box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px $light;
     position: relative;
     z-index: 200;
-    background-color: #fff;
+    background-color: $white;
 }
 .service-box-3 i {
     font-size: 60px;
@@ -330,7 +330,7 @@ body {
     text-align: center;
     width: 100%;
     display: block;
-    color: #9e3221;
+    color: $yellow;
 }
 .service-box-3 h4 {
     text-transform: uppercase;
@@ -348,7 +348,7 @@ body {
     padding-bottom: 0;
 }
 .page-content.custom-background .service-box-3 {
-    background-color: #fff;
+    background-color: $white;
 }
 .col-md-12 .service-box-3:nth-child(3n + 1),
 .col-md-9 .col-md-12 .service-box-3:nth-child(3n + 1) {
