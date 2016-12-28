@@ -1,131 +1,410 @@
-<% content_for :title do %>
-Wine List
-<% end %>
-<% content_for :description do %>
-Food this good deserves the company of great wine! That is why Ginny Lane's Wine List is so tempting.
-<% end %>
+<% @page_title = "Wine List" %>
+<% @page_description = "Food this good deserves the company of great wine! That is why Ginny Lane's Wine List is so tempting." %>
 
-<div id="page-title" class="pt-bkg-image image-wine">
-    <div class="container">
-        <div class="row">
-            <section class="title-container">
-                <div class="title">
-                    <h3>Ginny Lane's</h3>
-                    <h1>Wine List</h1>
-                </div>
-            </section>
-        </div>
+
+    <div class="fancy-heading center">
+        <%= image_tag( 'spectator.jpg', alt: 'Villaggio Grille wine spectator award', class: 'img-responsive sm-center-img') %>
+        <h3>Villaggio Grille is the<br>  Wine Spectator Award Winner of '09, 10, 11, 12, 13, 15</h3>
     </div>
-</div>
+    <div class="row text-center">
+        <h5>$6 House Wine on Draft - Guenoc Middletown, CA '14<br> Ask Server for Varietal Options</h5>
+    </div>
 
-<div class="tabs">
-    <div class="page-content container">
-        <div class="col-md-8 col-md-offset-2 col-xs-12 text-center">
-            <h4>We are now serving Guenoc Draft Wine!</h4>
-            <p>Ask your server about our draft selection, including: <strong>Cabernet</strong>, <strong>Pinot Noir</strong>, <strong>Chardonnay</strong>, &amp; <strong>Pinot Grigio</strong></p>
-        </div>
 
-        <div class="col-md-6 col-xs-12">
-            <div class="fancy-heading center"><h3>White Wine</h3></div>
-            <div id="accordeon">   
-                <div class="cbp-item">      
-                    <div class="cbp-caption first">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Chardonnay</h4>
-                        </div>
+    <section class="tabs-example">
+        <div class="tabs">
+            <div class="container no-padding">
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <h2 class="fancy-heading center">White Wine</h2>
+                    <div id="accordeon" class="col-md-12 no-padding">
+                        <div class="cbp-item">
+                            <div class="cbp-caption first">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Chardonnay</h4>
+                                </div>
 
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
-                                <div class="menu-item">
-                                    <h4>The Divining Rod, Santa Lucia Highlands, CA ‘14</h4>
-                                    <h4>Cartlidge and Brown, North Coast, CA ‘14</h4>
-                                    <h4>A to Z, unoaked, Or ‘14</h4>
-                                    <h4>One Hope, Reserve, Santa Barbara, CA ‘13</h4>
-                                    <h4>Hahn, Monterey County, CA</h4>
-                                    <h4>Pali, “Charm Acres,” Sonoma, CA ‘13</h4>
-                                    <h4>Schug, Sonoma, CA ‘13</h4>
-                                    <h4>Tre Terre, Russian River Valley, CA "</h4>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Schell Creek, Central Coast, CA ’14</h6>
+                                            <h6>Thomas Henry, Napa Valley, CA '14</h6>
+                                            <h6>Daniel Gehrs, “Oak-Free” Central Coast, CA ’14</h6>
+                                            <h6>Steele, Cuvee, Lake County, CA '14</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Gloria Ferrer, Carneros, CA ’10 </h6>
+                                            <h6>The Divining Rod, Santa Lucia Highlands, CA ’13</h6>
+                                            <h6>St. Innocent, Willamette Valley, OR ’14 </h6>
+                                            <h6>Bouchard Pere and Fils, Burgundy, France '13</h6>
+                                            <h6>William Fevre, Chablis, France '12</h6>
+                                            <h6>Domaine Luquet Roger, Pouilly Fuisse, France, ’12</h6>
+                                            <h6>Jordan, Russian River Valley, CA '13</h6>
+                                            <h6>Domaine Serene, "Evenstad Reserve," Dundee Hills, OR '11</h6>
+                                            <h6>Shafer, "Cameros," Napa Valley, CA '13</h6>
+                                            <h6>Jarvis Estate, Napa Valley, CA ’13</h6>
+                                            <h6>Nickel &amp; Nickel, Napa Valley, CA '13</h6>
+                                            <h6>Far Niente, Napa Valley, CA '13</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption second">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Sauvignon Blanc</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Domaine de Ballade, Gascony, France '14</h6>
+                                            <h6>Wagner Family, Emmolo, Napa Valley, ’14</h6>
+                                            <h6>Mt. Beautiful, North Canterbury, New Zealand '14</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Alto “Los Romeros”, Central Valley, Chile ’15 </h6>
+                                            <h6>Seamus Wines, Russian River Valley, CA '13</h6>
+                                            <h6>Alta Maria Vineyard, Santa Barbara, CA ’13  </h6>
+                                            <h6>Domaine Vincent Delaporte, Sancerre, France '14</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption third">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Pinot Grigio</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Orsino, Italy '14</h6>
+                                            <h6>Zingara, Italy '14</h6>
+                                            <h6>Scarpetta, Friuli-Venezia Giulia, Italy '14</h6>
+                                            <h6>Torii Mor, Pinot Gris, Willamette, OR ‘14</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Ornella Molon, Friuli-Venezia Giulia Italy '14</h6>
+                                            <h6>Colterenzio-Schreckbichl, Alto Adige, Italy '14</h6>
+                                            <h6>Swanson, Napa, CA ’11</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption fourth">
+                                <div class="cbp-caption-defaultWrap">
+                                <h4>Rosè</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Bardolino Chiaretto Classico, Le Morette, Italy ‘14</h6>
+                                            <h6>Mauritson, Rockpile, CA ’14 </h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Penya, Cotes Catalanes, France ’15 </h6>
+                                            <h6>Tuck Beckstoffer, “Hogwash”, St. Helena, CA ‘ 14</h6>
+                                            <h6>Domaine De Pallus Chinon Messanges, Loire, France ’14</h6>
+                                            <h6>Lucy, Santa Lucia Highlands, CA ‘14 </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption fifth">
+                                <div class="cbp-caption-defaultWrap">
+                                <h4>Distinctive Whites</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Tasari, Grillo, Sicily, Italy '13</h6>
+                                            <h6>99 Vines, Moscato, Lodi, CA NV</h6>
+                                            <h6>Starling Castle, Riesling, Germany ’14</h6>
+                                            <h6>Badenhorst, "Secateurs," Chenin Blanc, South Africa '14</h6>
+                                            <h6>E. Guigal, Rhone Blanc, Cotes du Rhone, France '13'</h6>
+                                            <h6>Conundrum White, CA ’13</h6>
+                                            <h6>Orin Swift, Location-Corse, Vermentino, Corsica, France NV</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Montinore Estate, Gewurztraminer, Willamette, OR '12</h6>
+                                            <h6>Shooting Star, Aligote, WA '12</h6>
+                                            <h6>Domaine Schlumberger, Les Princes Abbes, Alsace, France '12</h6>
+                                            <h6>Licia, Albarino, Rias Baixas, Spain '14</h6>
+                                            <h6>Maryhill Riesling, Columbia Valley, WA ’12  </h6>
+                                            <h6> d'Arenberg, Hermit Carb, Viognier, McLaren Vale, Australia '13</h6>
+                                            <h6>Malvira’, Roero Arneis, Piedmont, Italy ’13</h6>
+                                            <h6> Berger Gruner Veltliner, Austria 1Liter ’13</h6>
+                                            <h6>Falanghina, Puglia, Italy ’14</h6>
+                                            <h6>Robert Mondavi “Oakville”, Fumé Blanc, Napa, CA ’12</h6>
+                                            <h6>Orin Swift, Mannequin, Napa, CA ’12</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption sixth">
+                                <div class="cbp-caption-defaultWrap">
+                                <h4>Sparkling/Dessert</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Conde de Subirats, Cava, Spain, NV </h6>
+                                            <h6>Belstar, Brut, Prosecco, Italy, NV </h6>
+                                            <h6>Graham Beck, Brut Rosé, Robertson, South Africa  NV</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Canella Prosecco Brut, Veneto, Italy NV </h6>
+                                            <h6>Fantinel, Rose, Italy, NV </h6>
+                                            <h6>Roederer Estate, Brut, Anderson Valley, CA, NV </h6>
+                                            <h6>Laurent-Perrier, Brut, Champagne, France, NV </h6>
+                                            <h6>Veuve Clicquot Brut, Champagne, France NV </h6>
+                                            <h6>G.H. Mumm, Reims, France, NV</h6>
+                                            <h6>Veuve Clicquot, La Grande Dame, Brut, Champagne, France ’04</h6>
+                                            <h6>Dom Perignon, Champagne, France '04</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="cbp-caption second">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Pinot Grigio/ Gris</h4>
-                        </div>
+                <div class="col-md-8 col-md-offset-2 col-xs-12">
+                    <h2 class="fancy-heading center">Red Wine</h2>
+                    <div id="solo" class="col-md-12 no-padding">
+                        <div class="cbp-item">
+                            <div class="cbp-caption first">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Pinot Noir</h4>
+                                </div>
 
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Angeline Reserve, California Coast ’14</h6>
+                                            <h6>Cescon, Veneto, Italy ’13   </h6>
+                                            <h6>Meiomi, California Coast ’14</h6>
+                                            <h6>Love, Oregon, Willamette Valley, OR ’13</h6>
 
-                                <div class="menu-item">
-                                    <h4>La Garia, Italy ‘15</h4>
-                                    <h4>Parva Res, Sicilia, Italy </h4>
-                                    <h4>Firesteed , OR ‘14</h4>
-                                    <h4>Pike Road, Willamette Valley, OR ‘15</h4>
-                                    <h4>Hahn, Monterey County, CA ‘15</h4>
-                                    <h4>Mile Post 71, McMinnville, OR ‘14</h4>
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Z Alexander Brown,  Russian River Valey, CA ’13 </h6>
+                                            <h6>Bishop’s Peak, San Luis Obispo County, CA ’14  </h6>
+                                            <h6>Torii Mor, Willamette Valley, OR '13</h6>
+                                            <h6>Bouchard Pere and Fils, Bourgogne, France '14</h6>
+                                            <h6>Miura, Santa Lucia Highlands, CA ’14  </h6>
+                                            <h6>Bethel Heights, Amith Hills, OR '12</h6>
+                                            <h6>Cristom, Mt, Jefferson Cuvee, Willamette Valley, OR '13</h6>
+                                            <h6>Belle Glos, “Las Alturas”, Santa Lucia Highlands, CA ’14</h6>
+                                            <h6>Knez, Anderson Valley, CA ’12</h6>
+                                            <h6> Belle Glos, “Dairyman”, Santa Lucia Highlands, CA ’14 </h6>
+                                            <h6>Belle Glos, “Clark and Telephone”, California Coast, CA ’14</h6>
+                                            <h6>Domaine Serene Yamhill Appelation, OR '12</h6>
+                                            <h6>Cherry Pie, Carneros, Napa, CA '12</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                     <div class="cbp-caption third">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Sparkling</h4>
-                        </div>
+                            <div class="cbp-caption second">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Merlot</h4>
+                                </div>
 
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Schell Creek, Santa Rosa, CA '13</h6>
+                                            <h6>Independent Producers, "Bacchus," Columbia Valley, WA '12</h6>
 
-                                <div class="menu-item">
-                                    <h4>Gran Castillo, Cava, Penedes, Spain ‘NV</h4>
-                                    <h4>Belstar, Proscecco, Italy, ‘NV</h4>
-                                    <h4>La Marca, Proscecco, Italy ‘NV</h4>
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Parcel 41, Napa Valley, CA ’13</h6>
+                                            <h6>Swanson Vineyards, Oakville, CA '11</h6>
+                                            <h6>Steele "Stymie" Lake County, CA '10</h6>
+                                            <h6>Duckhorn, Napa Valley, CA ’12 </h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="cbp-caption fourth">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Sauvignon Blanc</h4>
-                        </div>
-
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
-                                <div class="menu-item">
-                                    <h4>Pomelo, Mason Cellars, CA ‘14</h4>
-                                    <h4>Kono, Marlborough, New Zealand ‘14</h4>
-                                    <h4>Black Stallion, Napa Valley, CA ‘15</h4>
+                            <div class="cbp-caption third">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Cabernet Sauvignon</h4>
                                 </div>
-                                
-                                <h4 class="wine-det">By the Bottle</h4>
-                                <div class="menu-item">
-                                    <h4>Chalk Hill, Sonoma, CA ‘13</h4>
-                                    <h4>Spy Valley, Marlborough, New Zealand ‘14</h4>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Smith &amp; Hook, Central Coast, CA '13</h6>
+                                            <h6>Revelry, Walla Walla, WA ’12</h6>
+                                            <h6>Hendry, HRW, Napa, CA ’12</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Cigar Box, Maipo, Chile ’14 </h6>
+                                            <h6>Hayes Valley, Central Coast, CA ’13</h6>
+                                            <h6>Lucky Star, Sonoma, CA ’13</h6>
+                                            <h6>Roth, Alexander Valley, CA’ 13</h6>
+                                            <h6>Hendry, HRW, Napa, CA ’12</h6>
+                                            <h6>Halter Ranch, Paso Robles, CA '13</h6>
+                                            <h6>Stonestreet, Alexander Valley, CA ’10</h6>
+                                            <h6>Stonestreet, Alexander Valley, CA ’11</h6>
+                                            <h6>Stag’s Leap, “Artemis”, Napa Valley, CA ’12</h6>
+                                            <h6>Peju, "Provence," Napa Valley, CA '12</h6>
+                                            <h6>Jordan Alexander Valley, CA '11</h6>
+                                            <h6>Joseph Phelps, Napa Valley, CA '12</h6>
+                                            <h6>Shafer, "One Point Five," Napa Valley, CA '12</h6>
+                                            <h6>Newton, “The Puzzle”, Napa Valley, CA ’13 </h6>
+                                            <h6>Caymus, Napa Valley, CA, 750ML ’13</h6>
+                                            <h6>Caymus, Napa Valley, CA, 1L ’13</h6>
+                                            <h6>Silver Oak, Napa Valley, CA '10</h6>
+                                            <h6>Stag’s Leap, “S.L.V” Napa, CA ’12</h6>
+                                            <h6>Jarvis Estate, Napa Valley, CA ’10    </h6>
+                                            <h6>Caymus Special Select, Napa Valley, CA ’12</h6>
+                                            <h6>Opus One, Napa Valley, CA '12</h6>
+                                            <h6>Opus One, Napa Valley, CA '11</h6>
+                                            <h6>Shafer, Hillside Select, Napa, CA ‘11</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class="cbp-caption fifth">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Rose</h4>
-                        </div>
+                            <div class="cbp-caption fourth">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Zinfandel/Primitivo</h4>
+                                </div>
 
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Teira, Sonoma County, CA '12</h6>
+                                            <h6>Campus Oak, Old Vine Zinfandel, Lodi, CA ‘11 </h6>
 
-                                <div class="menu-item">
-                                    <h4>Vino, Charles Smith, Columbia Valley, WA ’15</h4>
-                                    <h4>Hecht and Bannier, Provence, France,  ‘15</h4>
-                                    <h4>Liquid Geography, Bullas, Spain ‘15</h4>
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Matané Primitivo, Puglia, Italy ’13 </h6>
+                                            <h6>Seghesio, Sonoma County, CA '14</h6>
+                                            <h6>Ridge, Three Valleys, Sonoma County, CA '13</h6>
+                                            <h6>Dry Creek Vineyard, Sanoma, CA ’13  </h6>
+                                            <h6>Carol Shelton “Rocky Reserve”, Rockpile, CA ‘12 </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption fifth">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Syrah/Rhone Blends</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Orin Swift, “Abstract”, Rutherford, CA ’13</h6>
+                                            <h6>E. Guigal, Chateauneuf du Pape, France ’09  </h6>
+                                            <h6>E. Guigal, Chateauneuf du Pape, France ’10</h6>
+                                            <h6>JAQK "Soldiers of Fortune," Syrah, Napa, CA '08</h6>
+                                            <h6>Shafer, “Relentless,” Syrah, Napa, CA ’12 </h6>
+                                            <h6>Sine Qua Non, Dark Blossom, Central Coast, CA '11</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption sixth">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Chianti/Sangiovese</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Toscolo, Tuscany, Italy '14</h6>
+                                            <h6>Monte Antico, Tuscany, Italy '11</h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Triturris Rosso, Tuscany, Italy ’13</h6>
+                                            <h6>Felsina, Chianti Classico, Tuscany, Italy '12</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption seventh">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Bordeaux/Bordeaux Blends</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Chateau Haut Piquat, Lussac-St.-Emilion, France '10</h6>
+                                            <h6>Chateau Bel Air, Haut-Médoc, Bordeaux, France ’12 </h6>
+                                            <h6>Orin Swift, Papillion, Napa Cellars, CA ’13</h6>
+                                            <h6>Conn Valley Vineyards, "Eloge," Napa Valley, CA '10</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cbp-caption eighth">
+                                <div class="cbp-caption-defaultWrap">
+                                    <h4>Distinctive Reds</h4>
+                                </div>
+
+                                <div class="cbp-caption-activeWrap">
+                                    <div class="cbp-l-caption-body">
+                                        <div class="menu-item">
+                                            <h5><strong>Glass/Bottle</strong></h5>
+                                            <h6>Tasari, Nero D' Avola, Silcily, Italy '14</h6>
+                                            <h6>Chono, Carmenere, Maipo Valley Andes, Chile ’12</h6>
+                                            <h6> Fabre Montmayou, Malbec, Mendoza, Argentina ’13    </h6>
+                                            <h6>Orin Swift, "Location-F" Grenache/Syrah, France, NV</h6>
+                                            <h6>Steele, Writer’s Block, Petite Syrah, Lake County ’13    </h6>
+                                            <h6>Conundrum Red, CA ’12 </h6>
+                                            <h6>Fabre Montmayou Cabernet Franc, Mendoza Argentina ’13   </h6>
+
+                                            <h5><strong>By The Bottle</strong></h5>
+                                            <h6>Evodia Old Vine Grenache, Calatayud, Spain ’14  </h6>
+                                            <h6>Brazos, "Reunion," Malbec, Mendoza, Argentina '14</h6>
+                                            <h6>Dacu, Tempranillo, Ribera Del Guadiana, Spain ’12  </h6>
+                                            <h6>Bonny Doon, A Proper Claret, Santa Cruz, CA ’12</h6>
+                                            <h6>Scarpetta, Barbera, Italy '13</h6>
+                                            <h6>Boeri, Martinette, Barbera d’Asti, Piedmont, Italy ’11</h6>
+                                            <h6>Nicodemi, Montepulciano, Italy, ’13</h6>
+                                            <h6>Treasure Hunter “The Berserker”, Alexander Valley, CA ’14 </h6>
+                                            <h6>Steltzner, Claret, Napa Valley, CA '13</h6>
+                                            <h6>One Time Spaceman ‘Moon Duck”, Sebastopol, CA ’12</h6>
+                                            <h6>Poderi Di Luigi Einaudi, Dolcetto, Dogliani, Italy ’13 </h6>
+                                            <h6>Riondo Amarone della Valpolicella, Veneto, Italy</h6>
+                                            <h6>Stags’ Leap Petite Syrah Napa Valley, CA ’12  </h6>
+                                            <h6>Produttori, Barbaresco, Italy '11</h6>
+                                            <h6>Damilano, Barolo, Piedmont, Italy '10</h6>
+                                            <h6>Orin Swift, "D66,"Grenache, Maury, France '12</h6>
+                                            <h6>The Prisoner, Napa Valley, CA '13</h6>
+                                            <h6>La Bastia, Amorone Della Valpolicella, Veneto, Italy 750ml</h6>
+                                            <h6>Barbi, Brunello di Montalcino, Italy ’10    </h6>
+                                            <h6>Justin “Justification”, Paso Robles, CA ’12  </h6>
+                                            <h6>Sine Qua Non, "Five Shooter," Napa Valley, CA '10</h6>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,129 +412,7 @@ Food this good deserves the company of great wine! That is why Ginny Lane's Wine
                 </div>
             </div>
         </div>
-
-        <div class="col-md-6 col-xs-12">
-            <div class="fancy-heading center"><h3>Red Wine</h3></div>
-            <div id="solo">   
-                <div class="cbp-item">      
-                    <div class="cbp-caption first">
-                        <div class="cbp-caption-defaultWrap">         
-                            <h4>Pinot Noir</h4>
-                        </div>
-
-                        <div class="cbp-caption-activeWrap">
-                            <div class="cbp-l-caption-body">
-                                <h4 class="wine-det">By the Glass or Bottle</h4>
-
-                                <div class="menu-item">
-                                    <h4>Redtree, CA, ‘13</h4>
-                                    <h4>Sean Minor, Four Bears, Central Coast, CA ‘13</h4>
-                                    <h4>Underwood, OR ‘15"</h4>
-                                    <h4>Block Nine, Caiden’s Vineyard, CA ‘15</h4>
-                                    <h4>Pike Road, Willamette Valley, OR ‘15</h4>
-                                    <h4>Mile Post 71, McMinnville, OR ’14</h4>
-                                </div>
-
-                                <h4 class="wine-det">By the Bottle</h4>
-                                <div class="menu-item">
-                                    <h4>One Hope “Pinot For Paws”, CA ’13</h4>
-                                    <h4>Point North, Oregon ‘ 13</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cbp-caption second">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Cabernet Sauvignon</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <h4 class="wine-det">By the Glass or Bottle</h4>
-
-                                    <div class="menu-item">
-                                        <h4>The Divining Rod, Alexander Valley, CA ‘13  </h4>
-                                        <h4>Cartlidge and Brown, North Coast, CA ‘14    </h4>
-                                        <h4>Bliss, Estate Bottled, Mendocino, CA ‘13    </h4>
-                                        <h4>Hahn, CA ‘13    </h4>
-                                        <h4>Intrinsic, Columbia Valley, WA ‘14  </h4>
-                                    </div>
-
-                                    <h4 class="wine-det">By the Bottle</h4>
-                                    <div class="menu-item">
-                                        <h4>Chateau St. Jean, Alexander Valley, ’11</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="cbp-caption third">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Merlot</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <h4 class="wine-det">By the Glass or Bottle</h4>
-
-                                    <div class="menu-item">
-                                        <h4>Drumheller, Columbia Valley, WA ‘14</h4>
-                                        <h4>Angeline ‘Reserve’ Sonoma, CA ‘14</h4>
-                                        <h4>Skyfall, Columbia, WA ‘13</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="cbp-caption fourth">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Distinctive Reds</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <h4 class="wine-det">By the Glass or Bottle</h4>
-
-                                    <div class="menu-item">
-                                        <h4>Broadbent, Vinho Verde, Portugal ‘NV</h4>
-                                        <h4>Dr. Loosen, Riesling, Mosel, Germany ’14</h4>
-                                        <h4>Trimbach, Pinot Blanc, France ’14</h4>
-                                        <h4>The Whip, Livermore Valley, CA</h4>
-                                        <h4>Cara Bassa, Tempranillo, Spain</h4>
-                                        <h4>Tint O Negro, Malbec, Mendoza, Argentina ’15</h4>
-                                        <h4>MDZ Malbec, Mendoza, Argentina ‘15</h4>
-                                        <h4>Fantini, Chianti, Abruzzo, Italy ‘13</h4>
-                                        <h4>H3 Columbia Crest, Red Blend ‘13</h4>
-                                        <h4>The Stump Jump, Shiraz, Australia ‘11</h4>
-                                        <h4>Writers Block, Petite Sirah, Lake County, C.A. ‘12</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                         <div class="cbp-caption fifth">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Zinfandel</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <h4 class="wine-det">By the Glass or Bottle</h4>
-
-                                    <div class="menu-item">
-                                        <h4>Predator, Lodi, CA ‘14</h4>
-                                        <h4>Redemption, Alexander Valley, CA ’12</h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>  
-</div>
+    </section>
 
 
-<div class="col-xs-12"><div class="hr-png-6"></div></div>
+<div class="col-xs-12"><div class="hr hr-png-1"></div></div>

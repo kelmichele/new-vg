@@ -1,237 +1,183 @@
-<% content_for :title do %>
-Drink Menu
-<% end %>
-<% content_for :description do %>
-Whether you are enjoying a few cocktails with your meal, or just grabbing one to-go, &amp; parousing The Wharf, Ginny Lane has a Drink Menu you will love.
-<% end %>
+<% @page_title = "Drink Menu" %>
+<% @page_description = "Come enjoy a cold drink at Villaggio Grille. Let our bartenders entertain you for a while, or grab a drink to walk the docks of the Wharf's marina with. Either way, include our drink menu in your day, and you won't be sorry!" %>
 
-
-    <div id="page-title" class="pt-bkg-image image-6">
+<div id="menupage">
+    <div id="page-title" class="pt-bkg-image image-bottle">
         <div class="title-container">
-            <h3>Ginny Lane's</h3>
-            <h1>Drink Menu</h1>
-            <%= link_to '/bar-specials#penny' do %>
-                <h4>Ask your server about our Penny Martinis!</h4>
-            <% end %>
+            <section class="fancy-heading center">
+                <h1>Drink Menu</h1>
+            </section>
         </div>
     </div>
 
-    <div class="tabs">
-        <div class="page-content container">
-            <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div id="accordeon"> 
-                    <div class="cbp-item">      
-                        <div class="cbp-caption first">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Beer</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="menu-item text-center">
-                                        <h6>
-                                            Ask Your Server or Bartender About Our Draught Beer Selection!<br>
-                                            Draughts and Micro Brews Subject to Change.
-                                        </h6>
+    <div class="page-content food-menus">
+        <section class="tabs-example">
+            <div class="tabs">
+                <div class="container no-padding">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div id="accordeon" class="col-md-12 no-padding">
+                            <div class="cbp-item">
+                                <div class="cbp-caption first">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Beer List</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Domestics</h4>
-                                           
-                                            <h6>
-                                                Bud Light, Michelob Ultra<br>
-                                                Miller Lite, Coors Light - <strong>$3</strong>
-                                            </h6>
-                                            
-                                            <h6>Angry Orchard Hard Cider - <strong>$3.5</strong></h6>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item beer">
+                                                <h4><b>Domestics <span>...$3</span></b></h4>
+                                                <p>
+                                                    Bud Light<br>
+                                                    Coors Light<br>
+                                                    Yuengling<br>
+                                                    Michelob Ultra<br>
+                                                    Miller Lite
+                                                </p>
+                                            </div>
 
-                                            <h6>Yuengling -<strong> $4</strong></h6>
-                                        </div>
-                                    </div>
+                                            <div class="menu-item beer">
+                                                <h4><b>Imports</b></h4>
+                                                <p>
+                                                    Becks ... $3<br>
+                                                    Corona Light ... $3.5<br>
+                                                    Peroni Nastro Azzurro ... $4<br>
+                                                    Birra Moretti ... $4<br>
+                                                    Stella Artois ... $4
+                                                </p>
+                                            </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Craft Brews &amp; Imports</h4>
-                                            <h6>Corona Extra &amp; Corona Light - <strong>$3.5</strong></h6>
-                                            <h6>Stella Artois - <strong>$4 </strong></h6>
-
-                                            <h6>Rocket Republic Vapor Trail, Cream Ale<br>
-                                                Great Divide Hoss Rye Oktoberfest <br>
-                                            <strong>$4</strong></h6>
-
-                                            <h6>Back Forty Freckle Belly IPA
-                                            <strong>$4.5</strong></h6>
-
-                                            <h6>     
-                                            Monday Night Slap Fight IPA (GA)<br>
-                                            Catawba Farmer Ted’s Cream Ale<br>
-                                            <strong>$5</strong></h6>
-
-                                            <h6>Fairhope Amber <br>
-                                                Goodwood Walnut Brown Ale<br>
-                                            <strong>$5.5</strong></h6>
-
-                                            <h6>Fairhope 51 Pale Ale<br>
-                                            <strong>$6</strong></h6>
-
-                                            <h6>Rogue Hazelnut Brown Nectar<br>
-                                                Fairhope Judge Roy Bean Stout<br>
-                                            <strong>$7</strong></h6>
+                                            <div class="menu-item beer">
+                                                <h4><b>Craft</b></h4>
+                                                <p>
+                                                    Blue Moon ... $3.5<br>
+                                                    Angry Orchard ... $3.5<br>
+                                                    Truck Stop Honey ... $4<br>
+                                                    I Drink Therefore I (Amber) ... $4<br>
+                                                    Bearded Lady ... $4<br>
+                                                    Handy’s Gold ... $4<br>
+                                                    Dry Hopped Pale Ale - $5<br>
+                                                    Monkeynaut ... $5<br>
+                                                    Vanillaphant Porter ... $6
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="cbp-caption second">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>House Cocktails</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Ginny Lane’s Strawberry Lemonade</h4>
-                                            <div class="menu-price">
-                                                <p>$9</p>
-                                            </div>
-                                            <p>
-                                                Strawberry Vodka, Strawberry Puree, Sour Liqueur, Sierra Mist
-                                            </p>
-                                        </div> 
-                                       
-                                        <div class="menu-item">
-                                            <h4>Apple Cider Bellini </h4>
-                                            <div class="menu-price"><p>$9</p></div>
-                                            <p>Apple cider, orange liquor, maple syrup, topped with Prosecco and rosemary </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Lemon Basil Martini</h4>
-                                            <div class="menu-price"><p>$9</p></div>
-                                            <p>Bacardi Lemon, fresh squeezed lemon juice, basil simple syrup</p>
-                                        </div>
+                                <div class="cbp-caption second">
+                                    <div class="cbp-caption-defaultWrap">
+                                    <h4>Penny Cocktails</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Cooper’s Cup</h4>
-                                            <div class="menu-price"><p>$9</p></div>
-                                            <p>Cooper’s Craft Bourbon, fresh lime juice, topped with Cock and Bull ginger ale</p>
-                                        </div>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h5>Your first cocktail is a penny!<br>(One penny cocktail per guest, per day)</h5>
+                                            </div>
 
-                                        <div class="menu-item">
-                                            <h4>Fall Peartini</h4>
-                                            <div class="menu-price"><p>$9</p></div>
-                                            <p>Pear vodka, simple syrup, fresh squeezed lemon, brown sugar, muddled pear</p>
-                                        </div>
+                                            <div class="menu-item">
+                                                <h4>Villaggio Breeze</h4>
+                                                <p>Light Rum, Cranberry Juice, Pineapple Juice</p>
+                                            </div>
 
-                                        <div class="menu-item">
-                                            <h4>Coconut Ginger Mojito</h4>
-                                            <div class="menu-price"><p>$9</p></div>
-                                            <p>Malibu Rum, lime juice, muddled mint, topped with Buffalo Rock ginger ale </p>
+
+                                            <div class="menu-item">
+                                                <h4>Cosmo on the Rocks</h4>
+                                                <p>Vodka, Cranberry, Triple Sec, Fresh Lime</p>
+                                            </div>
+
+
+                                            <div class="menu-item">
+                                                <h4>Gin Punch</h4>
+                                                <p>Gin, Cranberry Juice, Orange Juice, Pineapple Juice, Strawberry Puree, Lemon &amp; Lime Soda</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="cbp-caption third">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Frozen Drinks</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="col-md-5 col-md-offset-1 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Pumpkin Pie Spiced Mudslide </h4>
-                                            <div class="menu-price">
-                                                <p>$9</p>
-                                            </div>
-                                            <p>
-                                               Pumpkin pie liqueur, Kahlua, Bailey’s Irish Cream, Vanilla Vodka, ice cream
-                                            </p>
-                                        </div>
+                                <div class="cbp-caption third">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Martinis</h4>
                                     </div>
 
-                                    <div class="col-md-5 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Bailey’s Banana Colada</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Finesse <span>... $11</span></h4>
+                                                <p>Strawberry Vodka<br> X-Rated Blood Orange &amp; Passion Fruit Vodka, Strawberry Puree, Pineapple Juice</p>
                                             </div>
-                                            <p>
-                                                Light Rum, Bailey’s, Cream of Banana, Piña Colada Mix, Hint of Coconut
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-md-5 col-md-offset-3 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Watermelon Margarita</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
+                                            <div class="menu-item">
+                                                <h4>Bubble <span>... $11</span></h4>
+                                                <p>Champagne<br>X-Rated Blood Orange &amp; Passion Fruit Vodka, Cranberry Juice, Fresh Lemon </p>
                                             </div>
-                                            <p>
-                                                Tequila, Watermelon Puree, Fresh Lime, Salt Rim 
-                                            </p>
+
+                                            <div class="menu-item">
+                                                <h4>Villaggio Bellini <span>... $11</span></h4>
+                                                <p>Vodka<br> Peach Schnapps<br>Champagne, Fresh Berries</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Knob Creek Manhattan <span>... $11</span></h4>
+                                                <p>Knob Creek Bourbon, Sweet Vermouth, Orange Bitters</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="cbp-caption fourth">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Dessert Martinis</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Apple Cinnamon Manhattan</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
-                                            </div>
-                                            <p>
-                                                Crown Royal Regal Apple, Jack Daniels Fire, Cranberry Juice
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>White Chocolate Raspberry</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
-                                            </div>
-                                            <p>
-                                                Godiva White Chocolate, Razzmatazz, Vanilla Vodka, Cream
-                                            </p>
-                                        </div>
+                                <div class="cbp-caption fourth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Cocktails</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Peaches N’ Cream</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>The Gulf Coast <span>... $10</span></h4>
+                                                <p>Light Rum, Peach Schnapps, Orange Juice, &amp; Grenadine</p>
                                             </div>
-                                            <p>
-                                               Smirnoff  Whipped Vodka, Peach Puree, Peach Schnapps, Cream 
-                                            </p>
-                                        </div>
 
-                                        <div class="menu-item">
-                                            <h4>Salted Caramel</h4>
-                                            <div class="menu-price">
-                                                <p>$10</p>
+                                            <div class="menu-item">
+                                                <h4>Purple Margarita <span>... $10</span></h4>
+                                                <p>Hornitos Tequila, Sweet and Sour Mix, Razzmatazz, Cranberry Juice, Salt Rim</p>
                                             </div>
-                                            <p>
-                                               Caramel Vodka, Rumchata, Sprinkle of Salt
-                                            </p>
+
+                                            <div class="menu-item">
+                                                <h4>Bulleit Bourbon Tea <span>... $10</span></h4>
+                                                <p>Bulleit Bourbon, Peach Schnapps, Sweet Tea </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption fifth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Dessert Martinis</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>German Chocolate Martini <span>... $11</span></h4>
+                                                <p>Malibu Rum, Godiva White Chocolate Liquor, Frangelico, Cream </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Lemoncello Cake Martini <span>... $11</span></h4>
+                                                <p>Belvedere Vodka, Lemoncello, Godiva White Chocolate, cream</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption sixth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Nonalcoholic Drinks</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item"><h5>Abita Root Beer,<br> Selection of Octavia Hot Loose Leaf Teas,<br> Pepsi Products</h5></div>
                                         </div>
                                     </div>
                                 </div>
@@ -240,7 +186,7 @@ Whether you are enjoying a few cocktails with your meal, or just grabbing one to
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
-
-<div class="col-xs-12"><div class="hr-png-6"></div></div>
+</div>
+<div class="col-md-12"><div class="hr hr-png-10"></div></div>

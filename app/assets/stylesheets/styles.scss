@@ -14,13 +14,27 @@
     background-color: $red;
 }
 
-.hr-png-6 {
-    width: 100%;
-    background: url(image_path('divider6.png')) repeat-x 0 0;
-    height: 4px;
+.hr {
     margin-top: 10px;
     margin-bottom: 15px;
+    @include sec-default();
+    background-repeat:repeat-x;
+
+    &.hr-png-1 {
+        background-image: url(image_path('divider1.png'));
+        height: 9px;
+    }
+    &.hr-png-10 {
+        background-image: url(image_path('divider10.png')) ;
+        height: 13px;
+    }
+    &.hr-png-6 {
+        background: url(image_path('divider6.png')) repeat-x 0 0;
+        height: 4px;
+    }
 }
+
+.overlay {@include overlay ();}
 
 body {
     background-image: url(image_path('zenbg.png'));
@@ -28,7 +42,7 @@ body {
     margin: 0 120px;
     font-size: 13px;
     line-height: 22px;
-    color: #777; 
+    color: #777;
 
     @include bp(tb) {
         margin: 0 60px;
@@ -108,34 +122,14 @@ body {
     @include sec-bgimage ();
     background-size: cover;
 
-    &.image-2 {background-image: url(image_path('entertainment.jpg'));}
-    &.image-3 {background-image: url(image_path('wine-din.png'));}
-    &.image-5 {
-        max-height: 300px;
-        background-image: url(image_path('gl-window.jpg'));
-    }
-    &.image-6 {background-image: url(image_path('bar-seat.jpg'));}
-    &.image-8 { background-image: url(image_path('table-set.jpg'));}
-    &.image-9 {background-image: url(image_path('full-allstar.jpg')); }
-    &.image-11 {background-image: url(image_path('allstar.jpg'));}
-    &.image-12 {background-image: url(image_path('gl-entry.jpg'));}
-    &.image-wine { background-image: url(image_path('bar-seat.jpg'));}
-    &.image-cater { background-image: url(image_path('starfish.jpg'));}
-    &.image-menu { background-image: url(image_path('menu-bg.jpg'));}
-    &.image-nyd { background-image: url(image_path('nyd.jpg')); background-position: center center;}
-
-    &.image-lunch {background-image: url(image_path('dining-room.jpg')); position: relative; z-index: 0;
-        &::before {
-            background: rgba($dark, .4);
-            content: "";
-            position: absolute;
-            width:100%;
-            height:100%;
-            top: 0;
-            left: 0;
-            z-index: 2;
-        }
-    }
+    &.image-cater {background-image: url(image_path('starfish.jpg'));}
+    &.image-truck {background-image: url(image_path('foodtruck.jpg'));}
+    &.image-bottle {background-image: url(image_path('woodford.png'));}
+    &.image-hh {background-image: url(image_path('blank.png'));}
+    &.image-lunch {background-image: url(image_path('blank.png'));}
+    &.image-dinner {background-image: url(image_path('blank.png'));}
+    &.image-brunch {background-image: url(image_path('blank.png'));}
+    &.image-events {background-image: url(image_path('wine-din.png')); height:200px;}
 }
 #page-title {
     @include sec-default ();
@@ -145,23 +139,27 @@ body {
         @include sec-default ();
         padding: 100px 0 60px 0;
         margin-bottom: 40px;
-        
+
         h3 {
-            font-size: 16px;
-            font-weight: 450;
-            text-transform: uppercase;
-            margin-bottom: 0;
+            font-size: 18px;
             color: $white;
             text-align: center;
-            padding-top: 20px;
+            line-height: 1.4em
         }
         h1 {
             color: $white;
-            font-family: $raleway;
-            font-weight: 700;
             font-size: 40px;
             text-align: center;
-            text-shadow: 2px 2px 2px #000;
+            text-shadow: 1px 2px 1px $black;
+        }
+
+        &.alt {
+            padding:0;
+            h1, h3 {
+              font-weight: 700;
+              font-family: 'Raleway', Arial, sans-serif;
+            }
+            h3 {font-size: 26px;}
         }
     }
 
@@ -301,12 +299,11 @@ body {
     SERVICES BOX 3
     ========================================================================= */
 .service-box-3 {
-    width: 33.1%;
+    // width: 33.1%;
     float: left;
     margin-left: 2px;
     margin-right: 2px;
     margin-bottom: 4px;
-    // background-color: #f6fcfe;
     padding: 30px;
     text-align: center;
     list-style: none;
@@ -317,76 +314,101 @@ body {
     transition: all 0.2s ease 0s;
     cursor: pointer;
     border: 1px solid $hcolor;
+
+    &:hover {
+        box-shadow: 0 0 20px $light;
+        position: relative;
+        z-index: 200;
+        background-color: $white;
+    }
+    i {
+        font-size: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+        display: block;
+        color: $yellow;
+    }
+    h4 {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        -webkit-transition: all 0.2s ease 0s;
+        -moz-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        -ms-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+    }
+    p {
+        text-align: center;
+        padding-bottom: 0;
+    }
 }
-.service-box-3:hover {
-    box-shadow: 0 0 20px $light;
+// .page-content.custom-background .service-box-3 {
+//     background-color: $white;
+// }
+// .col-md-12 .service-box-3:nth-child(3n + 1),
+// .col-md-9 .col-md-12 .service-box-3:nth-child(3n + 1) {
+//     margin-left: 0px;
+// }
+// .col-md-12 .service-box-3:nth-child(3n),
+// .col-md-9 .col-md-12 .service-box-3:nth-child(3n) {
+//     margin-right: -1px;
+// }
+// .col-md-9 .service-box-3 {
+//     width: 33%;
+// }
+// .col-md-8 .service-box-3 {
+//     width: 48%;
+// }
+// .col-md-7 .service-box-3,
+// .col-md-6 .service-box-3 {
+//     width: 49.6%;
+// }
+// .col-md-5 .service-box-3 {
+//     width: 49.5%;
+// }
+// .col-md-8 .service-box-3:nth-child(2n + 1),
+// .col-md-7 .service-box-3:nth-child(2n + 1),
+// .col-md-6 .service-box-3:nth-child(2n + 1),
+// .col-md-5 .service-box-3:nth-child(2n + 1) {
+//     margin-left: 0;
+// }
+// .col-md-8 .service-box-3:nth-child(2n),
+// .col-md-7 .service-box-3:nth-child(2n),
+// .col-md-6 .service-box-3:nth-child(2n),
+// .col-md-5 .service-box-3:nth-child(2n) {
+//     margin-right: -1px;
+// }
+// .col-md-4 .service-box-3,
+// .col-md-3 .service-box-3 {
+//     width: 100%;
+//     margin-bottom: 2px;
+//     margin-left: 0;
+//     margin-right: 0;
+// }
+
+
+
+.img-circled {
+    display: block;
+    width: 100%;
     position: relative;
-    z-index: 200;
-    background-color: $white;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }
-.service-box-3 i {
-    font-size: 60px;
-    margin-bottom: 20px;
-    text-align: center;
+
+.img-circled img,
+.img-rounded img {
     width: 100%;
     display: block;
-    color: $yellow;
 }
-.service-box-3 h4 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    -webkit-transition: all 0.2s ease 0s;
-    -moz-transition: all 0.2s ease 0s;
-    -o-transition: all 0.2s ease 0s;
-    -ms-transition: all 0.2s ease 0s;
-    transition: all 0.2s ease 0s;
-}
-.service-box-3 p {
-    text-align: center;
-    padding-bottom: 0;
-}
-.page-content.custom-background .service-box-3 {
-    background-color: $white;
-}
-.col-md-12 .service-box-3:nth-child(3n + 1),
-.col-md-9 .col-md-12 .service-box-3:nth-child(3n + 1) {
-    margin-left: 0px;
-}
-.col-md-12 .service-box-3:nth-child(3n),
-.col-md-9 .col-md-12 .service-box-3:nth-child(3n) {
-    margin-right: -1px;
-}
-.col-md-9 .service-box-3 {
-    width: 33%;
-}
-.col-md-8 .service-box-3 {
-    width: 48%;
-}
-.col-md-7 .service-box-3,
-.col-md-6 .service-box-3 {
-    width: 49.6%;
-}
-.col-md-5 .service-box-3 {
-    width: 49.5%;
-}
-.col-md-8 .service-box-3:nth-child(2n + 1),
-.col-md-7 .service-box-3:nth-child(2n + 1),
-.col-md-6 .service-box-3:nth-child(2n + 1),
-.col-md-5 .service-box-3:nth-child(2n + 1) {
-    margin-left: 0;
-}
-.col-md-8 .service-box-3:nth-child(2n),
-.col-md-7 .service-box-3:nth-child(2n),
-.col-md-6 .service-box-3:nth-child(2n),
-.col-md-5 .service-box-3:nth-child(2n) {
-    margin-right: -1px;
-}
-.col-md-4 .service-box-3,
-.col-md-3 .service-box-3 {
-    width: 100%;
-    margin-bottom: 2px;
-    margin-left: 0;
-    margin-right: 0;
+
+.img-circled img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
 }

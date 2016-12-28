@@ -1,3 +1,263 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+@import "mixins";
+
+
+.sm-center-img {
+	width: 15%;
+	@include center-block();
+}
+
+/***************************************/
+.cbp-item {
+	@include sec-default ();
+	.cbp-caption {border-bottom: none;}
+	.cbp-caption-activeWrap { background-color: $white; padding-top: 20px;}
+	.cbp-caption-defaultWrap {
+		background-color: #f6f6f6; padding-bottom: 5px; margin-bottom: 2px;
+
+		h4 {margin-bottom: 0px; padding-left: 30px;}
+	}
+	.cbp-caption-defaultWrap::before {
+	    position: absolute;
+	    display: block;
+	    content: '';
+	    background-color: #e6e6e6;
+	    background-image: url(image_path('accordion-closed.png'));
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    width: 42px;
+	    height: 45.5px;
+	    top: 0;
+	    left: 0;
+	    -webkit-transition: all 0.2s ease 0s;
+	    -moz-transition: all 0.2s ease 0s;
+	    -o-transition: all 0.2s ease 0s;
+	    -ms-transition: all 0.2s ease 0s;
+	    transition: all 0.2s ease 0s;
+	}
+	.cbp-caption-defaultWrap.active::before,
+	.cbp-caption-defaultWrap.active:hover::before {
+	   	background-image: url(image_path('accordion-opened.png'));
+	}
+	.cbp-caption-defaultWrap:hover::before {
+	    background-image: url(image_path('accordion-closed-hover.png'));
+	}
+
+	.menu-item {
+		padding-bottom: 10px; padding-right: 10px;
+		// text-align: center;
+		h4 {margin-bottom: 3px; color: $red;}
+		h4 span {color: $black; font-weight: bold; font-size: 15px;}
+		h4 img { width: 25px; float: left; display: inline-block; padding-top: 5px; padding-right: 5px;}
+		p {padding-bottom: 0; color: $black;}
+		.menu-price p { font-weight: bold; margin-bottom: 0px;}
+
+		&.beer p {line-height: 1.8em; font-size: 15px; }
+	}
+}
+/***************************************/
+.wine-list {
+
+    .cbp-l-caption-body .menu-item {text-align: left; padding-left: 7%;}
+
+	@include bp(md) {
+		.page-content {padding-left: 0; padding-right: 0;}
+	    .cbp-l-caption-body .menu-item {
+    		h4 { font-size: 15px;}
+	    }
+		.cbp-caption-expand .cbp-l-caption-body {padding-left:0;}
+	}
+
+	@include bp(sm) {
+	    .cbp-l-caption-body .menu-item{ padding-left: 5px;}
+	}
+}
+
+.food-truck {
+	.image-truck .title {
+	    background-color: rgba(0, 0, 0, 0.5);
+	    width: 45%;
+	    padding: 20px;
+	}
+
+	@include bp(md) {
+	  	.pt-bkg-image-truck .title {
+		    background-color: rgba(0, 0, 0, 0.5);
+		    width: 100%;
+		    padding: 10px;
+	  	}
+	}
+}
+
+.contact {
+	.socials {margin-top: 20px; }
+	.contact-socials {
+		width: 10%; display: inline-block; margin: 0 7px;
+
+		i {font-size: 30px; color: #777;}
+	}
+}
+
+.happy-hour {
+	#happyhour-page.page-content {
+	  	padding-top:20px;
+	  	h2, h3, h4, h6, p, span, a {font-family: $raleway;}
+		h3 { font-weight: bold; color: $yellow; font-size: 20px; margin-bottom: 5px; ;}
+		h2 {  color: $red; }
+		p { font-size: 16px; color: $navy; margin-bottom:0; padding-bottom:5px;}
+		.special { width: 100%; float: left; margin-bottom:10px; text-align: center; }
+		h4 { font-size: 20px; text-align: center; }
+		h4 span { font-size: 16px; color: $yellow; }
+		h6 a { color: $yellow; }
+		.food-menus { width:100%; float: left; background-color: $offwhite; padding-left: 15px; }
+	}
+}
+
+.new {
+	#page-title .title-container {
+		h3, a {
+			color: $white;
+			text-shadow: 0px 1px 2px $black;
+			font-size: 35px;
+		}
+	}
+	.required {
+	    font-weight: bold;
+	    color: $red !important;
+	}
+
+	p.xs-m { margin-bottom: 10px; padding-bottom: 0;}
+
+	.form-group {
+	    width: 100%;
+	    margin-bottom: 15px;
+	    color: $black;
+	    position: relative;
+	    display: block;
+	}
+	input,
+ 	textarea {
+	    background-color: $white;
+	    border: 1px solid #ddd;
+	    border-radius: 3px;
+	    padding: 6px 10px 6px 40px;
+	    width: 90%;
+	}
+	input.text {min-height: 36px;}
+	textarea { height: 80px; }
+	.form-group.email, .form-group.phone {width: 45%; display: inline-block;
+		input {width: 95%;}
+	}
+	.form-group::before {
+	    font-family: 'FontAwesome';
+	    position: absolute;
+	    display: block;
+	    font-size: 13px;
+	    top: 23px;
+	    left: 1px;
+	    width: 32px;
+	    height: 33px;
+	    padding-left: 10px;
+	    background-color: #f6fcfe;
+	    padding-top: 7px;
+	    border-radius: 3px;
+	}
+	.form-group.submit {
+		width: 30%;
+		input { text-align: center; padding:10px 0; background-color: $yellow; text-transform: uppercase;color: $white;font-size: 12px;}
+	    font-weight: 700;
+	    position: relative;
+	    -webkit-transition: all 0.2s ease 0s;
+	    -moz-transition: all 0.2s ease 0s;
+	    -o-transition: all 0.2s ease 0s;
+	    -ms-transition: all 0.2s ease 0s;
+	    transition: all 0.2s ease 0s;
+	    border: none;
+	    float: left;
+	}
+	.form-group.name::before { content: '\f040'; }
+	.form-group.email::before { content: "\f0ac"; }
+	.form-group.phone::before { content: "\f095"; }
+	.form-group.message::before { content: "\f003"; z-index: 1; margin-bottom: 0;}
+
+	input:focus,
+	textarea:focus {
+	    border-color: #ccc;
+	    outline: none;
+	}
+
+	@include bp(md) {
+		input, textarea { width: 100%; }
+		.form-group.email, .form-group.phone {width: 100%; display: block;
+			input {width: 100%;}
+		}
+		.form-group.message {margin-bottom: 0;}
+		.form-group::before {height:30px; top:25px;}
+	}
+
+	.cater-menus.tabs {
+		padding-top: 50px;
+		font-family: $raleway;
+		.fancy-heading p {font-size: 15px; color: $black; margin-bottom: 0; padding-bottom: 5px;}
+	}
+	h3.menu-head { margin-bottom: 0; padding-left:20px; font-weight: 700; }
+	.cater-menus .menu-info{
+		color: $black;
+		font-size: 15px;
+		padding-bottom: 20px;
+		margin-left: 20px;
+	}
+	.cater-menus .menu-info span {
+		font-weight: bold;
+		color: $navy;
+	}
+	.cater-menus .menu-items {
+		font-weight: normal;
+		font-size: 15px;
+		color: $red;
+		font-weight: bold;
+		padding-left: 20px;
+	}
+	.cater-menus .menu-items span {
+		color: $black;
+		font-weight: normal;
+	}
+	ul.items {
+		list-style-type: none;
+		padding-left: 0;
+		li {padding-bottom: 10px;}
+	}
+
+	.hdv-items {
+		font-weight: normal;
+		font-size: 14px;
+		color: $red;
+		font-weight: bold;
+		span {
+			color: $black;
+			font-weight: normal;
+		}
+		.fancy-heading {
+			margin-top: 20px;
+			margin-bottom: 10px;
+
+			h4 {font-size: 18px}
+		}
+	}
+	.mobile-menu-link {display: none;}
+	@include bp(md) {
+		.mobile-menu-link {display: block; width:25%; font-weight: bold; background-color: $red; color:$white; @include center-block (); padding: 10px 0; text-align: center; border: 1px solid $yellow;}
+		.cater-menus.tabs { padding-top: 20px;
+			.container {padding-left: 0; padding-right: 0;}
+			.fancy-heading p { line-height: 1.3em;}
+		}
+		.cbp-l-caption-body {padding-left: 0;}
+	}
+	@include bp(sm) {
+		.mobile-menu-link {width:50%;}
+	}
+}

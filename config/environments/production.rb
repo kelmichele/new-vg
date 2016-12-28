@@ -83,4 +83,22 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'hsdesignhouse.com',
+    user_name:            'kelli@hsdesignhouse.com',
+    password:             'Islandtime1',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
+  config.action_mailer.default_url_options = {
+  host: "hsdesignhouse.com"
+  }
+
+  config.action_mailer.default_options = {
+  from: "noreply@villaggiogrille.com"
+  }
 end

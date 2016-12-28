@@ -1,12 +1,8 @@
-<% content_for :title do %>
-Dinner Menu
-<% end %>
-<% content_for :description do %>
-Treat yourself to an incredible dinner at Ginny Lane Bar &amp; Grill, a delicious experience from appetizers through dessert!
-<% end %>
+<% @page_title = "Dinner Menu" %>
+<% @page_description = "Let the chefs at Villaggio Grille make your taste buds feel like royalty one bite at a time. Our dinner menu is full of incredible options for your whole table." %>
 
 <div id="menupage">
-    <div id="page-title" class="pt-bkg-image image-lunch">
+    <div id="page-title" class="pt-bkg-image image-dinner">
         <div class="title-container">
             <section class="fancy-heading center">
                 <h1>Dinner Menu</h1>
@@ -14,344 +10,312 @@ Treat yourself to an incredible dinner at Ginny Lane Bar &amp; Grill, a deliciou
         </div>
     </div>
 
-
-    <div class="tabs">
-        <div class="page-content container">
-            <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div id="accordeon"> 
-                    <div class="cbp-item">      
-                        <%= render "shared/starters" %>
-                        <div class="cbp-caption fourth">
-                            <div class="cbp-caption-defaultWrap">         
-                                <h4>Turf</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                        <div class="menu-item">
-                                            <h4>Cherry Barbecue Baby Back Ribs</h4>
-                                            <div class="menu-price">
-                                                <p>$20</p>
-                                            </div>
-                                            <p>
-                                             French Fries, Cole Slaw, Cherry Barbecue Sauce
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Pan Seared Airline Chicken Breast</h4>
-                                            <div class="menu-price">
-                                                <p>$22</p>
-                                            </div>
-                                            <p>
-                                                Cheddar Grits, Asparagus, Roasted Red Pepper Cream
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>12oz New York Strip* </h4>
-                                            <div class="menu-price">
-                                                <p>$22</p>
-                                            </div>
-                                            <p>
-                                                Mashed Potatoes, Asparagus, Red Wine Demi Glace
-                                            </p>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cbp-caption fifth">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4> Filet</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                        <div class="menu-item">
-                                            <h4>Grilled Filet Mignon*</h4>
-                                            <div class="menu-price">
-                                                <p>5oz - $24 | 8oz - $30</p>
-                                            </div>
-                                            <p>
-                                                Mashed Potatoes, Glazed Baby Carrots, Red Wine Demi Glace
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Gorgonzola Filet*</h4>
-                                            <div class="menu-price">
-                                                <p>5oz - $24 | 8oz - $30</p>
-                                            </div>
-                                            <p>
-                                             8oz Filet Topped with Gorgonzola Cream, Parmesan Risotto, Green Beans
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Filet Oscar* </h4>
-                                            <div class="menu-price">
-                                                <p>5oz - $30 | 8oz - $36</p>
-                                            </div>
-                                            <p> 
-                                                8oz Filet Topped with Lump Crab and Hollandaise, Roasted Red Potatoes, Brussels Sprouts
-                                            </p>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cbp-caption sixth">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4>Surf</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="menu-item text-center">
-                                        <p>*Add Cluster of Steamed Snow Crab Legs - $12</p>
+    <div class="page-content food-menus">
+        <section class="tabs-example">
+            <div class="tabs">
+                <div class="container no-padding">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div id="accordeon" class="col-md-12 no-padding">
+                            <div class="cbp-item">
+                                <div class="cbp-caption first">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Snacks</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Shrimp &amp; Grits</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Smoked Salmon Terrine <span>... $12</span></h4>
+                                                <p>
+                                                    Layers of Smoked Alaskan Salmon, Lemon Pepper Cream, Mustard Dill Dressing, Capers, Red Onion, Crostini
+                                                </p>
                                             </div>
-                                            <p>
-                                             Sautéed Gulf Shrimp, Tomatoes, Bacon, Thyme, Rosemary, Green Onions, Shallots, Garlic, Chardonnay Cream Sauce over Cheddar Grits
-                                            </p>
-                                        </div>
 
-                                        <div class="menu-item">
-                                            <h4>Pecan Encrusted Corvina</h4>
-                                            <div class="menu-price">
-                                                <p>$16</p>
+                                             <div class="menu-item">
+                                                <h4>Calamari Fritti <span>... $12</span></h4>
+                                                <p>
+                                                    Lightly Fried Seasoned Calamari, Parmesan Cheese, Lemons, Citrus Sweet Chili
+                                                </p>
                                             </div>
-                                            <p>
-                                                Sautéed Brussel Sprouts, Cheddar Grits, Beurre Blanc 
-                                            </p>
-                                        </div>
 
-                                        <div class="menu-item">
-                                            <h4>Bayou Grouper</h4>
-                                            <div class="menu-price">
-                                                <p>$26</p>
-                                            </div>
-                                            <p>
-                                                Blackened Grouper Topped with Crab, Mushroom Risotto, Asparagus, Lemon Beurre Blanc
-                                            </p>
-                                        </div>
 
-                                        <div class="menu-item">
-                                            <h4>Crab Cakes</h4>
-                                            <div class="menu-price">
-                                                <p>$22</p>
+                                            <div class="menu-item">
+                                                <h4>Crab Bruschetta <span>... $14</span></h4>
+                                                <p>
+                                                    Grilled Pesto Crostini, Lump Crab Meat, Fresh Tomatoes, Prosciutto, Parmesan, Basil
+                                                </p>
                                             </div>
-                                            <p>
-                                                Fried Green Tomatoes, White Rice, Creole Remoulade
-                                            </p>
-                                        </div>
-                                    </div>
 
-                                    <div class="col-md-6 col-xs-12">                             
-                                        <div class="menu-item">
-                                            <h4>Traditional Fried Gulf Shrimp</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
+                                            <div class="menu-item">
+                                                <h4>Shrimp Arancini <span>... $12</span></h4>
+                                                <p>
+                                                    Panko Breaded Risotto, Gulf Shrimp, Roasted Red Peppers, Parmesan, Diablo Cream
+                                                </p>
                                             </div>
-                                            <p>
-                                                Steamed New Potatoes, Cole Slaw, Cocktail Sauce
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Grilled Salmon*</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
+                                            <div class="menu-item">
+                                                <p>*consuming raw or uncooked meats, seafood, or shellfish may cause potential health risks </p>
                                             </div>
-                                            <p>
-                                                Spinach Risotto, Asparagus, Lemon Dill &amp; Caper Cream Sauce
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Bacon Wrapped Gulf Shrimp</h4>
-                                            <div class="menu-price">
-                                                <p>$16</p>
-                                            </div>
-                                            <p>
-                                                Gouda Smashed Red Potatoes, Green Beans, Cherry Barbecue Sauce
-                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div class="cbp-caption seventh">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4>Platters And Pots</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                        <div class="menu-item">
-                                            <h4>Fried Seafood Platter</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
-                                            </div>
-                                            <p>
-                                                Gulf Shrimp, Corvina, Crab Cakes, Fries, Cole Slaw
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Broiled Seafood Platter</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
-                                            </div>
-                                            <p>
-                                                Gulf Shrimp, Corvina, Garlic Butter Oysters, New Potatoes, Corn, Cole Slaw
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Steamer Pot</h4>
-                                            <div class="menu-price">
-                                                <p>$26</p>
-                                            </div>
-                                            <p>
-                                                Gulf Shrimp, Snow Crab Legs, Conecuh Sausage, New Potatoes, Corn
-                                            </p>
-                                        </div>                              
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cbp-caption eight">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4>Pasta</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                        <div class="menu-item">
-                                            <h4>Shrimp Scampi</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
-                                            </div>
-                                            <p>
-                                                Gulf Shrimp with Asparagus and Tomatoes in a White Wine, Butter and Garlic Sauce over Linguini
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Seafood Pasta</h4>
-                                            <div class="menu-price">
-                                                <p>$18</p>
-                                            </div>
-                                            <p>
-                                                Gulf Shrimp, Crab, Spinach and Peas in a Creamy Alfredo Sauce over Linguini
-                                            </p>
-                                        </div>                                
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cbp-caption ninth">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4>Kids Plates - $7</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                        <div class="menu-item">
-                                            <h4>Grilled Cheese &amp; Fries</h4>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Kids Burger - Plain or Cheese &amp; Fries</h4>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Chicken Tenders &amp; Fries</h4>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Little Fruit Plate</h4>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Fried Shrimp &amp; Fries</h4>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Elbow Pasta</h4>
-                                            <p> In Your Choice of Butter or Alfredo Sauce</p>
-                                        </div>                              
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="cbp-caption tenth">
-                            <div class="cbp-caption-defaultWrap">
-                                <h4>Desserts</h4>
-                            </div>
-
-                            <div class="cbp-caption-activeWrap">
-                                <div class="cbp-l-caption-body">
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>White Chocolate Bread Pudding</h4>
-                                            <div class="menu-price">
-                                                <p>$8</p>
-                                            </div>
-                                            <p>
-                                                Topped with Bourbon Sauce
-                                            </p>
-                                        </div>
-
-                                        <div class="menu-item">
-                                            <h4>Homemade Key Lime Pie</h4>
-                                            <div class="menu-price">
-                                                <p>$8</p>
-                                            </div>
-                                            <p>
-                                                With Graham Cracker Crust
-                                            </p>
-                                        </div>
+                                <div class="cbp-caption second">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Boards</h4>
                                     </div>
 
-                                    <div class="col-md-6 col-xs-12">
-                                        <div class="menu-item">
-                                            <h4>Chocolate Lava Cake</h4>
-                                            <div class="menu-price">
-                                                <p>$8</p>
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Charcuterie &amp; Cheese <span>... $14</span></h4>
+                                                <p>
+                                                    Cured Meats, Artisanal Cheeses, Cornichons, Olives, Assorted Crackers
+                                                </p>
                                             </div>
-                                            <p>
-                                                Hot, Melted Center
-                                            </p>
-                                        </div>
 
-                                        <div class="menu-item">
-                                            <h4>Chef's Select Cheese Cake</h4>
-                                            <div class="menu-price">
-                                                <p>$8</p>
+                                            <div class="menu-item">
+                                                <h4>Fruit &amp; Cheese <span>... $14</span></h4>
+                                                <p>
+                                                    Artisanal Cheeses, Fresh Seasonal Fruits, Spiced Walnuts, Assorted Crackers
+                                                </p>
                                             </div>
-                                            <p>
-                                                Ask Your Server for Today's Selection
-                                            </p>
                                         </div>
-                                    </div>                                 
+                                    </div>
                                 </div>
+
+                                <div class="cbp-caption third">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Wood Fired Oysters</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %><strong>8 each - $16</strong></h4>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Prosciutto Rockefeller</h4>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Garlic &amp; Butter</h4>
+                                            </div>
+
+
+                                            <div class="menu-item">
+                                                <h4>Half &amp; Half</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption fourth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Salads</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Grilled Caesar <span>... $10</span></h4>
+                                                <p>
+                                                    Romaine Heart, Grape Tomatoes Bacon, Focaccia Croutons, Bleu Cheese Crumbles, Caesar Dressing
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Villaggio <span>... $6</span></h4>
+                                                <p>
+                                                    Hydroponic Baby Field Greens, Grape Tomatoes, Sliced Red Onions, Parmesan
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Chopped Caesar <span>... $6</span></h4>
+                                                <p>
+                                                    Romaine Hearts, Grape Tomato, Focaccia Croutons, Parmesan
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Scallop &amp; Arugula <span>... $14</span></h4>
+                                                <p>
+                                                    Seared Georges Bank Scallops or Seared Tuna, Granny Smith Apples, Parmesan, Orange Supremes, Apple Smoked Bacon Bits, Orange Balsamic Vinaigrette
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Goat Cheese &amp; Walnut <span>... $10</span></h4>
+                                                <p>
+                                                    Hydroponic Baby Field Greens, Dried Cherries, Spiced Walnuts, Goat Cheese
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Caprese Salad <span>... $10</span></h4>
+                                                <p>
+                                                    Sliced Tomatoes, Whole Buffalo Mozzarella, Fresh Basil Chiffonade,
+                                                    <br> Extra Virgin Olive Oil, Balsamic Reduction
+                                                </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <p>*consuming raw or uncooked meats, seafood, or shellfish may cause potential health risks </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption fifth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Flats</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Villaggio <span> ... $15</span></h4>
+                                                <p>Sausage, Pepperoni, Tri-Colored Peppers, Wild Mushrooms, Kalamata Olives, Fresh Mozzarella, Oregano, Marinara</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Margherita <span> ... $12</span></h4>
+                                                <p>Fontina, Mozzarella, Provolone, Roasted Garlic, Basil, Tomatoes, Marinara</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Chicken Pesto <span> ... $12</span></h4>
+                                                <p>Grilled Chicken, Basil Pesto, Roasted Tomatoes, Mushrooms, Provolone, Mozzarella</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Duck Pizza <span> ... $14</span></h4>
+                                                <p>Smoked Duck Breast, Roasted Garlic, Goat Cheese, Dried Cherries, Balsamic Reduction</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>BBQ Pizza <span> ... $12</span></h4>
+                                                <p>BBQ Sauce, Grilled Chicken, Jalapeno, Red Onion, Cream Cheese, Cheddar</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Philly Cheesesteak Pizza <span> ... $14</span></h4>
+                                                <p>Filet Mignon, Roasted Garlic, Cheddar Cheese, Bell Peppers, Caramelized Onions, Mushrooms</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption sixth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Entrees</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Brown Butter Grouper <span>...$24</span></h4>
+                                                <p>Truffle Mashed Potatoes, Squash Succotash, Brown Butter</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Grilled Swordfish <span>...$21</span></h4>
+                                                <p>Roasted Red Potatoes, Butternut Squash, Balsamic Red Onions</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Coconut Seared Trout <span>...$24</span></h4>
+                                                <p>Sun-Dried Tomato Couscous, Green Beans , Mushroom Ragu</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Grilled Salmon <span>...$20</span></h4>
+                                                <p>Red Bliss Mashed Potatoes, Sautéed Spinach, Tomato Chutney</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Truffle Honey Gulf Coast Shrimp <span>...$24</span></h4>
+                                                <p>Gulf Shrimp, Roasted Tomato Parmesan Risotto, Green Beans, White Truffle Honey Glaze</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Pan Seared Divers Scallops￼<span>... $24</span></h4>
+                                                <p>Braised Lentils, Roasted Cauliflower, Balsamic Reduction</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>*Seafood Pasta <span>... $22</span></h4>
+                                                <p>Gulf Coast Shrimp, Lump Blue Crab, Scallops, Creamy Alfredo, Parmesan, Fresh Basil</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Cowboy Ribeye <span>... $35</span></h4>
+                                                <p>Grilled 22oz Bone-In Ribeye, Roasted Red Potatoes, Broccolini, Demi-Glace</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Surf-N-Turf <span>... $22</span></h4>
+                                                <p>8oz Marinated Sirloin, Filo Wrapped Gulf Shrimp, Roasted Red Potatoes, Green Beans, Port Reduction</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Shallot and Beef Kabobs <span>... $20</span></h4>
+                                                <p>Wild Rice, Sautéed Spinach, Mushroom Ragu, Demi-Glace</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Manhattan Filet￼<span>... $26</span></h4>
+                                                <p>Lobster Ravioli, Asparagus, Tomato Cream</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Grilled Beef Filet Mignon <span>... 5 oz. - $24 &nbsp;|&nbsp; 8 oz. – $28</span></h4>
+                                                <p>USDA Choice Beef Tenderloin, Red Bliss Mashed Potatoes, Asparagus, Red Wine Demi-Glace...Add Lump Crab – $5 </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Lamb Chops <span>... $24</span></h4>
+                                                <p>Roasted Garlic Wild Rice, Green Beans, Demi-Glace, Tomato Chutney</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Braised Lamb Shank <span>... $23</span></h4>
+                                                <p>Bill E’s Bacon and Lentils, Roasted Brussels Sprouts, Sriracha Lamb Jus</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>Tomato Braised Short Rib <span>... $22</span></h4>
+                                                <p>Mushroom Couscous, Roasted Cauliflower, Beef Jus</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>*Bone-In Pork Chop <span>... $22</span></h4>
+                                                <p>Grilled 16oz Bone-In Center Cut Duroc Pork Chop, Bill E’s Bacon &amp; Pea Mac &amp; Cheese, Haricot Vert, Demi-Glace</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Bolognese <span>... $20</span></h4>
+                                                <p>Ground Pork &amp; Beef, Apple Smoked Bacon, Fresh Basil, Tomato Cream , Housemade Pappardelle</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>*Airline Chicken￼<span>... $18</span></h4>
+                                                <p>Butternut Squash Risotto, Asparagus, Balsamic Red Onions</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <%= render "shared/menu-share" %>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 
-<div class="col-xs-12"><div class="hr-png-6"></div></div>
+
+<div class="col-xs-12"><div class="hr hr-png-1"></div></div>

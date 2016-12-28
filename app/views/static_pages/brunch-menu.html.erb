@@ -1,104 +1,176 @@
-<% content_for :title do %>
-Brunch Menu
-<% end %>
-<% content_for :description do %>
-Come enjoy an amazing brunch at Ginny Lane at The Wharf! Your first mimosa is free, and you can't beat the view!
-<% end %>
+<% @page_title = "Brunch Menu" %>
+<% @page_description = "Join Villaggio for brunch, Sunday's from 11 a.m.- 2p.m." %>
 
-<div id="page-title" class="pt-bkg-image image-lunch">
-    <div class="title-container">
-        <section class="fancy-heading center">
-            <h1>Sunday Champagne Brunch Menu</h1>
+<div id="menupage">
+    <div id="page-title" class="pt-bkg-image image-brunch">
+        <div class="title-container">
+            <section class="fancy-heading center">
+                <h1>Sunday Brunch Menu</h1>
+                <h6>Served 11am - 2pm</h6>
+            </section>
+        </div>
+    </div>
+
+    <div class="page-content food-menus">
+        <section class="tabs-example">
+            <div class="tabs">
+                <div class="container no-padding">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div id="accordeon" class="col-md-12 no-padding">
+                            <div class="cbp-item">
+                                <div class="cbp-caption first">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Snacks</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Crab Cakes<span>... $12</span></h4>
+                                                <p>Fried Green Tomatoes, Crab Cream, Mixed Greens</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Fruit &amp; Cheese<span>... $14</span></h4>
+                                                <p>Artisanal Cheeses, Fresh Seasonal Fruits, Spiced Walnuts, Assorted Crackers</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Smoked Salmon Bagel<span>... $12</span></h4>
+                                                <p>Cream Cheese, Red Onion, Capers, Lemon Beurre Blanc</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Truffle Deviled Eggs<span>... $10</span></h4>
+                                                <p>Bacon, Cheddar Cheese, Cornichons</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption second">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Benedicts on Bagels</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Villaggio Benedict <span>... $14</span></h4>
+                                                <p>Bacon, Crab Cream, Parmesan, Bacon Potato Hash </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Petite Filet Benedict <span>... $16</span></h4>
+                                                <p>Fried Green Tomatoes, Breakfast Potatoes, Crab Cream </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Crab Cake Benedict <span>... $14</span></h4>
+                                                <p>Fried Green Tomatoes, Breakfast Potatoes, Sriracha Tartar Sauce </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Salmon Cake Benedict <span>... $12</span></h4>
+                                                <p>Fresh Sliced Tomatoes, Asparagus, Cheddar Grits, Lemon Beurre Blanc </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Short Rib Benedict <span>... $14</span></h4>
+                                                <p>Bacon Potato Hash, Short Rib Jus</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Swordfish Benedict  <span>... $12</span></h4>
+                                                <p>Prosciutto, Sautéed Spinach, Cheddar Grits, Hollandaise </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption third">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Entrees</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Spinach &amp; Crab Frittata <span>... $14</span></h4>
+                                                <p>Goat Cheese, Asparagus, Lemon Beurre Blanc </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Caramelized Onion Frittata <span>... $12</span></h4>
+                                                <p>Bacon Potato Hash, Tomato Chutney </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Steak &amp; Eggs <span>... $15</span></h4>
+                                                <p>NY Strip, Poached Eggs, Asparagus, Bacon Potato Hash, Hollandaise </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Fried Chop &amp; Eggs <span>... $14</span></h4>
+                                                <p>Fried Pork Chop, Poached Eggs, Green Beans, Cheddar Grits, Tomato Chutney </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Airline Chicken <span>... $12</span></h4>
+                                                <p>Sautéed Spinach, Cheddar Grits, Hollandaise</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>French Toast <span>... $10</span></h4>
+                                                <p>Fresh Berries, Whipped Cream, Bacon, Maple Syrup </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Grilled Salmon <span>... $12</span></h4>
+                                                <p>Cheddar Grits, Sautéed Spinach, Hollandaise </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Chicken Scaloppini <span>... $10</span></h4>
+                                                <p>Tomato Caper Cream, Cheddar Grits </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Southern Comfort</h4>
+                                                <p>2 Eggs Your Way, Cheddar Grits, Boudin, Texas Toast</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption fourth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Pizza</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Steak &amp; Egg <span>... $12</span></h4>
+                                                <p>Caramelized Onion, Spinach, Roasted Garlic </p>
+                                            </div>
+
+
+                                            <div class="menu-item">
+                                                <h4>Breakfast <span>... $12</span></h4>
+                                                <p>Sausage, Bacon, Egg, Roasted Tomatoes, Marinara </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </div>
 
-<div class="page-content">
-    <div class="container">
-        <div class="food-menus">
-            <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Southern Style Eggs Benedict</h4>
-                        <p>
-                            Poached eggs, Southern Style Grits, Applewood Smoked Bacon, Green Beans, Hollandaise Sauce
-                            <br><b>$12</b>
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Cajun Omelet</h4>
-                        <p>
-                            Conecuh Sausage, Crawfish Tails, Bell Peppers, Onions, Spinach, Cheddar Cheese
-                            <br><b>$12</b>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Biscuits and Gravy</h4>
-                        <p>
-                            Pair of Biscuits, topped with Sausage Gravy, Southern Style Grits, Green Beans
-                            <br><b>$10</b>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Crab Cake Benedict</h4>
-                        <p>
-                            Homemade crab cakes, Southern Style Grits, Green Beans, Citrus Vinaigrette
-                            <br><b>$12</b>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Steak n' Eggs</h4>
-                        <p>
-                            Skirt Steak, Two Eggs, Biscuit, Potato Hash, Green Beans, Demi Glace
-                            <br><b>$14</b>
-                        </p>
-                    </div>
-                </div>
-
-                 <div class="col-md-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Southern Comfort</h4>
-                        <p>
-                            Sausage Gravy and Biscuit, Two Eggs-Scrambled, Conecuh Sausage Links, Southern Style Grits
-                            <br><b>$14</b>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-md-offset-4 col-xs-12">
-                    <div class="service-box-2">
-                        <h4>Shrimp &amp; Grits</h4>
-                        <p>
-                            Sauteed Gulf shrimp, bacon, tomatoes, Thyme, Rosemary, Green Onions &amp; Shallots, Garlic, &amp; a Chardonnay Cream Sauce, served over Southern Style Grits.
-                            <br><b>$12</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <%= link_to '/lunch-menu', class: 'btn red' do %>
-                        Click Here to View Our Lunch Menu<br> for Regular Menu Items
-                    <% end %>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="col-xs-12"><div class="hr-png-6"></div></div>
+<div class="col-xs-12"><div class="hr hr-png-1"></div></div>
