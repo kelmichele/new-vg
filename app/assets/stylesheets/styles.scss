@@ -32,6 +32,10 @@
         background: url(image_path('divider6.png')) repeat-x 0 0;
         height: 4px;
     }
+    &.hr-png-7 {
+        background: url(image_path('dotted.png')) repeat-x 0 0;
+        height: 4px;
+    }
 }
 
 .overlay {@include overlay ();}
@@ -42,7 +46,7 @@ body {
     margin: 0 120px;
     font-size: 13px;
     line-height: 22px;
-    color: #777;
+    color: $font-color;
 
     @include bp(tb) {
         margin: 0 60px;
@@ -313,14 +317,15 @@ body {
     -ms-transition: all 0.2s ease 0s;
     transition: all 0.2s ease 0s;
     cursor: pointer;
-    border: 1px solid $hcolor;
+    border: 1px solid $gray;
 
     &:hover {
-        box-shadow: 0 0 20px $light;
+        box-shadow: 0 0 20px rgba($gray, .7);
         position: relative;
         z-index: 200;
         background-color: $white;
     }
+
     i {
         font-size: 60px;
         margin-bottom: 20px;
@@ -345,51 +350,6 @@ body {
         padding-bottom: 0;
     }
 }
-// .page-content.custom-background .service-box-3 {
-//     background-color: $white;
-// }
-// .col-md-12 .service-box-3:nth-child(3n + 1),
-// .col-md-9 .col-md-12 .service-box-3:nth-child(3n + 1) {
-//     margin-left: 0px;
-// }
-// .col-md-12 .service-box-3:nth-child(3n),
-// .col-md-9 .col-md-12 .service-box-3:nth-child(3n) {
-//     margin-right: -1px;
-// }
-// .col-md-9 .service-box-3 {
-//     width: 33%;
-// }
-// .col-md-8 .service-box-3 {
-//     width: 48%;
-// }
-// .col-md-7 .service-box-3,
-// .col-md-6 .service-box-3 {
-//     width: 49.6%;
-// }
-// .col-md-5 .service-box-3 {
-//     width: 49.5%;
-// }
-// .col-md-8 .service-box-3:nth-child(2n + 1),
-// .col-md-7 .service-box-3:nth-child(2n + 1),
-// .col-md-6 .service-box-3:nth-child(2n + 1),
-// .col-md-5 .service-box-3:nth-child(2n + 1) {
-//     margin-left: 0;
-// }
-// .col-md-8 .service-box-3:nth-child(2n),
-// .col-md-7 .service-box-3:nth-child(2n),
-// .col-md-6 .service-box-3:nth-child(2n),
-// .col-md-5 .service-box-3:nth-child(2n) {
-//     margin-right: -1px;
-// }
-// .col-md-4 .service-box-3,
-// .col-md-3 .service-box-3 {
-//     width: 100%;
-//     margin-bottom: 2px;
-//     margin-left: 0;
-//     margin-right: 0;
-// }
-
-
 
 .img-circled {
     display: block;

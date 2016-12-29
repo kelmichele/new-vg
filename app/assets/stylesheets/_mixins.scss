@@ -42,6 +42,13 @@
     transition: 0.5s;
 }
 
+@mixin gray() {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
 // Breakpoints
 @mixin bp($point) {
     @if $point == tb {

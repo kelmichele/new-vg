@@ -30,11 +30,12 @@
         js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-    	<%= render 'layouts/header' %>
+
+    	  <%= render 'layouts/header' %>
           <div class="main-wrapper">
-            <% flash.each do |message_type, message| %>
+            <!-- <% flash.each do |message_type, message| %>
                 <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
-            <% end %>
+            <% end %> -->
             <%= yield %>
           </div>
         <%= render 'layouts/footer' %>

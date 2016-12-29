@@ -45,51 +45,46 @@
             </div>
         </div>
     </div>
-</div>
-<div class="page-content">
-    <div class="container">
+
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-12 clearfix">
-                <ul>
+            <div class="col-md-12">
+                <ul class="service-boxes">
                     <div class="col-md-4 no-padding col-xs-12">
                         <li class="service-box-3">
-                            <i class="linecons-book-open"></i>
+                            <%= image_tag( 'v-icon2.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
+                            <!-- <i class="linecons-book-open"></i> -->
                             <h4>Our Menus</h4>
-                            <p>
-                                Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!
-                            </p>
+                            <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
                             <br>
                             <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
-                                <span>View Menus</span>
+                                View Menus
                             <% end %>
                         </li>
                     </div>
 
                     <div class="col-md-4 no-padding col-xs-12">
                         <li class="service-box-3">
-                            <i class="linecons-wine"></i>
+                            <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
+                            <!-- <i class="fa fa-wine-glass"></i> -->
                             <h4>Wine List</h4>
-                            <p>
-                                We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it.
-                            </p>
+                            <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
                             <br>
                             <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
-                                <span>Wine List</span>
+                                View Wine List
                             <% end %>
                         </li>
                     </div>
 
                     <div class="col-md-4 no-padding col-xs-12">
                         <li class="service-box-3">
-                            <i class="linecons-wine"></i>
-                            <h4>Words Link</h4>
-                            <p>
-                                he wide range of our wine menu just confirms it.
-                                he wide range of our wine menu just confirms it.
-                            </p>
+                            <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
+                            <!-- <i class="linecons-wine"></i> -->
+                            <h4>Catering</h4>
+                            <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
                             <br>
-                            <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
-                                <span>Wine List</span>
+                            <%= link_to '/catering', class: 'btn btn-small yellow' do %>
+                               See More
                             <% end %>
                         </li>
                     </div>

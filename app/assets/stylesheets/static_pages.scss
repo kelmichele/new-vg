@@ -60,6 +60,23 @@
 	}
 }
 /***************************************/
+
+.home {
+	h1 { text-transform: uppercase; text-shadow: 1px 2px 3px rgba($gray, .8);}
+	ul.service-boxes {padding: 0 10px; margin-top:35px; @include center-block();}
+	li.service-box-3 {
+		p {font-family: $play;}
+		.btn.btn-small.yellow {font-family: $play; color: $black;}
+	}
+
+	.v-icon {
+		@include center-block ();
+		height:70px;
+		padding-bottom:10px;
+		// @include gray ();
+	}
+}
+
 .wine-list {
 
     .cbp-l-caption-body .menu-item {text-align: left; padding-left: 7%;}
