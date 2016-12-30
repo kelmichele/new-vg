@@ -117,7 +117,7 @@
 	    .cbp-l-caption-body .menu-item {
     		h4 { font-size: 15px;}
 	    }
-		.cbp-caption-expand .cbp-l-caption-body {padding-left:0;}
+		// .cbp-caption-expand .cbp-l-caption-body {padding-left:0;}
 	}
 
 	@include bp(sm) {
@@ -172,6 +172,9 @@
 
 		        input.email {width: 90%; @include center-block(); background-color: $light; padding: 5px 0; margin-bottom: 5px; border: 1px solid $silver;}
 		        input.button { background-color: $red; font-size: 14px; height: auto; @include center-block();}
+		    }
+		    @include bp(md) {
+			    #mc_embed_signup {margin-bottom: 10px;}
 		    }
 		}
 	}

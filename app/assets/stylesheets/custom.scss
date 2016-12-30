@@ -269,7 +269,6 @@ strong {
     }
     @include bp(xs) {
         .partner-l, .partner-r { width: 95%; float: none; display: block; margin-left: auto; margin-right: auto; }
-        // .mmc, .mfb { display: inline-block; }
     }
 }
 
@@ -283,6 +282,7 @@ strong {
         background: none;
         li a {color: $white; font-family: $play;}
         li .btn {color: $hcolor; font-size: 12px; padding: 5px;}
+        li.off {color: $white; font-family: $play;}
     }
 
     @include bp(md) {
@@ -291,4 +291,14 @@ strong {
     }
 }
 
+#menulist .uk-offcanvas-bar{
+    background-color: #520f0b;
+    padding: 35px 15px;
+    h3 { color: $white;}
+    ul {margin-top: 15px;}
+    li {margin-bottom: 5px;
+        a {color: $white; font-family: $play; font-weight: bold; font-size: 18px; line-height: 1.8em; }
+        a:hover {@include ease(); color: $gray;}
+    }
+}
 

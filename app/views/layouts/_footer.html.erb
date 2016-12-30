@@ -116,10 +116,24 @@
                 <ul class="breadcrumb footer-breadcrumb">
                     <li><%= link_to 'Home', root_path %></li>
                     <li><%= link_to 'About', about_path %></li>
-                    <li><%= link_to 'Menus', menus_path %></li>
+                    <!-- <li><%= link_to 'Menus', menus_path %></li> -->
+                    <li class="off" data-uk-offcanvas="{target:'#menulist'}">Menus</li>
                     <li><%= link_to 'Contact', contact_path %></li>
                 </ul>
             </div>
+        </div>
+    </div>
+
+    <div class="uk-offcanvas" id="menulist">
+        <div class="uk-offcanvas-bar">
+            <h3>Our Menus</h3>
+            <ul>
+                <li><%= link_to "Daily Menu", daily_menu_path %></li>
+                <li><%= link_to "Dinner", dinner_menu_path %></li>
+                <li><%= link_to "Brunch", brunch_menu_path %></li>
+                <li><%= link_to "Drink Menu", drink_menu_path %></li>
+                <li><%= link_to "Happy Hour", happy_hour_path %></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -146,16 +160,10 @@
 
                     <li><%= link_to "Wine List", wine_list_path %></li>
                     <li><%= link_to "Catering", catering_path %></li>
-                    <!-- <li><%= link_to "Food Truck", food_truck_path %></li> -->
-
-                    <!-- <li class="deeper parent"><a href="#">More <span class="toggle-icon fa fa-angle-down"></span></a>
-                        <ul style="display: none;" class="nav-child unstyled small"> -->
                     <li><%= link_to "About", about_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
                     <li><%= link_to "Book a Table", opentable_path, :target => '_blank' %></li>
                     <li><%= link_to "Get Directions", directions_path, :target => '_blank' %></li>
-                        <!-- </ul>
-                    </li> -->
                 </ul>
             </div>
         </div>
