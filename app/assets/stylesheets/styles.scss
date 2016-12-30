@@ -68,26 +68,13 @@ body {
     &.none { padding: 0}
 }
 
-   .signup {
-        width: 90%;
-        border: 2px solid $yellow;
-        background-color: $light;
-        margin-top: 10px;
-        padding-left: 10px;
-
-        label {color: $yellow; margin-bottom: 0;}
-        input.button{background-color: $yellow;}
-    }
-    #mc_embed_signup input.email {width: 90%;}
-    #mc_embed_signup .button { background-color: $yellow; }
-
-
 .fancy-heading {
     width: 100%;
     position: relative;
     margin-bottom: 30px;
     padding-bottom: 10px;
 
+    &.less {margin-bottom: 10px;}
     h1, h2, h3, h4, h5, h6 { margin-bottom: 0;}
     span {
     text-transform: uppercase;
@@ -134,6 +121,7 @@ body {
     &.image-menus {background-image: url(image_path('bg-menus.jpg'));}
     &.image-events {background-image: url(image_path('wine-din.png')); height:200px;}
     &.image-nye {background-image: url(image_path('nye-xl.jpg')); height:300px;}
+    &.image-contact {background-image: url(image_path('bg-contact.jpg'));}
 }
 #page-title {
     @include sec-default ();
@@ -163,14 +151,15 @@ body {
             padding:0;
             h1, h3 {
               font-weight: 700;
-              font-family: 'Raleway', Arial, sans-serif;
+              font-family: $raleway;
             }
             h3 {font-size: 26px;}
         }
     }
 
     @include bp(md) {
-        .title-container { padding: 30px 0; margin-bottom: 20px;
+        .title-container { padding: 20px 0; margin-bottom: 10px;
+            &.less { padding: 15px 0; margin-bottom: 10px;}
         }
     }
 }
@@ -350,6 +339,18 @@ body {
     p {
         text-align: center;
         padding-bottom: 0;
+    }
+
+    .v-icon {
+        @include center-block ();
+        height:70px;
+        padding-bottom:10px;
+    }
+
+    @include bp(md) {
+        padding: 10px;
+        .v-icon {height:55px;}
+        p {margin-bottom: 10px;}
     }
 }
 

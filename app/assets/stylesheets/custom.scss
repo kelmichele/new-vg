@@ -30,18 +30,6 @@
   font-style: normal;
 }
 
-.mobile-show { display: none; }
-.mobile-hide { display: block; }
-
-
-@media (max-width: 768px) {
-  .mobile-show { display: block; }
-  .mobile-hide { display: none; }
-
-  #header.header-type-1 .navbar-collapse { float:none; display: block; margin-left:auto; margin-right:auto; }
-    .xs-bmargin0 { margin-bottom: 0; }
-}
-
 .bpadding0 { padding-bottom: 0; }
 .tpadding0 { padding-top: 0; }
 .tmargin0 { margin-top: 0; }
@@ -81,13 +69,20 @@
   margin: 0 !important;
   padding: 0 !important;
 }
-.no-padding {
-  padding: 0 !important;
-}
+.no-padding {padding: 0 !important;}
+
+.mobile-show { display: none; }
+.mobile-hide { display: block; }
 
 @include bp(md) {
-  .no-padding-xs { padding: 0; }
-  .no-mb-xs { margin-bottom: 0; }
+    .no-padding-xs { padding: 0; }
+    .no-mb-xs { margin-bottom: 0; }
+
+    .mobile-show { display: block; }
+    .mobile-hide { display: none; }
+
+    #header.header-type-1 .navbar-collapse { float:none; display: block; margin-left:auto; margin-right:auto; }
+    .xs-bmargin0 { margin-bottom: 0; }
 }
 
 p.red,
@@ -170,46 +165,17 @@ h6 {
     color: #252525;
     margin-top: 0;
     margin-bottom: 15px;
+    line-height: 1.4em;
 
     &.caps {text-transform: uppercase;}
 }
 
-h1 {
-    font-size: 35px;
-    // line-height: 41px;
-    line-height: 1.4em;
-}
-
-h2 {
-    font-size: 28px;
-    // line-height: 38px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 24px;
-    // line-height: 32px;
-    line-height: 1.4em;
-}
-
-h4 {
-    font-size: 21px;
-    // line-height: 30px;
-    line-height: 1.4em;
-}
-
-h5 {
-    font-size: 18px;
-    // line-height: 26px;
-    line-height: 1.4em;
-}
-
-h6 {
-    font-size: 15px;
-    // line-height: 23px;
-    line-height: 1.4em;
-}
-
+h1 {font-size: 35px;}
+h2 {font-size: 28px;}
+h3 {font-size: 24px;}
+h4 {font-size: 21px;}
+h5 {font-size: 18px;}
+h6 {font-size: 15px;}
 strong {
     font-weight: 600;
     color: $yellow;
@@ -257,25 +223,18 @@ strong {
     .signup {
         width:100%;
         border: 2px solid $red;
-        background-color: $light;
+        background-color: $white;
         margin-top: 0px;
-        padding-left: 10px;
+        padding-left: 0px;
 
-        label {color: $red; margin-bottom: 0;}
-        form {padding-top: 5px; padding-bottom: 5px;}
+        label {color: $red; margin-bottom: 0; text-align: center;}
+        form {padding: 5px 0;}
     }
-    #mc_embed_signup input.email {width: 90%;}
-    #mc_embed_signup .button { background-color: $red; }
-
-
-    // h3, h6, h4, li, li a { color: $font-color;}
-    h3 {
-        font-size: 15px;
-        font-weight: bold;
-        margin-bottom: 20px;
+    #mc_embed_signup {
+        text-align: center;
+        input.email {width: 90%; @include center-block(); background-color: $light; padding: 5px 0; margin-bottom: 5px; border: 1px solid $silver;}
+        .button { background-color: $red; font-size: 14px; height: auto; @include center-block();}
     }
-    h3 {margin-bottom: 0;}
-    h3.title { font-family: $raleway; color: $yellow; margin-bottom: 5px; font-weight: 800; font-size: 17px; }
 
     .cbp-item {
         .cbp-caption-activeWrap { background-color: $white; padding: 20px 0 0; margin-bottom: 1px;}
@@ -297,11 +256,20 @@ strong {
     }
 
     @include bp(md) {
+        padding: 20px 0px;
         .partner-l, .partner-r { float: none; display: block; margin-left: auto; margin-right: auto; }
+        .mmc, .mfb { display: inline-block; width: 49%;}
+        .mmc {float: right;}
+        .mtab { margin-bottom: 15px;}
     }
 
+    @include bp(sm) {
+        .mmc, .mfb, .mtab { width: 90%; float: none; @include center-block (); }
+        .mmc {margin-top: 15px;}
+    }
     @include bp(xs) {
         .partner-l, .partner-r { width: 95%; float: none; display: block; margin-left: auto; margin-right: auto; }
+        // .mmc, .mfb { display: inline-block; }
     }
 }
 
@@ -315,6 +283,11 @@ strong {
         background: none;
         li a {color: $white; font-family: $play;}
         li .btn {color: $hcolor; font-size: 12px; padding: 5px;}
+    }
+
+    @include bp(md) {
+        text-align: center;
+        .footer-breadcrumb {float: none;}
     }
 }
 

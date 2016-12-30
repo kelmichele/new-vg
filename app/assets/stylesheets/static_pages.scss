@@ -8,9 +8,13 @@
 
 .sm-center-img {
 	width: 13%;
-	// width: 35%;
 	@include center-block();
 }
+.stamp {
+	img, p { display: inline-block; }
+}
+
+.mobile-img {width: 75%;@include center-block();}
 
 /***************************************/
 .cbp-item {
@@ -82,11 +86,13 @@
 		.btn.btn-small.yellow {font-family: $play; color: $black;}
 	}
 
-	.v-icon {
-		@include center-block ();
-		height:70px;
-		padding-bottom:10px;
-		// @include gray ();
+	@include bp(md) {
+		.col-xs-img, .col-xs-img2 {display: inline-block; width: 50%; }
+		.col-xs-img2 {float: right;width: 30%;}
+	}
+	@include bp(sm) {
+		.col-xs-img, .col-xs-img2 {float: none; @include center-block(); width: 60%; }
+		.col-xs-img2 {width: 40%; padding-top:15px;}
 	}
 }
 
@@ -120,6 +126,7 @@
 }
 
 .food-truck {
+	#page-title {height: 400px;}
 	.image-truck .title {
 	    background-color: rgba(0, 0, 0, 0.5);
 	    width: 45%;
@@ -128,7 +135,6 @@
 
 	@include bp(md) {
 	  	.pt-bkg-image-truck .title {
-		    background-color: rgba(0, 0, 0, 0.5);
 		    width: 100%;
 		    padding: 10px;
 	  	}
@@ -136,11 +142,38 @@
 }
 
 .contact {
+	#page-title .title-container {
+		h3{margin-bottom:3px; font-weight: bold;}
+		h1 {line-height: 1em}
+	}
+	.overlay {background: rgba($black, .6);}
+
 	.socials {margin-top: 20px; }
 	.contact-socials {
 		width: 10%; display: inline-block; margin: 0 7px;
-
 		i {font-size: 30px; color: #777;}
+	}
+
+	.page-content{ padding-top:10px;
+		.p-link {color: $red; font-weight: bold; font-size: 16px;
+			h4 {color: $red;font-weight: bold; text-shadow: 0px 1px 1px $gray;}}
+		.signup { @include sec-default ();
+		    #mc_embed_signup {
+		        width: 85%;
+		        @include center-block();
+		        border: 1px solid $red;
+		        background-color: $white;
+		        margin-top: 0px;
+		        padding-left: 0px;
+		        text-align: center;
+
+		        label {color: $red; margin-bottom: 0; text-align: center;}
+		        form {padding: 5px 0;}
+
+		        input.email {width: 90%; @include center-block(); background-color: $light; padding: 5px 0; margin-bottom: 5px; border: 1px solid $silver;}
+		        input.button { background-color: $red; font-size: 14px; height: auto; @include center-block();}
+		    }
+		}
 	}
 }
 
@@ -156,6 +189,10 @@
 		h4 span { font-size: 16px; color: $yellow; }
 		h6 a { color: $yellow; }
 		.food-menus { width:100%; float: left; padding-left: 15px; }
+	}
+
+	@include bp(md) {
+		.overlay {background: rgba($black, .6);}
 	}
 }
 
@@ -355,4 +392,8 @@
 		}
 		@include bp(sm) {.nye-menus h4 span.seating {display: block; margin-right: auto; margin-left: auto; }}
 	}
+}
+
+.dinner-menu, .daily-menu, .brunch-menu, .contact {
+	.page-content {background-image: url(image_path('patt1.png'));}
 }
