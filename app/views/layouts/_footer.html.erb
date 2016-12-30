@@ -20,10 +20,10 @@
 
 <div id="footer-wrapper" class="tabs-example">
     <div class="container">
-        <div class="tabs">
-            <div class="row">
-                <div class="col-md-5 col-md-offset-1">
-                    <div id="accordeon" class="col-md-12 no-padding">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="tabs">
+                <div class="col-md-4">
+                    <div id="ft" class="col-md-12 no-padding">
                         <div class="cbp-item">
                             <div class="cbp-caption first">
                                 <div class="cbp-caption-defaultWrap">
@@ -47,6 +47,10 @@
                                                 <i class="fa fa-home"></i>
                                                 4790 Main Street Suite F 108-B<br> Orange Beach, Al 36561
                                             </li>
+
+                                            <%= link_to '/directions', target: '_blank', class: 'btn btn-small yellow' do %>
+                                                Get Directions
+                                            <% end %>
                                         </ul>
                                     </div>
                                 </div>
@@ -67,45 +71,35 @@
                                 </div>
                             </div>
 
-                            <div class="cbp-caption third">
-                                <div class="cbp-caption-defaultWrap">
-                                    <h4>Join Our Mailing List</h4>
-                                </div>
-
-                                <div class="cbp-caption-activeWrap">
-                                    <div class="cbp-l-caption-body">
-                                        <div class="signup">
-                                            <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-                                            <div id="mc_embed_signup">
-                                              <form action="//villaggiogrille.us12.list-manage.com/subscribe/post?u=4c78eb4e16987add938a2f662&amp;id=472d9b9216" method="post" id="mc-embedded-subscribe-form"   name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                                    <div id="mc_embed_signup_scroll">
-                                                        <label for="mce-EMAIL">Join Our Mailing List</label>
-                                                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
-
-                                                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c78eb4e16987add938a2f662_472d9b9216" tabindex="-1" value=""  ></div>
-                                                        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="cbp-caption cbp-link">
+                                <%= link_to '/opentable', target: '_blank' do %>
+                                    <h4>Book a Table</h4>
+                                <% end %>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-5 col-md-offset-1">
-                    <div class="fb-page" data-href="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="150" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts">Villaggio Grille at the Wharf</a></blockquote></div>
+                <div class="col-md-4">
+                    <div class="fb-page" data-href="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-height="120" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Villaggio-Grille-at-the-Wharf-268094240121/?fref=ts">Villaggio Grille at the Wharf</a></blockquote></div>
                 </div>
 
-                <!-- <div class="col-md-2">
-                    <div class="row btns">
-                        <%= link_to 'Get Directions!', directions_path, class: 'btn btn-small yellow', target: '_blank' %>
-                        <div class="clearfix"></div><br>
-                        <%= link_to 'Book a Table', opentable_path, class: 'btn btn-small yellow', target: '_blank' %>
+                 <div class="col-md-4">
+                    <div class="signup">
+                        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+                        <div id="mc_embed_signup">
+                          <form action="//villaggiogrille.us12.list-manage.com/subscribe/post?u=4c78eb4e16987add938a2f662&amp;id=472d9b9216" method="post" id="mc-embedded-subscribe-form"   name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                                <div id="mc_embed_signup_scroll">
+                                    <label for="mce-EMAIL">Join Our Mailing List</label>
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
+
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4c78eb4e16987add938a2f662_472d9b9216" tabindex="-1" value=""  ></div>
+                                    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

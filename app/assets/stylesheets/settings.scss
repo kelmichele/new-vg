@@ -1261,7 +1261,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		color-stop(0.13, rgb(0,0,0)),
 		color-stop(1, rgb(50,50,50))
 	);
-	
+
 	display:table;max-width:100%; overflow:hidden;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
 }
 
@@ -1499,7 +1499,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 .tp-simpleresponsive >ul >li{
 	list-style:none;
 	position:absolute;
-	visibility:hidden
+	visibility:hidden;
 }
 
 /*  CAPTION SLIDELINK   **/
@@ -2030,7 +2030,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 
 
 
-.tp-loader.spinner5 	{	
+.tp-loader.spinner5 	{
 		// background:url(../assets/loader.gif) no-repeat 10px 10px;
 		background-color:#fff;
 		margin:-22px -22px;
@@ -2255,8 +2255,8 @@ zoom: 1;
 
 
 
-.tparrows.preview2b {	
-	width:40px; min-height:110px; background:rgba(0,0,0, .5); 
+.tparrows.preview2b {
+	width:40px; min-height:110px; background:rgba(0,0,0, .5);
 	overflow:hidden;
 	-webkit-transition: -webkit-transform 1.3s;
 	-webkit-transition: width 0.3s, background-color 0.3s, opacity 0.3s;
@@ -2271,7 +2271,7 @@ zoom: 1;
 .tp-leftarrow.preview2b:after {	content: '\f053';  left:10px}
 
 
-.tparrows.preview2b .tp-arr-titleholder {	
+.tparrows.preview2b .tp-arr-titleholder {
 	background-size:cover; background-position:center center; display:block; visibility:hidden;position:relative;top:0px;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;

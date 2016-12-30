@@ -1,6 +1,6 @@
 $(document).ready(function() {
     "use strict";
-    
+
     $('#tabs-services').cubeportfolio({
         filters: '#js-filters-tabs',
         defaultFilter: '.first',
@@ -34,5 +34,27 @@ $(document).ready(function() {
         gapHorizontal: 0,
         gapVertical: 0,
     });
- 
+
+    $('#ft').cubeportfolio({
+        filters: '#filters-faq',
+        defaultFilter: '*',
+        animationType: 'sequentially',
+        gridAdjustment: 'default',
+        displayType: 'default',
+        caption: 'expand',
+        gapHorizontal: 0,
+        gapVertical: 0,
+    });
+
+    $('#ft2').cubeportfolio({
+        filters: '#filters-faq',
+        defaultFilter: '*',
+        animationType: 'sequentially',
+        gridAdjustment: 'default',
+        displayType: 'default',
+        caption: 'expand',
+        gapHorizontal: 0,
+        gapVertical: 0,
+    });
+
 }); // End of document.ready

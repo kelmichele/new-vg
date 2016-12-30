@@ -7,7 +7,8 @@
 
 
 .sm-center-img {
-	width: 15%;
+	width: 13%;
+	// width: 35%;
 	@include center-block();
 }
 
@@ -62,6 +63,18 @@
 /***************************************/
 
 .home {
+
+	.tp-banner-container.fullwidthbanner {
+        #rev-slider.tp-banner {
+            ul { margin-bottom: 10px;
+				li {
+            		a .img-responsive {}
+            	}
+            }
+        }
+	}
+	.page-content {padding-bottom: 0px;}
+
 	h1 { text-transform: uppercase; text-shadow: 1px 2px 3px rgba($gray, .8);}
 	ul.service-boxes {padding: 0 10px; margin-top:35px; @include center-block();}
 	li.service-box-3 {
@@ -78,11 +91,23 @@
 }
 
 .wine-list {
-
+	#page-title { position: relative; z-index: 4; }
     .cbp-l-caption-body .menu-item {text-align: left; padding-left: 7%;}
+    .entrance {
+    	@include sec-default();
+    	text-align: center;
+    	position: relative;
+    	z-index: 0;
+    	padding:20px;
+    	background-color: $offwhite;
+
+    	h5 {color: $red;}
+    }
+
+    .list1 {padding-bottom: 20px;}
+    .list2 {padding-top: 15px;}
 
 	@include bp(md) {
-		.page-content {padding-left: 0; padding-right: 0;}
 	    .cbp-l-caption-body .menu-item {
     		h4 { font-size: 15px;}
 	    }
@@ -120,7 +145,7 @@
 }
 
 .happy-hour {
-	#happyhour-page.page-content {
+	#happyhour-page .page-content {
 	  	padding-top:20px;
 	  	h2, h3, h4, h6, p, span, a {font-family: $raleway;}
 		h3 { font-weight: bold; color: $yellow; font-size: 20px; margin-bottom: 5px; ;}
@@ -130,7 +155,7 @@
 		h4 { font-size: 20px; text-align: center; }
 		h4 span { font-size: 16px; color: $yellow; }
 		h6 a { color: $yellow; }
-		.food-menus { width:100%; float: left; background-color: $offwhite; padding-left: 15px; }
+		.food-menus { width:100%; float: left; padding-left: 15px; }
 	}
 }
 
@@ -142,6 +167,9 @@
 			font-size: 35px;
 		}
 	}
+
+	.page-content {padding-bottom: 0;}
+
 	.required {
 	    font-weight: bold;
 	    color: $red !important;
@@ -216,8 +244,11 @@
 		.form-group::before {height:30px; top:25px;}
 	}
 
+	#menus{
+		background-color: #fbfbfb;
+		padding: 35px 0;
+	}
 	.cater-menus.tabs {
-		padding-top: 50px;
 		font-family: $raleway;
 		.fancy-heading p {font-size: 15px; color: $black; margin-bottom: 0; padding-bottom: 5px;}
 	}
@@ -276,5 +307,52 @@
 	}
 	@include bp(sm) {
 		.mobile-menu-link {width:50%;}
+	}
+}
+
+.special-events {
+	//all nye can be deleted after the event
+	.nye-page {
+		@include sec-default ();
+
+		#page-title {
+			h4 	{color: $white;
+			 	span {color: $yellow; font-weight: bold; }
+			}
+			h1 {color: $yellow;}
+		}
+		p { font-family: $raleway; font-size: 16px; color: $black; margin-bottom: 0px;}
+
+		.nye-menus {@include sec-default (); padding-top:40px;
+			h3, h3 span, h4, h5, p {font-family: $raleway;}
+			h3 {font-weight: 700; margin-bottom: 4px;}
+			h3 span {font-size: 17px; font-style: italic; color: $yellow;}
+			h5 {font-size: 16px; margin-bottom: 3px;}
+			h4 span.seating {display: inline-block; margin-right: 10px; color: $black; font-weight: bold;}
+			p {color: $black;}
+			h4.price {font-size: 17px; margin-bottom: 10px;}
+		}
+
+		.nye-box {
+			@include sec-default ();
+		  	margin-top:15px;
+		  	background-image: url(image_path('nye-blue.jpg'));
+		  	background-size: 90%;
+		  	background-position: center center;
+		  	background-repeat: no-repeat;
+		  	padding: 25px 0;
+		  	text-align: center;
+			&.early { padding: 30px 0 40px;}
+		}
+		a.link {width: auto; background-color: $red; color: $white; font-weight:bold; border-radius: 5px; font-family: $raleway; padding:10px 15px; text-align: center; position: relative;z-index: 10;}
+
+
+		@include bp(md) {
+		  	#page-title.pt-bkg-image-nye {background-color:$black; background-image: none; height: auto; padding-bottom: 10px;}
+		  	#page-title h1 { padding-top:10px;}
+		  	.p-top-4 {padding-top: 15px;}
+		  	.n0-m-xs {margin-bottom:10px;}
+		}
+		@include bp(sm) {.nye-menus h4 span.seating {display: block; margin-right: auto; margin-left: auto; }}
 	}
 }

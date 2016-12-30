@@ -46,6 +46,7 @@
 .tpadding0 { padding-top: 0; }
 .tmargin0 { margin-top: 0; }
 .bmargin0 { margin-bottom: 0; }
+.bmargin1 { margin-bottom: 10px; }
 .bmargin2 { margin-bottom: 20px; }
 .bmargin3 { margin-bottom: 30px; }
 .bmargin4 { margin-bottom: 40px; }
@@ -240,47 +241,34 @@ strong {
     padding: 30px 15px;
 
     ul {padding-left: 0;}
-    .fb-page{width: 100%;}
 
-    // .btns { width: auto; @include center-block(); padding-top: 5px;}
     .btn {
-        // width: 49.45%; display: inline-block;
-        @include sec-default();
-        text-transform: uppercase;
+        width:80%;
         text-align: center;
-        font-weight: 600;
-        padding-left: 0;
-        padding-right: 0;
-        background-color: $yellow;
         font-size: 13px;
-        color: $black;
-        font-family: $play;
+        color:$black;
+
+        &:hover {
+            background-color: lighten($yellow, 15%);
+            @include ease ();
+        }
     }
 
-    .btn:hover {
-        background-color: lighten($yellow, 15%);
-        -webkit-transition: all 0.4s ease 0s;
-        -moz-transition: all 0.4s ease 0s;
-        -o-transition: all 0.4s ease 0s;
-        -ms-transition: all 0.4s ease 0s;
-        transition: all 0.4s ease 0s;
-    }
-
-       .signup {
+    .signup {
         width:100%;
-        border: 2px solid $yellow;
+        border: 2px solid $red;
         background-color: $light;
         margin-top: 0px;
         padding-left: 10px;
 
-        label {color: $yellow; margin-bottom: 0;}
+        label {color: $red; margin-bottom: 0;}
         form {padding-top: 5px; padding-bottom: 5px;}
     }
     #mc_embed_signup input.email {width: 90%;}
-    #mc_embed_signup .button { background-color: $yellow; }
+    #mc_embed_signup .button { background-color: $red; }
 
 
-    h3, h6, h4, li, a { color: $font-color;}
+    // h3, h6, h4, li, li a { color: $font-color;}
     h3 {
         font-size: 15px;
         font-weight: bold;
@@ -290,17 +278,20 @@ strong {
     h3.title { font-family: $raleway; color: $yellow; margin-bottom: 5px; font-weight: 800; font-size: 17px; }
 
     .cbp-item {
-        .cbp-caption-activeWrap { background-color: $white; padding-top: 20px;}
-        .cbp-caption-defaultWrap {
-            padding: 10px 0;
-            h4 { padding:0; text-align: center;}
+        .cbp-caption-activeWrap { background-color: $white; padding: 20px 0 0; margin-bottom: 1px;}
+        .cbp-caption-defaultWrap, .cbp-link {
+            padding: 9px 0;
+            h4 { padding:0; font-size: 18px; text-align: center; font-weight: bold; color: $red; font-family: $raleway; text-shadow: 0px 1px 1px $gray;}
+        }
+        .cbp-link { background-color: $white;
+            h4 {margin-bottom: 0;}
         }
         .cbp-caption-defaultWrap::before {display: none;}
 
         .contact-info-list {
             padding-left: 0;
-            li {font-size: 14px; margin-bottom: 10px; color: $dark;}
-            .btn.btn-small.yellow { margin-top: 15px; }
+            li, li a {font-size: 14px; margin-bottom: 10px; color: $dark;}
+            .btn.btn-small.yellow { margin-top: 5px; }
             i {color: $gray; margin-right: 5px; }
         }
     }

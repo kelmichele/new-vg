@@ -2,126 +2,6 @@
 @import "mixins";
 
 
-
-
-.normal { font-weight: normal; }
-.text-center{ text-align: center; }
-.section-gray { background-color: #e3e3e3; }
-.section-lgray { background-color: #ececec; }
-.section-c3 { background-color: #c3c3c3; }
-.section-dk { background-color: #3a3a3a; }
-.section-white { background-color: #fff; }
-.text-white { color: #fff; }
-.nobg { background-color: transparent;}
-.text-black { color: #000; }
-.seprator-border {
-  border-bottom: 1px solid #f2f2f2;
-}
-
-
-
-.tp-caption .tp-big-heading {text-decoration: none;}
-h2.slide-head {
-  color: #fff;
-  font-weight: normal;
-  font-size: 45px;
-  line-height: 50px;
-  text-decoration: none;
-  background: rgba( 0, 0, 0, 0.6);
-  padding: 20px;
-}
-h2.slide-head span {
-  font-weight: bold;
-}
-
-.tp-big-heading::after {display: none;}
-
-.tp-caption h2 {
-  color: #fff;
-  font-family: 'Raleway', Arial, sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.tp-caption h2 span.color-text { color: #f1ba11; }
-
-.tp-caption a {
-  display: inline-block;
-  background-color: #f1ba11;
-  color: #fff;
-  font-family: 'Raleway', Arial, sans-serif;
-  padding: 10px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-}
-.tp-caption a.songwriter-link2 {
-  margin-left: 20px;
-}
-.tp-caption a:hover {
-  color: #696969;
-}
-
-@media (max-width: 768px) {
-
-  #dl-menu {
-    float: none;
-    margin-left: auto;
-    margin-right:auto;
-  }
-
-  .tp-caption  { position: relative; }
-  .tp-caption h2 { font-size:20px; line-height: 25px;}
-  .tp-caption a {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  h4.slide-head {
-    color: #fff;
-    font-weight: normal;
-    font-size: 15px;
-    padding: 5px;
-    text-decoration: none;
-    background-color: #000;
-  }
-}
-
-@media (max-width: 640px) {
-  .tp-caption h2 { font-size:16px; line-height: 20px;}
-  .tp-caption a {
-    display: block;
-    font-size: 15px;
-  }
-  .tp-caption a.songwriter-link2 {margin-left: 0; margin-top:15px;}
-}
-
-.pt-bkg-image-v {
-    background-image: url('../img/easter-cover.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
-.pt-bkg-cater {
-    background-image: url('../img/starfish.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.title-container a.tel {
-  color: #fff;
-  text-shadow: 2px 2px 2px #000;
-  font-size: 35px;
-}
-
-
-
 .wpcf7 .wpcf7-textarea {
     width: 90%;
     height: 100px;
@@ -140,7 +20,7 @@ h2.slide-head span {
   margin-bottom: 40px;
 }
 .cater-menus p {
-  color: #000;
+  color: $black;
   text-transform: none;
   margin-bottom: 15px;
   padding-left: 20px;
@@ -150,24 +30,24 @@ h2.slide-head span {
 .cater-menus .menu-info{
   /*text-align: center;*/
   margin-left: 20px;
-  color: #000;
+  color: $black;
   font-size: 15px;
   padding-bottom: 20px;
 }
 .cater-menus .menu-info span {
   font-weight: bold;
-  color: #f1ba11;
+  color: $yellow;
 }
 
 .cater-menus .menu-items {
   font-weight: normal;
   font-size: 15px;
-  color: #f1ba11;
+  color: $yellow;
   text-transform: uppercase;
   padding-left: 20px;
 }
 .cater-menus .menu-items span {
-  color: #000;
+  color: $black;
   font-weight: normal;
   text-transform: none;
 }
@@ -181,11 +61,11 @@ ul.items li {
 .cater-menus .hdv-items {
   font-weight: normal;
   font-size: 14px;
-  color: #f1ba11;
+  color: $yellow;
   text-transform: uppercase;
 }
 .cater-menus .hdv-items span {
-  color: #000;
+  color: $black;
   font-weight: normal;
   text-transform: none;
 }
@@ -208,130 +88,67 @@ ul.items li {
 /**********************************************************/
 
 
-.events-listing-page #event-sec {
-  width:100%;
-  float: left;
-  padding-top: 30px;
-}
+// .events-listing-page #event-sec {
+//   width:100%;
+//   float: left;
+//   padding-top: 30px;
+// }
 
-.events-listing-page #event-sec .event-sec-box{
-  width:100%;
-  float: left;
-  text-align: center;
-  padding: 20px;
-  background-color: #f5f4f4;
-}
-.events-listing-page #event-sec .event-sec-box hr {
-  margin-top:5px;
-  margin-bottom:25px;
-  border-top: 1px solid #dfdfdf;
-}
-.events-listing-page #event-sec .event-sec-box h6 {font-family: 'Raleway', Arial, sans-serif;}
-.events-listing-page #event-sec .event-sec-box h6 span {
-  color: #622622;
-  font-weight: 700;
-}
+// .events-listing-page #event-sec .event-sec-box{
+//   width:100%;
+//   float: left;
+//   text-align: center;
+//   padding: 20px;
+//   background-color: #f5f4f4;
+// }
+// .events-listing-page #event-sec .event-sec-box hr {
+//   margin-top:5px;
+//   margin-bottom:25px;
+//   border-top: 1px solid #dfdfdf;
+// }
+// .events-listing-page #event-sec .event-sec-box h6 {font-family: 'Raleway', Arial, sans-serif;}
+// .events-listing-page #event-sec .event-sec-box h6 span {
+//   color: #622622;
+//   font-weight: 700;
+// }
 
-.events-listing-page #event-sec .nye-date {
-  width: 100%;
-  float: left;
-  background-color: #000;
-  text-align: center;
-  padding: 20px 0px;
-}
+// .events-listing-page #event-sec .nye-date {
+//   width: 100%;
+//   float: left;
+//   background-color: $black;
+//   text-align: center;
+//   padding: 20px 0px;
+// }
 
-.events-listing-page #event-sec .nye-date .top {
-  width: 100%;
-  float: left;
-  margin-bottom: 10px;
-}
+// .events-listing-page #event-sec .nye-date .top {
+//   width: 100%;
+//   float: left;
+//   margin-bottom: 10px;
+// }
 
-.events-listing-page #event-sec .nye-date .mid {
-  width: 100%;
-  float: left;
-  margin-bottom: 10px;
-}
+// .events-listing-page #event-sec .nye-date .mid {
+//   width: 100%;
+//   float: left;
+//   margin-bottom: 10px;
+// }
 
-.events-listing-page #event-sec .nye-date .end {
-  width: 100%;
-  float: left;
-}
+// .events-listing-page #event-sec .nye-date .end {
+//   width: 100%;
+//   float: left;
+// }
 
-.events-listing-page #event-sec .nye-date h3 { color: #fff; margin-bottom:0;font-family: 'Raleway', Arial, sans-serif; }
-.events-listing-page #event-sec .nye-date h3 span { font-style: italic; font-size: 15px; line-height: 1em; color:#f1ba11; }
-.events-listing-page #event-sec .nye-date p { color: #fff; font-weight: bold; font-size: 15px;font-family: 'Raleway', Arial, sans-serif; }
-.events-listing-page #event-sec .nye-date p span.yellow { color: #f1ba11; font-family: 'Raleway', Arial, sans-serif; }
-.events-listing-page #event-sec .nye-date .btn.btn-small.yellow a { color: #000; font-family: 'Raleway', Arial, sans-serif; }
-.events-listing-page #event-sec .nye-date img {padding-bottom:10px;}
-/*{ padding: 15px; width:80%; float:none; display: block; margin-left: auto; margin-right: auto; }*/
+// .events-listing-page #event-sec .nye-date h3 { color: #fff; margin-bottom:0;font-family: 'Raleway', Arial, sans-serif; }
+// .events-listing-page #event-sec .nye-date h3 span { font-style: italic; font-size: 15px; line-height: 1em; color:$yellow; }
+// .events-listing-page #event-sec .nye-date p { color: #fff; font-weight: bold; font-size: 15px;font-family: 'Raleway', Arial, sans-serif; }
+// .events-listing-page #event-sec .nye-date p span.yellow { color: $yellow; font-family: 'Raleway', Arial, sans-serif; }
+// .events-listing-page #event-sec .nye-date .btn.btn-small.yellow a { color: $black; font-family: 'Raleway', Arial, sans-serif; }
+// .events-listing-page #event-sec .nye-date img {padding-bottom:10px;}
+
 
 /************************************************************************/
 /*****************************NYE****************************************/
 /************************************************************************/
 
-.nye-page {width: 100%; float: left; }
-.nye-page #page-title.pt-bkg-image-nye {background-image: url('../img/nye-xl.jpg'); background-size: cover; height:300px;}
+//
 
-.nye-page #page-title h1,
-.nye-page #page-title h1 span,
-.nye-page #page-title h3,
-.nye-page #page-title h4 {color: #fff; font-weight: bold; font-family: 'Raleway', Arial, sans-serif;}
-.nye-page #page-title h4 span {color: #f1ba11; font-weight: bold; font-family: 'Raleway', Arial, sans-serif;}
-.nye-page #page-title h1 {color: #f1ba11;margin-bottom: 4px; padding-top:20px;}
-.nye-page #page-title h3 {font-weight: normal;font-size: 18px;}
-
-.nye-page .nye-menus {width: 100%; float: left; padding-top:20px;}
-.nye-page .nye-menus h3, .nye-page .nye-menus h3 span, .nye-page .nye-menus h4, .nye-page .nye-menus h5, .nye-page .nye-menus p {font-family: 'Raleway', Arial, sans-serif;}
-.nye-page .nye-menus h3 {font-weight: 700; margin-bottom: 4px;}
-.nye-page .nye-menus h3 span {font-size: 17px; font-style: italic; color: #f1ba11;}
-.nye-page .nye-menus h5 {font-size: 16px; margin-bottom: 3px;}
-.nye-page .nye-menus h4 span.seating {display: inline-block; margin-right: 10px; font-family: 'Raleway', Arial, sans-serif; color: #000; font-weight: bold;}
-.nye-page .nye-menus p {color: #000;}
-.nye-page .nye-menus h4.price {font-size: 17px; margin-bottom: 10px;}
-
-.nye-page .nye-box {
-  margin-top:15px;
-  width: 100%;
-  float: left;
-  background-image: url('../img/nye-blue.jpg');
-  background-size: 90%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 25px 0;
-  text-align: center;
-}
-.nye-page .nye-box.early {
-  padding: 30px 0 40px;
-}
-
-.nye-page .nye-box a.link {width: auto; background-color: #622622; color: #fff; font-weight:bold; border-radius: 5px; font-family: 'Raleway', Arial, sans-serif; padding:10px 15px; text-align: center; position: relative;z-index: 10;}
-
-@media (max-width: 768px) {
-  .nye-page #page-title.pt-bkg-image-nye {background-color:#000; background-image: none; height: auto; padding-bottom: 10px;}
-  .nye-page #page-title h1 { padding-top:10px;}
-  .nye-page .p-top-4 {padding-top: 15px;}
-  .nye-page .n0-m-xs {margin-bottom:10px;}
-}
-@media (max-width: 640px) {
-  .nye-page .nye-menus h4 span.seating {display: block; margin-right: auto; margin-left: auto; }
-}
-@media only screen and (max-width: 767px) and (min-width: 480px){
-  .page-content *[class*="col-"] { margin-bottom: 15px; }
-}
-
-
-
-
-
-#page-title.pt-bkg-image-10 {
-    background-image: url('../img/wine-p3.jpg');
-  background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#page-title.pt-bkg-image-10 .title-container { width: 100%; float: left; text-align: center; padding: 60px 0;}
-#page-title.pt-bkg-image-10 .title-container h1, #page-title.pt-bkg-image-10 .title-container h3, #page-title.pt-bkg-image-10 .title-container h4, #page-title.pt-bkg-image-10 .title-container p { color: #fff; font-family: 'Raleway', 'Open Sans', Arial, sans-serif;}
-#page-title.pt-bkg-image-10 .title-container h1 {font-weight: 700;}
-h3.burg-text {margin-top:20px; color: #951000; font-family: 'Raleway', 'Open Sans', Arial, sans-serif; font-weight: 700;}
 

@@ -126,14 +126,14 @@ body {
     @include sec-bgimage ();
     background-size: cover;
 
-    &.image-cater {background-image: url(image_path('starfish.jpg'));}
+    &.image-cater {background-image: url(image_path('bg-catering.jpg')); background-position: center center;}
     &.image-truck {background-image: url(image_path('foodtruck.jpg'));}
     &.image-bottle {background-image: url(image_path('woodford.png'));}
-    &.image-hh {background-image: url(image_path('blank.png'));}
-    &.image-lunch {background-image: url(image_path('blank.png'));}
-    &.image-dinner {background-image: url(image_path('blank.png'));}
-    &.image-brunch {background-image: url(image_path('blank.png'));}
+    &.image-hh {background-image: url(image_path('bg-hh.jpg')); }
+    &.image-wine {background-image: url(image_path('bg-wine.jpg'));}
+    &.image-menus {background-image: url(image_path('bg-menus.jpg'));}
     &.image-events {background-image: url(image_path('wine-din.png')); height:200px;}
+    &.image-nye {background-image: url(image_path('nye-xl.jpg')); height:300px;}
 }
 #page-title {
     @include sec-default ();
@@ -141,7 +141,7 @@ body {
 
     .title-container {
         @include sec-default ();
-        padding: 100px 0 60px 0;
+        padding: 40px 0;
         margin-bottom: 40px;
 
         h3 {
@@ -153,10 +153,12 @@ body {
         h1 {
             color: $white;
             font-size: 40px;
+            font-weight: bold;
             text-align: center;
             text-shadow: 1px 2px 1px $black;
         }
 
+        &.less { padding: 40px 0; margin-bottom: 20px;}
         &.alt {
             padding:0;
             h1, h3 {
