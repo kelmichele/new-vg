@@ -282,7 +282,8 @@ strong {
         background: none;
         li a {color: $white; font-family: $play;}
         li .btn {color: $hcolor; font-size: 12px; padding: 5px;}
-        li.off {color: $white; font-family: $play;}
+        // li.off {color: $white; font-family: $play;}
+        li button {color: $white; font-family: $play; background-color: transparent; border: none;}
     }
 
     @include bp(md) {
