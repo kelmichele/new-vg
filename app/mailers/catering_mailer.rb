@@ -8,8 +8,8 @@ class CateringMailer < ApplicationMailer
     @catering = catering
 
     mail subject: "Catering Inquiry from the Villaggio Grille site"
-    mail to: "kelli@hsdesignhouse.com"
-     # mail to: "ginnycateringdirector@gmail.com"
+    # mail to: "kelli@hsdesignhouse.com"
+     mail to: "ginnycateringdirector@gmail.com"
   end
 
 end
