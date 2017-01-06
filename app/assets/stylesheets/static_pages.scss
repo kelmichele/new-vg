@@ -351,49 +351,38 @@
 }
 
 .special-events {
-	//all nye can be deleted after the event
-	.nye-page {
-		@include sec-default ();
+	.intro {
+		@include sec-default();
+		padding-bottom: 35px;
+		text-align: center;
+		h2 {font-weight: bold; color: $yellow; margin-bottom: 4px;}
+		h3 {font-size: 20px; margin-bottom:6px;}
+		h4 {color: $black; font-size: 19px; font-weight: bold;}
+	}
 
-		#page-title {
-			h4 	{color: $white;
-			 	span {color: $yellow; font-weight: bold; }
-			}
-			h1 {color: $yellow;}
+	.top{@include sec-default (); margin-bottom: 40px;}
+
+	.service-box-2 {
+		h3{ color: $hcolor; font-style: italic; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5);}
+		h4{color: $red; margin-bottom: 5px; font-weight: bold; font-size: 19px;}
+		h5 {font-size: 16px; margin-bottom: 7px;}
+		p{margin-bottom:0px;}
+	}
+
+	@include bp(md) {
+		.pt-bkg-image.image-events {height: 150px;}
+		#page-title .title-container { padding-bottom: 20px;
+			h1 {margin-top: 20px; font-size: 30px;}
 		}
-		p { font-family: $raleway; font-size: 16px; color: $black; margin-bottom: 0px;}
+		.intro {padding-bottom: 15px;
+		h3 {font-size: 17px;}
+		h4 {font-size: 15px;}}
 
-		.nye-menus {@include sec-default (); padding-top:40px;
-			h3, h3 span, h4, h5, p {font-family: $raleway;}
-			h3 {font-weight: 700; margin-bottom: 4px;}
-			h3 span {font-size: 17px; font-style: italic; color: $yellow;}
-			h5 {font-size: 16px; margin-bottom: 3px;}
-			h4 span.seating {display: inline-block; margin-right: 10px; color: $black; font-weight: bold;}
-			p {color: $black;}
-			h4.price {font-size: 17px; margin-bottom: 10px;}
+		.top{margin-bottom: 0px;}
+		.service-box-2 {padding-bottom: 20px;
+			h4{font-size: 17px}
+			h5{font-size: 15px;}
 		}
-
-		.nye-box {
-			@include sec-default ();
-		  	margin-top:15px;
-		  	background-image: url(image_path('nye-blue.jpg'));
-		  	background-size: 90%;
-		  	background-position: center center;
-		  	background-repeat: no-repeat;
-		  	padding: 25px 0;
-		  	text-align: center;
-			&.early { padding: 30px 0 40px;}
-		}
-		a.link {width: auto; background-color: $red; color: $white; font-weight:bold; border-radius: 5px; font-family: $raleway; padding:10px 15px; text-align: center; position: relative;z-index: 10;}
-
-
-		@include bp(md) {
-		  	#page-title.pt-bkg-image-nye {background-color:$black; background-image: none; height: auto; padding-bottom: 10px;}
-		  	#page-title h1 { padding-top:10px;}
-		  	.p-top-4 {padding-top: 15px;}
-		  	.n0-m-xs {margin-bottom:10px;}
-		}
-		@include bp(sm) {.nye-menus h4 span.seating {display: block; margin-right: auto; margin-left: auto; }}
 	}
 }
 
