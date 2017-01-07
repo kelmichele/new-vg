@@ -9,7 +9,8 @@ class CateringMailer < ApplicationMailer
 
     mail subject: "Catering Inquiry from the Villaggio Grille site"
     # mail to: "kelli@hsdesignhouse.com"
-     mail to: "ginnycateringdirector@gmail.com"
+     mail to: "kelmichele@yahoo.com", "kelli@hsdesignhouse.com"
+     # mail to: "ginnycateringdirector@gmail.com", "ian@villaggiogrille.com"
   end
 
 end
