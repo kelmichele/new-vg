@@ -1,6 +1,6 @@
 class CateringMailer < ApplicationMailer
 
-   	default from: "Villaggio Grille Website Contact Form <noreply@ginnylanebargrill.com>"
+   	default from: "Villaggio Grille Website Contact Form <noreply@villaggiogrille.com>"
    	default subject: "Catering Inquiry from the Villaggio Grille site"
 	# layout 'catering_mailer'
 
@@ -9,8 +9,7 @@ class CateringMailer < ApplicationMailer
 
     mail subject: "Catering Inquiry from the Villaggio Grille site"
     # mail to: "kelli@hsdesignhouse.com"
-     # mail to: "kelli@hsdesignhouse.com, kelmichele@yahoo.com"
-     mail to: "ginnycateringdirector@gmail.com, ian@villaggiogrille.com"
+     mail to: "ginnycateringdirector@gmail.com"
   end
 
 end
