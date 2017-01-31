@@ -122,6 +122,8 @@ body {
     &.image-events {background-image: url(image_path('wine-din.png')); height:200px;}
     &.image-nye {background-image: url(image_path('nye-xl.jpg')); height:300px;}
     &.image-contact {background-image: url(image_path('bg-contact.jpg'));}
+    &.image-event-list {background-image: url(image_path('villaggio-ftb.jpg')); background-position: center center;}
+    &.image-vday {background-image: url(image_path('vday1.jpg'));}
 }
 #page-title {
     @include sec-default ();

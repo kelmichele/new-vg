@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   	get '/menus', to: 'static_pages#menus'
   	get '/happy-hour', to: 'static_pages#happy-hour'
     get '/contact', to: 'static_pages#contact'
-  	get '/events', to: 'static_pages#special-events'
+    get '/events', to: 'static_pages#special-events'
+  	get '/event-list', to: 'static_pages#event-list'
+    get '/valentines', to: 'static_pages#valentines'
 
     get '/opentable', to: 'links#opentable'
     get '/gilbeys', to: 'links#gilbeys'
