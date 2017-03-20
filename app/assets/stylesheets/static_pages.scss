@@ -86,6 +86,8 @@
 		.btn.btn-small.yellow {font-family: $play; color: $black;}
 	}
 
+	.badge {@include center-block(); background-color: $white;}
+
 	@include bp(md) {
 		.col-xs-img, .col-xs-img2 {display: inline-block; width: 50%; }
 		.col-xs-img2 {float: right;width: 30%;}

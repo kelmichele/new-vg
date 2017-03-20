@@ -36,12 +36,16 @@
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-md-4 col-md-offset-3 col-xs-img">
-                <%= image_tag( 'badge.jpg', alt: 'Villaggio Grille, Local Favorites Badge', class: 'img-responsive', style: 'padding-top:20px') %>
-            </div>
-            <div class="col-md-3 col-xs-img2">
-                <%= image_tag( 'choice.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive') %>
+            <!-- <div class="col-md-4 col-xs-img"><%= image_tag( 'badge.jpg', alt: 'Villaggio Grille, Local Favorites Badge', class: 'img-responsive') %></div> -->
+
+            <!-- <div class="col-md-4 col-xs-img2"><%= image_tag( 'choice.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive') %></div> -->
+
+            <!-- <div class="col-md-4 col-xs-img"> -->
+            <div class="badge">
+                <link href="https://cdn.otstatic.com/dcwidget/2017/dinerschoicebadges.css" rel="stylesheet" type="text/css" />
+                <a href="http://www.opentable.com/restaurant/profile/91339/reserve?rid=91339&restref=91339" class="ot-dc-badge ot-dc-badge--p" target="_blank"> </a>
             </div>
         </div>
     </div>
@@ -55,7 +59,6 @@
                             <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
                             <h4>Our Menus</h4>
                             <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
-                            <!-- <br> -->
                             <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
                                 View Menus
                             <% end %>
@@ -67,7 +70,6 @@
                             <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
                             <h4>Wine List</h4>
                             <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
-                            <!-- <br> -->
                             <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
                                 View Wine List
                             <% end %>
@@ -79,7 +81,6 @@
                             <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
                             <h4>Catering</h4>
                             <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
-                            <!-- <br> -->
                             <%= link_to '/catering', class: 'btn btn-small yellow' do %>
                                See More
                             <% end %>
