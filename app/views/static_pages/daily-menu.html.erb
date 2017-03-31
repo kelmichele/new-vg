@@ -20,7 +20,7 @@
                     <div class="col-md-8 col-md-offset-2 col-xs-12">
                         <div id="accordeon" class="col-md-12 no-padding">
                             <div class="cbp-item">
-                                <div class="cbp-caption first">
+                               <!--  <div class="cbp-caption first">
                                     <div class="cbp-caption-defaultWrap">
                                         <h4>$8 Selections</h4>
                                     </div>
@@ -48,9 +48,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="cbp-caption second">
+                                <!-- <div class="cbp-caption second">
                                     <div class="cbp-caption-defaultWrap">
                                         <h4>$10 Selections</h4>
                                     </div>
@@ -103,38 +103,137 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
-                                <div class="cbp-caption third">
+                                <div class="cbp-caption first">
                                     <div class="cbp-caption-defaultWrap">
-                                        <h4>$11 Flats</h4>
+                                        <h4>Lunch Menu</h4>
                                     </div>
 
                                     <div class="cbp-caption-activeWrap">
                                         <div class="cbp-l-caption-body">
                                             <div class="menu-item">
-                                                <h4>Margherita Pizza</h4>
-                                                <p>Roasted Garlic, Basil, Tomatoes, Mozzarella, Provolone</p>
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Vegetable Plate<span> ... $12 </span></h4>
+                                                <p>Grilled Eggplant, Roasted Red Peppers, Squash Succotash</p>
+                                            </div>
+
+
+                                            <div class="menu-item">
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Beef or Shrimp &amp; Bleu Cheese Salad * <span> ... $12 </span></h4>
+                                                <p>Red Onion, Tomato, Spiced Walnuts, Ranch Dressing, Bleu Cheese Crumbles</p>
                                             </div>
 
                                             <div class="menu-item">
-                                                <h4>Villaggio Pizza</h4>
-                                                <p>House Made Sausage, Pepperoni, Peppers, Mushrooms, Olives, Mozzarella, Marinara</p>
+                                              <h4>Airline Chicken Breast <span> ... $14 </span></h4>
+                                                <p>Garlic Wild Rice, Asparagus, Brown Butter </p>
                                             </div>
 
                                             <div class="menu-item">
-                                                <h4>Chicken Pesto Pizza</h4>
-                                                <p>Grilled Chicken, Basil Pesto, Roasted Tomatoes Mushrooms, Provolone, Mozzarella</p>
+                                              <h4>Spinach &amp; Wood Fired Chicken Salad<span> ... $14 </span></h4>
+                                                <p>Baby Spinach, Red Onion, Tomatoes, Croutons, Feta Cheese, Warm Bacon Vinaigrette </p>
                                             </div>
 
                                             <div class="menu-item">
-                                                <h4>BBQ Chicken Pizza</h4>
-                                                <p>Barbeque Sauce, Grilled Chicken, Jalapeno, Red Onion, Cream Cheese, Cheddar Cheese</p>
+                                              <h4>Basil Chicken Pasta <span> ... $12 </span></h4>
+                                                <p>Mushrooms, Tomatoes, Basil Pesto Cream, Grilled Chicken, Fettuccini Pasta </p>
                                             </div>
 
                                             <div class="menu-item">
-                                                <h4>Philly Cheesesteak Pizza</h4>
-                                                <p>Beef Filet, Roasted Garlic, Cheddar Cheese, Bell Peppers, Caramelized Onions, Mushrooms</p>
+                                              <h4>Seafood Pasta <span> ... $14 </span></h4>
+                                                <p>Gulf Shrimp, Scallops, Lump Crab Meat, Alfredo Cream, Parmesan Cheese, Fettuccini Pasta </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Chicken Parmesan <span> ... $12 </span></h4>
+                                                <p>Stuffed Breaded Chicken, Mozzarella, Marinara, Parmesan Cheese, Basil, Fettuccini Pasta </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Veal Marsala<span> ... $14 </span></h4>
+                                                <p>Breaded Veal, Tomatoes, Carnalized Onions, Capers, Fettuccini Pasta </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Traditional Lasagna <span> ... $10 </span></h4>
+                                                <p>Ground Beef &amp; Pork, Ricotta Cheese, Marinara, Mozzarella Cheese, Fresh Pasta Sheets </p>
+                                            </div>
+
+
+                                            <div class="menu-item">
+                                              <h4>Eggplant Pasta  <span> ... $12 </span></h4>
+                                                <p>Breaded Eggplant, Sautéed Spinach, Marinara, Mozzarella Cheese, Trottole Pasta </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Pan Seared Corvina <span> ... $14 </span></h4>
+                                                <p>Green Beans, Garlic Wild Rice, Brown Butter </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Grilled Salmon * <span> ... $14 </span></h4>
+                                                <p>Roasted Garlic Grits, Sautéed Spinach, Balsamic Reduction</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Marinated Sirloin Steak * <span> ... $14 </span></h4>
+                                                <p>Truffle Mashed Potatoes, Green Beans, Red Wine Demi Glaze </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Shrimp Kabobs <span> ... $14 </span></h4>
+                                                <p>Garlic Wild Rice, Sautéed Spinach, Truffle Honey Glaze </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Beef &amp; Shallot Kabob * <span> ... $14 </span></h4>
+                                                <p>Roasted Shallot Mashed Potatoes, Broccolini, Demi Glaze </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Shrimp BLT <span> ... $12</span></h4>
+                                                <p>Blackened Gulf Shrimp, Bacon, Provolone Fried Green Tomato, Roasted Garlic Aioli
+                                                <br> Choice Of:  Fries or House Made Chips </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Villaggio Burger * <span> ... $11</span></h4>
+                                                <p>Grilled Beef Burger, Tomato, Seared Red Onion, Field Greens, Roasted Garlic Aioli <br>
+                                                Choice of: Blue Cheese, Provolone or Cheddar<br>
+                                                Choice of: Fries or House Made Chips</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Villaggio Melt <span> ... $10</span></h4>
+                                                <p>Roast Beef, Tavern Ham, Smoked Turkey, Tomato , Field Greens, Mozzarella, Dijon Mustard <br>
+                                                Choice Of:  Fries or House Made Chips</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption third">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Lunch Pizzas - $12</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                              <h4>Margherita</h4>
+                                                <p>Mozzarella &amp; Provolone Cheese, Roasted Garlic, Tomatoes, Fresh Basil, Marinara</p>
+                                            </div>
+                                            <div class="menu-item">
+                                              <h4>Barbeque Chicken</h4>
+                                                <p>Grilled Chicken, Barbeque Sauce, Red Onion, Jalapenos, Cheddar &amp; Cream Cheese</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Chicken Pesto </h4>
+                                                <p>Grilled Chicken, Basil Pesto, Roasted Tomatoes, Mushrooms, Provolone, Mozzarella</p>
+                                            </div>
+                                            <div class="menu-item">
+                                              <h4>Villaggio </h4>
+                                                <p>Sausage, Pepperoni, Bell Peppers, Wild Mushrooms, Kalamata Olives, Mozzarella, Oregano, Marinara</p>
                                             </div>
 
                                             <!-- <div class="menu-item">
@@ -145,7 +244,7 @@
                                     </div>
                                 </div>
 
-                                <div class="cbp-caption fourth">
+                                <!-- <div class="cbp-caption fourth">
                                     <div class="cbp-caption-defaultWrap">
                                         <h4>$12 Heart Healthy Selections</h4>
                                     </div>
@@ -176,14 +275,9 @@
                                                 <h4>Vegetable Plate</h4>
                                                 <p>Grilled Eggplant, Roasted Red Peppers, Succotash <br>(299 Cal)</p>
                                             </div>
-
-                                            <!-- <div class="menu-item">
-                                                <h4>Pan Seared Trout</h4>
-                                                <p>Roasted Garlic Couscous, Butternut Squash, Balsamic Reduction<br>(529 Cal)</p>
-                                            </div> -->
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <%= render "shared/menu-share" %>
                             </div>
