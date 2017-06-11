@@ -4,7 +4,7 @@ class Catering
   include ActiveModel::Conversion
   include ActiveModel::Validations
 
-  attr_accessor :name, :phone, :email, :content, :honey
+  attr_accessor :name, :phone, :email, :date, :guest, :content, :honey
 
   validates :name,
     presence: true
@@ -13,6 +13,12 @@ class Catering
     presence: true
 
   validates :email,
+    presence: true
+
+  validates :date,
+    presence: true
+
+  validates :guest,
     presence: true
 
   validates :content,

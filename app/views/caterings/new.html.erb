@@ -25,7 +25,7 @@
                         <p class="xs-m"> We have everything you need to make your event a success. Villaggio Grille offers a number of different catering packages, a great staff, and an beautiful venue for hosting. </p>
 
                         <p class="xs-m">
-                            If you're looking for more information on our catering services, enter your name and email address in the contact box, followed by a brief description (including the date) of your upcoming event, or any specific questions you have, and we will get back in touch with you soon!
+                            If you're looking for more information on our catering services, fill out our contact form, followed by a brief description of your upcoming event, or any specific questions you have, and we will get back in touch with you soon!
                         </p>
                         <%= link_to '#menus', class: 'mobile-menu-link' do %> View Menus <% end %>
 
@@ -45,7 +45,6 @@
                             <div class="form-group name">
                                 <span class="required">*</span> Full Name: <br>
                                 <%= catering.text_field :name %>
-
                             </div>
 
                             <div class="form-group phone">
@@ -56,8 +55,23 @@
                             <div class="form-group email">
                                 <span class="required">*</span> Email address: <br>
                                 <%= catering.email_field :email %>
-
                             </div>
+
+
+                            <div class="form-group date">
+                                <span class="required">*</span> Date of Event: <br>
+                                <%= catering.date_field :date %>
+                            </div>
+
+
+                            <div class="form-group guest">
+                                <span class="required">*</span> Guest Count: <br>
+                                <%= catering.text_field :guest %>
+                            </div>
+
+
+
+
 
                             <div class="form-group message">
                                 <span class="required">*</span> Message: <br>
