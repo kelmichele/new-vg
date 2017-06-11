@@ -270,7 +270,6 @@
 	.form-group.email::before { content: "\f0ac"; }
 	.form-group.phone::before { content: "\f095"; }
 	.form-group.message::before { content: "\f003"; z-index: 1; margin-bottom: 0;}
-
 	.form-group.date::before { content: "\f073"; }
 	.form-group.guest::before { content: "\f2c0"; }
 
@@ -282,7 +281,7 @@
 
 	@include bp(md) {
 		input, textarea { width: 100%; }
-		.form-group.email, .form-group.phone {width: 100%; display: block;
+		.form-group.email, .form-group.phone, .form-group.date, .form-group.guest  {width: 100%; display: block;
 			input {width: 100%;}
 		}
 		.form-group.message {margin-bottom: 0;}
