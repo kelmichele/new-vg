@@ -1,45 +1,47 @@
 <div id="h-wrap">
   <header class="header">
     <div id="top-bar-wrapper" class="clearfix">
-          <div class="col-md-4 xs-l">
-              <i class="fa fa-phone"></i>
-              <%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %>
-          </div>
-          
-          <div class="col-md-4 xs-r">
-            Catering: <%= number_to_phone(2515976651, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %>
-          </div>
-          
-          <div class="col-md-4 xs-f">
-            <ul id="social-links">
-                <li>
-                  <%= link_to '/fb', target: '_blank' do %>
-                    <i class="fa fa-facebook"></i>
-                  <% end %>
-                </li>
+      <!-- <div class="full-top"> -->
+        <div class="col-md-4 xs-l">
+          <i class="fa fa-phone"></i>
+          <%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %>
+        </div>
 
-                <li>
-                  <%= link_to '/insta', target: '_blank' do %>
-                    <i class="fa fa-instagram"></i>
-                  <% end %>
-                </li>
+        <div class="col-md-4 xs-r">
+          Catering: <%= number_to_phone(2515976651, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %>
+        </div>
 
-                <li>
-                  <div id="TA_socialButtonBubbles315" class="TA_socialButtonBubbles">
-                    <ul id="RyzN41p0Q8j" class="TA_links r04oU5">
-                      <li id="qY8coROITv" class="UMF8YEGBm">
-                        <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g30753-d1074736-Reviews-Villaggio_Grille-Orange_Beach_Alabama.php"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x20_green-21693-2.png" /></a>
-                      </li>
-                    </ul>
-                  </div>
-                  <script src="http://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=315&amp;locationId=1074736&amp;color=green&amp;size=sm&amp;lang=en_US&amp;display_version=2"></script></li>
-            </ul>
-          </div>
+        <div class="col-md-4 xs-f">
+          <ul id="social-links">
+            <li>
+              <%= link_to '/fb', target: '_blank' do %>
+                <i class="fa fa-facebook"></i>
+              <% end %>
+            </li>
+
+            <li>
+              <%= link_to '/insta', target: '_blank' do %>
+                <i class="fa fa-instagram"></i>
+              <% end %>
+            </li>
+
+            <li>
+              <div id="TA_socialButtonBubbles315" class="TA_socialButtonBubbles">
+                <ul id="RyzN41p0Q8j" class="TA_links r04oU5">
+                  <li id="qY8coROITv" class="UMF8YEGBm">
+                    <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g30753-d1074736-Reviews-Villaggio_Grille-Orange_Beach_Alabama.php"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x20_green-21693-2.png" /></a>
+                  </li>
+                </ul>
+              </div>
+              <script src="http://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=315&amp;locationId=1074736&amp;color=green&amp;size=sm&amp;lang=en_US&amp;display_version=2"></script></li>
+          </ul>
+        </div>
+      <!-- </div> -->
     </div>
 
     <div class="main-header">
       <div class="col-md-3 logo-block">
-        <%= link_to(image_tag('villaggio-logo.png', alt: 'Villaggio Grille Logo', class: 'img-responsive logo-img'), root_path ) %> 
+        <%= link_to(image_tag('villaggio-logo.png', alt: 'Villaggio Grille Logo', class: 'img-responsive logo-img'), root_path ) %>
       </div>
 
       <div class="col-md-9 mega-tab">
@@ -47,7 +49,7 @@
           <%= render 'shared/nav' %>
         </ul>
       </div>
-      
+
       <!-- <div> -->
         <a href="#" id="offcanvas-toggler">
           <span>

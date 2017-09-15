@@ -53,12 +53,20 @@
 
 // Breakpoints
 @mixin bp($point) {
-    @if $point == tb {
+    @if $point == lg {
+        @media (max-width: 1024px)  { @content ; }
+    }
+
+    @else if $point == tb {
         @media (max-width: 992px)  { @content ; }
     }
 
     @else if $point == md {
         @media (max-width: 768px)  { @content ; }
+    }
+
+    @else if $point == pl {
+        @media (max-width: 737px)  { @content ; }
     }
 
     @else if $point == sm {
