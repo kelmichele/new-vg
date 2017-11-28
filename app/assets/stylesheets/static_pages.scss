@@ -367,6 +367,11 @@
 }
 
 .special-events {
+	#page-title .title-container.less {
+		padding-top: 20px;
+		text-align: center;
+		h2 {color: white; font-weight: bold;text-shadow: 0px 1px 1px black;}
+	}
 	.intro {
 		@include sec-default();
 		padding-bottom: 35px;
@@ -386,6 +391,12 @@
 	}
 
 	.page-content .hr{margin: 40px auto;}
+
+
+
+	@include bp(md) {
+		#page-title {height:auto;}
+	}
 
 	@include bp(md) {
 		.pt-bkg-image.image-events {height: 150px;}
