@@ -62,7 +62,7 @@ $(document).ready(function() {
     // --
     $('#faq').cubeportfolio({
         filters: '#js-filters-tabs',
-        defaultFilter: '.first',
+        defaultFilter: '.details',
         animationType: 'sequentially',
         gridAdjustment: 'default',
         displayType: 'default',
