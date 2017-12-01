@@ -57,4 +57,17 @@ $(document).ready(function() {
         gapVertical: 0,
     });
 
+    // --
+    // FAQ
+    // --
+    $('#faq').cubeportfolio({
+        filters: '#js-filters-tabs',
+        defaultFilter: '.first',
+        animationType: 'sequentially',
+        gridAdjustment: 'default',
+        displayType: 'default',
+        caption: '',
+    });
+
+
 }); // End of document.ready
