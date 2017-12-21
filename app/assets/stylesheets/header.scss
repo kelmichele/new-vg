@@ -2,12 +2,27 @@
 @import "mixins";
 
 #h-wrap {
-    // width: inherit;
     @include sec-default ();
     box-shadow: 0 0 5px rgba($black, 0.2);
     -webkit-box-shadow: 0 0 5px rgba($black, 0.2);
     -moz-box-shadow: 0 0 5px rgba($black, 0.2);
     border-bottom: 1px solid $silver;
+}
+
+.announce-bar {
+    @include sec-default(); padding: 5px 20px;
+    background-color: $yellow;
+    background: -webkit-linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
+    // background: linear-gradient(-10deg, rgba($yellow, .65), rgba($yellow2, .15));
+
+    text-align: center;
+    // .announce {width: 80%; @include center-block();}
+    p, .links {display: inline-block; color: white; font-family: $play; text-shadow: 0px 1px 1px rgba($black, .5);
+        margin-bottom: 0; font-size: 15px; padding-bottom:0; font-weight: bold; width: 50%;}
+    .links {float: right;}
+    .ny-link {color: white; padding: 0 20px;
+        &:hover {opacity: .5;}
+    }
 }
 
 header {
@@ -20,11 +35,12 @@ header {
 #top-bar-wrapper { @include sec-default (); background-color: $navy; padding:15px; padding-bottom: 0;
     a {color: $white; font-size: 16px;}
     li a.tel { font-family: $play;}
-    #social-links {
-        float: right;
-        margin-right: 3%;
-        li { float: left; margin-left: 20px;}
+    #social-links { padding-left: 0;
+        li { float: right; margin-right: 20px;}
     }
+    #TA_socialButtonBubbles315 {margin-top:-20px;}
+    // .TA_socialButtonBubbles
+
     .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 16px; color: $white;}
     .xs-l {padding-left: 20px; text-align: left; }
 

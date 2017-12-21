@@ -442,7 +442,12 @@
 	  h2 {color: $nygold; font-weight: bold; margin-bottom: 5px;}
 
 	  .tab-title {font-family: $play; text-transform: none; font-weight: bold; font-size:18px;}
-	  .cbp-filter-item.cbp-filter-item-active {}
+
+	  .cbp-filter-item.cbp-filter-item-active {
+	  	border-color: #b9d3ee; border-radius: 4px;
+	  	.tab-title {color:#a90f40}
+	  }
+
 	  .cbp-item.details {@include sec-default();
 			h5 {color: $hcolor; font-weight: 800; font-family: $open; font-size: 16px;}
 			.nyimg {@include center-block(); width: 10%;}
