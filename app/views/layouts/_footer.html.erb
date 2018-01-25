@@ -1,20 +1,19 @@
 <div class="vil-gil">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <section class="fancy-heading center">
-                    <h2>Check out our other AMAZING restaurants!</h2>
-                </section>
-            </div>
-
-            <div class="col-md-4 col-md-offset-2 partner-l col-xs-6 xs-l2">
-                <%= link_to(image_tag('gl-logo.jpg', alt: 'Ginny Lane, Orange Beach, Logo', class: 'img-responsive'), ginny_path, :target => '_blank' ) %>
-            </div>
-
-            <div class="col-md-4 col-md-offset-1 partner-r col-xs-6">
-                <%= link_to(image_tag('gilbeys-logo.png', alt: 'Gilbeys Seafood and Steak, Orange Beach', class: 'img-responsive'), gilbeys_path, :target => '_blank' ) %>
-            </div>
+        <div class="txt">
+            <!-- <div class="fancy-heading"> -->
+                <h3>Check out our other AMAZING restaurant!</h3>
+            <!-- </div> -->
         </div>
+
+        <!-- <div class="col-md-4 col-md-offset-2 partner-l col-xs-6 xs-l2"> -->
+        <div class="logo">
+            <%= link_to(image_tag('gl-logo.jpg', alt: 'Ginny Lane, Orange Beach, Logo', class: 'img-responsive'), ginny_path, :target => '_blank' ) %>
+        </div>
+
+        <!-- <div class="col-md-4 col-md-offset-1 partner-r col-xs-6">
+            <%= link_to(image_tag('gilbeys-logo.png', alt: 'Gilbeys Seafood and Steak, Orange Beach', class: 'img-responsive'), gilbeys_path, :target => '_blank' ) %>
+        </div> -->
     </div>
 </div>
 

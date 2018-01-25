@@ -201,7 +201,18 @@ strong {
     @include bp(sm) { right: 15px; }
 }
 
-.vil-gil { @include sec-default (); background-color: $white; text-align: center; padding: 10px 0 40px; }
+.vil-gil { @include sec-default(); background-color: $white; text-align: center; padding: 30px 0;
+    .txt, .logo {display: inline-block; width: 45%; margin-top:25px;}
+    .logo {float: right; margin-top:0;}
+
+    @include bp(pl) {
+        .txt, .logo {@include center-block(); margin-top: 5px; margin-bottom: 10px; width: 80%;}
+        .txt {width: 95%;}
+        h3 {font-size: 18px;}
+        .logo img {width: 204px; height: auto; @include center-block();}
+    }
+
+}
 #footer-wrapper {
     @include sec-default (); background-color: $navy;
     padding: 30px 15px;
