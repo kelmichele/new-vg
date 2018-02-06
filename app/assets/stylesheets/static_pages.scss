@@ -363,7 +363,9 @@
 		@include bp(tb) {margin-bottom: 15px;}
 	}
 	h3 {color: $red; font-weight: 800; margin-bottom:5px;}
-	.event-view {background-color: $yellow; padding:10px; font-weight: bold; color: $black; border-radius: 4px;}
+	.event-view {background-color: $yellow; padding:10px; font-weight: bold; color: $black; border-radius: 4px;
+		&:hover {opacity: .7;}
+	}
 }
 
 .special-events {
