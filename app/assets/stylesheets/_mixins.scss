@@ -23,7 +23,7 @@
     background-attachment: fixed;
 }
 
-@mixin before () {
+@mixin before() {
     content: "";
     left: 0;
     position: absolute;

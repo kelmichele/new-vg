@@ -492,10 +492,40 @@
 		  }
 		}
 	}
-
-
 }
 
+.valentines {
+	#page-title .title-container h1 {margin-bottom:5px; font-size: 35px;}
+	h2 {color: $white; font-weight: bold; text-align: center; text-shadow: 1px 2px 1px $black;}
+	.pt-bkg-image {padding:30px;
+    &.valentine {background-image: url(image_path('vday5.jpg')); background-position: center center;}
+    .fancy-box{float: right; }
+  }
+
+  @media screen and (max-width: 1024px) {
+		#page-title .title-container h1 {font-size: 28px}
+		h2 {font-size: 22px;}
+		.pt-bkg-image {padding:0px 30px;}
+  }
+
+  @media screen and (max-width: 812px) {
+		#page-title .title-container h1 {font-size: 24px}
+		h2 {font-size: 19px;}
+		.pt-bkg-image {padding:0px 30px;}
+  }
+
+  @media screen and (max-width: 768px) {
+		.pt-bkg-image {padding-top:20px;}
+  }
+
+  @media screen and (max-width: 415px) {
+		.pt-bkg-image.valentine {position: relative; z-index: 0;
+			&::before {@include before(); height:100%; background-color: rgba(black, .45); z-index: -1;}
+	    .fancy-box{@include center-block(); }
+		}
+
+  }
+}
 
 
 

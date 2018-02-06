@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get '/events', to: 'static_pages#special-events'
   	get '/event-list', to: 'static_pages#event-list'
     get '/nye', to: 'static_pages#nye'
+    get '/valentines', to: 'static_pages#valentines'
 
     get '/opentable', to: 'links#opentable'
     get '/gilbeys', to: 'links#gilbeys'
