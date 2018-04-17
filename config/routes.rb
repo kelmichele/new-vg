@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   	get '/happy-hour', to: 'static_pages#happy-hour'
     get '/contact', to: 'static_pages#contact'
     get '/events', to: 'static_pages#special-events'
-  	get '/event-list', to: 'static_pages#event-list'
+    get '/event-list', to: 'static_pages#event-list'
+  	get '/pairing', to: 'static_pages#pairing'
     get '/nye', to: 'static_pages#nye'
     get '/valentines', to: 'static_pages#valentines'
 
