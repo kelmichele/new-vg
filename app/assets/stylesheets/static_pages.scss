@@ -15,6 +15,7 @@
 }
 
 .mobile-img {width: 75%;@include center-block();}
+.h4-sm h4{font-size: 17px;}
 
 /***************************************/
 .cbp-item {
@@ -387,9 +388,9 @@
 
 	.service-box-2 {
 		h3{ color: $hcolor; font-style: italic; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5);}
-		h4{color: $red; margin-bottom: 5px; font-weight: bold; font-size: 19px;}
+		h4{color: $red; margin-bottom: 5px; font-weight: bold; font-size: 18px;}
 		h5 {font-size: 16px; margin-bottom: 7px;}
-		p{margin-bottom:0px;}
+		p{margin-bottom:0px; padding-bottom: 5px;}
 	}
 
 	.page-content .hr{margin: 40px auto;}
