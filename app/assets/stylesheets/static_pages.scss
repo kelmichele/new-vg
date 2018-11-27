@@ -17,6 +17,10 @@
 .mobile-img {width: 75%;@include center-block();}
 .h4-sm h4{font-size: 17px;}
 
+
+.dinner-menu .lunch-only{display: none;}
+.daily-menu .dinner-only{display: none;}
+
 /***************************************/
 .cbp-item {
 	@include sec-default ();
@@ -358,6 +362,7 @@
 .dinner-menu, .daily-menu, .brunch-menu, .contact {
 	.page-content {background-image: url(image_path('patt1.png'));}
 }
+
 
 .event-list {
 	#page-title {margin-bottom:30px;
