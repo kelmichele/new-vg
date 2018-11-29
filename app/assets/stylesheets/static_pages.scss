@@ -436,18 +436,21 @@
 .nye {
 	// .pt-bkg-image.image-nye {background-image: url(image_path('nyd.jpg'));
 	#page-title.image-nye {background-image: url(image_path('ny-background.jpg')); height:auto;
+		.overlay{background-color: rgba($yellow, .35);}
 		.title-container {text-align:center; padding: 25px 0 0px;
-			h1, h2, h3, h4, h5{ font-weight: bold; color: white; margin-bottom: 5px; font-family: $raleway; text-shadow: 0px 1px 1px rgba($black, .5);}
+			h1, h2, h3, h4, h5{ font-weight: bold; color: white; margin: 0; font-family: $raleway; text-shadow: 0px 1px 1px rgba($black, .5);}
 			h3 {font-size: 22px;}
 		}
 	}
 
 	.faq-section{ text-align:center;
+		p, a, h3, h4, h5 {font-family: $raleway; text-transform: uppercase; letter-spacing: .5px;}
+
 		h3, h4 {font-weight: bold; }
 		h2.inv{color: $nygold; font-size: 27px;}
 		h4 b {color: $red;}
 		h4 span, p span {color: rgba(black, .4); font-weight: normal;}
-		p.railway {font-family: $raleway; font-weight: bold;font-size: 17px;}
+		p.railway {font-weight: 600;font-size: 17px; color:$black;}
 		.service-box-2 { margin-bottom:20px;
 			h4{color: $red; margin-bottom: 5px; font-weight: bold; font-size: 19px;}
 			h5 {font-size: 16px; margin-bottom: 7px;}
@@ -456,26 +459,39 @@
 	  hr.hlf {width: 40%; @include center-block();}
 	  h2 {color: $nygold; font-weight: bold; margin-bottom: 5px;}
 
-	  .tab-title {font-family: $play; text-transform: none; font-weight: bold; font-size:18px;}
+	  .tab-title {font-family: $raleway; font-weight: bold; font-size:18px; letter-spacing: .5px;}
+	  #js-filters-tabs {border-bottom: 1px solid rgba($black,.1);}
 
 	  .cbp-filter-item.cbp-filter-item-active {
 	  	border-color: #b9d3ee; border-radius: 4px;
 	  	.tab-title {color:#a90f40}
 	  }
 
-	  .cbp-item.details {@include sec-default();
-			h5 {color: $hcolor; font-weight: 800; font-family: $open; font-size: 16px;}
-			.nyimg {@include center-block(); width: 10%;}
-			.res-link {@include sec-default(); margin: 20px 0 40px;}
-			.res {font-weight: bold; color: white; background-color: $yellow; padding:15px; font-size: 18px;
-				&:hover {opacity: .6;}
-			}
-			.time {display: inline-block; width: 35%; background-color: #f7f7f7; padding: 20px; margin: 10px 1% 25px;}
+	  .res-link {@include sec-default(); margin: 20px 0 40px;}
+	  .res {font-weight: bold; color: white; background-color: $yellow; padding:15px; font-size: 18px;
+	  	&:hover {opacity: .6;}
 	  }
 
-		.inline-service {width:85%; @include center-block();
-			h3{ text-align: center; color: $hcolor; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5); margin-top:20px;}
-			.service-box-2 {width: 45%; display: inline-block; padding: 5px 15px;}
+	  .cbp-item.details {@include sec-default();
+			// h5 {color: $hcolor; font-weight: 700; font-family: $open; font-size: 16px;}
+			h5 {font-size: 16px;}
+			.nyimg {@include center-block(); width: 10%;}
+			.time {display: inline-block; width: 40%; background-color: #f7f7f7; padding: 20px 20px 0px; margin: 10px 1% 25px;
+				h4{margin-bottom: 5px;}
+				p.big{line-height: 2em; font-weight: 700; font-size: 18px; color:$black;}
+				p{color: $black; font-size: 16px; font-weight: 600; padding-bottom: 6px;}
+			}
+	  }
+
+		.inline-service {@include sec-default();
+			h3{@include sec-default(); text-align: center; color: $hcolor; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5); margin-top:20px;}
+			.service-box-2 {
+				width: 45%; display: inline-block; padding: 5px 10px;
+				float:left; margin-left: 4%;
+				h4, h5{text-transform: none;}
+				h4{font-size: 18px; margin-top:20px;}
+				h5{font-size: 15px; margin-bottom: 10px;}
+			}
 
 		  .title-line {width: 10%; @include center-block(); height: 2px; border-bottom: 1px dashed rgba($black, .2); margin-bottom: 15px;}
 			&.three {width: 100%;
@@ -485,9 +501,10 @@
 
 		@include bp(lg) {
 			.cbp-item.details {
-				.nyimg { width: 15%;}
 				.time {width:45%;}
 		  }
+
+		  .inline-service .service-box-2 {@include center-block(); width:90%; padding:0;}
 		}
 
 		@include bp(md) {
