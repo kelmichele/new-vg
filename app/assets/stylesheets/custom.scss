@@ -63,6 +63,7 @@
 .p-top-5 { padding-top: 50px; }
 .extra-padding { padding: 35px; }
 .border-t { border-top: 2px solid #dfdfdf; }
+.center-block {@include center-block();}
 
 .l-2 { line-height: 25px; }
 .no-margin {
