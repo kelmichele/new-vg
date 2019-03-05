@@ -27,6 +27,21 @@
                     Get Directions
                 <% end %>
             </div>
+
+            <div class="col-md-4 col-xs-12">
+                <div class="fancy-heading center">
+                    <h2> Our Hours:</h2>
+                </div>
+                <!-- <h5>Sunday - Thursday: 11am-9pm</h5> -->
+                <!-- <h5>Open Daily:<br> 11am-10pm</h5> -->
+                <h6>Sunday - Thursday: 11am - 9pm</h6>
+                <h6>Friday - Saturday: 11am - 10pm</h6>
+
+                <%= link_to '/opentable', target: '_blank', class: 'p-link' do %>
+                    <h4>Book a Table</h4>
+                <% end %>
+            </div>
+
             <div class="col-md-4 col-xs-12">
                 <div class="fancy-heading center">
                     <h2>Stay Updated</h2>
@@ -49,24 +64,12 @@
 
                 <div class="col-md-12 socials">
                     <%= link_to '/fb', target: '_blank', class: 'contact-socials' do %>
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook" style="margin-top: 10px;"></i>
                     <% end %>
                 </div>
             </div>
 
-            <div class="col-md-4 col-xs-12">
-                <div class="fancy-heading center">
-                    <h2> Our Hours:</h2>
-                </div>
-                <!-- <h5>Sunday - Thursday: 11am-9pm</h5> -->
-                <!-- <h5>Open Daily:<br> 11am-10pm</h5> -->
-                <h6>Sunday - Thursday: 11am - 9pm</h6>
-                <h6>Friday - Saturday: 11am - 10pm</h6>
-
-                <%= link_to '/opentable', target: '_blank', class: 'p-link' do %>
-                    <h4>Book a Table</h4>
-                <% end %>
-            </div>
+            
         </div>
     </div>
 </div>
