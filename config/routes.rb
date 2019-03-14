@@ -23,6 +23,7 @@ Rails.application.routes.draw do
     get '/directions', to: 'links#directions'
     get '/fb', to: 'links#fb'
     get '/insta', to: 'links#insta'
+    get '/yelp', to: 'links#yelp'
 
     get '/catering', to: 'caterings#new', as: 'catering'
     post '/catering', to: 'caterings#create'

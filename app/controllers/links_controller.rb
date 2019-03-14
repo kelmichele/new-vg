@@ -25,4 +25,7 @@ class LinksController < ApplicationController
 	    redirect_to('https://www.instagram.com/villaggiogrille/')
 	end
 
+	def yelp
+		redirect_to('https://www.yelp.com/reservations/villaggio-grille-orange-beach?from_reserve_now=1')
+	end
 end
