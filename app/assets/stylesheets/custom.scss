@@ -203,14 +203,25 @@ strong {
 }
 
 .vil-gil { @include sec-default(); background-color: $white; text-align: center; padding: 30px 0;
-    .txt, .logo {display: inline-block; width: 45%; margin-top:25px;}
-    .logo {float: right; margin-top:0;}
+    // .txt, .logo {display: inline-block; width: 45%; margin-top:25px;}
+    // .logo {float: right; margin-top:0;}
 
-    @include bp(pl) {
-        .txt, .logo {@include center-block(); margin-top: 5px; margin-bottom: 10px; width: 80%;}
-        .txt {width: 95%;}
-        h3 {font-size: 18px;}
-        .logo img {width: 204px; height: auto; @include center-block();}
+    // @include bp(pl) {
+    //     .txt, .logo {@include center-block(); margin-top: 5px; margin-bottom: 10px; width: 80%;}
+    //     .txt {width: 95%;}
+    //     h3 {font-size: 18px;}
+    //     .logo img {width: 204px; height: auto; @include center-block();}
+    // }
+
+    .partner-logo {display: inline-block; width: 230px; float:none; margin:10px 2% 0; vertical-align: top;
+    }
+
+    @include bp(pl) {padding:15px 0;
+        .partner-logo {@include sec-default(); margin:15px 0;
+            img{@include center-block(); width: 230px;}
+        }
+
+        h3 {font-size: 16px;}
     }
 
 }

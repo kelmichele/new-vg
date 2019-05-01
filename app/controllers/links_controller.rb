@@ -22,10 +22,18 @@ class LinksController < ApplicationController
 	end
 
 	def insta
-	    redirect_to('https://www.instagram.com/villaggiogrille/')
+	    redirect_to('https://www.instagram.com/villaggiogrilleob/')
 	end
 
 	def yelp
 		redirect_to('https://www.yelp.com/reservations/villaggio-grille-orange-beach?from_reserve_now=1')
+	end
+
+	def twitter
+		redirect_to('https://twitter.com/VillaggioOBA')
+	end
+
+	def yoho
+		redirect_to('https://www.yohorumandtacos.com/')
 	end
 end
