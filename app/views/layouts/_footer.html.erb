@@ -113,7 +113,6 @@
                 <ul class="breadcrumb footer-breadcrumb">
                     <li><%= link_to 'Home', root_path %></li>
                     <li><%= link_to 'About', about_path %></li>
-                    <!-- <li><%= link_to 'Menus', menus_path %></li> -->
                     <li><button class="off" data-uk-offcanvas="{target:'#menulist'}">Menus</button></li>
                     <li><%= link_to 'Contact', contact_path %></li>
                 </ul>
@@ -155,13 +154,14 @@
                         </ul>
                     </li>
 
-                    <li><%= link_to "Events", pairing_path %></li>
+                    <li><%= link_to "Events", event_list_path %></li>
                     <li><%= link_to "Wine List", wine_list_path %></li>
                     <li><%= link_to "Catering", catering_path %></li>
                     <li><%= link_to "About", about_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
                     <li><%= link_to "Book a Table", yelp_path, :target => '_blank' %></li>
                     <li><%= link_to "Get Directions", directions_path, :target => '_blank' %></li>
+                    <li><a href="https://alwharf.com/calendar/" target="_blank">Events At The Wharf</a></li>
                 </ul>
             </div>
         </div>
