@@ -16,23 +16,25 @@
   </div>
 
   <div class="page-content">
-    <h3 class="text-center">Check back soon for new events!</h3>
-    <!-- <div class="col-md-5 col-md-offset-1 col-xs-12">
-  		<div class="service-box-2">
+    <!-- <h3 class="text-center">Check back soon for new events!</h3> -->
+    <div class="col-md-5 col-md-offset-1 col-xs-12">
+      <%= link_to 'https://alwharf.com/calendar/60ABA3217C~Sparks+After+Dark+Fireworks+Show.htm', target: "_blank" do %>
+          <%=image_tag('fire.jpg', alt: 'Monday night fireworks at The Wharf', class: 'img-responsive') %>
+      <% end %>
+    </div>
+
+    <div class="col-md-5 col-xs-12">
+      <%= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
+          <%=image_tag('wharfvents.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive borderImg') %>
+      <% end %>
+    </div>
+
+  		<!-- <div class="service-box-2">
   			<h3>Holiday Wine Dinner</h3>
         <h4>December 28th &nbsp;|&nbsp; 6pm</h4>
   			<%= link_to 'See Details', pairing_path, class: 'event-view' %>
         <div class="clearfix"></div> <br>
-  		</div>
-    </div>
-
-    <div class="col-md-5 col-xs-12">
-      <div class="service-box-2">
-        <h3>New Year's Eve 2018</h3>
-        <h4>December 31st &nbsp;|&nbsp; Multiple Seatings</h4>
-        <%= link_to 'View Details', nye_path, class: 'event-view' %>
-      </div>
-    </div> -->
+  		</div> -->
   </div>
 
 </div>

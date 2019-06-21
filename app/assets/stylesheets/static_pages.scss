@@ -372,6 +372,7 @@
 	.event-view {background-color: $yellow; padding:10px; font-weight: bold; color: $black; border-radius: 4px;
 		&:hover {opacity: .7;}
 	}
+	.borderImg{border:1px solid rgba($black,.2);}
 }
 
 .special-events, .pairing {
