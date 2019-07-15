@@ -93,6 +93,41 @@
 
 	.badge {@include center-block(); background-color: $white;}
 
+	.resImg {@include sec-default(); text-align:center; padding-top:20px;
+		img, span {display: inline-block;}
+		img{width:120px; margin-top:-20px;}
+		span{color: $black;font-size: 26px; font-weight:bold;}
+	}
+
+	@include bp(lg) {
+		h1 {font-size:28px; margin-bottom: 5px;}
+		h3.sizing {font-size:21px;}
+
+		.resImg {
+			img{width:100px;}
+			span{font-size: 22px;}
+		}
+
+		.col-md-4.no-padding.col-custom {@include sec-default(); max-width:100% !important; margin-bottom: 20px;}
+		li.service-box-3 {width:80%; @include center-block(); padding:10px 15px;}
+		.service-box-3 .v-icon{height:55px;}
+	}
+
+	@media (max-width: 823px) {
+		.page-content {padding-top:10px;}
+		h1 {font-size:24px;}
+		h3.sizing {font-size:18px;}
+
+		.resImg {
+			img{width:90px;}
+			span{font-size: 20px;}
+		}
+
+		li.service-box-3 {width:90%;}
+		.service-box-3 .v-icon{height:45px;}
+	}
+
+
 	@include bp(md) {
 		.col-xs-img, .col-xs-img2 {display: inline-block; width: 50%; }
 		.col-xs-img2 {float: right;width: 30%;}
@@ -100,6 +135,7 @@
 	@include bp(sm) {
 		.col-xs-img, .col-xs-img2 {float: none; @include center-block(); width: 60%; }
 		.col-xs-img2 {width: 40%; padding-top:15px;}
+		li.service-box-3 {width:100%;}
 	}
 }
 

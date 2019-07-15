@@ -36,21 +36,15 @@
             <div class="col-md-12">
                 <div class="intro-title centered">
                     <h1>Villaggio Grille</h1>
-                    <h3> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
+                    <h3 class="sizing"> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <!-- <div class="col-md-4 col-xs-img"><%= image_tag( 'badge.jpg', alt: 'Villaggio Grille, Local Favorites Badge', class: 'img-responsive') %></div> -->
-
-            <!-- <div class="col-md-4 col-xs-img2"><%= image_tag( 'choice.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive') %></div> -->
-
-            <!-- <div class="col-md-4 col-xs-img"> -->
-            <div class="badge">
-                <link href="https://cdn.otstatic.com/dcwidget/2018/dinerschoicebadges.css" rel="stylesheet" type="text/css" />
-                <a href="/yelp" class="ot-dc-badge ot-dc-badge--p" target="_blank"> </a>
-            </div>
+            <%= link_to "/yelp", target: "_blank", class: 'resImg' do %>
+              <%= image_tag('yelpRes.png', alt: 'Ginny Lane Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
+            <% end %>
         </div>
     </div>
 
@@ -58,7 +52,7 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="service-boxes">
-                    <div class="col-md-4 no-padding col-xs-12">
+                    <div class="col-md-4 no-padding col-custom">
                         <li class="service-box-3">
                             <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
                             <h4>Our Menus</h4>
@@ -69,7 +63,7 @@
                         </li>
                     </div>
 
-                    <div class="col-md-4 no-padding col-xs-12">
+                    <div class="col-md-4 no-padding col-custom">
                         <li class="service-box-3">
                             <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
                             <h4>Wine List</h4>
@@ -80,7 +74,7 @@
                         </li>
                     </div>
 
-                    <div class="col-md-4 no-padding col-xs-12">
+                    <div class="col-md-4 no-padding col-custom">
                         <li class="service-box-3">
                             <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
                             <h4>Catering</h4>
