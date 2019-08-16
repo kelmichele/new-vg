@@ -7,6 +7,12 @@
         <div id="rev-slider" class="tp-banner">
             <ul>
                 <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+                    <%= link_to '/pairing', target: "_blank" do %>
+                        <%=image_tag('sept.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
+                    <% end %>
+                </li>
+
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                     <%= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
                         <%=image_tag('wharfvents.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
                     <% end %>
