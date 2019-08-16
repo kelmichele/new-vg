@@ -437,18 +437,27 @@
 
 	.page-content .hr{margin: 40px auto;}
 
+
+	.fluidMenu{text-align: center;}
+	.menuFluid {display: inline-block; float: none; width: 40%; margin: 10px 2%; vertical-align: top;}
+
 	@include bp(tb) {
 		#page-title .title-container{
 			h1{font-size: 35px;}
 			h2 {font-size: 24px;}
 		}
+		.fluidMenu .intro {padding-bottom: 0;}
+
+		.menuFluid {@include sec-default(); margin:15px auto;
+			&.last{margin-bottom: 0;}
+			.service-box-2{width: 60%; @include center-block();}
+			h3{font-size: 20px;}
+		}
+		.hr-dec{display: none;}
 	}
 
 	@include bp(md) {
 		#page-title {height:auto;}
-	}
-
-	@include bp(md) {
 		.pt-bkg-image.image-events {height: 150px;}
 		#page-title .title-container { padding-bottom: 20px;
 			h1 {margin-top: 20px; font-size: 30px;}
@@ -463,6 +472,11 @@
 			h5{font-size: 15px;}
 		}
 		.page-content .hr{margin: 10px auto;}
+
+		.menuFluid {
+			.service-box-2{width: 90%; padding-bottom: 0;}
+			h3{font-size: 17px;}
+		}
 	}
 }
 
