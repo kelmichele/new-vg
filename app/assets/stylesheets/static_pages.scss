@@ -18,8 +18,12 @@
 .h4-sm h4{font-size: 17px;}
 
 
-.dinner-menu .lunch-only{display: none;}
-.daily-menu .dinner-only{display: none;}
+.dinner-menu {
+	.lunch-price, .lunch-only{display: none;}
+}
+.daily-menu {
+	.dinner-price, .dinner-only{display: none;}
+}
 
 /***************************************/
 .cbp-item {
