@@ -26,9 +26,13 @@
     </div>
  -->
 
- <div class="col-md-5 col-md-offset-1 col-xs-12">
-      <%= link_to '/pairing' do %>
-          <%=image_tag('sept.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive borderImg') %>
+ <div class="col-md-4 col-md-offset-2 col-xs-12">
+      <%= link_to '/pairing', class: 'service-box-2 floatMid' do %>
+        <h3 style="padding-top: 25px;">Fall Wine Dinner</h3>
+        <h4>Thursday, October 17th | 6:00pm</h4>
+        <h4>$55 per guest</h4>
+        <%= link_to 'View Details', pairing_path, class: 'event-view center-block text-center' %>
+          <!-- <=image_tag('sept.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive borderImg') %> -->
       <% end %>
     </div>
     <div class="col-md-5 col-xs-12">
