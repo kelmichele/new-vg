@@ -66,6 +66,8 @@
 .center-block {@include center-block();}
 
 .l-2 { line-height: 25px; }
+h1.lh1{line-height: 1.2em;}
+
 .no-margin {
   margin: 0 !important;
   padding: 0 !important;
@@ -108,6 +110,10 @@ a:hover {text-decoration: none;}
 .text-center {text-align: center;}
 
 .image-center { @include center-block ();}
+
+.smborder{width: 100px; @include center-block; height:1.5px; background-color: rgba($black,.2); margin-bottom: 20px;
+    &.less {width:50px;height:1px; margin:7px auto 15px;}
+}
 
 p,
 a,
