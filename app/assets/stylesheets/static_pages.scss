@@ -417,8 +417,29 @@
 
 	.stacked{margin:20px 0 50px;}
 
+
+	.inline-events{text-align: center;}
+	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none;}
+
 	@include bp(lg) {
 		.stacked{margin:0 0 20px;}
+		.inline-event{width:45%; margin: 10px .5% 10px 2%;}
+	}
+
+	@include bp(tn) {
+		.inline-event{width:70%; @include center-block();
+			&.one {margin-bottom: 40px;}
+		}
+	}
+
+	@include bp(sm) {
+		.inline-event{width:85%;
+			&.one {margin-bottom: 30px;}
+		}
+	}
+
+	@media (max-width: 425px) {
+		.inline-event{width:95%;}
 	}
 }
 
