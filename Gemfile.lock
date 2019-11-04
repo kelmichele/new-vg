@@ -230,7 +230,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   better_errors
   binding_of_caller
-  bootstrap (~> 4.0.0.alpha3.1)
+  bootstrap
   byebug
   coffee-rails (~> 4.2)
   font-awesome-rails (~> 4.6, >= 4.6.3.1)
