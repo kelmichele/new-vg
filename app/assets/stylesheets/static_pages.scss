@@ -530,6 +530,25 @@
 			h3 {font-size: 22px;}
 		}
 		@include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-position: center center;
+
+
+		@include bp(lg) {
+			.overlay {background:rgba(0,0,0,0.7);}
+			.title-container {
+				h1{font-size:35px;}
+				h2{font-size: 25px;}
+				h3 {font-size: 22px;}
+			}
+		}
+
+		@include bp(md) {
+			.overlay {background:rgba(0,0,0,0.7);}
+			.title-container {
+				h1{font-size:30px;}
+				h2{font-size: 22px;}
+				h3 {font-size: 19px;}
+			}
+		}
 	}
 	//KP 2019 edits
 
@@ -604,7 +623,7 @@
 
 		@include bp(md) {
 			.cbp-item.details {
-				.res { font-size: 16px;}
+				.res, .menu-btn { font-size: 16px;}
 				.time {@include center-block(); width: 80%; padding: 20px 10px;}
 		  }
 
