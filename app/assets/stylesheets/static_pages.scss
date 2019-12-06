@@ -524,12 +524,15 @@
 
 .nye {
 	#page-title.image-nye {background-image: url(image_path('ny-background.jpg')); height:auto;
-		.overlay{background-color: rgba($yellow, .35);}
+		// .overlay{background-color: rgba($yellow, .35);}
 		.title-container {text-align:center; padding: 25px 0 0px;
 			h1, h2, h3, h4, h5{ font-weight: bold; color: white; margin: 0; font-family: $raleway; text-shadow: 0px 1px 1px rgba($black, .5);}
 			h3 {font-size: 22px;}
 		}
+		@include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-position: center center;
 	}
+	//KP 2019 edits
+
 
 	.faq-section{ text-align:center;
 		p, a, h3, h4, h5 {font-family: $raleway; text-transform: uppercase; letter-spacing: .5px;}
@@ -555,8 +558,11 @@
 	  	.tab-title {color:#a90f40}
 	  }
 
-	  .res-link {@include sec-default(); margin: 20px 0 40px;}
+	  .res-link, .menu-link {@include sec-default(); margin: 20px 0;}
 	  .res {font-weight: bold; color: white; background-color: $yellow; padding:15px; font-size: 18px;
+	  	&:hover {opacity: .6;}
+	  }
+	  .menu-btn {font-weight: bold; color: white; background-color: $red; padding:15px; font-size: 18px;
 	  	&:hover {opacity: .6;}
 	  }
 
@@ -564,7 +570,8 @@
 			// h5 {color: $hcolor; font-weight: 700; font-family: $open; font-size: 16px;}
 			h5 {font-size: 16px;}
 			.nyimg {@include center-block(); width: 10%;}
-			.time {display: inline-block; width: 40%; background-color: #f7f7f7; padding: 20px 20px 0px; margin: 10px 1% 25px;
+			.time {display: inline-block; width: 40%; background-color: #f7f7f7; padding: 20px 20px; margin: 10px 1% 25px;
+				// @include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-size:cover;
 				h4{margin-bottom: 5px;}
 				p.big{line-height: 2em; font-weight: 700; font-size: 18px; color:$black;}
 				p{color: $black; font-size: 16px; font-weight: 600; padding-bottom: 6px;}
@@ -598,7 +605,7 @@
 		@include bp(md) {
 			.cbp-item.details {
 				.res { font-size: 16px;}
-				.time {@include center-block(); width: 80%; padding: 20px 10px 10px;}
+				.time {@include center-block(); width: 80%; padding: 20px 10px;}
 		  }
 
 		  .inline-service {@include sec-default();
@@ -609,6 +616,12 @@
 		  	&.three {width: 100%;
 		  		.service-box-2 {width: 30%; margin-left: 3%;}
 		  	}
+		  }
+		}
+
+		@include bp(md) {
+			.cbp-item.details {
+				.time {width: 90%;}
 		  }
 		}
 	}

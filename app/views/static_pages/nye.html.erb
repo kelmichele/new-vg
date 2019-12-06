@@ -2,9 +2,10 @@
 <% @page_title = "New Year's Eve" %>
 <% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
 
-<div class="events-listing-page">
+<div class="events-listing-page newyear">
   <div id="page-title" class="pt-bkg-image image-nye">
   	<div class="overlay">
+		  <!-- <div id="page-title" class="pt-bkg-image-none"> -->
       <div class="container">
         <div class="title-container less">
         	<h2>Join us for a Celebration</h2>
@@ -16,7 +17,7 @@
   </div>
 
   <div class="page-content faq-section">
-    <div class="tabs">
+    <!-- <div class="tabs">
       <div id="js-filters-tabs" class="cbp-l-filters-big">
 	      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
           <div class="tab-title">Details</div>
@@ -29,7 +30,7 @@
         <div data-filter=".reg" class="cbp-filter-item ">
           <div class="tab-title">4-Course Menu</div>
         </div>
-      </div>
+      </div> -->
 
       <div class="container food-menus no-padding">
         <div id="faq" class="cbp cbp-l-grid-faq">
@@ -47,6 +48,7 @@
 								<hr>
 								<p class="big">5-5:30pm<br> $60 per guest</p>
 								<hr>
+		            <div class="menu-link"><%= link_to "View Menu", "NYE2019-early.pdf", target: '_blank', class: 'menu-btn' %></div>
 								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
 	              <div class="clearfix"></div>
 							</div>
@@ -57,25 +59,16 @@
 								<hr>
 								<p class="big">7-7:30pm &nbsp;&amp;&nbsp; 9-9:30pm <br> $100 per guest</p>
 								<hr>
+		            <div class="menu-link"><%= link_to "View Menu", "NYE2019.pdf", target: '_blank', class: 'menu-btn' %></div>
 								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
 	              <div class="clearfix"></div>
 							</div>
 	          </div>
 	        </div>
-
-	        <div class="cbp-item early">
-            <div class="nye-menu"><%= image_tag "nye2019-early.jpg", alt: "Villaggio New Year's Eve, early bird menu", class: "img-responsive early-menu" %></div>
-	        </div>
-
-          <div class="cbp-item reg">
-            <!-- <= link_to "NYE2019.pdf", target: '_blank' do %> -->
-            <div class="nye-menu"><%= image_tag "nye2019.jpg", alt: "Villaggio New Year's Eve menu", class: "img-responsive menu-img" %></div>
-            <!-- < end %> -->
-		      </div>
-
 	      </div>
 	    </div>
-		</div>
+
+		<!-- </div> -->
 	</div>
 </div>
 
