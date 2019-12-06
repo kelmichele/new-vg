@@ -523,7 +523,6 @@
 }
 
 .nye {
-	// .pt-bkg-image.image-nye {background-image: url(image_path('nyd.jpg'));
 	#page-title.image-nye {background-image: url(image_path('ny-background.jpg')); height:auto;
 		.overlay{background-color: rgba($yellow, .35);}
 		.title-container {text-align:center; padding: 25px 0 0px;
@@ -612,6 +611,12 @@
 		  	}
 		  }
 		}
+	}
+
+	.nye-menu{
+		// @include sec-default();background-color: #f1f0d1;
+		.menu-img{width:85%; @include center-block();}
+		.early-menu{width:80%; @include center-block();}
 	}
 }
 

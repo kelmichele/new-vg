@@ -8,252 +8,75 @@
       <div class="container">
         <div class="title-container less">
         	<h2>Join us for a Celebration</h2>
-          <h1>New Year's Eve 2018</h1>
-		      <h3>Monday, December 31, 2018</h3>
+          <h1>New Year's Eve 2019</h1>
+		      <h3>Tuesday, December 31, 2019</h3>
         </div>
       </div>
     </div>
   </div>
-  <!-- <%= image_tag('nye-hd.jpg', class: 'img-responsive') %>  -->
 
-    <div class="page-content faq-section">
-	    <div class="tabs">
-        <div id="js-filters-tabs" class="cbp-l-filters-big">
-		      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
-	          <div class="tab-title">Details</div>
-	        </div>
-
-          <div data-filter=".early" class="cbp-filter-item">
-	          <div class="tab-title">Early Bird Menu</div>
-	        </div>
-
-          <div data-filter=".reg" class="cbp-filter-item ">
-            <div class="tab-title">Menu</div>
-          </div>
+  <div class="page-content faq-section">
+    <div class="tabs">
+      <div id="js-filters-tabs" class="cbp-l-filters-big">
+	      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
+          <div class="tab-title">Details</div>
         </div>
 
-	      <div class="container food-menus no-padding">
-	        <div id="faq" class="cbp cbp-l-grid-faq">
-	          <div class="cbp-item details">
-							<div class="dets">
-		          	<h5>Each seating is reservation only. Credit card is required to hold reservation.<br>
-						      <!-- *Reservations can be made online only -->
-						    </h5>
-		          	<hr class="hlf">
+        <div data-filter=".early" class="cbp-filter-item">
+          <div class="tab-title">Early Bird Menu</div>
+        </div>
 
-								<div class="time">
-									<h4><b>Early Bird Seating:</b></h4>
-									<p>3-Course Meal &amp; champagne toast</p>
-									<hr>
-									<p class="big">5pm - 5:30pm <br> $65 per guest</p>
-									<hr>
-									<div class="res-link"><%= link_to "Make Reservations", opentable_path, :target => '_blank', class: 'res' %></div>
+        <div data-filter=".reg" class="cbp-filter-item ">
+          <div class="tab-title">4-Course Menu</div>
+        </div>
+      </div>
+
+      <div class="container food-menus no-padding">
+        <div id="faq" class="cbp cbp-l-grid-faq">
+          <div class="cbp-item details">
+						<div class="dets">
+	          	<h5>Each seating is reservation only.
+		          	<!-- <h5>Each seating is reservation only. Credit card is required to hold reservation.<br> -->
+					      <!-- *Reservations can be made online only -->
+					    </h5>
+	          	<hr class="hlf">
+
+							<div class="time early-seat">
+								<h4><b>Early Bird Seating:</b></h4>
+								<p>3-Course Meal &amp; champagne toast</p>
+								<hr>
+								<p class="big">5-5:30pm<br> $60 per guest</p>
+								<hr>
+								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
 	              <div class="clearfix"></div>
-								</div>
+							</div>
 
-								<div class="time">
-									<h4><b>Additional Seatings:</b></h4>
-									<p>5-Course Meal &amp; champagne toast</p>
-									<hr>
-									<p class="big">7pm - 7:30pm &amp; 9pm - 9:30pm <br> $100 per guest</p>
-									<hr>
-									<div class="res-link"><%= link_to "Make Reservations", opentable_path, :target => '_blank', class: 'res' %></div>
-		              <div class="clearfix"></div>
-								</div>
-		          </div>
-		        </div>
+							<div class="time reg-seat">
+								<h4><b>Additional Seatings:</b></h4>
+								<p>4-Course Meal &amp; champagne toast</p>
+								<hr>
+								<p class="big">7-7:30pm &nbsp;&amp;&nbsp; 9-9:30pm <br> $100 per guest</p>
+								<hr>
+								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
+	              <div class="clearfix"></div>
+							</div>
+	          </div>
+	        </div>
 
-		        <div class="cbp-item early">
-		        	<h2>New Year's Eve Early Bird Menu</h2>
-		        	<p class="railway">3-Course meal, with Champagne Toast<br>Seating from: 5pm - 5:30pm <span>/</span> $65</p>
-		        	<div class="res-link"><%= link_to "Make Reservations", opentable_path, :target => '_blank', class: 'res' %></div>
-              <div class="clearfix"></div>
+	        <div class="cbp-item early">
+            <div class="nye-menu"><%= image_tag "nye2019-early.jpg", alt: "Villaggio New Year's Eve, early bird menu", class: "img-responsive early-menu" %></div>
+	        </div>
 
-          	  <div class="inline-service">
-				        <h3>Appetizer Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>Beet & Goat Cheese Tartare </h4>
-				        	<h5>Topped with Quail Egg, Sweet & Spicy Pecans, Micro Greens and Toast Points</h5>
-
-				        	<h4>Crawfish Stuffed Bacon Wrapped Shrimp </h4>
-				        	<h5>Spicy Remoulade</h5>
-
-				        	<h4>Tuna Carpaccio</h4>
-				        	<h5>Red Onion, Avocado, Arugula, Sesame Seeds, Wonton Crisp, and Sesame Ginger Vinaigrette</h5>
-				        </div>
-
-				        <div class="service-box-2">
-				        	<h4>Honey Citrus Glazed Pork Belly</h4>
-				        	<h5>Soft Poached Fried Egg, Frisee, and Champagne Vinaigrette</h5>
-
-				        	<h4>Shell Bank Select Oysters on the Half Shell</h4>
-				        	<h5>Half Dozen Oysters, Paddlefish Caviar, Cucumber, Red Onion, and Caper Mignonette</h5>
-
-				        	<h4>Braised Rabbit Tortellini </h4>
-				        	<h5>Braised Rabbit, Carmelized Onion and Ricotta Filled Tortellini with Sage Brown Butter and Capers</h5>
-				        </div>
-
-
-				        <h3>Entrèe Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>10oz Bone-in Filet</h4>
-				        	<h5>Asiago Gnocchi, Broccolini, Mushrooms, Sundried Tomatoes and Demi Glace</h5>
-
-				        	<h4>Pan Seared Grouper</h4>
-				        	<h5>Cauliflower Risotto, Roasted Brussel Sprouts and Rock Shrimp & Artichoke Relish</h5>
-
-				        	<h4>Crab Encrusted Lobster Tails</h4>
-				        	<h5>Red Pepper Pesto, Spaghetti Squash, Roasted Eggplant, and Beurre Blanc</h5>
-			        	</div>
-
-				        <div class="service-box-2">
-				        	<h4>Grilled Jumbo Shrimp & Scallops </h4>
-									<h5>Celery Root Puree, Broccolini, and Tomato Caper Vinaigrette</h5>
-
-									<h4>Grilled Veal Porterhouse </h4>
-									<h5>Fried Black Eye Pea Cake, Creamed Spinach, and Bacon & Molasses Chive Butter</h5>
-
-									<h4>Herb Roasted Cornish Hen with Hoppin John</h4>
-									<h5>Rice, Bacon, Onion, Peppers, Vinegar, Spices, Served with Fried Squash and Pan Gravy</h5>
-				        </div>
-
-
-				        <h3>Dessert Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>Mini Lava Cake</h4>
-				        	<h5>Chentilly Cream</h5>
-				        </div>
-
-				        <div class="service-box-2">
-				        	<h4>Lemon Marscapone Gelato Cheesecake</h4>
-				        	<h5>Macerated Strawberries</h5>
-				        </div>
-				      </div>
-			      </div>
-
-	          <div class="cbp-item reg">
-		        	<h2>New Year's Eve Menu</h2>
-		        	<p class="railway">5-Course meal, with Champagne Toast<br>Seating from: 7pm - 7:30pm &amp; 9pm - 9:30pm <span>/</span> $100</p>
-							<div class="res-link"><%= link_to "Make Reservations", opentable_path, :target => '_blank', class: 'res' %></div>
-              <div class="clearfix"></div>
-
-          	  <div class="inline-service">
-				        <h3>Appetizer Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>Beet & Goat Cheese Tartare </h4>
-				        	<h5>Topped with Quail Egg, Sweet & Spicy Pecans, Micro Greens and Toast Points</h5>
-
-				        	<h4>Crawfish Stuffed Bacon Wrapped Shrimp </h4>
-				        	<h5>Spicy Remoulade</h5>
-
-				        	<h4>Tuna Carpaccio</h4>
-				        	<h5>Red Onion, Avocado, Arugula, Sesame Seeds, Wonton Crisp, and Sesame Ginger Vinaigrette</h5>
-				        </div>
-
-				        <div class="service-box-2">
-				        	<h4>Honey Citrus Glazed Pork Belly</h4>
-				        	<h5>Soft Poached Fried Egg, Frisee, and Champagne Vinaigrette</h5>
-
-				        	<h4>Shell Bank Select Oysters on the Half Shell</h4>
-				        	<h5>Half Dozen Oysters, Paddlefish Caviar, Cucumber, Red Onion, and Caper Mignonette</h5>
-
-				        	<h4>Braised Rabbit Tortellini </h4>
-				        	<h5>Braised Rabbit, Carmelized Onion and Ricotta Filled Tortellini with Sage Brown Butter and Capers</h5>
-				        </div>
-
-				        <h3>Salad Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-					        <h4>House Salad</h4>
-									<h5>Spring Mix, Red Onion, Tomatoes, Parmesan Cheese</h5>
-
-									<h4>Shaved Fennel and Apple Salad</h4>
-									<h5>Walnuts, Gorgonzola, and Champagne Vinaigrette</h5>
-								</div>
-
-								<div class="service-box-2">
-									<h4>Caesar</h4>
-									<h5>Romaine Lettuce, Parmesan Cheese, Marinated Tomatoes, House Made Croutons. Caesar Dressing</h5>
-
-									<h4>Spinach and Feta Salad</h4>
-									<h5>Strawberries, Red Onion, Pecans and Red Wine Vinaigrette</h5>
-								</div>
-
-								<h3>Soup Course</h3>
-								<div class="title-line"></div>
-								<div class="clearfix"></div>
-
-								<div class="service-box-2">
-									<h4>Lobster Bisque </h4>
-									<h5>Saffron, Sherry, Cream</h5>
-								</div>
-
-								<div class="service-box-2">
-									<h4>Italian Wedding Soup</h4>
-									<h5>Turkey Meatballs, Collard Greens, Kale, Pasta, Chicken Broth</h5>
-								</div>
-
-
-				        <h3>Entrèe Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>10oz Bone-in Filet</h4>
-				        	<h5>Asiago Gnocchi, Broccolini, Mushrooms, Sundried Tomatoes and Demi Glace</h5>
-
-				        	<h4>Pan Seared Grouper</h4>
-				        	<h5>Cauliflower Risotto, Roasted Brussel Sprouts and Rock Shrimp & Artichoke Relish</h5>
-
-				        	<h4>Crab Encrusted Lobster Tails</h4>
-				        	<h5>Red Pepper Pesto, Spaghetti Squash, Roasted Eggplant, and Beurre Blanc</h5>
-			        	</div>
-
-				        <div class="service-box-2">
-				        	<h4>Grilled Jumbo Shrimp & Scallops </h4>
-									<h5>Celery Root Puree, Broccolini, and Tomato Caper Vinaigrette</h5>
-
-									<h4>Grilled Veal Porterhouse </h4>
-									<h5>Fried Black Eye Pea Cake, Creamed Spinach, and Bacon & Molasses Chive Butter</h5>
-
-									<h4>Herb Roasted Cornish Hen with Hoppin John</h4>
-									<h5>Rice, Bacon, Onion, Peppers, Vinegar, Spices, Served with Fried Squash and Pan Gravy</h5>
-				        </div>
-
-
-				        <h3>Dessert Course</h3>
-				        <div class="title-line"></div>
-				        <div class="clearfix"></div>
-
-				        <div class="service-box-2">
-				        	<h4>Mini Lava Cake</h4>
-				        	<h5>Chentilly Cream</h5>
-				        </div>
-
-				        <div class="service-box-2">
-				        	<h4>Lemon Marscapone Gelato Cheesecake</h4>
-				        	<h5>Macerated Strawberries</h5>
-				        </div>
-				      </div>
-
+          <div class="cbp-item reg">
+            <!-- <= link_to "NYE2019.pdf", target: '_blank' do %> -->
+            <div class="nye-menu"><%= image_tag "nye2019.jpg", alt: "Villaggio New Year's Eve menu", class: "img-responsive menu-img" %></div>
+            <!-- < end %> -->
 		      </div>
-		    </div>
-			</div>
+
+	      </div>
+	    </div>
 		</div>
+	</div>
 </div>
 
 <div class="col-xs-12"><div class="hr hr-png-1"></div></div>
