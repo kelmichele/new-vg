@@ -17,7 +17,7 @@
     p, .links {display: inline-block; color: white; font-family: $play; text-shadow: 0px 1px 1px rgba($black, .5);
         margin-bottom: 0; font-size: 15px; padding-bottom:0; font-weight: bold; width: 50%;}
     .links {float: right;}
-    .ny-link {color: white; padding: 0 20px;
+    .ny-link {color: white; padding: 0 20px; font-family: $play;
         &:hover {opacity: .5;}
     }
 }
@@ -35,7 +35,7 @@ header {
     #social-links { padding-left: 0;
         li { float: right; margin-right: 20px;}
     }
-    #TA_socialButtonBubbles315 {margin-top:-20px;}
+    // #TA_socialButtonBubbles315 {margin-top:-20px;}
     // .TA_socialButtonBubbles
 
     .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 16px; color: $white;}
