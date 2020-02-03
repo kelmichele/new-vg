@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   	get '/pairing', to: 'static_pages#pairing'
     get '/nye', to: 'static_pages#nye'
     get '/valentines', to: 'static_pages#valentines'
+    get '/daddy-daughter-date', to: 'static_pages#daddy-daughter-date'
 
     get '/opentable', to: 'links#opentable'
     get '/gilbeys', to: 'links#gilbeys'

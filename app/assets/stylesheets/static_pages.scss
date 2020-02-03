@@ -668,8 +668,13 @@
 	#page-title .title-container h1 {margin-bottom:5px; font-size: 35px;}
 	h2 {color: $white; font-weight: bold; text-align: center; text-shadow: 1px 2px 1px $black;}
 	.pt-bkg-image {padding:30px;
-    &.valentine {background-image: url(image_path('vday5.jpg')); background-position: center center;}
-    .fancy-box{float: right; }
+    &.valentine {
+    	background-image: url(image_path('vday2.jpg')); 
+    	// background-attachment: fixed;
+    	position: relative; z-index: 0;
+			&::before{@include before(); height:100%; z-index: -1; background-color: rgba($black,.4);}
+    }
+    .fancy-box{float: left;}
   }
 
   @media screen and (max-width: 1024px) {
@@ -697,7 +702,27 @@
   }
 }
 
+.pairing.dd-date { text-align:center;
+	.pt-bkg-image.image-events{background-image: url(image_path('dd-bg1.jpg')); background-position:center center;}
+	.overlay{background:rgba(0, 0, 0, .3);}
+	#page-title .title-container.less {
+		h1, h2, p.res{text-shadow: 0px 1px 2px rgba($black, .5);}
+		p.res {color: white; font-weight: bold; letter-spacing: 1px; margin:0;
+			span{color: $pink;}
+		}
+	}
 
+	.heart-border{@include sec-default(); margin: 20px 0 30px;
+		img{@include center-block(); width:150px;}
+	}
+	.menu-item {
+		h3{color: $dpink; font-weight: bold; margin-top:30px; line-height: 1em;
+			span{font-family: inherit; font-size: .65em;}
+		}
+		h4{color: $pink; font-weight: bold; margin-bottom: 5px;}
+		p{color: $black; font-family: $raleway; font-size: 16px;}
+	}
+}
 
 
 
