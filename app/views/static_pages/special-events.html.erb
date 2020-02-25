@@ -1,76 +1,78 @@
 <% @page_title = "Special Events" %>
 <% @page_description = "Every month, Villaggio Grille hosts a wine dinner showcasing a different vineyard. With the amazing dishes they create to accompany each wine, every dinner becomes a four-course experience that your taste buds will thank you for." %>
 
-<div class="events-listing-page">
-    <div id="page-title" class="pt-bkg-image image-events">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="title-container less">
-                        <h1>2018 Uncorked Dinner</h1>
-                        <h2>Featuring Goldschmidt Vineyards</h2>
-                    </div>
-                </div>
-            </div>
+<div class="events-listing-page roaring20s">
+  <div id="page-title" class="pt-bkg-image image-20s">
+    <!-- <div class="overlay"> -->
+      <div class="container">
+        <!-- <div class="row"> -->
+          <div class="title20s">
+          <!-- <div class="title-container less"> -->
+            <h1>Roaring 20's Wine Dinner</h1>
+            <h4 class="sub">Roaring 20's Attire Encouraged </h4>
+            <h2>Featuring Winston with Alabama Crown</h2>
+            <h4>Wednesday, March 18th  &nbsp;|&nbsp; 6:00 p.m.<br> $60 per guest</h4>
+          </div>
+        <!-- </div> -->
+      </div>
+    <!-- </div> -->
+  </div>
+
+  <div class="page-content">
+    <div class="container food-menus no-padding">
+      <div class="intro">
+        <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
+      </div>
+
+      <div class="row col-md-12">
+        <div class="col-md-6 col-xs-12 menu-course">
+          <div class="service-box-2">
+            <h3>Hors d’oeuvre on Patio</h3>
+            <h4>Passed Shrimp Cocktail<br>
+            Oysters with Cucumber Mignonette</h4>
+            <p>Paired with:</p>
+            <h4>Castello Banfi, Principessa Gavia Gavi, Piedmont, Italy ‘14</h4>
+          </div>
         </div>
-    </div>
 
-    <div class="page-content">
-        <div class="container food-menus no-padding">
-            <div class="intro">
-                <h4>September 13th, 2018 &nbsp;|&nbsp; 6:00 p.m.<br> $60 per guest</h4>
-                <p class="mobile-show"><b>For Reservations, Call:<br> <%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %></b></p>
-            </div>
-            <div class="row col-md-12">
-                <div class="col-md-6 col-xs-12 menu-course">
-                  <div class="service-box-2">
-                    <h3>1st course</h3>
-                    <h4>Sliced Seared Diver Scallop over Avocado &amp; Watermelon Salad</h4>
-                    <h5>Feta, Walnuts, Pears, and Orange Segments, Champagne Vinaigrette </h5>
-                    <p>Paired with:</p>
-                    <h4>Signing Tree Chardonnay 2015, Russian River Valley, CA</h4>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-xs-12 menu-course">
-                  <div class="service-box-2">
-                    <h3>2nd Course</h3>
-                    <h4>Crab Stuffed Flounder Filet</h4>
-                    <h5>Grilled Zucchini, topped with citrus beurre blanc</h5>
-                    <p>Paired with:</p>
-                    <h4>Bolder Bank Sauvignon Blanc 2015, Marlborough, New Zealand</h4>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-10 col-md-offset-1 col-xs-12">
-                <div class="hr hr-png-6"></div>
-            </div>
-
-            <div class="row col-md-12">
-                <div class="col-md-6 col-xs-12 menu-course">
-                  <div class="service-box-2">
-                    <h3>3rd Course</h3>
-                    <h4>Grilled Ribeye Bruschetta</h4>
-                    <h5>Sliced Ribeye, Grilled Red Onions, Roasted Eggplant Puree, Gorgonzola Crumbles</h5>
-                    <p>Paired with:</p>
-                    <h4>Hilary Goldschmidt Cabernet, 2014 Charming Creek, Oakville, CA</h4>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-xs-12 menu-course">
-                  <div class="service-box-2">
-                    <h3>4th Course</h3>
-                    <h4>Amaretto &amp; almond bread pudding</h4>
-                    <h5>Raspberry Coulis</h5>
-                    <p>Paired with:</p>
-                    <h4>Chacras Malbec, 2012 Mendoza, Argentina</h4>
-                  </div>
-                </div>
-
-            </div>
+        <div class="col-md-6 col-xs-12 menu-course">
+          <div class="service-box-2">
+            <h3>2nd Course</h3>
+            <h4>Stuffed Acorn Squash</h4>
+            <h5>Red Peppers, Granny Smith Apples, Feta Cheese, Walnuts, and Quinoa </h5>
+            <p>Paired with:</p>
+            <h4>Calvet, Crémant de Bordeaux Brut Rosé, Bordeaux, France</h4>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-10 col-md-offset-1 col-xs-12">
+        <div class="hr hr-png-6"></div>
+      </div>
+
+      <div class="row col-md-12">
+        <div class="col-md-6 col-xs-12 menu-course">
+          <div class="service-box-2">
+            <h3>3rd Course</h3>
+            <h4>Coca Cola Braised Pheasant</h4>
+            <h5>Roasted Parsnips, Fried Okra </h5>
+            <p>Paired with:</p>
+            <h4>Nino Negri, Valtellina Superiore Quadrio ‘15, Lombardy, Italy</h4>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-xs-12 menu-course">
+          <div class="service-box-2">
+            <h3>4th Course</h3>
+            <h4>Strawberry Bundt Cake </h4>
+            <h5>Dark Chocolate Bark </h5>
+            <p>Paired with:</p>
+            <h4>Pasas, Jumilla Monastrell Gran Pasas, Murcia, Spain ‘16</h4>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <div class="col-xs-12"><div class="hr hr-png-1"></div></div>
