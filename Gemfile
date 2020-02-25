@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
-ruby '2.4.0'
+# ruby '2.4.0'
+ruby '2.5.3'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+# gem 'rails', '~> 5.2.2'
 gem 'puma'
-# gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
 # bundle these and remove sass-rails for trouble shoot
 # gem 'sassc'
@@ -12,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap'
-# gem 'bootstrap', '~> 4.0.0.alpha3.1'
+
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
@@ -23,10 +24,12 @@ gem 'metamagic'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+# gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'font-awesome-rails'
+# gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
+gem 'rails-assets-tether'
 gem 'animate-rails'
 gem 'ionicons-rails'
-gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 
 
 group :development, :test do
