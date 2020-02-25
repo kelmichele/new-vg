@@ -63,8 +63,8 @@ Rails.application.configure do
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
-  config.i18n.fallbacks = true
-  # config.i18n.fallbacks = :en
+  # config.i18n.fallbacks = true
+  config.i18n.fallbacks = :en
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
@@ -90,8 +90,8 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'hsdesignhouse.com',
-    user_name:            'kelli@hsdesignhouse.com',
-    password:             'Islandtime1',
+    user_name:            'kelproduction.enviro@gmail.com',
+    password:             '2V4>su7$CKt{,QdN3o=n',
     authentication:       'plain',
     enable_starttls_auto: true  }
 

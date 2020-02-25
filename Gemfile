@@ -4,6 +4,7 @@ ruby '2.5.3'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # gem 'rails', '~> 5.2.2'
+gem 'pg'
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
 # bundle these and remove sass-rails for trouble shoot
@@ -34,8 +35,7 @@ gem 'ionicons-rails'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  # gem 'sqlite3'
-  gem 'sqlite3', '~> 1.3.6'
+  # gem 'sqlite3', '~> 1.3.6'
 end
 
 group :development do
@@ -56,7 +56,7 @@ group :test do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
 end
 
