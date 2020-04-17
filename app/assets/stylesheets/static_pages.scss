@@ -89,13 +89,17 @@
 
 		@include bp(lg) {
 			h2{font-size:2em;}
-			h3{font-size: 20px;}
+			h3{font-size: 20px; font-weight: bold;}
 		}
 
 		@include bp(tn) {
 			padding:30px 0;
 			h2{font-size:1.7em;}
 			h3{font-size: 18px;}
+		}
+    
+    @include bp(sm) {
+			h2{font-size:1.5em;}
 		}
 	}
 

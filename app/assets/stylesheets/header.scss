@@ -29,6 +29,9 @@
         p{@include sec-default(); margin-bottom: 10px;}
         .dets-btn{margin-left: auto; padding: 5px 20px;}
     }
+    @include bp(tn) {
+        p{font-size:16px;}
+    }
 }
 
 header {
