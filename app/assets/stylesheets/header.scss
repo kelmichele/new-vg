@@ -11,14 +11,23 @@
 
 .announce-bar {
     @include sec-default(); padding: 5px 20px;background-color: $yellow;text-align: center;
-    background: -webkit-linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
-    background: linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
+    // background: -webkit-linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
+    // background: linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
 
-    p, .links {display: inline-block; color: white; font-family: $play; text-shadow: 0px 1px 1px rgba($black, .5);
-        margin-bottom: 0; font-size: 15px; padding-bottom:0; font-weight: bold; width: 50%;}
-    .links {float: right;}
-    .ny-link {color: white; padding: 0 20px; font-family: $play;
-        &:hover {opacity: .5;}
+    // p, .links {display: inline-block; color: white; font-family: $play; text-shadow: 0px 1px 1px rgba($black, .5);
+    //     margin-bottom: 0; font-size: 15px; padding-bottom:0; font-weight: bold; width: 50%;}
+    // .links {float: right;}
+    // .ny-link {color: white; padding: 0 20px; font-family: $play;
+    //     &:hover {opacity: .5;}
+    // }
+
+    // for FAMILY MEALS -- uncomment all responsive code for ny bar
+    padding: 10px 20px;
+    p, .dets-btn{display:inline-block; color: $black; font-family: $raleway; margin-bottom: 0; font-size: 17px; padding-bottom:0; font-weight: bold;}
+    .dets-btn{background-color: $red; color: $white; padding: 5px 10px; margin-left: 10px; font-size: 15px; text-shadow: 0px 1px 1px rgba($black, .2);}
+    @include bp(lg) {
+        p{@include sec-default(); margin-bottom: 10px;}
+        .dets-btn{margin-left: auto; padding: 5px 20px;}
     }
 }
 
@@ -92,13 +101,13 @@ header {
         }
     }
 
-    .announce-bar {
-        p {width: 40%;}
-        .links {width:60%}
-        .ny-link {color: white; padding: 0 20px;
-            &:hover {opacity: .5;}
-        }
-    }
+    // .announce-bar {
+    //     p {width: 40%;}
+    //     .links {width:60%}
+    //     .ny-link {color: white; padding: 0 20px;
+    //         &:hover {opacity: .5;}
+    //     }
+    // }
 }
 
 #offcanvas-toggler {
@@ -172,12 +181,12 @@ h3.module-title{color: $white;}
     .menu span.toggle-icon.fa {display:inline-block;font-family:FontAwesome;font-size:15px;position:absolute; float:right; color: $dark; background-color: $white; padding: 0px 4px; margin-top: 2px; margin-left: 5px; font-weight: 700;}
     header .logo-img{width:40%;}
 
-    .announce-bar {
-        p, .links {width:100%;}
-        .ny-link {color: white; padding: 0 20px;
-            &:hover {opacity: .5;}
-        }
-    }
+    // .announce-bar {
+    //     p, .links {width:100%;}
+    //     .ny-link {color: white; padding: 0 20px;
+    //         &:hover {opacity: .5;}
+    //     }
+    // }
 
 }
 
@@ -194,7 +203,7 @@ h3.module-title{color: $white;}
 @include bp(sm) {
     #offcanvas-toggler { width: 50%; }
 
-    .announce-bar .ny-link { @include sec-default(); padding-bottom: 6px;}
+    // .announce-bar .ny-link { @include sec-default(); padding-bottom: 6px;}
 }
 
 

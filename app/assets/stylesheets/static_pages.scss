@@ -77,6 +77,28 @@
 
 .home {
 
+	.familyMeals{@include sec-default(); background-color:$red; text-align: center; padding:60px 0;
+		.inside{width:90%; @include center-block();}
+		h2, h3{color:$white; text-shadow:0px 1px 2px rgba($black,.3);}
+		h2{color:$yellow; font-weight: bold; text-decoration: underline; font-family: $raleway; text-transform: uppercase;}
+
+		@media screen and (min-width:1025px) {
+			h2{font-size:2.5em;}
+			h2,h3{letter-spacing: .5px;}
+		}
+
+		@include bp(lg) {
+			h2{font-size:2em;}
+			h3{font-size: 20px;}
+		}
+
+		@include bp(tn) {
+			padding:30px 0;
+			h2{font-size:1.7em;}
+			h3{font-size: 18px;}
+		}
+	}
+
 	.tp-banner-container.fullwidthbanner {
         #rev-slider.tp-banner {
             ul { margin-bottom: 10px;
