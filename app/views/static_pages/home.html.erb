@@ -3,48 +3,84 @@
 
 
 
-<div class="tp-banner-container fullwidthbanner">
+<!-- <div class="tp-banner-container fullwidthbanner">
     <div id="rev-slider" class="tp-banner">
         <ul>
-            <!-- <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+            <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                 <= link_to '/pairing' do %>
                     <=image_tag('febwine.jpg', alt: 'February Wine Dinner menu link', class: 'img-responsive') %>
                 < end %>
-            </li> -->
+            </li>
 
             <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                 <%=image_tag('covid-slide.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%>
             </li>
 
-            <!-- <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+            <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
                 <= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
                     <=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
                 < end %>
-            </li> -->
+            </li>
         </ul>
     </div>
-</div>
+</div> -->
 
-<div id="family-meals">
-    <div class="familyMeals">
-        <div class="inside">
-            <h2>Now Serving<br> Takeout Family Meals for $26</h2>
-            <!-- <h3>Your choice of Lasagna, Chicken Picatta, or Shrimp &amp; Grits.<br>
-            Served with salad for four, and bread with olive oil and parmesan.</h3> -->
+    
 
-            <h3>Your choice of meal, served with salad for four, and bread with olive oil &amp; parmesan.</h3>
+<div id="family-meals" class="family-meals-full">
+    <div class="container">
+        <h1>We are open for to-go orders!<br/>Call
+          <a href="+12512246510" class="tel">251-224-6510</a>
+        </h1>
+        <h2>Now Serving Takeout Family Meals</h2>
+        <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
 
-            <p class="title">Meal Options:</p>
-            <p>Lasagna</p>
-            <p>Chicken Picatta </p>
-            <p>Shrimp Grits</p>
-            <p>BBQ Bacon Wrapped Shrimp, Served with Smashed Fingerling Potatoes &amp; Green Beans</p>
-            <p>Meatloaf with gravy, Served with Smashed Fingerling Potatoes &amp; Green Beans</p>
-            <p>Shrimp Scampi</p>
-            <p>Shrimp or Chicken Alfredo</p>
+
+        <div class="item">
+            <h4>Lasagna... $26</h4>
         </div>
+
+        <div class="item">
+            <h4>Shrimp Scampi... $26</h4>
+        </div>
+
+        <div class="item">
+            <h4>Stuffed Shells... $26</h4>
+        </div>
+
+        <div class="item">
+            <h4>Bolognese... $30</h4>
+        </div>
+
+        <div class="item">
+            <h4>Chicken or Shrimp Alfredo... $26  </h4>
+        </div>
+
+        <div class="item">
+            <h4>Chicken Scallopini... $26</h4>
+            <p>Tomato caper cream, cheddar grits</p>
+        </div>
+
+        <div class="item">
+            <h4>Large Kabobs (Chicken or Beef)... $30</h4>
+            <p>8 large kabobs. Truffle Mashed Potatoes, green beans.</p>
+        </div>
+
+        <div class="item">
+            <h4>Grilled Salmon... $30</h4>
+            <p>4 pieces (lunch size). Truffle Mashed potatoes, green beans.</p>
+        </div>
+
+        <div class="item">
+            <h4>Shrimp Sacchetti... $36</h4>
+            <p>Pasta Stuffed with Truffle infused ricotta, roasted tomatoes, peas, prosciutto, &amp; chardonnay cream sauce.</p>
+        </div>
+
     </div>
 </div>
+
+<div class="cov-center"><%=image_tag('covid-slide-ed.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%></div>
+
 
 
 
@@ -61,7 +97,7 @@
 
         <div class="row">
             <%= link_to "/yelp", target: "_blank", class: 'resImg' do %>
-              <%= image_tag('yelpRes.png', alt: 'Ginny Lane Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
+              <%= image_tag('yelpRes.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
             <% end %>
         </div>
     </div>

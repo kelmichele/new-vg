@@ -1,3 +1,51 @@
+Ginny Lane Family Meals
+All meals served with a family sized salad and bread for 4 people (Caesar can be substituted)
+
+GL
+	Shrimp and Grits--$26	
+	BBQ Shrimp—Approximately 20 shrimp--$26
+		Red Potatoes, green beans
+	Meatloaf (has had some complaints)--$26
+		Red Potatoes, green beans
+	Lemon Pepper, blackened or fried fish (1.5#s fish)
+		Red Potatoes, green beans --$30
+	Fried Shrimp-- (1.5 #s Shrimp)
+		Red Potatoes, green beans, hushpuppies--$36
+	Fried Seafood Platter--  (1# shrimp, ½ #fish)   
+		Red Potatoes, green beans, hush puppies--$36
+	Low Country Boil (2#shrimp)--$40
+		Shrimp, Corn, Quartered Red Potatoes, Sausage
+
+
+
+
+
+Villaggios Family Meals
+	All meals served with a family sized salad and bread for 4 people (Caesar can be substituted)
+
+	<!-- Drop BBQ shrimp From VG family meals -->
+	<!-- Drop Shrimp and Grits from VG family Meals -->
+	<!-- Drop Meat loaf from VG family meals -->
+
+	Chicken Scallopini –just like off brunch menu (drop Picatta)
+	Tomato Caper Cream, Cheddar Grits --$26
+	Lasagna--$26
+	Scampi--$26
+	Stuffed Shells --$26
+	Chicken or Shrimp Alfredo--$26	
+	Large Kabobs (Chicken or Beef 8 LARGE kabobs)--$30
+		Truffle Mashed Potatoes, green beans
+	Grilled Salmon ( 4 @ lunch size)--$30
+		Truffle Mashed potatoes, green beans
+	Bolognese --$30
+	Shrimp Sacchetti--$36
+	Pasta Stuffed with Truffle infused ricotta, roasted tomatoes, peas, prosciutto, and chardonnay cream sauce.
+
+
+
+
+
+
 NYE 2018 file...changed for 2019
 	<!-- can you add by reservation on line only and the open table tab? -->
 	<% @page_title = "New Year's Eve" %>
