@@ -1,46 +1,101 @@
-Ginny Lane Family Meals
-All meals served with a family sized salad and bread for 4 people (Caesar can be substituted)
+FAMILY MEALS -- FULL SECTION
+	.cov-center {@include sec-default(); text-align: center; padding: 30px 0 0;
+	    img{@include center-block();}
+	}
+	.family-meals-full {@include sec-default(); text-align: center; padding: 60px 0;
+	    @include sec-bgimage(); background-image: url(image_path('family-bg.jpg')); 
+	    background-size:cover;
+	    position: relative; z-index: 0;
+	    &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
 
-GL
-	Shrimp and Grits--$26	
-	BBQ Shrimp—Approximately 20 shrimp--$26
-		Red Potatoes, green beans
-	Meatloaf (has had some complaints)--$26
-		Red Potatoes, green beans
-	Lemon Pepper, blackened or fried fish (1.5#s fish)
-		Red Potatoes, green beans --$30
-	Fried Shrimp-- (1.5 #s Shrimp)
-		Red Potatoes, green beans, hushpuppies--$36
-	Fried Seafood Platter--  (1# shrimp, ½ #fish)   
-		Red Potatoes, green beans, hush puppies--$36
-	Low Country Boil (2#shrimp)--$40
-		Shrimp, Corn, Quartered Red Potatoes, Sausage
+	    h1{color: $red; font-weight: bold; text-transform: uppercase; margin-bottom:40px;}
+	    h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
+	    h3{margin:0 0 15px; font-size: 18px;}
+	    h4{color: $red; font-weight: bold; margin-bottom:0px;}
+	    p{margin:0; font-size:17px; color:$black;}
+	    a.tel{font-family: inherit; color: inherit;}
 
-
-
+	    .item{@include sec-default(); margin-top:20px;}
 
 
-Villaggios Family Meals
-	All meals served with a family sized salad and bread for 4 people (Caesar can be substituted)
 
-	<!-- Drop BBQ shrimp From VG family meals -->
-	<!-- Drop Shrimp and Grits from VG family Meals -->
-	<!-- Drop Meat loaf from VG family meals -->
+	    @include bp(xl) {
+	        padding:40px 0;
+	        h1{margin-bottom:25px;}
+	        h3{margin-bottom: 10px;}
+	    }
 
-	Chicken Scallopini –just like off brunch menu (drop Picatta)
-	Tomato Caper Cream, Cheddar Grits --$26
-	Lasagna--$26
-	Scampi--$26
-	Stuffed Shells --$26
-	Chicken or Shrimp Alfredo--$26	
-	Large Kabobs (Chicken or Beef 8 LARGE kabobs)--$30
-		Truffle Mashed Potatoes, green beans
-	Grilled Salmon ( 4 @ lunch size)--$30
-		Truffle Mashed potatoes, green beans
-	Bolognese --$30
-	Shrimp Sacchetti--$36
-	Pasta Stuffed with Truffle infused ricotta, roasted tomatoes, peas, prosciutto, and chardonnay cream sauce.
+	    @media screen and (max-width: 823px){
+	        padding:40px 0 30px;
+	        h1{font-size:27px;}
+	        h2{font-size:24px;}
+	        h4{font-size:19px;}
+	        p{font-size: 16px;}
+	        .item{margin-top: 12px;}
+	    }
+	    @include bp(sm) {
+	        h1{font-size: 24px;}
+	        h2{font-size:20px;}
+	        h3{font-size: 17px;}
+	        h4{font-size:18px;}
+	    }
+	}
 
+
+
+	<div id="family-meals" class="family-meals-full">
+	    <div class="container">
+	        <h1>We are open for to-go orders!<br/>Call
+	          <a href="+12512246510" class="tel">251-224-6510</a>
+	        </h1>
+	        <h2>Now Serving Takeout Family Meals</h2>
+	        <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
+
+
+	        <div class="item">
+	            <h4>Lasagna... $26</h4>
+	        </div>
+
+	        <div class="item">
+	            <h4>Shrimp Scampi... $26</h4>
+	        </div>
+
+	        <div class="item">
+	            <h4>Stuffed Shells... $26</h4>
+	        </div>
+
+	        <div class="item">
+	            <h4>Bolognese... $30</h4>
+	        </div>
+
+	        <div class="item">
+	            <h4>Chicken or Shrimp Alfredo... $26  </h4>
+	        </div>
+
+	        <div class="item">
+	            <h4>Chicken Scallopini... $26</h4>
+	            <p>Tomato caper cream, cheddar grits</p>
+	        </div>
+
+	        <div class="item">
+	            <h4>Large Kabobs (Chicken or Beef)... $30</h4>
+	            <p>8 large kabobs. Truffle Mashed Potatoes, green beans.</p>
+	        </div>
+
+	        <div class="item">
+	            <h4>Grilled Salmon... $30</h4>
+	            <p>4 pieces (lunch size). Truffle Mashed potatoes, green beans.</p>
+	        </div>
+
+	        <div class="item">
+	            <h4>Shrimp Sacchetti... $36</h4>
+	            <p>Pasta Stuffed with Truffle infused ricotta, roasted tomatoes, peas, prosciutto, &amp; chardonnay cream sauce.</p>
+	        </div>
+
+	    </div>
+	</div>
+
+	<div class="cov-center"><%=image_tag('covid-slide-ed.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%></div>
 
 
 
