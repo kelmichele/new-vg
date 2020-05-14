@@ -10,6 +10,10 @@
         <div class="partner-logo two">
             <%= link_to(image_tag('yoho.png', alt: 'Yoho Rum and Tacos, Orange Beach, Logo', class: 'img-responsive'), yoho_path, :target => '_blank' ) %>
         </div>
+
+        <div class="partner-logo">
+            <%=image_tag( 'marker158.png', alt:'Mile Marker 158 Dockside Logo', class: 'img-responsive') %>
+        </div>
     </div>
 </div>
 
@@ -156,7 +160,7 @@
 
                     <li><%= link_to "Events", event_list_path %></li>
                     <li><%= link_to "Wine List", wine_list_path %></li>
-                    <li><%= link_to "Catering", catering_path %></li>
+                    <li><%= link_to "Catering", "https://wharfcateringgroup.com/", target: '_blank' %></li>
                     <li><%= link_to "About", about_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
                     <li><%= link_to "Book a Table", yelp_path, :target => '_blank' %></li>
