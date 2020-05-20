@@ -35,7 +35,9 @@
     position: relative; z-index: 0;
     &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
 
-    h1{color: $red; font-weight: bold; text-transform: uppercase; margin-bottom:40px;}
+    h1{color: $red; font-weight: bold; text-transform: uppercase; margin-bottom:40px;
+    	span{font-family: inherit; color: $navy;}
+    }
     h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
     h3{margin:0 0 15px; font-size: 18px;}
     h4{color: $red; font-weight: bold; margin-bottom:0px;}
