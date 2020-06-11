@@ -83,10 +83,17 @@
 
     @media screen and (max-width: 767px){
     	.container{padding:0; max-width:90%;}
-    	// br.large{display:none;}
-    	
     	h1{font-size: 22px;}
     	h2{font-size:20px;}
+    }
+
+    @media screen and (max-width: 500px){
+    	hr.top, br.large{display:none;}
+    	h1{font-size: 21px;}
+    	h2{font-size:19px;}
+    	h3{width:100%;}
+    	p{width:90%;}
+
     }
 }
 
