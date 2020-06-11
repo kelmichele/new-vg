@@ -30,43 +30,57 @@
 	img{@include center-block();}
 }
 .family-meals-full {@include sec-default(); text-align: center; padding: 60px 0;
-    @include sec-bgimage(); background-image: url(image_path('family-bg.jpg')); 
-    background-size:cover;
+    @include sec-bgimage(); background-image: url(image_path('family-bg.jpg')); background-size:cover;
     position: relative; z-index: 0;
     &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
 
-    h1{color: $red; font-weight: bold; text-transform: uppercase; margin-bottom:40px;
-    	span{font-family: inherit; color: $navy;}
+    h1{color: $red; font-weight: bold; text-transform: uppercase; 
+    	font-family: $raleway; margin-bottom:0px;
+    	a.tel{font-family: inherit; color: $navy;}
     }
     h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
     h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em;}
     h4{color: $red; font-weight: bold; margin-bottom:0px;}
     p{margin:0; font-size:17px; color:$black;}
-    a.tel{font-family: inherit; color: inherit;}
+    // a.tel{font-family: inherit; color: inherit;}
 
     .item{@include sec-default(); margin-top:20px;}
 
+    .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
+		hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.3);}
+		.deliveryLogo{display:inline-block; width:30%; max-width:200px; margin: 0 1%;
+	      .mob{display: none;}
+	    }
+	}
 
 
-    @include bp(xl) {
-    	padding:40px 0;
-    	h1{margin-bottom:25px;}
-    	h3{margin-bottom: 10px;}
-    }
 
-    @media screen and (max-width: 823px){
-    	padding:40px 0 30px;
-    	h1{font-size:27px;}
-    	h2{font-size:24px;}
-    	h4{font-size:19px;}
-    	p{font-size: 16px;}
-    	.item{margin-top: 12px;}
-    }
-    @include bp(sm) {
-    	h1{font-size: 24px;}
-    	h2{font-size:20px;}
-    	h3{font-size: 17px;}
+    @include bp(lg) {
+    	padding:40px 0 20px;
+    	h1{font-size:26px;}
+    	h2{font-size:23px;margin-bottom:5px;}
+    	h3{font-size:17px; margin-bottom: 0px; width:85%; @include center-block();}
     	h4{font-size:18px;}
+    	p{font-size: 16px;width:85%; @include center-block();}
+    	.item{margin-top:12px;}
+
+    	.deliverySec{
+    		hr{margin: 15px auto;}
+    		.deliveryLogo{max-width: 180px;}
+    	}
+    }
+
+    @media screen and (max-width: 823px){ padding:25px 0 15px;
+    	h1{font-size: 24px;}
+    	h2{font-size:21px;}
+    	h3{font-size: 16px; }
+    	h4{font-size:17px;}
+    	p{font-size: 15px; padding-bottom: 8px;}
+    }
+
+    @media screen and (max-width: 767px){
+    	br.large{display:none;}
+    	
     }
 }
 
@@ -123,41 +137,6 @@
 /***************************************/
 
 .home {
-
-	.familyMeals{@include sec-default(); background-color:$red; text-align: center; padding:60px 0;
-		.inside{width:90%; @include center-block();}
-		h2, h3,p{color:$white; text-shadow:0px 1px 2px rgba($black,.3);}
-		h2{color:$yellow; font-weight: bold; text-decoration: underline; font-family: $raleway; text-transform: uppercase;}
-		p {font-size: 19px; margin:14px 0 10px; position: relative; z-index: 0; line-height: 1.5em;
-			&::after{@include before(); width:30px; height:2px; background-color: $yellow; left: 49%; top:99%; }
-		}
-		p.title{text-decoration: underline; color: $yellow; font-weight: bold; padding-bottom: 0;
-			&::after{display: none;}
-		}
-
-		@media screen and (min-width:1025px) {
-			h2{font-size:2.5em;}
-			h2,h3{letter-spacing: .5px;}
-		}
-
-		@include bp(lg) {
-			h2{font-size:2em;}
-			h3{font-size: 20px; font-weight: bold;}
-			p {font-size: 17px;}
-		}
-
-		@include bp(tn) {
-			padding:30px 0;
-			h2{font-size:1.7em;}
-			h3{font-size: 18px;}
-			p {font-size: 16px;}
-		}
-    
-	    @include bp(sm) {
-			h2{font-size:1.5em;}
-		}
-	}
-
 	.tp-banner-container.fullwidthbanner {
         #rev-slider.tp-banner {
             ul { margin-bottom: 10px;
@@ -169,7 +148,7 @@
 	}
 	.page-content {padding-bottom: 0px;}
 
-	h1 { text-transform: uppercase; text-shadow: 1px 2px 3px rgba($gray, .8);}
+	.intro-title h1 { text-transform: uppercase; text-shadow: 1px 2px 3px rgba($gray, .8);}
 	ul.service-boxes {padding: 0 10px; margin-top:35px; @include center-block();}
 	li.service-box-3 {
 		p {font-family: $play;}
@@ -185,7 +164,7 @@
 	}
 
 	@include bp(lg) {
-		h1 {font-size:28px; margin-bottom: 5px;}
+		.intro-title h1 {font-size:28px; margin-bottom: 5px;}
 		h3.sizing {font-size:21px;}
 
 		.resImg {
@@ -200,7 +179,7 @@
 
 	@media (max-width: 823px) {
 		.page-content {padding-top:10px;}
-		h1 {font-size:24px;}
+		.intro-title h1 {font-size:24px;}
 		h3.sizing {font-size:18px;}
 
 		.resImg {
