@@ -47,9 +47,10 @@
     .item{@include sec-default(); margin-top:20px;}
 
     .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
-		hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.3);}
-		.deliveryLogo{display:inline-block; width:30%; max-width:200px; margin: 0 1%;
-	      .mob{display: none;}
+		hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.15);}
+		.deliveryLogo{display:inline-block; width:30%; max-width:175px; margin: 0 1%;
+	      &.narrow{margin-bottom: 20px;}
+	      &.tall{max-width: 150px}
 	    }
 	}
 
@@ -66,21 +67,26 @@
 
     	.deliverySec{
     		hr{margin: 15px auto;}
-    		.deliveryLogo{max-width: 180px;}
+    		.deliveryLogo{max-width: 160px;
+		      &.tall{max-width: 130px;}
+		  }
     	}
     }
 
     @media screen and (max-width: 823px){ padding:25px 0 15px;
     	h1{font-size: 24px;}
     	h2{font-size:21px;}
-    	h3{font-size: 16px; }
+    	h3{font-size: 16px;}
     	h4{font-size:17px;}
     	p{font-size: 15px; padding-bottom: 8px;}
     }
 
     @media screen and (max-width: 767px){
-    	br.large{display:none;}
+    	.container{padding:0; max-width:90%;}
+    	// br.large{display:none;}
     	
+    	h1{font-size: 22px;}
+    	h2{font-size:20px;}
     }
 }
 
