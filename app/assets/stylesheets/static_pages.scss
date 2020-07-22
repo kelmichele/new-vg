@@ -45,7 +45,9 @@
     p.up{text-transform: uppercase; font-size:16px; padding:5px 0 15px; letter-spacing: .3px;}
     // a.tel{font-family: inherit; color: inherit;}
 
-    .item{@include sec-default(); margin-top:20px;}
+    .item{@include sec-default(); margin-top:20px;
+    	p{padding-bottom: 0;}
+    }
 
     .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
 		hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.15);}
