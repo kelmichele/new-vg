@@ -477,6 +477,18 @@
 	.page-content {background-image: url(image_path('patt1.png'));}
 }
 
+.brunch-menu{
+	.page-content{padding-bottom:10px;}
+	.brunch-box{width:780px; @include center-block();}
+	.service-box-2{margin-bottom:30px;}
+	h4 span{font-size: .9em; font-weight:600;}
+
+	@include bp(lg) {
+		.brunch-box{width:90%;}
+		.pairing .service-box-2{margin-bottom:20px; padding-bottom:0;}
+	}
+}
+
 
 .event-list {
 	#page-title {margin-bottom:0px;

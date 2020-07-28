@@ -1,0 +1,238 @@
+<% @page_title = "Brunch Menu" %>
+<% @page_description = "Join Villaggio for brunch, Sunday's from 11 a.m.- 2p.m." %>
+
+<div id="menupage">
+    <div id="page-title" class="pt-bkg-image image-menus">
+        <div class="overlay">
+            <div class="title-container less">
+                <section class="fancy-heading center">
+                    <h1>Sunday Brunch Menu</h1>
+                    <h3>Served 11am - 2pm</h3>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content food-menus">
+        <section class="tabs-example">
+            <div class="tabs">
+                <div class="container no-padding">
+                    <div class="col-md-8 col-md-offset-2 col-xs-12">
+                        <div id="accordeon" class="col-md-12 no-padding">
+                            <div class="cbp-item">
+                                <div class="cbp-caption first">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Starters</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Fruit and Cheese Plate<span> ...$14</span></h4>
+                                                <p>Artisanal Cheeses, Fresh Seasonal Fruit, Spiced Walnuts, Assorted Crackers </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Smoked Salmon Terrine<span> ...$12</span></h4>
+                                                <p>Layers of Smoked Salmon, Lemon Pepper Cream Cheese, Capers, Red Onions, and Mustard Dill Dressing </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Calamari Fritti<span> ...$12</span></h4>
+                                                <p>Lightly Fried Seasoned Calamari, Parmesan Cheese, Lemon, and Citrus Sweet Chili </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>West Indies Salad<span> ...$14</span></h4>
+                                                <p>Crab, Cucumber and Onion Marinated in Champagne Vinaigrette with Arugula and Assorted Crackers </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption salads">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Salads</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <p>Add Chicken - $5 &nbsp; | &nbsp;
+                                                Add Scallop - $6 &nbsp; | &nbsp;
+                                                Add Shrimp - $8</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Villaggio<span> ... $6</span></h4>
+                                                <p>Spring Mix, Grape Tomatoes, Sliced Onion, and Parmesan with Roasted Fig Vinaigrette </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Chopped Caesar<span> ... $6</span></h4>
+                                                <p>Romaine Hearts, Grape Tomatoes, Croutons, and Parmesan with Caesar Dressing </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Goat Cheese and Walnut<span> ... $8</span></h4>
+                                                <p>Spring Mix, Dried Cherries, Spiced Walnuts, and Goat Cheese with Roasted Fig Vinaigrette </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Spinach and Grilled Chicken<span> ... $12</span></h4>
+                                                <p>Baby Spinach, Red Onion, Tomatoes, Feta Cheese, and House Made Croutons with Warm Bacon Vinaigrette </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption oyster">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Wood Oven Fired Oysters</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4><strong>8 per order</strong></h4>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Prosciutto Rockefeller<span> ... $14</span></h4>
+                                                <p>Fresh Louisiana Oysters Topped with Prosciutto, Spinach, Cream and Parmesan Cheese </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Garlic Butter<span> ... $14</span></h4>
+                                                <p>Fresh Louisiana Oysters topped with a Roasted Garlic and Butter Compound </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Gorgonzola and Shallot<span> ... $14</span></h4>
+                                                <p>Fresh Louisiana Oysters topped with Creamy Gorgonzola and Shallot Cheese Sauce </p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Oyster Trio<span> ... $16</span></h4>
+                                                <p>Three of each Oyster </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cbp-caption fourth">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Wood Oven Fired Pizzas</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Margherita<span> ... $12</span></h4>
+                                                <p>Marinara, Roasted Garlic, Fresh Mozzarella, Tomatoes, and Fresh Basil</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Villaggio<span> ... $14</span></h4>
+                                                <p>Italian Sausage, Pepperoni, Bell Peppers, Mushrooms, and Kalamata Olives</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Chicken Pesto<span> ... $14</span></h4>
+                                                <p>Grilled Chicken, Basil Pesto, Sundried Tomatoes. and Mushrooms</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                              <h4>Shrimp and Crawfish<span> ... $14</span></h4>
+                                                <p>Shrimp, Crawfish, Bell Peppers, Proscuitto and Spinach Cream Sauce</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="cbp-caption third">
+                                    <div class="cbp-caption-defaultWrap">
+                                        <h4>Brunch Plates</h4>
+                                    </div>
+
+                                    <div class="cbp-caption-activeWrap">
+                                        <div class="cbp-l-caption-body">
+                                            <div class="menu-item">
+                                                <h4>Villaggio Benedict<span> ... $12</span></h4>
+                                                <p>Prosciutto, Fried Green Tomato, Two Poached Eggs, Bearnaise Sauce, English Muffins, Roasted Garlic Grits, and Sauteed Green Beans</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Crab Cake Benedict<span> ... $14</span></h4>
+                                                <p>Two petite crab cakes, two poached eggs, english muffins, Bearnaise Sauce, Roasted garlic grits, and sauteed green beans</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Smoked Salmon Benedict<span> ... $12</span></h4>
+                                                <p>Two Poached Eggs, Roasted Garlic Grits, Green Beans, English Muffins, Mustard Dill Dressing</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Short Rib Benedict<span> ... $12</span></h4>
+                                                <p>Two poached eggs, english muffins, sweet potato hash, and sauteed green beans</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Steak &amp; Eggs<span> ... $16</span></h4>
+                                                <p>Grilled NY Strip, Two Fried Eggs, Sweet Potato Hash, Green Beans and Demi Glace</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Southern Comfort<span> ... $14</span></h4>
+                                                <p>Two Scrambled Eggs, Smoked Bacon Strips, Sweet Potato Hash, Biscuits with Sausage Gravy</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Brunch Salmon<span> ... $12</span></h4>
+                                                <p>Grilled Salmon, Sweet Potato Hash, Sauteed Green Beans topped with Beurre Blanc</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Blueberry Pancakes<span> ... $12</span></h4>
+                                                <p>Five Medallion Blueberry Pancakes, with Fruit, Whipped Cream and Syrup on the Side</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>French Toast<span> ... $12</span></h4>
+                                                <p>Texas Toast, Caramelized Granny Smith Apple and Cinnamon Glaze, Bacon Strips, topped with whipped cream</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Shrimp &amp; Grits<span> ... $14</span></h4>
+                                                <p>Gulf Shrimp with Bacon Tomato Chardonnay Cream Sauce, Served over Roasted Garlic Grits</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Seafood Pasta<span> ... $14</span></h4>
+                                                <p>Gulf Shrimp, Scallop, Crab Salad, and Fettuccine tossed in Alfredo Sauce</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>B.E.S.T.<span> ... $12</span></h4>
+                                                <p>Bacon, Scrambled Eggs, Spinach, Fried Green Tomato and Garlic Aioli on Texas Toast</p>
+                                            </div>
+
+                                            <div class="menu-item">
+                                                <h4>Italian Club<span> ... $12</span></h4>
+                                                <p>Chicken, Prosciutto, Spring Mix, Tomato and Basil Aioli on Ciabatta Bread</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+<div class="col-xs-12"><div class="hr hr-png-1"></div></div>
