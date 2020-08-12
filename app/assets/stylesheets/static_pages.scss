@@ -39,7 +39,9 @@
     	a.tel{font-family: inherit; color: $navy;}
     }
     h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
-    h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em;}
+    h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em; 
+    	b{font-family:$raleway; text-transform: uppercase; font-weight:800; text-decoration: underline;}
+    }
     h4{color: $red; font-weight: bold; margin-bottom:0px;}
     p{margin:0; font-size:17px; color:$black;}
     p.up{text-transform: uppercase; font-size:16px; padding:5px 0 15px; letter-spacing: .3px;}
