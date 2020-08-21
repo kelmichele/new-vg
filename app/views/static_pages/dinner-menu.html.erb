@@ -2,151 +2,111 @@
 <% @page_description = "Let the chefs at Villaggio Grille make your taste buds feel like royalty one bite at a time. Our dinner menu is full of incredible options for your whole table." %>
 
 <div id="menupage">
-    <div id="page-title" class="pt-bkg-image image-menus">
-        <div class="overlay">
-            <div class="title-container">
-                <h1>Dinner Menu</h1>
-            </div>
-        </div>
+  <div id="page-title" class="pt-bkg-image image-menus">
+    <div class="overlay">
+      <div class="title-container"><h1>Dinner Menu</h1></div>
     </div>
+  </div>
 
-    <div class="page-content food-menus">
-        <section class="tabs-example">
-            <div class="tabs">
-                <div class="container no-padding">
-                    <div class="col-md-8 col-md-offset-2 col-xs-12">
-                        <div id="accordeon" class="col-md-12 no-padding">
-                            <div class="cbp-item">
-                                <%= render 'shared/snacks' %>
+  <div class="page-content food-menus">
+    <section class="tabs-example">
+      <div class="tabs">
+        <div class="container no-padding">
+          <div class="col-md-8 col-md-offset-2 col-xs-12">
+            <div id="accordeon" class="col-md-12 no-padding">
+              <div class="cbp-item">
+                <%= render 'shared/snacks' %>
 
-                                <div class="cbp-caption entrees">
-                                    <div class="cbp-caption-defaultWrap">
-                                        <h4>Entrees</h4>
-                                    </div>
+                <div class="cbp-caption entrees">
+                  <div class="cbp-caption-defaultWrap"><h4>Entrees</h4></div>
 
-                                    <div class="cbp-caption-activeWrap">
-                                        <div class="cbp-l-caption-body">
-                                            <!-- <div class="menu-item"><p>Add Side Salad - $3</p></div> -->
+                  <div class="cbp-caption-activeWrap">
+                    <div class="cbp-l-caption-body">
+                      <div class="menu-item">
+                        <h4>8oz Filet Mignon <span> ... $34</span></h4>
+                        <p>Asiago Gnocchi, Creamed Swiss Chard, Demi Glace<br/><b>Add Crab: $4</b></p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4>Filet Mignon <span> ... 8oz - $34</span></h4>
-                                                <p>Asiago Gnocchi, Asparagus, Demi Glace</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
+                          16oz Cowboy Ribeye <span> ... $44</span></h4>
+                          <p>Truffle Mashed Potatoes, Asparagus, Demi Glace</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Filet Oscar <span> ... 8oz - $38</span></h4>
-                                                <p>Crab Encrusted Filet, Roasted Fingerlings, Green Beans, Béarnaise</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4>16oz Bone-in Duroc Pork Chop <span> ... $30</span></h4>
+                        <p>Pancetta Pea Mac & Cheese, Asparagus, Peach Aioli</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                Cowboy Ribeye <span> ... 16oz - $44</span></h4>
-                                                <p>Smashed Fingerling Potatoes, Asparagus, Demi Glace</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
+                        Grilled Fish <span> ... $30</span></h4>
+                        <p>Truffle Mashed Potatoes, Squash Succotash, Brown Butter Vinaigrette</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4>Bone-in Duroc Pork Chop <span> ... 16oz - $30</span></h4>
-                                                <p>Pancetta Pea Mac &amp; Cheese, Asparagus, Peach Aioli</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
+                        Scallops <span> ... $30</span></h4>
+                        <p>Pan Seared Scallops, Red Beet Risotto, Goat Cheese Cream</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                Grilled Fresh Fish <span> ... $30</span></h4>
-                                                <p>Truffle Mashed Potatoes, Squash Succotash, Brown Butter Vinaigrette</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4>Teriyaki Glazed Tuna <span> ... $30</span></h4>
+                        <p>Roasted Vegetables and Wasabi Aioli</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                Scallops <span> ... $30</span></h4>
-                                                <p>Pan Seared Scallops, Peach &amp; Spinach Risotto, Red Pepper Pesto Cream</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Honey Truffle Shrimp <span> ... $28</span></h4>
+                        <p>Roasted Tomato Risotto, Broccolini, and White Truffle Honey Glaze</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Soy Glazed Tuna <span> ... $30</span></h4>
-                                                <p>Roasted Vegetables &amp; Wasabi Aioli</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4>Seafood Pasta <span> ... $26</span></h4>
+                        <p>Alabama Gulf Shrimp, St. Georges Bank Scallops, Crab Salad, with Fettuccine and Creamy Alfredo, Topped with Fresh Basil </p>
+                      </div>
 
-                                            <div class="menu-item">
-                                                <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                    Honey Truffle Shrimp <span> ... $28</span></h4>
-                                                <p>Roasted Tomato Risotto, Broccolini, &amp; White Truffle Honey Glaze</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4>Bolognese <span> ... $26</span></h4>
+                        <p>Pappardelle Pasta with Ground Beef and Pork, Smoked Bacon, Fresh Basil, and Tomato Cream Sauce</p>
+                      </div>
 
-                                            <div class="menu-item">
-                                              <h4>Seafood Pasta <span> ... $26</span></h4>
-                                                <p>Alabama Gulf Shrimp, St. Georges Bank Scallops, Crab Salad, &amp; Fresh Basil with Fettucini &amp; Creamy Alfredo</p>
-                                            </div>
-                    
-                                            <div class="menu-item">
-                                                <h4>Bolognese <span> ... $26</span></h4>
-                                                <p>Pappardelle Pasta with Ground Beef &amp; Pork, Smoked Bacon, Fresh Basil, &amp; Tomato Cream Sauce</p>
-                                            </div>
+                      <div class="menu-item">
+                        <h4>Marsala Beer Braised Short Rib Osso Bucco <span> ... $32</span></h4>
+                        <p>Truffle Ricotta Sacchetti, Caramelized Onion, Tomato, Mushroom</p>
+                      </div>
 
+                      <div class="menu-item">
+                        <h4>Veal Parmesan <span> ... $26</span></h4>
+                        <p>Thinly Sliced, Herbed Panko Breaded Veal, Parmesan, Provolone, Over Fettuccine and Marinara</p>
+                      </div>
 
+                      <div class="menu-item">
+                        <h4>Mustard & Herb Duroc Pork Roulade <span> ... $28</span></h4>
+                        <p>Wild Mushroom Ravioli, Balsamic Roasted Brussels and Creole Mustard Cream</p>
+                      </div>
 
+                      <div class="menu-item">
+                        <h4>Roasted Lamb Chop <span> ... $34</span></h4>
+                        <p>Fig Jam Risotto, Green Beans, Balsamic Glaze</p>
+                      </div>
 
-                                            <!-- <div class="menu-item">
-                                              <h4>Blackened New York Strip <span> ... 12oz - $24</span></h4>
-                                                <p>Spinach Gnocchi, Broccolini, Bleu Cheese Cream Sauce</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                Lamb Chops <span> ... 12oz - $30</span></h4>
-                                                <p>Mint Pesto Risotto, Green Beans, Fig Jam</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Beer Braised Short Rib <span> ... 8oz - $26</span></h4>
-                                                <p>Smashed Fingerling Potatoes, Asparagus, Caramelized Onions, Short Rib Jus</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                              <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>
-                                                Salmon Oscar <span> ... $26</span></h4>
-                                                <p>Crab Encrusted, Roasted Fingerlings, Green Beans, Béarnaise</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                              <h4>Shrimp Sacchetti <span> ... $22</span></h4>
-                                                <p>Pasta Stuffed with Truffle Infused Ricotta, Roasted Tomatoes, Peas, Proscuitto, and Chardonnay Cream Sauce</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                                <h4>Butternut Ravioli <span> ... $20</span></h4>
-                                                <p>Butternut Squash Filled Ravioli, Caramelized Onions and Capers with Sage Brown Butter</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                                <h4>Veal Piccata <span> ... $22</span></h4>
-                                                <p>Fettuccine, Caramelized Onions, Capers, and Garlic with Herb Lemon Butter Sauce</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                                <h4>Vegetable Pasta <span> ... $16</span></h4>
-                                                <p>Angel Hair, Artichokes, Red Pepper Pesto, Asparagus, Sun Dried Tomatoes</p>
-                                            </div>
-
-                                            <div class="menu-item">
-                                                <h4>Lobster Papardelle <span> ... $26</span></h4>
-                                                <p>Roasted Tomato, Chopped Broccolini with Chardonnay Cream</p>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <%= render "shared/menu-share" %>
-                            </div>
-                        </div>
                     </div>
-                    <div class="clearfix"></div><br>
-                    <div class="col-md-4 col-md-offset-4 col-xs-12 stamp">
-                        <%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> <p>** Represents Gluten Free Menu Items </p>
-                    </div>
+                  </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</div>
 
+                <%= render "shared/menu-share" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="clearfix"></div><br>
+          <div class="menu-print">
+            <p>* Consuming raw or uncooked meats, seafood, or shellfish may cause potential health risks </p>
+            <div class="stamp"><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> <p>Represents Gluten Free Menu Items </p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
 <div class="col-xs-12"><div class="hr hr-png-1"></div></div>

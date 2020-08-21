@@ -11,52 +11,43 @@
 	@include center-block();
 }
 .stamp {
-	img, p { display: inline-block; }
+	img, p {display: inline-block;}
 }
 
 .mobile-img {width: 75%;@include center-block();}
 .h4-sm h4{font-size: 17px;}
 
-
-.dinner-menu {
-	.lunch-price, .lunch-only{display: none;}
-}
-.daily-menu {
-	.dinner-price, .dinner-only{display: none;}
-}
-
-
 .cov-center {@include sec-default(); text-align: center; padding: 30px 0 0;
 	img{@include center-block();}
 }
 .family-meals-full {@include sec-default(); text-align: center; padding: 60px 0;
-    @include sec-bgimage(); background-image: url(image_path('family-bg.jpg')); background-size:cover;
-    position: relative; z-index: 0;
-    &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
+  @include sec-bgimage(); background-image: url(image_path('family-bg.jpg')); background-size:cover;
+  position: relative; z-index: 0;
+  &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
 
-    h1{color: $red; font-weight: bold; text-transform: uppercase; 
-    	font-family: $raleway; margin-bottom:0px;
-    	a.tel{font-family: inherit; color: $navy;}
-    }
-    h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
-    h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em; 
-    	b{font-family:$raleway; text-transform: uppercase; font-weight:800; text-decoration: underline;}
-    }
-    h4{color: $red; font-weight: bold; margin-bottom:0px;}
-    p{margin:0; font-size:17px; color:$black;}
-    p.up{text-transform: uppercase; font-size:16px; padding:5px 0 15px; letter-spacing: .3px;}
-    // a.tel{font-family: inherit; color: inherit;}
+  h1{color: $red; font-weight: bold; text-transform: uppercase; 
+  	font-family: $raleway; margin-bottom:0px;
+  	a.tel{font-family: inherit; color: $navy;}
+  }
+  h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
+  h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em; 
+  	b{font-family:$raleway; text-transform: uppercase; font-weight:800; text-decoration: underline;}
+  }
+  h4{color: $red; font-weight: bold; margin-bottom:0px;}
+  p{margin:0; font-size:17px; color:$black;}
+  p.up{text-transform: uppercase; font-size:16px; padding:5px 0 15px; letter-spacing: .3px;}
+  // a.tel{font-family: inherit; color: inherit;}
 
-    .item{@include sec-default(); margin-top:20px;
-    	p{padding-bottom: 0;}
-    }
+  .item{@include sec-default(); margin-top:20px;
+  	p{padding-bottom: 0;}
+  }
 
-    .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
-		hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.15);}
-		.deliveryLogo{display:inline-block; width:30%; max-width:175px; margin: 0 1%;
-	      &.narrow{margin-bottom: 20px;}
-	      &.tall{max-width: 150px}
-	    }
+  .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
+	hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.15);}
+	.deliveryLogo{display:inline-block; width:30%; max-width:175px; margin: 0 1%;
+      &.narrow{margin-bottom: 20px;}
+      &.tall{max-width: 150px}
+    }
 	}
 
     @include bp(lg) {
@@ -144,7 +135,7 @@
 		h4 {margin-bottom: 3px; color: $red;}
 		h4 span {color: $black; font-weight: bold; font-size: 15px;}
 		h4 img { width: 25px; float: left; display: inline-block; padding-top: 5px; padding-right: 5px;}
-		p {padding-bottom: 0; color: $black;}
+		p {padding-bottom: 0; color: $black; font-size:15px;}
 		.menu-price p { font-weight: bold; margin-bottom: 0px;}
 
 		&.beer p {line-height: 1.8em; font-size: 15px; }
@@ -477,7 +468,14 @@
 
 .dinner-menu, .daily-menu, .brunch-menu, .contact {
 	.page-content {background-image: url(image_path('patt1.png'));}
+	.menu-print{@include sec-default(); text-align: center;
+		p{padding-bottom: 0;}
+	}
 }
+.dinner-menu {.lunch-price, .lunch-only{display: none;}}
+.daily-menu {.dinner-price, .dinner-only{display: none;}}
+
+
 
 .brunch-menu{
 	.page-content{padding-bottom:10px;}
