@@ -467,6 +467,7 @@
 }
 
 .dinner-menu, .daily-menu, .brunch-menu, .contact {
+	p {font-size:15px;}
 	.page-content {background-image: url(image_path('patt1.png'));}
 	.menu-print{@include sec-default(); text-align: center;
 		p{padding-bottom: 0;}
