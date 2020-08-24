@@ -2,48 +2,43 @@
 <% @page_description = "Villaggio Grille is one of the Alabama Gulf Coast's best restaurants. Italian fusion at its tastiest, Villaggio wants to prove that they live up to their reputation. Join us for lunch or dinner, and leave satisfied." %>
 
 <div id="family-meals" class="family-meals-full">
-    <div class="container">
-        <h1>We are open for inside &amp; outside dining,<br class="large"> as well as takeout and delivery! </h1>
-        <!-- <br> -->
-        <p class="up">*togo orders subject to change upon high volume nights </p>
-        <h1><a href="tel: +12512246510" class="tel">251-224-6510</a></h1>
+  <div class="container">
+    <h1>We are open for inside &amp; outside dining,<br class="large"> as well as takeout and delivery! </h1>
+    <p class="up">*togo orders subject to change upon high volume nights </p>
+    <h1><a href="tel: +12512246510" class="tel">251-224-6510</a></h1>
 
 
-        <div class="deliverySec">
-            <div class="clearfix"></div><hr class="top"/>
-            
-            
+    <div class="deliverySec">
+      <div class="clearfix"></div><hr class="top"/>
+      <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
+        <%= image_tag('takeout-waitr.png', alt: 'Waitr logo for Villaggio delivery link', class: 'img-responsive fw') %>
+      </a>
 
-            <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
-                <%= image_tag('takeout-waitr.png', alt: 'Waitr logo for Villaggio delivery link', class: 'img-responsive fw') %>
-            </a>
+      <a href="https://www.ubereats.com/mobile-al/food-delivery/villaggio-grille/5f_1ED3DSV-ZvWGWI49_cw" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
+        <%= image_tag('takeout-uber.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
+      </a>
 
-            <a href="https://www.ubereats.com/mobile-al/food-delivery/villaggio-grille/5f_1ED3DSV-ZvWGWI49_cw" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
-                <%= image_tag('takeout-uber.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
-            </a>
-
-            <div class="clearfix"></div><hr/>
-        </div>
-
-        <h2>Takeout Family Meals</h2>
-        <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
-
-
-        <div class="item"><h4>Lasagna... $26</h4></div>
-        <div class="item"><h4>Shrimp Scampi... $26</h4></div>
-        <div class="item"><h4>Bolognese... $30</h4></div>
-        <div class="item"><h4>Chicken or Shrimp Alfredo... $26</h4></div>
-
-        <div class="item">
-            <h4>Chicken Scallopini... $26</h4>
-            <p>Tomato caper cream, cheddar grits</p>
-        </div>
-
-        <div class="item">
-            <h4>Grilled Salmon... $30</h4>
-            <p>4 pieces (lunch size). Truffle Mashed potatoes, green beans.</p>
-        </div>
+      <div class="clearfix"></div><hr/>
     </div>
+
+    <h2>Takeout Family Meals</h2>
+    <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
+
+
+    <div class="item"><h4>Lasagna... $26</h4></div>
+    <div class="item"><h4>Shrimp Scampi... $26</h4></div>
+    <div class="item"><h4>Chicken or Shrimp Alfredo... $26</h4></div>
+
+    <div class="item">
+      <h4>Shrimp Sacchetti... $36</h4>
+      <p>Pasta Stuffed with Truffle infused ricotta, roasted tomatoes, peas, and chardonnay cream sauce.</p>
+    </div>
+
+    <div class="item">
+      <h4>Grilled Salmon... $30</h4>
+      <p>4 pieces (lunch size). Served with tomato risotto, and green beans.</p>
+    </div>
+  </div>
 </div>
 
 
@@ -51,61 +46,61 @@
 <!-- <div class="cov-center"><%=image_tag('covid-slide-ed.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%></div> -->
 
 <div class="page-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="intro-title centered">
-                    <h1>Villaggio Grille</h1>
-                    <h3 class="sizing"> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
-                </div>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="intro-title centered">
+          <h1>Villaggio Grille</h1>
+          <h3 class="sizing"> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
         </div>
-
-        <div class="row">
-            <%= link_to "/yelp", target: "_blank", class: 'resImg' do %>
-              <%= image_tag('yelpRes.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
-            <% end %>
-        </div>
+      </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="service-boxes">
-                    <div class="col-md-4 no-padding col-custom">
-                        <li class="service-box-3">
-                            <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
-                            <h4>Our Menus</h4>
-                            <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
-                            <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
-                                View Menus
-                            <% end %>
-                        </li>
-                    </div>
-
-                    <div class="col-md-4 no-padding col-custom">
-                        <li class="service-box-3">
-                            <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
-                            <h4>Wine List</h4>
-                            <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
-                            <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
-                                View Wine List
-                            <% end %>
-                        </li>
-                    </div>
-
-                    <div class="col-md-4 no-padding col-custom">
-                        <li class="service-box-3">
-                            <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
-                            <h4>Catering</h4>
-                            <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
-                            <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
-                               See More
-                            <% end %>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </div>
+    <div class="row">
+      <%= link_to "/yelp", target: "_blank", class: 'resImg' do %>
+        <%= image_tag('yelpRes.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
+      <% end %>
     </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="service-boxes">
+          <div class="col-md-4 no-padding col-custom">
+            <li class="service-box-3">
+              <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
+              <h4>Our Menus</h4>
+              <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
+              <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
+                  View Menus
+              <% end %>
+            </li>
+          </div>
+
+          <div class="col-md-4 no-padding col-custom">
+            <li class="service-box-3">
+              <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
+              <h4>Wine List</h4>
+              <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
+              <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
+                  View Wine List
+              <% end %>
+            </li>
+          </div>
+
+          <div class="col-md-4 no-padding col-custom">
+            <li class="service-box-3">
+              <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
+              <h4>Catering</h4>
+              <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
+              <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
+                 See More
+              <% end %>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
