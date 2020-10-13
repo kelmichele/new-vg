@@ -466,6 +466,23 @@
 	}
 }
 
+
+/********** PAGE TITLES MOBILE *************/
+@media (max-width: 823px) {
+	#page-title {
+		.title-container h1{font-size:35px !important; text-shadow: 0px 1px 2px $black;}
+		.title-container, .title-container.less{padding:25px 0 10px !important;}
+		.fancy-heading{margin-bottom: 10px;}
+	}
+}
+@include bp(sm) {
+	#page-title {
+		.title-container h1{font-size:30px !important; text-shadow: 0px 1px 2px $black;}
+	}
+}
+/******************************************/
+
+
 .dinner-menu, .daily-menu, .brunch-menu, .contact {
 	p {font-size:15px;}
 	.page-content {background-image: url(image_path('patt1.png'));}
@@ -475,7 +492,6 @@
 }
 .dinner-menu {.lunch-price, .lunch-only{display: none;}}
 .daily-menu {.dinner-price, .dinner-only{display: none;}}
-
 
 
 .brunch-menu{
@@ -490,6 +506,7 @@
 		p.instr{font-size:25px; font-family: $play; color:$black; margin-bottom: 30px;}
 		.bm-link{display: inline-block; width:42%; margin: 10px 1%;}
 		h3{font-size: 22px; margin-bottom: 5px;}
+		br{display: none;}
 	}
 
 	@media (max-width: 1230px) {
@@ -519,8 +536,9 @@
 
 	@include bp(sm) {
 		.brunch-links{
-			p.instr{font-size:19px;}
+			p.instr{font-size:17px;}
 			h3{font-size: 16px;}
+			br{display: block;}
 		}
 	}
 }
