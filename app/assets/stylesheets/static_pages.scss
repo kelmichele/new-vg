@@ -479,14 +479,49 @@
 
 
 .brunch-menu{
-	.page-content{padding-bottom:10px;}
+	.page-content{padding:30px 0 10px;}
 	.brunch-box{width:780px; @include center-block();}
 	.service-box-2{margin-bottom:30px;}
 	h4 span{font-size: .9em; font-weight:600;}
+	h2{color:$white; font-size:22px; line-height: 1.4em; margin-top:0 !important;}
+
+
+	.brunch-links{@include sec-default(); text-align:center;
+		p.instr{font-size:25px; font-family: $play; color:$black; margin-bottom: 30px;}
+		.bm-link{display: inline-block; width:42%; margin: 10px 1%;}
+		h3{font-size: 22px; margin-bottom: 5px;}
+	}
+
+	@media (max-width: 1230px) {
+		.brunch-links h3{font-size: 20px;}
+	}
 
 	@include bp(lg) {
+		.page-content{padding:20px 0 10px;}
+		.brunch-links{
+			p.instr{font-size:22px; margin-bottom: 15px;}
+			h3{font-size: 19px;}
+		}
+
 		.brunch-box{width:90%;}
 		.pairing .service-box-2{margin-bottom:20px; padding-bottom:0;}
+	}
+
+	@media (max-width: 823px) {
+		.page-content{padding:20px 0 10px;}
+		.brunch-links{
+			p.instr{font-size:20px; margin-bottom: 5px;}
+			.bm-link{width:47%; margin: 10px 0 10px 2%; float:left;}
+			.bm-link.two{float:right;margin: 10px 2% 10px 0;}
+			h3{font-size: 17px;}
+		}
+	}
+
+	@include bp(sm) {
+		.brunch-links{
+			p.instr{font-size:19px;}
+			h3{font-size: 16px;}
+		}
 	}
 }
 

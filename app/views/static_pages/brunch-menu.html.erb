@@ -7,65 +7,24 @@
       <div class="title-container less">
         <section class="fancy-heading center">
           <h1>Sunday Brunch Menu</h1>
-          <h3>Served 11am - 2pm</h3>
+          <h2>Served 11am - 2pm</h2>
         </section>
       </div>
     </div>
   </div>
 
   <div class="page-content food-menus pairing bpair">
-    <div class="container no-padding">
-      <div class="brunch-box">
-        <div class="service-box-2">
-          <h4>Villaggio Benedict<span> ... $12</span></h4>
-          <h5>Prosciutto, Fried Green Tomato, Two Poached Eggs, Béarnaise Sauce, English Muffins, Roasted Garlic Grits, and Sautéed Green Beans </h5>
-        </div>
+    <div class="brunch-links">
+      <p class="instr">Select a menu below to view a larger version.</p>
+      <%= link_to "Brunch-Small-Plates.pdf", target: '_blank', class: 'bm-link' do %>
+        <h3>Starters, Salads, Oysters, &amp; Pizzas</h3>
+        <%= image_tag('brunch-small-plates.jpg', class: 'img-responsive') %>
+      <% end %>
 
-        <div class="service-box-2">
-          <h4>Crab Cake Benedict<span> ... $14</span></h4>
-          <h5>Two Petite Crab Cakes, Two Poached Eggs, English Muffins, Béarnaise Sauce, Roasted Garlic Grits, and Sautéed Green Beans </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Steak and Eggs<span> ... $16</span></h4>
-          <h5>Grilled NY Strip, Two Fried Eggs, Sweet Potato Hash, Green Beans and Demi Glacé </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Southern Comfort<span> ... $14</span></h4>
-          <h5>Two Scrambled Eggs, Smoked Bacon Strips, Sweet Potato Hash, Biscuits with Sausage Gravy </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Brunch Salmon<span> ... $16</span></h4>
-          <h5>Grilled Salmon, Sweet Potato Hash, Sautéed Green Beans topped with Beurre Blanc </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Shrimp and Grits<span> ... $14</span></h4>
-          <h5>Gulf Shrimp with Bacon Tomato Chardonnay Cream Sauce, Served over Roasted Garlic Grits </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Seafood Pasta<span> ... $16</span></h4>
-          <h5>Gulf Shrimp, Scallop, Crab Salad, and Fettuccine tossed in Alfredo Sauce </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Italian Club<span> ... $12</span></h4>
-          <h5>Chicken, Prosciutto, Spring Mix, Tomato and Basil Aioli on Ciabatta Bread </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>B.E.S.T.<span> ... $12</span></h4>
-          <h5>Bacon, Scrambled Eggs, Spinach, Fried Green Tomato and Garlic Aioli on Texas Toast </h5>
-        </div>
-
-        <div class="service-box-2">
-          <h4>Chef's Choice Ravioli<span> ... $13</span></h4>
-          <h5>Rotating Pairing of Ravioli and Sauce Created Daily by Our Chef </h5>
-        </div>
-      </div>
+      <%= link_to "Brunch-Entrees.pdf", target: '_blank', class: 'bm-link two' do %>
+        <h3>Brunch Plates</h3>
+        <%= image_tag('brunch-entrees.jpg', class: 'img-responsive') %>
+      <% end %>
     </div>
   </div>
 </div>
