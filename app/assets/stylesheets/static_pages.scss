@@ -17,6 +17,15 @@
 .mobile-img {width: 75%;@include center-block();}
 .h4-sm h4{font-size: 17px;}
 
+
+.thanksLink{
+	img.mobile{display: none;}
+	
+  @media (max-width: 1023px) {
+		img.fw{display: none;}
+		img.mobile{display: block;}
+	}
+}
 .cov-center {@include sec-default(); text-align: center; padding: 30px 0 0;
 	img{@include center-block();}
 }
