@@ -498,6 +498,12 @@
 	.menu-print{@include sec-default(); text-align: center;
 		p{padding-bottom: 0;}
 	}
+
+	h4.cat{font-weight: bold; color:$black; font-family: $raleway; text-transform: uppercase; border-bottom: 1px solid rgba($black,.1); width:70%;}
+
+	@include bp(sm) {
+		h4.cat{width:90%; font-size:18px;}
+	}
 }
 .dinner-menu {.lunch-price, .lunch-only{display: none;}}
 .daily-menu {.dinner-price, .dinner-only{display: none;}}
