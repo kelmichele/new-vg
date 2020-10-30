@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     get '/yelp', to: 'links#yelp'
     get '/twitter', to: 'links#twitter'
     get '/yoho', to: 'links#yoho'
+    get '/mm', to: 'links#mm'
 
     get '/catering', to: 'caterings#new', as: 'catering'
     post '/catering', to: 'caterings#create'
