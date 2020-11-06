@@ -154,13 +154,10 @@
 
 .home {
 	.tp-banner-container.fullwidthbanner {
-        #rev-slider.tp-banner {
-            ul { margin-bottom: 10px;
-				li {
-            		a .img-responsive {}
-            	}
-            }
-        }
+	  #rev-slider.tp-banner {
+	    ul {margin-bottom: 10px;}
+	    img{width:100%;}
+	  }
 	}
 	.page-content {padding-bottom: 0px;}
 
@@ -574,7 +571,11 @@
 
 
 	.inline-events{text-align: center;}
-	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none;}
+	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none; vertical-align: top;}
+	.inline-event.noimg{@include sec-bgimage(); background-image: url('nye-blue.jpg'); background-size: cover;padding:5% 0;
+		.btnrow{@include sec-default(); display:block;}
+		.btn{font-size:16px; background-color:$white; padding:5px 10px; border:1px solid rgba($black,2);}
+	}
 
 	@include bp(lg) {
 		.stacked{margin:0 0 20px;}
@@ -584,6 +585,11 @@
 	@include bp(tn) {
 		.inline-event{width:70%; @include center-block();
 			&.one {margin-bottom: 40px;}
+		}
+		.inline-event.noimg{margin-bottom:40px;padding:5% 0 12%;
+			h3{font-size:19px;}
+			h4{font-size:17px;}
+			.btn{font-size:14px;}
 		}
 	}
 

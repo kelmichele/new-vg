@@ -3,15 +3,13 @@
 
 <div class="events-listing-page">
   <div id="page-title" class="pt-bkg-image image-event-list">
-      <div class="overlay">
-          <div class="container">
-              <div class="row">
-                  <div class="title-container less">
-                      <h1>Upcoming Events</h1>
-                  </div>
-              </div>
-          </div>
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="title-container less"><h1>Upcoming Events</h1></div>
+        </div>
       </div>
+    </div>
   </div>
 
   <div class="page-content inline-events">
@@ -19,14 +17,16 @@
     <h3 class="text-center">Select an event from the list below to visit the page and learn more.</h3><br>
 
     <div class="inline-event one">
-      <%= link_to '/pairing', class: 'floatMid' do %>
-        <%=image_tag('febwine.jpg', alt: 'November Wine Dinner', class: 'img-responsive') %>
+      <%= link_to "villaggio-thanksgiving2020.pdf", target: '_blank', class: "floatMid" do %>
+        <%= image_tag('vt2020event.jpg', alt: 'Villaggio Thanksgiving Family Meals', class: 'img-responsive fw') %>
       <% end %>
     </div>
 
-    <div class="inline-event one">
-      <%= link_to '/events', class: 'floatMid' do %>
-        <%=image_tag('slide20s.jpg', alt: 'Roaring 20s Wine Dinner', class: 'img-responsive') %>
+    <div class="inline-event two noimg">
+      <%= link_to '/pairing', class: 'floatMid' do %>
+        <h3>Pacific Northwest<br>Five Course Wine Dinner</h3>
+        <h4>December 29th &nbsp;|&nbsp; 6:00pm</h4>
+        <div class="btnrow"><a href="/pairing" class="btn">Details & Menu</a></div>
       <% end %>
     </div>
 
