@@ -572,7 +572,7 @@
 
 	.inline-events{text-align: center;}
 	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none; vertical-align: top;}
-	.inline-event.noimg{@include sec-bgimage(); background-image: url('nye-blue.jpg'); background-size: cover;padding:5% 0;
+	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('nye-blue.jpg')); background-size: cover;padding:5% 0;
 		.btnrow{@include sec-default(); display:block;}
 		.btn{font-size:16px; background-color:$white; padding:5px 10px; border:1px solid rgba($black,2);}
 	}

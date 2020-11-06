@@ -1,24 +1,24 @@
 SLIDER -- FOR AFTER COVID SECTION GOES
 <!-- <div class="tp-banner-container fullwidthbanner">
-    <div id="rev-slider" class="tp-banner">
-        <ul>
-            <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
-                <= link_to '/pairing' do %>
-                    <=image_tag('febwine.jpg', alt: 'February Wine Dinner menu link', class: 'img-responsive') %>
-                < end %>
-            </li>
+  <div id="rev-slider" class="tp-banner">
+    <ul>
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <%= link_to '/pairing' do %>
+          <%=image_tag('febwine.jpg', alt: 'February Wine Dinner menu link', class: 'img-responsive') %>
+        <% end %>
+      </li>
 
-            <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
-                <%=image_tag('covid-slide.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%>
-            </li>
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <%=image_tag('covid-slide.jpg', alt: 'Villaggio Grille, Orange Beach', class: 'img-responsive')%>
+      </li>
 
-            <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
-                <= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
-                    <=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
-                < end %>
-            </li>
-        </ul>
-    </div>
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <%= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
+          <%=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
 </div> -->
 
 
