@@ -11,27 +11,35 @@
 
 .announce-bar {
     @include sec-default(); padding: 5px 20px;background-color: $yellow;text-align: center;
-    // background: -webkit-linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
-    // background: linear-gradient(120deg, rgba($yellow, .95), rgba($red, .85));
+    background: -webkit-linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
+    background: linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
 
-    // p, .links {display: inline-block; color: white; font-family: $play; text-shadow: 0px 1px 1px rgba($black, .5);
-    //     margin-bottom: 0; font-size: 15px; padding-bottom:0; font-weight: bold; width: 50%;}
-    // .links {float: right;}
-    // .ny-link {color: white; padding: 0 20px; font-family: $play;
-    //     &:hover {opacity: .5;}
-    // }
+    p, .links {display: inline-block; color: white; font-family: $open; text-shadow: 0px 1px 1px rgba($black, .35);
+        margin-bottom: 0; font-size: 16px; padding-bottom:0; font-weight: 600; width: 50%; letter-spacing: .5px;}
+    .links {float: right;}
+    .ny-link {color: white; padding: 0 20px; font-family: $open;
+        &:hover {opacity: .5;}
+    }
+    @include bp(tb) {padding:10px 0;
+        p,.links{@include sec-default();float:left;}
+        p{margin-bottom:10px;}
+        .ny-link{padding: 0 10px;}
+    }
+    @include bp(xs) {
+        p,.links{font-size:15px;}
+    }
 
     // for FAMILY MEALS -- uncomment all responsive code for ny bar
-    padding: 10px 20px;
-    p, .dets-btn{display:inline-block; color: $black; font-family: $raleway; margin-bottom: 0; font-size: 17px; padding-bottom:0; font-weight: bold;}
-    .dets-btn{background-color: $red; color: $white; padding: 5px 10px; margin-left: 10px; font-size: 15px; text-shadow: 0px 1px 1px rgba($black, .2);}
-    @include bp(lg) {
-        p{@include sec-default(); margin-bottom: 10px;}
-        .dets-btn{margin-left: auto; padding: 5px 20px;}
-    }
-    @include bp(tn) {
-        p{font-size:16px;}
-    }
+    // padding: 10px 20px;
+    // p, .dets-btn{display:inline-block; color: $black; font-family: $raleway; margin-bottom: 0; font-size: 17px; padding-bottom:0; font-weight: bold;}
+    // .dets-btn{background-color: $red; color: $white; padding: 5px 10px; margin-left: 10px; font-size: 15px; text-shadow: 0px 1px 1px rgba($black, .2);}
+    // @include bp(lg) {
+    //     p{@include sec-default(); margin-bottom: 10px;}
+    //     .dets-btn{margin-left: auto; padding: 5px 20px;}
+    // }
+    // @include bp(tn) {
+    //     p{font-size:16px;}
+    // }
 }
 
 header {
