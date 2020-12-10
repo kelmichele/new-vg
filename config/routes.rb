@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get '/event-list', to: 'static_pages#event-list'
   	get '/pairing', to: 'static_pages#pairing'
     get '/nye', to: 'static_pages#nye'
+    get '/new-years-eve', to: 'static_pages#nye'
     get '/valentines', to: 'static_pages#valentines'
     get '/daddy-daughter-date', to: 'static_pages#daddy-daughter-date'
 

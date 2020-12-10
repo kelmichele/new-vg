@@ -126,87 +126,79 @@ FAMILY MEALS -- FULL SECTION
 
 
 
-NYE 2018 file...changed for 2019
-	<!-- can you add by reservation on line only and the open table tab? -->
-	<% @page_title = "New Year's Eve" %>
-	<% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
+NYE file for cute pdf menus...if not, use tabs
+<!-- can you add by reservation on line only and the open table tab? -->
+<% @page_title = "New Year's Eve" %>
+<% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
 
-	<div class="events-listing-page">
-	  <div id="page-title" class="pt-bkg-image image-nye">
-	  	<div class="overlay">
-	      <div class="container">
-	        <div class="title-container less">
-	        	<h2>Join us for a Celebration</h2>
-	          <h1>New Year's Eve 2019</h1>
-			      <h3>Tuesday, December 31, 2019</h3>
+<div class="events-listing-page newyear">
+  <div id="page-title" class="pt-bkg-image image-nye">
+  	<div class="overlay">
+		  <!-- <div id="page-title" class="pt-bkg-image-none"> -->
+      <div class="container">
+        <div class="title-container less">
+        	<h2>Join us for a Celebration</h2>
+          <h1>New Year's Eve 2019</h1>
+		      <h3>Tuesday, December 31, 2019</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-content faq-section">
+    <!-- <div class="tabs">
+      <div id="js-filters-tabs" class="cbp-l-filters-big">
+	      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
+          <div class="tab-title">Details</div>
+        </div>
+
+        <div data-filter=".early" class="cbp-filter-item">
+          <div class="tab-title">Early Bird Menu</div>
+        </div>
+
+        <div data-filter=".reg" class="cbp-filter-item ">
+          <div class="tab-title">4-Course Menu</div>
+        </div>
+      </div> -->
+
+      <div class="container food-menus no-padding">
+        <div id="faq" class="cbp cbp-l-grid-faq">
+          <div class="cbp-item details">
+						<div class="dets">
+	          	<h5>Each seating is reservation only.
+		          	<!-- <h5>Each seating is reservation only. Credit card is required to hold reservation.<br> -->
+					      <!-- *Reservations can be made online only -->
+					    </h5>
+	          	<hr class="hlf">
+
+							<div class="time early-seat">
+								<h4><b>Early Bird Seating:</b></h4>
+								<p>3-Course Meal &amp; champagne toast</p>
+								<hr>
+								<p class="big">5-5:30pm<br> $60 per guest</p>
+								<hr>
+		            <div class="menu-link"><%= link_to "View Menu", "NYE2019-early.pdf", target: '_blank', class: 'menu-btn' %></div>
+								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
+	              <div class="clearfix"></div>
+							</div>
+
+							<div class="time reg-seat">
+								<h4><b>Additional Seatings:</b></h4>
+								<p>4-Course Meal &amp; champagne toast</p>
+								<hr>
+								<p class="big">7-7:30pm &nbsp;&amp;&nbsp; 9-9:30pm <br> $100 per guest</p>
+								<hr>
+		            <div class="menu-link"><%= link_to "View Menu", "NYE2019.pdf", target: '_blank', class: 'menu-btn' %></div>
+								<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
+	              <div class="clearfix"></div>
+							</div>
+	          </div>
 	        </div>
 	      </div>
 	    </div>
-	  </div>
 
-	  <div class="page-content faq-section">
-	    <div class="tabs">
-	      <div id="js-filters-tabs" class="cbp-l-filters-big">
-		      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
-	          <div class="tab-title">Details</div>
-	        </div>
-
-	        <div data-filter=".early" class="cbp-filter-item">
-	          <div class="tab-title">Early Bird Menu</div>
-	        </div>
-
-	        <div data-filter=".reg" class="cbp-filter-item ">
-	          <div class="tab-title">4-Course Menu</div>
-	        </div>
-	      </div>
-
-	      <div class="container food-menus no-padding">
-	        <div id="faq" class="cbp cbp-l-grid-faq">
-	          <div class="cbp-item details">
-							<div class="dets">
-		          	<h5>Each seating is reservation only.
-			          	<!-- <h5>Each seating is reservation only. Credit card is required to hold reservation.<br> -->
-						      <!-- *Reservations can be made online only -->
-						    </h5>
-		          	<hr class="hlf">
-
-								<div class="time early-seat">
-									<h4><b>Early Bird Seating:</b></h4>
-									<p>3-Course Meal &amp; champagne toast</p>
-									<hr>
-									<p class="big">5-5:30pm<br> $60 per guest</p>
-									<hr>
-									<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
-		              <div class="clearfix"></div>
-								</div>
-
-								<div class="time reg-seat">
-									<h4><b>Additional Seatings:</b></h4>
-									<p>4-Course Meal &amp; champagne toast</p>
-									<hr>
-									<p class="big">7-7:30pm &nbsp;&amp;&nbsp; 9-9:30pm <br> $100 per guest</p>
-									<hr>
-									<div class="res-link"><%= link_to "Make Reservations", yelp_path, :target => '_blank', class: 'res' %></div>
-		              <div class="clearfix"></div>
-								</div>
-		          </div>
-		        </div>
-
-		        <div class="cbp-item early">
-	            <div class="nye-menu"><%= image_tag "nye2019-early.jpg", alt: "Villaggio New Year's Eve, early bird menu", class: "img-responsive early-menu" %></div>
-		        </div>
-
-	          <div class="cbp-item reg">
-	            <!-- <= link_to "NYE2019.pdf", target: '_blank' do %> -->
-	            <!-- <= link_to "View Menu", "NYE2019.pdf", target: '_blank' %> -->
-	            <div class="nye-menu"><%= image_tag "nye2019.jpg", alt: "Villaggio New Year's Eve menu", class: "img-responsive menu-img" %></div>
-	            <!-- < end %> -->
-			      </div>
-
-		      </div>
-		    </div>
-			</div>
-		</div>
+		<!-- </div> -->
 	</div>
+</div>
 
-	<div class="col-xs-12"><div class="hr hr-png-1"></div></div>
+<div class="col-xs-12"><div class="hr hr-png-1"></div></div>
