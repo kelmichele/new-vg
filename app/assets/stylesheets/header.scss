@@ -14,19 +14,30 @@
     background: -webkit-linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
     background: linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
 
-    p, .links {display: inline-block; color: white; font-family: $open; text-shadow: 0px 1px 1px rgba($black, .35);
-        margin-bottom: 0; font-size: 16px; padding-bottom:0; font-weight: 600; width: 50%;}
-    .links {float: right;}
-    .ny-link {color: white; padding: 0 20px; font-family: $open;
+    p.ah-text, .links, p, p a {display: inline-block; color: white; font-family: $open; text-shadow: 0px 1px 1px rgba($black, .35); 
+        margin-bottom: 0; font-size: 16px; padding-bottom:0; font-weight: 600;
+    }
+    p.ah-text{width:30%;}
+
+    .links {float: right;width:70%;}
+    .ny-link {display:inline-block; color: white; padding: 0 20px; font-family: $open;
         &:hover {opacity: .5;}
     }
-    @include bp(tb) {padding:10px 0;
-        p,.links{@include sec-default();float:left;}
-        p{margin-bottom:10px;}
+
+
+    @media (max-width:1200px){
+        p.ah-text{width:40%;}
+        .links{width:60%;}
+
+    }
+
+    @media (max-width:1024px){padding:10px 0;
+        p.ah-text,.links{@include sec-default();float:left;}
+        p.ah-text{margin-bottom:10px;}
         .ny-link{padding: 0 10px;}
     }
-    @include bp(xs) {
-        p,.links{font-size:15px;}
+    @include bp(sm) {
+        p.ah-text,.links, p, p a{font-size:15px;}
     }
 
     // for FAMILY MEALS -- uncomment all responsive code for ny bar

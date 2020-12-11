@@ -1,10 +1,11 @@
 <div id="h-wrap">
   <div class="announce-bar">
     <div class="announce">
-      <p>Join us for New Year's Eve 2020!</p>
+      <p class="ah-text">Join us for New Year's Eve 2020!</p>
       <div class="links">
         <%= link_to 'Details & Menu', new_years_eve_path, class: 'ny-link one' %>
-        <%= link_to 'Reservations', yelp_path, class: 'ny-link', :target => '_blank' %>
+        <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
+
       </div>
     </div>
   </div>

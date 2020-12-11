@@ -46,7 +46,9 @@
 									<hr>
 									<p class="big">5:00pm<br> $65 per guest</p>
 									<hr>
-									<div class="res-link"><%= link_to "Reserve Online", yelp_path, :target => '_blank', class: 'res' %></div>
+	          	    <p class="res">Call For Reservations:<br>
+	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+	          	    </p>
 		              <div class="clearfix"></div>
 								</div>
 
@@ -56,7 +58,9 @@
 									<hr>
 									<p class="big">7pm &nbsp;&amp;&nbsp; 9pm <br> $100 per guest</p>
 									<hr>
-									<div class="res-link"><%= link_to "Reserve Online", yelp_path, :target => '_blank', class: 'res' %></div>
+									<p class="res">Call For Reservations:<br>
+	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+	          	    </p>
 		              <div class="clearfix"></div>
 								</div>
 		          </div>
