@@ -30,6 +30,15 @@
     top: 0;
     width: 100%;
 }
+@mixin after() {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:100%;
+  z-index: -1;
+}
+
 @mixin overlay () {
     // content: "";
     float: left;

@@ -17,6 +17,76 @@
 .mobile-img {width: 75%;@include center-block();}
 .h4-sm h4{font-size: 17px;}
 
+.holidayBanner{@include sec-default();display:block; margin:10px 0 0; padding:30px 0; text-align: center;
+  @include sec-bgimage();background-image:url(image_path('xmas.jpg')); 
+  background-size:30%;background-repeat:repeat; box-shadow:0px 10px 20px rgba($black,.2); 
+
+  .contentSec{width:700px; @include center-block();}
+  .textBox{@include sec-default(); background-color:$green; box-shadow:0px 10px 20px rgba($black,.2); padding:12px 0 25px;}
+  p{font-size:19px; font-weight:bold; margin-bottom:15px; color:$white;}
+  br{display: none;}
+  .mileLink{background-color: $white; color:$green; padding:10px 20px; font-size:15px; font-weight:bold;}
+
+  @include bp(tn) {
+    .contentSec{width:90%;}
+    .textBox{padding:12px 15px 25px;}
+    p{font-size:17px;}
+    br{display: block;}
+  }
+}
+
+.holidayOffer{@include sec-default();display:block; margin-bottom:40px;
+  .contentSec{@include sec-default();display:block;@include sec-bgimage();background-image:url(image_path('holiday-bg.jpg')); background-size: cover; padding-bottom: 60px;
+  	position:relative; z-index:0;
+		&::before{@include before(); height:100%; background-color: rgba($lgreen, .8);}
+  }
+  .textBox{width:55%; float:right; margin:12% 8% 0 0; position:relative; z-index:1;}
+   
+  h3, h4{font-weight:bold; text-transform: uppercase; color:$green; margin-top:0; text-shadow:0px 1px 2px rgba($black,.2);}
+  h3{font-size:32px;}
+  h4{position:relative; z-index:0; padding-bottom:3px; margin-bottom:15px; font-size:20px;
+    &::after{@include after(); width:65px;left:0; height:2px; background-color:$green;}
+  }
+  h5{font-size:17px;color:$black; color:$red; margin:0; line-height: 1em; font-weight:bold; text-transform: uppercase; letter-spacing: .5px;}
+  p, a{font-size:20px;line-height:1.3em;margin-top: 0; color:$black; margin:0 0 15px !important; padding:0;}
+  p span{font-weight: normal; color:inherit; font-size:inherit;}
+  p.call{margin-top:25px;margin-top:0; font-weight:bold; color:$red;text-transform: uppercase;}   
+  .mileLink{background-color: $green; color:$white; padding:7px 20px; font-size:15px; font-weight:bold;
+  	&:hover{opacity: .85;}
+  }
+  
+  .info, .menu{width:98%; margin-left:2%; margin-top:30px; padding-left:15px; border-left:3px solid $red;}
+  .menu{border-color:$green;
+    p{margin-bottom:20px; font-weight:bold;} 
+  }
+
+  @media screen and (max-width: 1200px) {
+	  .textBox{width:550px;margin:20% 8% 0 0;}
+	}
+
+  @media screen and (max-width: 1100px) {margin-bottom:30px;
+    .contentSec{background-image:url(image_path('holiday-bgTb.jpg')); padding:20px 0; }
+    .textBox{width:500px; float:none;margin:0 auto 0;}
+
+    h3{font-size: 28px;}
+    h4{font-size:19px;}
+    p{font-size: 19px;}
+    .mileLink{font-size: 14px;}
+  }
+
+  @media screen and (max-width: 1023px) {
+    h3{font-size: 22px;}
+    p{font-size: 18px;}
+  }
+
+  @media screen and (max-width: 639px) {
+    .contentSec{background-size:cover; &::before{background-color: rgba($lgreen, .9);}}
+    .textBox{width:90%;}
+    h3{font-size: 20px;}
+    p{font-size: 17px;}
+  }
+}
+
 
 .thanksLink{
 	img.mobile{display: none;}
