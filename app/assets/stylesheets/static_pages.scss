@@ -563,7 +563,8 @@
 
 	.inline-events{text-align: center;}
 	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none; vertical-align: top;}
-	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('nye-blue.jpg')); background-size: cover;padding:5% 0;
+	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('bg-wine.jpg')); background-size: cover;padding:8% 0;
+		position:relative;z-index:0;&::before{@include before(); height:100%; background-color:rgba($white,.8);z-index:-1;}
 		.btnrow{@include sec-default(); display:block;}
 		.btn{font-size:16px; background-color:$white; padding:5px 10px; border:1px solid rgba($black,2);}
 	}
@@ -571,9 +572,11 @@
 	@include bp(lg) {
 		.stacked{margin:0 0 20px;}
 		.inline-event{width:45%; margin: 10px .5% 10px 2%;}
+		h3{font-size:20px;}
 	}
 
 	@include bp(tn) {
+		h3{font-size:18px;}
 		.inline-event{width:70%; @include center-block();
 			&.one {margin-bottom: 40px;}
 		}

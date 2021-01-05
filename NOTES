@@ -1,3 +1,18 @@
+NEW YEARS HEADER 
+  <!-- <div class="announce-bar">
+    <div class="announce">
+      <p class="ah-text">Join us for New Year's Eve 2020!</p>
+      <div class="links">
+        <%= link_to 'Details & Menu', new_years_eve_path, class: 'ny-link one' %>
+        <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
+
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div> -->
+
+  
+
 SLIDER -- FOR AFTER COVID SECTION GOES
 <!-- <div class="tp-banner-container fullwidthbanner">
   <div id="rev-slider" class="tp-banner">
