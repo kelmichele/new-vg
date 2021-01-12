@@ -2,6 +2,30 @@
 <% @page_description = "Villaggio Grille is one of the Alabama Gulf Coast's best restaurants. Italian fusion at its tastiest, Villaggio wants to prove that they live up to their reputation. Join us for lunch or dinner, and leave satisfied." %>
 
 
+<div class="tp-banner-container fullwidthbanner">
+  <div id="rev-slider" class="tp-banner">
+    <ul>
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <a href="#family-meals" uk-scroll>
+          <%=image_tag('family-meal-slide.jpg', alt: 'Villaggio Grille Family Meals, Takeout in Orange Beach, Al', class: 'img-responsive')%>
+        </a>
+      </li>
+
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <%=image_tag('togo.jpg', alt: 'Togo orders at Villaggio Grille at The Wharf', class: 'img-responsive') %>
+      </li>
+
+      <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
+        <%= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
+          <%=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
+        <% end %>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
 <div class="family-meals-full">
   <div class="container">
     <h1>We are open for inside &amp; outside dining,<br class="large"> as well as takeout and delivery! </h1>

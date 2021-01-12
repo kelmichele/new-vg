@@ -21,7 +21,7 @@
   </head>
 
 
-  	<body class=" <%= controller_name %> <%= action_name %>">
+  	<body class="<%= controller_name %> <%= action_name %>">
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -31,10 +31,12 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
+      <div class="appWrap">
     	  <%= render 'layouts/header' %>
           <div class="main-wrapper">
             <%= yield %>
           </div>
         <%= render 'layouts/footer' %>
-  	</body>
+      </div>
+	</body>
 </html>
