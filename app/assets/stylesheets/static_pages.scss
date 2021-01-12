@@ -142,16 +142,17 @@
 	}
 }
 /***************************************/
-#rev-slider.tp-banner {
-  @media (min-width:1500px){max-height:100% !important; height:750px !important;}
-  @media (min-width:1600px){height:800px !important;}
-  @media (min-width:1700px){height:850px !important;}
-}
+// #rev-slider.tp-banner {
+//   @media (min-width:1500px){max-height:100% !important; height:750px !important;}
+//   @media (min-width:1600px){height:800px !important;}
+//   @media (min-width:1700px){height:850px !important;}
+// }
 .home {
 	.tp-banner-container.fullwidthbanner {
 	  #rev-slider.tp-banner {
 	    ul {margin-bottom: 10px;}
-	    img{width:100%;}
+	    //img{width:100%;}
+	    img{@include center-block();box-shadow:0px 10px 20px rgba($black,.4)}
 	  }
 	}
 	.page-content {padding-bottom: 0px;}
