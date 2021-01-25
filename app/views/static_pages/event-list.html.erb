@@ -1,4 +1,4 @@
-<% @page_title = "Upcoming Events" %>
+<% @page_title = "Events at Villaggio Grille Restaurant in Orange Beach, Al" %>
 <% @page_description = "Every month, Villaggio Grille hosts a wine dinner showcasing a different vineyard. With the amazing dishes they create to accompany each wine, every dinner becomes a four-course experience that your taste buds will thank you for." %>
 
 <div class="events-listing-page">
@@ -16,16 +16,16 @@
     <!-- <h3 class="text-center">Check back soon for new events!</h3> -->
     <h3 class="text-center">Select an event from the list below to visit the page and learn more.</h3><br>
 
-    <!-- <div class="inline-event one">
-      <= link_to "villaggio-thanksgiving2020.pdf", target: '_blank', class: "floatMid" do >
-        <= image_tag('vt2020event.jpg', alt: 'Villaggio Thanksgiving Family Meals', class: 'img-responsive fw') >
-      < end >
-    </div> -->
+    <div class="inline-event one">
+      <%= link_to "/daddy-daughter-date", class: "floatMid" do %>
+        <%= image_tag('daddy-daughter.jpg', alt: 'Villaggio Annual Daddy Daughter Valentine Dinner', class: 'img-responsive fw') %>
+      <% end %>
+    </div>
 
     <div class="inline-event two noimg">
       <%= link_to '/pairing', class: 'floatMid' do %>
-        <h3>Around the World Wine Dinner</h3>
-        <h4>January 14th &nbsp;|&nbsp; 6:00pm</h4>
+        <h3>Laissez les Bon Temps Rouler</h3>
+        <h4>February 18th &nbsp;|&nbsp; 6:00pm</h4>
         <div class="btnrow"><a href="/pairing" class="btn">Details & Menu</a></div>
       <% end %>
     </div>
