@@ -60,19 +60,31 @@ header {
     .logo-img { padding: 5px;}
 }
 
-#top-bar-wrapper { @include sec-default (); background-color: $navy; padding:15px; padding-bottom: 0;
+#top-bar-wrapper {@include sec-default (); background-color: $navy; padding:15px; padding-bottom: 0;
     a {color: $white; font-size: 16px;}
     li a.tel { font-family: $play;}
     #social-links { padding-left: 0;
-        li { float: right; margin-right: 20px;}
+      li {float: right; margin-left: 20px;}
     }
-    // #TA_socialButtonBubbles315 {margin-top:-20px;}
-    // .TA_socialButtonBubbles
 
-    .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 16px; color: $white;}
-    .xs-l {padding-left: 20px; text-align: left; }
+    // .xs-r, .xs-l {text-align: center; font-family: $play; font-size: 16px; color: $white;}
+    // .xs-l {padding-left: 20px; text-align: left; }
 
     a:hover {opacity: .7;}
+
+  .tb-col{display:inline-block;font-family: $play; font-size: 16px; color: $white;}
+  .tbc1, .tbc3{width:20%;}
+  .tbc1{float:left;}
+  .tbc3{float:right;}
+
+  .tbc2{width:60%;text-align: center;
+    form{text-align: center;padding:0;}
+    #mc_embed_signup{width:100%;}
+    label,input.email,.sub-btn{display:inline-block;}
+    label{color:$white; font-size:15px;}
+    input.email{width:300px; margin:0 10px; font-size: 14px;}
+    .sub-btn input{background-color: $white; color: $dark; width:auto;font-size: 14px;}
+  }
 }
 
 
@@ -97,6 +109,18 @@ header {
     }
 }
 
+@media (max-width:1200px) {
+  #top-bar-wrapper{
+    .tbc1{width:150px; margin-bottom:10px;}
+    .tbc3{float:left; width:180px; text-align: left; margin-bottom:10px;}
+    .tbc2{float:right; width:500px;}
+    .tbc2, .tbc2 form{text-align: right;}
+
+    .tbc2 input.email{width:250px; margin-right: 0;}
+    #social-links li{float:left; margin: 0 15px 0 0;}
+  }
+}
+
 @include bp(lg) {
     header .logo-img {margin-top: 10px;}
     header {
@@ -109,11 +133,6 @@ header {
 }
 
 @include bp(tb) {
-    #top-bar-wrapper {text-align: center;
-        .col-md-4.xs-r,
-        .col-md-4.xs-l,
-        .col-md-4.xs-f {max-width:30%; display: inline-block; float:left;}
-    }
     header {
         .col-md-3.logo-block {max-width:100%; text-align: center;}
         .logo-img{width:25%; @include center-block();}
@@ -190,6 +209,24 @@ header {
 .menu .nav-child.small{font-size:inherit}
 h3.module-title{color: $white;}
 
+@media (max-width:823px) {
+  #top-bar-wrapper{text-align: center;
+    .tbc1, .tbc2, .tbc3{@include sec-default(); text-align: center;}
+    // .tbc1{width:150px; margin-bottom:10px;}
+    // .tbc3{float:left; width:180px; text-align: left; margin-bottom:10px;}
+    // .tbc2{float:right; width:500px;}
+    // .tbc2, .tbc2 form{text-align: right;}
+
+    .tbc2 form, #social-links{text-align: center;}
+    .tbc2 {
+      label{font-size: 14px;padding-bottom:0;}
+      .sub-btn input, input.email{font-size:13px;}
+      input.email{margin-left:5px;}
+    }
+    #social-links li{display:inline-block; float:none; margin: 0 6px;}
+  }
+}
+
 
 @include bp(md) {
     .logo-img {margin-bottom:10px;}
@@ -197,9 +234,9 @@ h3.module-title{color: $white;}
 
     #offcanvas-toggler { @include center-block(); width: 35%; text-align: center; margin-bottom:15px;}
 
-    #top-bar-wrapper {
-        #social-links {float: left;text-align: center; margin-top: 0;}
-    }
+    // #top-bar-wrapper {
+    //   #social-links {float: left;text-align: center; margin-top: 0;}
+    // }
     .menu span.toggle-icon.fa {display:inline-block;font-family:FontAwesome;font-size:15px;position:absolute; float:right; color: $dark; background-color: $white; padding: 0px 4px; margin-top: 2px; margin-left: 5px; font-weight: 700;}
     header .logo-img{width:40%;}
 
@@ -213,18 +250,17 @@ h3.module-title{color: $white;}
 }
 
 @include bp(pl) {
-    #top-bar-wrapper {
-        .col-md-4.xs-l, .col-md-4.xs-r, .col-md-4.xs-f {max-width:70%; @include center-block(); padding: 0; text-align: center; margin-bottom: 10px;}
-        #social-links { width: 60%; float:right; padding: 0; text-align: center;
-            li {float: left; display: inline-block; margin: 0 6px ;}
-        }
-    }
+    // #top-bar-wrapper {
+    //     .col-md-4.xs-l, .col-md-4.xs-r, .col-md-4.xs-f {max-width:70%; @include center-block(); padding: 0; text-align: center; margin-bottom: 10px;}
+    //     #social-links { width: 60%; float:right; padding: 0; text-align: center;
+    //         li {float: left; display: inline-block; margin: 0 6px ;}
+    //     }
+    // }
 }
 
 
 @include bp(sm) {
     #offcanvas-toggler { width: 50%; }
-
     // .announce-bar .ny-link { @include sec-default(); padding-bottom: 6px;}
 }
 
