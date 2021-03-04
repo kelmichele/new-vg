@@ -13,7 +13,7 @@
         <p>Bresola, Coppa, Prosciutto, Gorgonzola, Honey Brie, Fig Spread, Spiced Walnuts and Assorted Crackers</p>
       </div>
 
-      <div class="menu-item lunch-only">
+      <div class="menu-item">
         <h4>Stuffed Shells <span> ... $12</span></h4>
         <p>Stuffed with Herbed Ricotta Cheese and Served with Bolognese Sauce</p>
       </div>
@@ -24,13 +24,13 @@
       </div>
 
       <div class="menu-item">
-        <h4>Beef Carpaccio <span class="lunch-price"> ... $14</span><span class="dinner-price"> ... $16</span></h4>
+        <h4>Beef Carpaccio <span> ... $14</span></h4>
         <p>Thinly Sliced Rare Beef Tenderloin over Arugula, Capers, and Red Onions with Horseradish Cream Sauce </p>
       </div>
 
-      <div class="menu-item lunch-only">
+      <div class="menu-item ">
         <h4>Prosciutto &amp; Saffron Arancini <span> ... $14</span></h4>
-        <p>Saffron Risotto, Prosciutto, Green Onions, Roasted Tomatoes, Bell Pepper, Parmesan, Mozzarella, Piccanti Marinara</p>
+        <p>Saffron Risotto, Prosciutto, Green Onions, Roasted Tomatoes, Parmesan, Mozzarella, Piccanti Marinara</p>
       </div>
     </div>
   </div>
@@ -64,7 +64,7 @@
   </div>
 </div>
 
-<div class="cbp-caption dsalads dinner-only">
+<div class="cbp-caption dsalads">
   <div class="cbp-caption-defaultWrap"><h4>Salads</h4></div>
 
   <div class="cbp-caption-activeWrap">
@@ -73,12 +73,13 @@
 
       <div class="menu-item"><h4 class="cat">Side Salads</h4></div>
       <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Villaggio House Salad <span> ... $8</span></h4>
+        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Villaggio House Salad 
+          <span class="dinner-price"> ... $8</span><span class="lunch-price"> ... $6</span></h4>
         <p>Spring Mix, Grape Tomatoes, Sliced Onion, &amp; Parmesan with Roasted Fig Vinaigrette</p>
       </div>
 
       <div class="menu-item">
-        <h4>Chopped Caesar  <span> ... $8</span></h4>
+        <h4>Chopped Caesar <span class="dinner-price"> ... $8</span><span class="lunch-price"> ... $6</span></h4>
         <p>Romaine Hearts, Grape Tomatoes, Croutons, &amp; Parmesan, tossed in Caesar Dressing</p>
       </div>
 
@@ -93,59 +94,45 @@
       </div>
 
       <div class="menu-item"><h4 class="cat">Entrée Salads</h4></div>
-      <div class="menu-item">
-        <h4>Buttered Salmon Salad <span> ... $14</span></h4>
-        <p>Blackened Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomato and Goat Cheese. Tossed in Champagne Vinaigrette </p>
+
+      <div class="dinner-only">
+        <div class="menu-item">
+          <h4>Buttered Salmon Salad <span> ... $14</span></h4>
+          <p>Blackened Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomato and Goat Cheese. Tossed in Champagne Vinaigrette </p>
+        </div>
       </div>
-      
+
+      <div class="lunch-only">
+        <div class="menu-item">
+          <h4>Spinach &amp; Grilled Chicken <span> ... $12 </span></h4>
+          <p>Baby Spinach, Red Onion, Tomatoes, Feta Cheese, &amp; House Made Croutons, tossed in Warm Bacon Vinaigrette</p>
+        </div>  
+
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Scallop &amp; Arugula <span> ... $16</span></h4>
+          <p>St. George's Bank Scallops over Arugula, Granny Smith Apples, Bacon, Orange Segments, &amp; Parmesan. Balsamic Citrus Vinaigrette</p>
+        </div>
+
+        <div class="menu-item">
+          <h4>Blackened Salmon Salad <span> ... $14</span></h4>
+          <p>Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomato and Goat Cheese. Tossed in Chamapgne Viniagrette</p>
+        </div>
+      </div>
+        
       <div class="menu-item">
         <h4>Roasted Veggie Salad <span> ... $10</span></h4>
         <p>Tri Colored Peppers, Squash , Zucchini, Butternut Squash, Red Onion, Quartered Tomato, Feta Cheese with Citrus Vinaigrette </p>
       </div>
       
       <div class="menu-item">
-        <h4>Super Salad <span> ... $16</span></h4>
+        <h4>Super Salad <span class="dinner-price"> ... $16</span><span class="lunch-price"> ... $14</span></h4>
         <p>Sesame Crusted Tuna, Spring Mix, Granny Smith Apples, Hard Boiled Egg, Quinoa, Candied Walnuts with Balsamic Vinaigrette </p>
-      </div>
+      </div>        
 
     </div>
   </div>
 </div>
 
-<div class="cbp-caption dsalads lunch-only">
-  <div class="cbp-caption-defaultWrap"><h4>Salads</h4></div>
-
-  <div class="cbp-caption-activeWrap">
-    <div class="cbp-l-caption-body">
-      <div class="menu-item"><p class="text-center">Add Chicken - $5 &nbsp; | &nbsp; Add Scallop - $6 &nbsp; | &nbsp; Add Shrimp - $8</p></div>
-
-      <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Villaggio House Salad <span> ... $7</span></h4>
-        <p>Spring Mix, Grape Tomatoes, Sliced Onion, &amp; Parmesan with Roasted Fig Vinaigrette</p>
-      </div>
-
-      <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Goat Cheese &amp; Walnut <span> ... $10 </span></h4>
-        <p>Spring Mix, Dried Cherries, Spiced Walnuts, Goat Cheese served with Roasted Fig Vinaigrette</p>
-      </div>
-
-      <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Scallop &amp; Arugula <span> ... $16</span></h4>
-        <p>St. George's Bank Scallops over Arugula, Granny Smith Apples, Bacon, Orange Segments, &amp; Parmesan. Balsamic Citrus Vinaigrette</p>
-      </div>
-
-      <div class="menu-item">
-        <h4>Chopped Caesar  <span> ... $8 </span></h4>
-        <p>Romaine Hearts, Grape Tomatoes, Croutons, &amp; Parmesan, tossed in Caesar Dressing </p>
-      </div>
-
-      <div class="menu-item">
-        <h4>Spinach &amp; Grilled Chicken <span> ... $12 </span></h4>
-        <p>Baby Spinach, Red Onion, Tomatoes, Feta Cheese, &amp; House Made Croutons, tossed in Warm Bacon Vinaigrette</p>
-      </div>            
-    </div>
-  </div>
-</div>
 
 <div class="cbp-caption pizza">
   <div class="cbp-caption-defaultWrap"><h4>Wood Fired Pizzas</h4></div>
@@ -167,13 +154,13 @@
         <p>Grilled Chicken, Basil Pesto, Sundried Tomatoes, and Mushrooms </p>
       </div>
 
-      <div class="menu-item lunch-only">
+      <div class="menu-item">
         <h4>BBQ Chicken <span> ... $14</span></h4>
         <p>BBQ Sauce, Mozzarella, Grilled Chicken, Cream Cheese, Red Onions, and Jalapeños</p>
       </div>
 
-      <div class="menu-item lunch-only">
-        <h4>Shrimp &amp; Crawfish <span class="dinner-price"> ... $14</span><span class="lunch-price"> ... $16</span></h4>
+      <div class="menu-item">
+        <h4>Shrimp &amp; Crawfish <span> ... $16</span></h4>
         <p>Shrimp, Crawfish, Bell Peppers, Prosciutto and Spinach Cream Sauce</p>
       </div>
 

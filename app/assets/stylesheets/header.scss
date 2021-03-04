@@ -212,11 +212,6 @@ h3.module-title{color: $white;}
 @media (max-width:823px) {
   #top-bar-wrapper{text-align: center;
     .tbc1, .tbc2, .tbc3{@include sec-default(); text-align: center;}
-    // .tbc1{width:150px; margin-bottom:10px;}
-    // .tbc3{float:left; width:180px; text-align: left; margin-bottom:10px;}
-    // .tbc2{float:right; width:500px;}
-    // .tbc2, .tbc2 form{text-align: right;}
-
     .tbc2 form, #social-links{text-align: center;}
     .tbc2 {
       label{font-size: 14px;padding-bottom:0;}
@@ -233,10 +228,6 @@ h3.module-title{color: $white;}
     .mega-tab, .megamenu-parent {display: none;}
 
     #offcanvas-toggler { @include center-block(); width: 35%; text-align: center; margin-bottom:15px;}
-
-    // #top-bar-wrapper {
-    //   #social-links {float: left;text-align: center; margin-top: 0;}
-    // }
     .menu span.toggle-icon.fa {display:inline-block;font-family:FontAwesome;font-size:15px;position:absolute; float:right; color: $dark; background-color: $white; padding: 0px 4px; margin-top: 2px; margin-left: 5px; font-weight: 700;}
     header .logo-img{width:40%;}
 
@@ -247,15 +238,6 @@ h3.module-title{color: $white;}
     //     }
     // }
 
-}
-
-@include bp(pl) {
-    // #top-bar-wrapper {
-    //     .col-md-4.xs-l, .col-md-4.xs-r, .col-md-4.xs-f {max-width:70%; @include center-block(); padding: 0; text-align: center; margin-bottom: 10px;}
-    //     #social-links { width: 60%; float:right; padding: 0; text-align: center;
-    //         li {float: left; display: inline-block; margin: 0 6px ;}
-    //     }
-    // }
 }
 
 
