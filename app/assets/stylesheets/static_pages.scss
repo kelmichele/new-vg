@@ -498,9 +498,9 @@
 		h4.cat{width:90%; font-size:18px;}
 	}
 }
-.dinner-menu {.lunch-price, .lunch-only{display: none;}}
-.daily-menu {.dinner-price, .dinner-only{display: none;}}
-
+.dinner-menu {.lunch-price, .lunch-only, .brunch-only{display: none;}}
+.daily-menu {.dinner-price, .dinner-only, .brunch-only{display: none;}}
+.brunch-menu .no-brunch{display: none;}
 
 .brunch-menu{
 	.page-content{padding:30px 0 10px;}
@@ -924,6 +924,6 @@
 
 
 
-// .dinner-menu, .daily-menu{
-// 	.menu-item span{display:none;}
-// }
+.dinner-menu, .daily-menu, .brunch-menu{
+	.menu-item span{display:none;}
+}

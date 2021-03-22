@@ -1,3 +1,34 @@
+BRUNCH WITH PDF's
+	<div id="menupage">
+	  <div id="page-title" class="pt-bkg-image image-menus">
+	    <div class="overlay">
+	      <div class="title-container less">
+	        <section class="fancy-heading center">
+	          <h1>Sunday Brunch Menu</h1>
+	          <h2>Served 11am - 2pm</h2>
+	        </section>
+	      </div>
+	    </div>
+	  </div>
+
+	  <div class="page-content food-menus pairing bpair">
+	    <div class="brunch-links">
+	      <p class="instr">Select a menu below to view a larger version.</p>
+	      <%= link_to "brunch-menu.pdf", target: '_blank', class: 'bm-link' do %>
+	        <h3>Starters, Salads,<br/> Oysters, &amp; Pizzas</h3>
+	        <%= image_tag('brunch-small-plates.jpg', class: 'img-responsive') %>
+	      <% end %>
+
+	      <%= link_to "brunch-menu.pdf", target: '_blank', class: 'bm-link two' do %>
+	        <h3>Brunch<br/> Entrees</h3>
+	        <%= image_tag('brunch-entrees.jpg', class: 'img-responsive') %>
+	      <% end %>
+	    </div>
+	  </div>
+	</div>
+
+
+
 NEW YEARS HEADER 
   <!-- <div class="announce-bar">
     <div class="announce">
