@@ -22,7 +22,7 @@
                     <div class="cbp-l-caption-body">
                       <div class="menu-item">
                         <h4>Beef Carpaccio <span> ... $16</span></h4>
-                        <p>Thinly Sliced Rare Beef Tenderloin under Arugula, Capers, and Red Onions. With Horseradish Cream Sauce</p>
+                        <p>Thinly Sliced Rare Beef Tenderloin, Arugula, Capers, Red Onions, Horseradish Cream Sauce</p>
                       </div>
 
                       <div class="menu-item">
@@ -37,17 +37,17 @@
 
                       <div class="menu-item ">
                         <h4>Prosciutto &amp; Saffron Arancini <span> ... $14</span></h4>
-                        <p>Saffron Risotto, Prosciutto, Green Onions, Roasted Tomatoes, Parmesan, Mozzarella. Served with Piccanti Marinara</p>
+                        <p>Saffron Risotto, Prosciutto, Green Onions, Roasted Tomatoes, Parmesan, Mozzarella, Piccanti Marinara</p>
                       </div>
 
                       <div class="menu-item">
                         <h4>Oyster Trio <span> ... $22</span></h4>
-                        <p>Prosciutto Rockefeller, Gorgonzola &amp; Shallot, Manchego & Jalapeno. Includes 3 of Each Oyster</p>
+                        <p>Includes 3 of Each Oyster: Prosciutto Rockefeller, Gorgonzola &amp; Shallot, Manchego &amp; Jalapeno</p>
                       </div>
 
                       <div class="menu-item dinner-only">
                         <h4>Meat &amp; Cheese Board <span> ... $16</span></h4>
-                        <p>Bresola, Coppa, Prosciutto, Gorgonzola, Honey Brie, Fig Spread, Spiced Walnuts and Assorted Crackers</p>
+                        <p>Bresola, Coppa, Prosciutto, Gorgonzola, Honey Brie, Fig Spread, Spiced Walnuts, Assorted Crackers</p>
                       </div>
                     </div>
                   </div>
@@ -61,8 +61,9 @@
                   <div class="cbp-caption-activeWrap">
                     <div class="cbp-l-caption-body">
                       <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> 
-                          Grilled Fish <span> ... $30</span></h4>
+                        <h4>
+                          <!-- <= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>  -->
+                          Grilled Fish <span> ... $32</span></h4>
                         <p>Truffle Mashed Potatoes, Squash Succotash, Brown Butter Vinaigrette</p>
                       </div>
 
@@ -72,25 +73,18 @@
                       </div>
 
                       <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> 
-                          Scallops <span> ... $34</span></h4>
-                        <p>Pan Seared Scallops, Red Beet Risotto, Goat Cheese Cream</p>
-                      </div>
-
-                      <div class="menu-item">
                         <h4>Seafood Pasta <span> ... $30</span></h4>
-                        <p>Alabama Gulf Shrimp, St. Georges Bank Scallops, Crab Salad, with Fettuccine and Creamy Alfredo, Topped with Fresh Basil</p>
+                        <p>Alabama Gulf Shrimp, St. Georges Bank Scallops, Crab Salad, Fresh Basil, Fettuccine, Creamy Alfredo</p>
                       </div>
 
                       <div class="menu-item">
-                        <h4>8oz Filet Mignon <span> ... $34</span></h4>
+                        <h4>8oz Filet Mignon <span> ... $36</span></h4>
                         <p>Asiago Gnocchi, Asparagus, Demi Glace<br/><b>Add Crab: $4</b></p>
                       </div>
 
                       <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> 
-                          16oz Cowboy Ribeye <span> ... $44</span></h4>
-                        <p>Truffle Mashed Potatoes, Brocollini, Demi Glace</p>
+                        <h4>12oz Prime New York Strip <span> ... $38</span></h4>
+                        <p>Truffle Mashed Potatoes, Broccolini, Gorgonzola Cream sauce</p>
                       </div>
 
                       <div class="menu-item">
@@ -99,8 +93,8 @@
                       </div>
 
                       <div class="menu-item">
-                        <h4>Roasted Lamb Chop <span> ... $34</span></h4>
-                        <p>Wood Fired Roasted Lamb Chop, Fig Jam Risotto, Green Beans, Blasamic Glaze</p>
+                        <h4>Honey Truffle Shrimp <span> ... $32</span></h4>
+                        <p>Roasted Tomato Risotto, Broccolini, White Truffle Honey Glaze</p>
                       </div>
 
                     </div>
@@ -112,12 +106,7 @@
             </div>
           </div>
 
-          <div class="clearfix"></div><br>
-          <div class="menu-print">
-            <p>* Consuming raw or uncooked meats, seafood, or shellfish may cause potential health risks </p>
-            <div class="stamp"><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> <p>Represents Gluten Free Menu Items </p></div>
-            <p>** There will be a convenience fee added to all card payments.</p>
-          </div>
+          <%= render "shared/disclaimer" %>
         </div>
       </div>
     </section>

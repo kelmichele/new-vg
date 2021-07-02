@@ -500,9 +500,10 @@
 .dinner-menu, .daily-menu, .brunch-menu, .contact {
 	p {font-size:15px;}
 	.page-content {background-image: url(image_path('patt1.png'));}
-	.menu-print{@include sec-default(); text-align: center;
-		p{padding-bottom: 0;}
+	.menu-print{@include sec-default(); text-align: center; margin-top:20px;
+		p{padding-bottom: 0;text-transform: none;}
 	}
+	.mp-wrap{width:90%;max-width:640px; @include center-block();}
 
 	h4.cat{font-weight: bold; color:$black; font-family: $raleway; text-transform: uppercase; border-bottom: 1px solid rgba($black,.1); width:70%;}
 
