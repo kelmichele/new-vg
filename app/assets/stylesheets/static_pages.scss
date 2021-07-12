@@ -241,6 +241,16 @@
     .list1 {padding-bottom: 20px;}
     .list2 {padding-top: 15px;}
 
+
+    .specImg{max-width:270px;@include center-block();margin-top:20px;}
+    .awardrow h4{font-size:19px;}
+
+	@media (max-width:1023px){
+		.wine-row-sm{max-width:100% ;}
+		.specImg{max-width:200px;}
+    .awardrow h4{font-size:17px;margin-top:30px;}
+	}
+
 	@include bp(md) {
 	    .cbp-l-caption-body .menu-item {
     		h4 { font-size: 15px;}
