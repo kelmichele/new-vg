@@ -5,6 +5,9 @@
 @import "variables";
 @import "mixins";
 
+// added 7/2021 for phone links and contact page phone
+.resphonelink:hover, .resphonelink:hover > *{opacity:.7;}
+h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inherit;font-family:inherit;}
 
 .sm-center-img {
 	width: 13%;

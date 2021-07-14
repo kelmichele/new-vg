@@ -71,9 +71,8 @@
                             </div>
 
                             <div class="cbp-caption cbp-link">
-                                <%= link_to '/yelp', target: '_blank' do %>
-                                    <h4>Book a Table</h4>
-                                <% end %>
+                                <!-- <= link_to '/yelp', target: '_blank' do %><h4>Book a Table</h4>< end %> -->
+                                <a href="tel:+12512246510" class="tel resphonelink"><h4>Call for Reservations</h4></a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +89,7 @@
                             <form action="https://ginnylanebargrill.us10.list-manage.com/subscribe/post?u=fe0c421eb8ae1acbc885e39d3&amp;id=303b0e0335" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll">
                                     <label for="mce-EMAIL">Join Our Mailing List</label>
-                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address" required>
                                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe0c421eb8ae1acbc885e39d3_303b0e0335" tabindex="-1" value=""></div>
                                 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -163,7 +162,8 @@
                     <li><%= link_to "Catering", "https://wharfcateringgroup.com/", target: '_blank' %></li>
                     <li><%= link_to "About", about_path %></li>
                     <li><%= link_to "Contact", contact_path %></li>
-                    <li><%= link_to "Book a Table", yelp_path, :target => '_blank' %></li>
+                    <!-- <li><= link_to "Book a Table", yelp_path, :target => '_blank' %></li> -->
+                    <li><a href="tel:+12512246510" class="tel resphonelink">Call for Reservations</a></li>
                     <li><%= link_to "Get Directions", directions_path, :target => '_blank' %></li>
                     <li><a href="https://alwharf.com/calendar/" target="_blank">Events At The Wharf</a></li>
                 </ul>
