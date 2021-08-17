@@ -165,7 +165,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 .review-modal{text-align:center;
 	.uk-modal-dialog{width:80%;
-		background-image:url("quote1.png"),url("quote2.png");
+		background-image:url(image_path("quote1.png")),url(image_path("quote2.png"));
 		background-size:50px, 50px;background-position: top left, bottom right;
 		background-repeat: no-repeat, no-repeat;
 	}
