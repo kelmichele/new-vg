@@ -1,114 +1,155 @@
-<% @page_title = "Villaggio Grille | Orange Beach Alabama" %>
+<% @page_title = "Villaggio Grille" %>
 <% @page_description = "Villaggio Grille is one of the Alabama Gulf Coast's best restaurants. Italian fusion at its tastiest, Villaggio wants to prove that they live up to their reputation. Join us for lunch or dinner, and leave satisfied." %>
 
+<div class="homepage">
+    <div class="homeSlide">
+    <div class="uk-position-relative uk-visible-toggle home-slideshow" tabindex="-1" uk-slideshow="animation: fade">
+      <ul class="uk-slideshow-items">
+        <li class="reviewSlide">
+          <%=image_tag('family-bg.jpg', alt: 'Villaggio Grille bar and dining room background', class: 'img-responsive') %>
+          <div class="uk-position-center uk-position-small uk-text-center uk-light rs-box">
+            <div class="rs-bg">
+              <%=image_tag('rating.png', alt: 'Villaggio Grille 5 star review', class: 'icon') %>
+              <p class="auth">Alex Whitaker</p>
+              <p class="rs-intro">"Each piece of shrimp, scallop and crab were cooked to perfection, not under or overdone in the slightest. And though not listed on the menu, the fresh basil in the sauce worked wonderfully in concert with the other flavors, bringing a light refreshment to match the heavier richness of the alfredo."</p>
+              <button class="vg-btn" type="button" uk-toggle="target: #full-review">Read Full Review</button>
+            </div>
+          </div>
+        </li>
+        <li><a href="#family-meals">
+          <%=image_tag('family-meal-slide.jpg', alt: 'Villaggio Grille Family Meals, Takeout in Orange Beach, Al', class: 'img-responsive')%>
+        </a></li>
+        <li><%=image_tag('togo.jpg', alt: 'Togo orders at Villaggio Grille at The Wharf', class: 'img-responsive') %></li>
+      </ul>
 
-<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-  <ul class="uk-slideshow-items">
-    <li><a href="#family-meals"><%=image_tag('family-meal-slide.jpg', alt: 'Villaggio Grille Family Meals, Takeout in Orange Beach, Al', class: 'img-responsive')%></a></li>
-    <li><%=image_tag('togo.jpg', alt: 'Togo orders at Villaggio Grille at The Wharf', class: 'img-responsive') %></li>
-    <li><%= link_to 'https://alwharf.com/calendar', target: "_blank" do %><%=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %><% end %></li>
-  </ul>
-
-  <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-  <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-</div>
-
-<div class="family-meals-full">
-  <div class="container">
-    <h1>We are open for inside &amp; outside dining,<br class="large"> as well as takeout and delivery! </h1>
-    <h1><a href="tel: +12512246510" class="tel">251-224-6510</a></h1>
-
-
-    <div class="deliverySec">
-      <div class="clearfix"></div><hr class="top"/>
-      <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
-        <%= image_tag('takeout-waitr.png', alt: 'Waitr logo for Villaggio delivery link', class: 'img-responsive fw') %>
-      </a>
-
-      <a href="https://www.ubereats.com/mobile-al/food-delivery/villaggio-grille/5f_1ED3DSV-ZvWGWI49_cw" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
-        <%= image_tag('takeout-uber.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
-      </a>
-
-      <div class="clearfix"></div><hr/>
-    </div>
-
-    <div id="family-meals">
-      <h2>Takeout Family Meals</h2>
-      <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
-
-
-      <div class="item"><h4>Lasagna... $26</h4></div>
-      <div class="item"><h4>Chicken or Shrimp Alfredo... $26</h4></div>
-
-      <div class="item">
-        <h4>Shrimp Sacchetti... $36</h4>
-      </div>
-
-      <div class="item">
-        <h4>Grilled Salmon... $30</h4>
-        <p>Served with Roasted Tomato Risotto, Green Beans, &amp; Beurre Blanc Sauce</p>
+      <div class="uk-light">
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
       </div>
     </div>
   </div>
-</div>
-<div class="togo-disc"><p>** ToGo orders subject to change, depending on wait times and volume of restaurant.</p></div>
+
+  <div id="full-review" class="uk-flex-top review-modal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <button class="uk-modal-close-default" type="button" uk-close></button>
+      <%=image_tag('rating.png', alt: 'Villaggio Grille 5 star review', class: 'icon') %>
+      <p class="auth">Alex Whitaker</p>
+      <hr>
+      <p>It was our last night in Orange Beach, Alabama. We had paddle boarded, swam, and walked the beach about as much as we could stand that day. We were beat, but we wanted one last “hoorah” before packing up the van the next morning, and we had been meaning to check out the wharf while in town, so we landed on going to Villaggio Grille.</p>
+
+      <p>As far as restaurants go, our experience in Orange Beach had been kind of hit or miss until then. So our expectations were not very high. But the restaurant was very busy that night, so we figured that was a pretty good sign. Neither of us expected what was actually in store for us.</p>
+
+      <p>Our server, Irena, was very kind and promptly refilled our drinks as needed and explained the menu and specials in detail.
+      We started with the Oyster Trio – nine baked oysters including three of each of the following: Prosciutto Rockefeller, Gorgonzola & Shallot, and Manchego & Jalapeno.
+      The Prosciutto Rockefeller and the Gorgonzola & Shallot both had intense umami flavors and were creamy, not slimy as is often the case in uncooked oysters. The shallots practically melted in my mouth. The Manchego & Jalapeno offered a brighter punch with a not-too-overwhelming heat from the jalapeno.</p>
+
+      <p>Both of us ordered the Seafood Pasta. It included: shrimp, scallops, & crab salad, and was served over fettuccini alfredo. We are big fans of alfredo, so it was a no-brainer. We are now also big fans of Villaggio Grille.</p>
+
+      <p>Each piece of shrimp, scallop and crab were cooked to perfection, not under or overdone in the slightest. And though not listed on the menu, the fresh basil in the sauce worked wonderfully in concert with the other flavors, bringing a light refreshment to match the heavier richness of the alfredo.
+      One of the most important things I noticed came towards the end of the meal. I could not see any excess oil pooling at the bottom of my plate. It usually is most noticeable when the food cools off a bit and the oil begins to separate from the cream. This often happens when the chef adds too much oil to the pan on the front end. It was impressive to see the lack of oil and told me that Villaggio Grille hires quality chefs.</p>
+      
+      <p>About halfway through the meal my wife said, “This is one of the better seafood pastas I’ve ever had.”
+      I could not have disagreed with her more. It was the best. Period. I dare other restaurants to do better.</p>
+    </div>
+  </div>
+
+  <div class="family-meals-full">
+    <div class="container">
+      <h1>We are open for inside &amp; outside dining,<br class="large"> as well as takeout and delivery! </h1>
+      <h1><a href="tel: +12512246510" class="tel">251-224-6510</a></h1>
 
 
-<div class="page-content">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="intro-title centered">
-          <h1>Villaggio Grille</h1>
-          <h3 class="sizing"> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
+      <div class="deliverySec">
+        <div class="clearfix"></div><hr class="top"/>
+        <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
+          <%= image_tag('takeout-waitr.png', alt: 'Waitr logo for Villaggio delivery link', class: 'img-responsive fw') %>
+        </a>
+
+        <a href="https://www.ubereats.com/mobile-al/food-delivery/villaggio-grille/5f_1ED3DSV-ZvWGWI49_cw" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow">
+          <%= image_tag('takeout-uber.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
+        </a>
+
+        <div class="clearfix"></div><hr/>
+      </div>
+
+      <div id="family-meals">
+        <h2>Takeout Family Meals</h2>
+        <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
+
+
+        <div class="item"><h4>Lasagna... $26</h4></div>
+        <div class="item"><h4>Chicken or Shrimp Alfredo... $26</h4></div>
+
+        <div class="item">
+          <h4>Shrimp Sacchetti... $36</h4>
+        </div>
+
+        <div class="item">
+          <h4>Grilled Salmon... $30</h4>
+          <p>Served with Roasted Tomato Risotto, Green Beans, &amp; Beurre Blanc Sauce</p>
         </div>
       </div>
     </div>
-
-    <!-- <div class="row">
-      <= link_to "/yelp", target: "_blank", class: 'resImg' do %>
-        <= image_tag('yelpRes.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
-      < end %>
-    </div> -->
   </div>
+  <div class="togo-disc"><p>** ToGo orders subject to change, depending on wait times and volume of restaurant.</p></div>
 
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <ul class="service-boxes">
-          <div class="col-md-4 no-padding col-custom">
-            <li class="service-box-3">
-              <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
-              <h4>Our Menus</h4>
-              <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
-              <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
-                  View Menus
-              <% end %>
-            </li>
-          </div>
 
-          <div class="col-md-4 no-padding col-custom">
-            <li class="service-box-3">
-              <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
-              <h4>Wine List</h4>
-              <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
-              <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
-                  View Wine List
-              <% end %>
-            </li>
+  <div class="page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="intro-title centered">
+            <h1>Villaggio Grille</h1>
+            <h3 class="sizing"> Italian Fusion has never tasted so good! Our <strong>talented chefs</strong> and <strong>pristine ingredients</strong> create a dining experience so <strong>enjoyable</strong> you won't want it to end!</h3>
           </div>
+        </div>
+      </div>
 
-          <div class="col-md-4 no-padding col-custom">
-            <li class="service-box-3">
-              <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
-              <h4>Catering</h4>
-              <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
-              <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
-                 See More
-              <% end %>
-            </li>
-          </div>
-        </ul>
+      <!-- <div class="row">
+        <= link_to "/yelp", target: "_blank", class: 'resImg' do %>
+          <= image_tag('yelpRes.png', alt: 'Villaggio Grille Diners Choice Award', class: 'img-responsive image-center') %> <span>Reservations</span>
+        < end %>
+      </div> -->
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="service-boxes">
+            <div class="col-md-4 no-padding col-custom">
+              <li class="service-box-3">
+                <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
+                <h4>Our Menus</h4>
+                <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
+                <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
+                    View Menus
+                <% end %>
+              </li>
+            </div>
+
+            <div class="col-md-4 no-padding col-custom">
+              <li class="service-box-3">
+                <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
+                <h4>Wine List</h4>
+                <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
+                <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
+                    View Wine List
+                <% end %>
+              </li>
+            </div>
+
+            <div class="col-md-4 no-padding col-custom">
+              <li class="service-box-3">
+                <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
+                <h4>Catering</h4>
+                <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
+                <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
+                   See More
+                <% end %>
+              </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

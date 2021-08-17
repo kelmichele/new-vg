@@ -162,7 +162,78 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 //   @media (min-width:1600px){height:800px !important;}
 //   @media (min-width:1700px){height:850px !important;}
 // }
+
+.review-modal{text-align:center;
+	.uk-modal-dialog{width:80%;
+		background-image:url("quote1.png"),url("quote2.png");
+		background-size:50px, 50px;background-position: top left, bottom right;
+		background-repeat: no-repeat, no-repeat;
+	}
+	p{color:$black;font-size:17px;line-height: 1.5em;width:80%;@include center-block();}
+	.icon{width:100px;@include center-block();margin-bottom:7px;}
+	p.auth{font-size:20px;font-weight:bold;letter-spacing:5px;text-transform:uppercase;color:$black;margin-bottom:10px;padding-bottom:0;}
+	hr{width:70%;@include center-block();margin-bottom:20px;}
+
+	@media (max-width:1200px){
+		.uk-modal-dialog{width:95%;}
+		p{width:100%;}
+	}
+
+	@media (max-width:1023px){
+		.uk-modal-dialog{width:95%;background-size:35px, 35px;}
+		p{font-size:16px;}
+		p.auth{font-size:17px;}
+	}
+}
+
 .home {
+	.homepage{@include sec-default();position:relative;}
+	.homeSlide{@include sec-default();}
+	.home-slideshow{
+		.reviewSlide::before{@include before();height:100%;background-color:rgba($black,.5);}
+
+		.rs-box{width:70%;}//@include center-block();}
+		.rs-bg{@include sec-default();padding:40px;background-color:rgba($white,.8);//position: relative;z-index: 0;
+			&::before{@include before();height:115%;width:105%;left:-2.5%;top:-6.5%;border:5px solid $orange;z-index: -1;}
+		}
+		.icon{width:100px;@include center-block();margin-bottom:7px;}
+		p.auth{font-size:20px;font-weight:bold;letter-spacing:5px;text-transform:uppercase;color:$black;margin-bottom:0;}
+		p.rs-intro{font-size:24px;font-weight:bold;color:$burg;line-height:1.4em;}//text-shadow:0px 1px 2px rgba($black,0);
+		.vg-btn{background-color:$orange;color:$white;padding:15px 30px;line-height:1em;font-weight:bold;border:0;
+			font-size:14px;letter-spacing: 2px;text-transform: uppercase;
+			&:hover{opacity:.8;@include ease();}
+		}
+
+		@media (max-width:1200px){
+			.rs-box{width:90%;}
+			.rs-bg{padding:20px 30px 30px;}
+			p.auth{font-size:16px;}
+			p.rs-intro{font-size:19px;}
+		}
+
+		@media (max-width:1023px){
+			.rs-box{width:95%;}
+			.rs-bg{padding:20px 15px 25px;border:5px solid $orange;
+				&::before{display:none;}
+			}
+			p.auth{font-size:15px;}
+			p.rs-intro{font-size:18px;}
+			.vg-btn{font-size:13px;}
+		}
+
+		@media (max-width:767px){
+			.rs-box{width:100%;}
+			.rs-bg{padding:20px 15px 25px;border:5px solid $orange;background-color:rgba($black,.8);
+				&::before{display:none;}
+			}
+			p{color:$white !important;}
+			p.auth{font-size:14px;}
+			p.rs-intro{font-size:16px;}
+			.vg-btn{padding:10px 20px;}
+		}
+	}
+
+
 	.tp-banner-container.fullwidthbanner {
 	  #rev-slider.tp-banner {
 	    ul {margin-bottom: 10px;}
