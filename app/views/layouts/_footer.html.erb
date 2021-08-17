@@ -108,32 +108,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-xs-12">
-                <p>&copy; 2015 All rights reserved. Web Design by <%= link_to 'http://hsdesignhouse.com', target: '_blank' do %>High Seas Design House.<% end %></p>
+                <p>&copy; <%= Date.today.year %> All rights reserved. Web Design by <%= link_to 'http://hsdesignhouse.com', target: '_blank' do %>High Seas Design House.<% end %></p>
             </div>
             <div class="col-md-6 col-xs-12">
                 <ul class="breadcrumb footer-breadcrumb">
                     <li><%= link_to 'Home', root_path %></li>
                     <li><%= link_to 'About', about_path %></li>
-                    <li><button class="off" data-uk-offcanvas="{target:'#menulist'}">Menus</button></li>
+                    <!-- <li><button class="off" data-uk-offcanvas="{target:'#menulist'}">Menus</button></li> -->
                     <li><%= link_to 'Contact', contact_path %></li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-    <div class="uk-offcanvas" id="menulist">
+    <!-- <div class="uk-offcanvas" id="menulist">
         <div class="uk-offcanvas-bar">
             <h3>Our Menus</h3>
             <ul>
-                <li><%= link_to "Daily Menu", daily_menu_path %></li>
-                <li><%= link_to "Dinner Menu", dinner_menu_path %></li>
-                <li><%= link_to "Brunch Menu", brunch_menu_path %></li>
-                <li><%= link_to "Family Meals", "/#family-meals" %></li>
-                <li><%= link_to "Drink Menu", drink_menu_path %></li>
-                <li><%= link_to "Happy Hour", happy_hour_path %></li>
+                <li><= link_to "Daily Menu", daily_menu_path %></li>
+                <li><= link_to "Dinner Menu", dinner_menu_path %></li>
+                <li><= link_to "Brunch Menu", brunch_menu_path %></li>
+                <li><= link_to "Family Meals", "/#family-meals" %></li>
+                <li><= link_to "Drink Menu", drink_menu_path %></li>
+                <li><= link_to "Happy Hour", happy_hour_path %></li>
             </ul>
         </div>
-    </div>
+    </div> -->
 <!-- </div> -->
 
 <!-- Off Canvas Menu -->

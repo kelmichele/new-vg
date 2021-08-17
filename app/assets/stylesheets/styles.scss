@@ -40,6 +40,7 @@
 
 .overlay {@include overlay ();}
 
+html{background:transparent;}
 body {
     background-image: url(image_path('zenbg.png'));
     background-repeat: repeat;
