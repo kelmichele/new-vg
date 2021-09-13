@@ -1062,7 +1062,42 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 
 
-
+//  HIDDEN PRICES
 .dinner-menu, .daily-menu, .brunch-menu{
 	.menu-item span{display:none;}
 }
+
+
+.about{
+	.fancy-heading::after{display:none;}
+	p{font-family:$play;color:$black;font-size:18px;padding:0;margin-bottom:15px;line-height:1.5em;}
+
+	.image-row{@include sec-default();margin-bottom:30px;text-align:center;
+		&.mobile{display:none;}
+
+		.img-item{display:inline-block;width:24.5%;padding:0 1px;}
+	}
+	.text-row{@include sec-default();padding:0 15px 0 20px;}
+
+	@media (max-width:1200px){
+		.page-content{padding:20px 0 10px;}
+		.fancy-heading{margin-bottom:15px;}
+		h1{font-size:25px;}
+		.image-row{margin-bottom:20px;}
+	}
+
+	@media (max-width:1023px){
+		.page-content{padding:15px 0 5px;}
+		.fancy-heading{margin-bottom:7px;}
+		h1{font-size:22px;}
+		p{font-size:17px;}
+	}
+
+	@media (max-width:823px){
+		h1{font-size:20px;font-weight:bold;}
+		.image-row.fw{display:none;}
+		.image-row.mobile{display:block;}
+	}
+}
+
+
