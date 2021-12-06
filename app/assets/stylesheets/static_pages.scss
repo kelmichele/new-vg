@@ -190,6 +190,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	.homepage{@include sec-default();position:relative;}
 	.homeSlide{@include sec-default();}
 	.home-slideshow{
+		.uk-slidenav{background-color:rgba($black,.2);}
+
 		.reviewSlide::before{@include before();height:100%;background-color:rgba($black,.5);}
 
 		.rs-box{width:70%;}//@include center-block();}
