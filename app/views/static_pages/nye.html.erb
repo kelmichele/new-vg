@@ -10,27 +10,29 @@
 	      <div class="container">
 	        <div class="title-container less">
 	        	<h2>Join us for a Celebration</h2>
-	          <h1>New Year's Eve 2020</h1>
-			      <h3>Thursday, December 31, 2020</h3>
+	          <h1>New Year's Eve 2021</h1>
+			      <h3>Friday, December 31, 2021</h3>
 	        </div>
 	      </div>
 	    </div>
 	  </div>
 
 	  <div class="page-content faq-section">
-	    <div class="tabs">
+	    <div class="tabs nyTabs">
 	      <div id="js-filters-tabs" class="cbp-l-filters-big">
-		      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
-	          <div class="tab-title">Details</div>
-	        </div>
+	      	<div class="innerTabBtns"><div class="innerin">
+			      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
+		          <div class="tab-title">Details</div>
+		        </div>
 
-	        <div data-filter=".early" class="cbp-filter-item">
-	          <div class="tab-title">Early Bird Menu</div>
-	        </div>
+		        <div data-filter=".early" class="cbp-filter-item">
+		          <div class="tab-title">Early Bird Menu</div>
+		        </div>
 
-	        <div data-filter=".reg" class="cbp-filter-item ">
-	          <div class="tab-title">4-Course Menu</div>
-	        </div>
+		        <div data-filter=".reg" class="cbp-filter-item ">
+		          <div class="tab-title">4-Course Menu</div>
+		        </div>
+		      </div></div>
 	      </div>
 
 	      <div class="container food-menus no-padding">
@@ -44,7 +46,7 @@
 									<h4><b>Early Bird Seating:</b></h4>
 									<p>3-Course Meal &amp; champagne toast</p>
 									<hr>
-									<p class="big">5:00pm<br> $65 per guest</p>
+									<p class="big">5pm<br> $65 per guest<br><a href="NYE2021-early.pdf" target="_blank" class="image-menu">View Menu</a></p>
 									<hr>
 	          	    <p class="res">Call For Reservations:<br>
 	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
@@ -56,7 +58,7 @@
 									<h4><b>Additional Seatings:</b></h4>
 									<p>4-Course Meal &amp; champagne toast</p>
 									<hr>
-									<p class="big">7pm &nbsp;&amp;&nbsp; 9pm <br> $100 per guest</p>
+									<p class="big">7pm &nbsp;&amp;&nbsp; 9:30pm <br> $100 per guest<br><a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">View Menu</a></p>
 									<hr>
 									<p class="res">Call For Reservations:<br>
 	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
@@ -69,149 +71,38 @@
 		        <div class="cbp-item early">
 		        	<div class="container food-menus no-padding">
 		        	  <div class="col-md-10 center-block col-sm-12"><!-- menuFluid -->
+		        	    <div class="service-box-2 headBox">
+		        	    	<h4>Early Bird Seating: 5pm - $65 per guest</h4>
+		        	    	<p class="ltext">Click the menu below to see larger version</p>
+		        	    	<p class="res">Call For Reservations:<br>
+	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    </p>
+		          	  </div>
+
 		        	    <div class="service-box-2">
-		        	      <h3>Appetizers</h3>
-		        	      <h4>Beet and Goat Cheese Tartar</h4>
-		        	      <h5>Red Beets, Golden Beets, Herbed Goat Cheese, Arugula, Watermelon Radish Slaw</h5>
-
-		        	      <h4>Smoked Salmon Terrine</h4>
-		        	      <h5>Smoked Salmon Layered with Lemon Pepper Cream Cheese, Capers and Red Onion. Served with Mustard Dill Dressing</h5>
-
-		        	      <h4>Murder Point Oysters</h4>
-		        	      <h5>Raw Alabama Oysters with Peach Mignonette and Spiced Pecans</h5>
-
-		        	      <h4>Shrimp Trio</h4>
-		        	      <h5>Grilled, Poached, and Fried Gulf of Mexico Shrimp with Sweet Chili Aioli, Spicy Remoulade, Champagne Vinaigrette</h5>
+										<a href="NYE2021-early.pdf" target="_blank" class="image-menu">
+											<%= image_tag('NYE2021-early.jpg', alt: 'Villaggio Grille 2021 NYE Early Menu', class:'nye-menu') %>
+										</a>
 		        	    </div>
 		        	  </div>
-
-		        	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-		        	  <div class="clearfix"></div>
-
-		        	  <div class="col-md-10 center-block col-sm-12">
-		        	    <div class="service-box-2">
-		        	      <h3>Entree</h3>
-		        	      <h4>Roasted Lamb Chops</h4>
-		        	      <h5>Fig Jam Risotto, Collard Greens with Balsamic Drizzle</h5>
-
-		        	      <h4>Pan Seared Snapper</h4>
-		        	      <h5>Sweet Potato Gratin, Swiss Chard & Pancetta, Tomato Beurre Blanc and Heirloom Grape Tomato Garnish</h5>
-
-		        	      <h4>Roasted Cornish Hen</h4>
-		        	      <h5>Spinach Quinoa, Roasted Baby Carrots, Beurre Blanc & Parsley Oil</h5>
-
-		        	      <h4>8oz Filet</h4>
-		        	      <h5>Fingerling Hash, Deep Fried Okra, Molasses Compound Butter</h5>
-
-		        	      <h4>Lobster Tails</h4>
-		        	      <h5>Sugar Snap Peas, Roasted Tomatoes, Celery Root Puree with Garlic Butter</h5>
-
-		        	      <h4>Pan Seared Scallops</h4>
-		        	      <h5>Butternut Squash Risotto, Roasted Squash and Zucchini, Topped with Limoncello Vinaigrette</h5>
-		        	    </div>
-		        	  </div>
-
-		        	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-		        	  <div class="clearfix"></div>
-
-		        	  <div class="col-md-10 center-block col-sm-12">
-		        	    <div class="service-box-2">
-		        	      <h3>Dessert</h3>
-		        	      <h4>Classic Tiramisu</h4>
-		        	      <h5>Mascarpone Cheese, Espresso-Infused Ladyfingers and Fresh Cocoa</h5>
-
-		        	      <h4>Lemon Drop Cheesecake</h4>
-		        	      <h5>Cheesecake Swirled with Lemon Curd and Vanilla Crumbs</h5>
-
-		        	      <h4>Chocolate Truffle Cake</h4>
-		        	      <h5>Premium Belgian Chocolate Truffle Topped with Chocolate Ganache </h5>
-		        	    </div>
-		        	  </div>
-
-		        	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-		        	  <div class="clearfix"></div>
-
 		        	</div>
 		        </div>
 
 	          <div class="cbp-item reg">
 	          	<div class="container food-menus no-padding">
 	          	  <div class="col-md-10 center-block col-sm-12">
+	          	  	<div class="service-box-2 headBox">
+		        	    	<h4>Seatings: 7pm &amp; 9:30pm - $100 per guest</h4>
+			        	    <p class="ltext">Click the menu below to see larger version</p>
+		        	    	<p class="res">Call For Reservations:<br>
+	          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    </p>
+		          	  </div>
+
 	          	    <div class="service-box-2">
-	          	      <h3>Appetizers</h3>
-	          	      <h4>Beet and Goat Cheese Tartar</h4>
-	          	      <h5>Red Beets, Golden Beets, Herbed Goat Cheese, Arugula, Watermelon Radish Slaw</h5>
-
-	          	      <h4>Smoked Salmon Terrine</h4>
-	          	      <h5>Smoked Salmon Layered with Lemon Pepper Cream Cheese, Capers and Red Onion. Served with Mustard Dill Dressing</h5>
-
-	          	      <h4>Murder Point Oysters</h4>
-	          	      <h5>Raw Alabama Oysters with Peach Mignonette and Spiced Pecans</h5>
-
-	          	      <h4>Shrimp Trio</h4>
-	          	      <h5>Grilled, Poached, and Fried Gulf of Mexico Shrimp with Sweet Chili Aioli, Spicy Remoulade, Champagne Vinaigrette</h5>
-	          	    </div>
-	          	  </div>
-	          	  
-	          	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-	          	  <div class="clearfix"></div>
-
-	          	  <div class="col-md-10 center-block col-sm-12">
-	          	    <div class="service-box-2">
-	          	      <h3>Soup or Salad</h3>
-	          	      <h4>Butter Lettuce </h4>
-	          	      <h5>Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Tomatoes, Goat Cheese, Champagne Vinaigrette </h5>
-
-	          	      <h4>Sorrel and Arugula</h4>
-	          	      <h5>Candy-Striped Beets, Peach Slices, Cherry Tomato, with Red Wine Vinaigrette</h5>
-
-	          	      <h4>Goat Cheese and Walnut</h4>
-	          	      <h5>Spring Mix, Spiced Walnuts, Dried Cherries, Goat Cheese with Roasted Fig Vinaigrette</h5>
-
-	          	      <h4>Roasted Butternut Squash Bisque</h4>
-	          	    </div>
-	          	  </div>
-
-	          	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-	          	  <div class="clearfix"></div>
-
-	          	  <div class="col-md-10 center-block col-sm-12">
-	          	    <div class="service-box-2">
-	          	      <h3>Entree</h3>
-	          	      <h4>Roasted Lamb Chops</h4>
-	          	      <h5>Fig Jam Risotto, Collard Greens with Balsamic Drizzle</h5>
-
-	          	      <h4>Pan Seared Snapper</h4>
-	          	      <h5>Sweet Potato Gratin, Swiss Chard & Pancetta, Tomato Beurre Blanc and Heirloom Grape Tomato Garnish</h5>
-
-	          	      <h4>Roasted Cornish Hen</h4>
-	          	      <h5>Spinach Quinoa, Roasted Baby Carrots, Beurre Blanc & Parsley Oil</h5>
-
-	          	      <h4>8oz Filet</h4>
-	          	      <h5>Fingerling Hash, Deep Fried Okra, Molasses Compound Butter</h5>
-
-	          	      <h4>Lobster Tails</h4>
-	          	      <h5>Sugar Snap Peas, Roasted Tomatoes, Celery Root Puree with Garlic Butter</h5>
-
-	          	      <h4>Pan Seared Scallops</h4>
-	          	      <h5>Butternut Squash Risotto, Roasted Squash and Zucchini, Topped with Limoncello Vinaigrette</h5>
-	          	    </div>
-	          	  </div>
-
-	          	  <div class="col-md-8 center-block col-xs-12 hr-dec"><div class="hr hr-png-6"></div></div>
-	          	  <div class="clearfix"></div>
-
-	          	  <div class="col-md-10 center-block col-sm-12">
-	          	    <div class="service-box-2">
-	          	      <h3>Dessert</h3>
-	          	      <h4>Classic Tiramisu</h4>
-	          	      <h5>Mascarpone Cheese, Espresso-Infused Ladyfingers and Fresh Cocoa</h5>
-
-	          	      <h4>Lemon Drop Cheesecake</h4>
-	          	      <h5>Cheesecake Swirled with Lemon Curd and Vanilla Crumbs</h5>
-
-	          	      <h4>Chocolate Truffle Cake</h4>
-	          	      <h5>Premium Belgian Chocolate Truffle Topped with Chocolate Ganache </h5>
+										<a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">
+											<%= image_tag('NYE2021-dinner.jpg', alt: 'Villaggio Grille 2021 NYE Dinner Menu', class:'nye-menu') %>
+										</a>
 	          	    </div>
 	          	  </div>
 	          	</div>

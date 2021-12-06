@@ -684,10 +684,11 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 	.stacked{margin:20px 0 50px;}
 
+	h4{font-family:$open;font-size:17px;}
 
 	.inline-events{text-align: center;}
 	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none; vertical-align: top;}
-	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('bg-wine.jpg')); background-size: cover;padding:8% 0;
+	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('nyd.jpg')); background-size: cover;padding:8% 0;
 		position:relative;z-index:0;
 		&::before{@include before(); height:100%; background-color:rgba($white,.8);z-index:-2;}
 		&::after{@include before(); height:70%; width:70%;left:15%;top:15%; background-color:rgba($white,1);z-index:-1;box-shadow:0px 10px 20px rgba($black,.2);}
@@ -710,13 +711,11 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		// .inline-event.noimg{padding:7% 0;
 		// 	&::after{width:85%;height:85%;left:7.5%;top:7.5%;}
 		// }
-	// }
 
-	// @include bp(lg) {
 		.stacked{margin:0 0 20px;}
 		.inline-event{width:45%; margin: 10px .5% 10px 2%;}
 		h3{font-size:20px;}
-		h4{font-size:18px;}
+		h4{font-size:16px;}
 		.btn{font-size:14px;}
 	}
 
@@ -727,7 +726,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		}
 		.inline-event.noimg{margin-bottom:40px;padding:5% 0 12%;
 			h3{font-size:19px;}
-			h4{font-size:17px;}
+			// h4{font-size:17px;}
 		}
 	}
 
@@ -917,13 +916,14 @@ $wgreen:#5f836f;
 }
 
 .nye {
-	#page-title.image-nye {height:auto;
+	#page-title.image-nye {height:auto;box-shadow: none;
 		.title-container {text-align:center; padding: 25px 0;
 			h1, h2, h3, h4, h5{ font-weight: bold; color: white; margin: 0; font-family: $raleway; text-shadow: 0px 1px 1px rgba($black, .8);}
 			h3 {font-size: 22px;}
 			h1{color: $nygold;}
 		}
-		@include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-position: center center;
+		// @include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-position: center center;
+		@include sec-bgimage(); background-image: url(image_path('nyd.jpg')); background-position: center center;
 
 		@include bp(lg) {
 			.overlay {background:rgba(0,0,0,0.7);}
@@ -946,9 +946,8 @@ $wgreen:#5f836f;
 	//KP 2019 edits
 
 
-	.faq-section{ text-align:center;
+	.faq-section{text-align:center;padding-top:20px;
 		p, a, h3, h4, h5 {font-family: $raleway; text-transform: uppercase; letter-spacing: .5px;}
-
 		h3, h4 {font-weight: bold; }
 		h2.inv{color: $nygold; font-size: 27px;}
 		h4 b {color: $red;}
@@ -962,12 +961,14 @@ $wgreen:#5f836f;
 	  hr.hlf {width: 40%; @include center-block();}
 	  h2 {color: $nygold; font-weight: bold; margin-bottom: 5px;}
 
-	  .tab-title {font-family: $raleway; font-weight: bold; font-size:18px; letter-spacing: .5px;}
-	  #js-filters-tabs {border-bottom: 1px solid rgba($black,.1);}
+	  // #js-filters-tabs {border-bottom: 1px solid rgba($black,.1);}
+	  .innerTabBtns{max-width:800px;float:none;margin:auto;}
+	  .innerin{width:100%;border-bottom: 1px solid rgba($black,.1);}
 
-	  .cbp-filter-item.cbp-filter-item-active {
-	  	border-color: #b9d3ee; border-radius: 4px;
-	  	.tab-title {color:#a90f40}
+		.cbp-filter-item{margin:0 10px 10px; float:none;}
+	  .tab-title{font-family:$raleway;font-weight:bold;font-size:18px;letter-spacing:.5px;}
+	  .cbp-filter-item.cbp-filter-item-active {border:none;
+	  	.tab-title {color:#a90f40;text-decoration: underline;}
 	  }
 
 	  .res-link, .menu-link {@include sec-default(); margin: 20px 0;}
@@ -976,11 +977,9 @@ $wgreen:#5f836f;
 	  }
 
 	  .cbp-item.details {@include sec-default();
-			// h5 {color: $hcolor; font-weight: 700; font-family: $open; font-size: 16px;}
 			h5 {font-size: 16px;}
 			.nyimg {@include center-block(); width: 10%;}
 			.time {display: inline-block; width: 40%; background-color: #f7f7f7; padding: 20px 20px; margin: 10px 1% 25px;
-				// @include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-size:cover;
 				h4{margin-bottom: 5px;}
 				p.big{line-height: 2em; font-weight: 700; font-size: 18px; color:$black;}
 				p{color: $black; font-size: 16px; font-weight: 600; padding-bottom: 6px;}
@@ -989,8 +988,20 @@ $wgreen:#5f836f;
 			  	a{font-family:$open; color: darken($red, 10%); font-weight:800; text-transform: none;}
 			  	a:hover {opacity: .6;}
 			  }
+
+			  .image-menu{color:$nygold;font-size:16px;padding:5px 10px;border:1px solid $nygold;
+			  	&:hover{opacity:.7;}
+			  }
 			}
 	  }
+
+	  .headBox{
+	  	h4{font-size:22px;font-weight:bold;color:$black;margin-bottom:10px;}
+	  	p{color:$black;}
+	  	a{text-transform:none;color:$burg;}
+	  	p.ltext{padding-bottom:5px;}
+	  }
+
 
 		.inline-service {@include sec-default();
 			h3{@include sec-default(); text-align: center; color: $hcolor; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5); margin-top:20px;}
@@ -1008,6 +1019,10 @@ $wgreen:#5f836f;
 			}
 		}
 
+		@media (max-width:1200px){
+			.headBox h4{font-size:20px;}
+		}
+
 		@include bp(lg) {
 			.cbp-item.details {
 				.time {width:45%;}
@@ -1019,7 +1034,7 @@ $wgreen:#5f836f;
 		@include bp(md) {
 			.cbp-item.details {
 				.res, .menu-btn { font-size: 16px;}
-				.time {@include center-block(); width: 80%; padding: 20px 10px;}
+				.time {@include center-block(); width: 90%; padding: 20px 10px;}
 		  }
 
 		  .inline-service {@include sec-default();
@@ -1033,18 +1048,18 @@ $wgreen:#5f836f;
 		  }
 		}
 
-		@include bp(md) {
-			.cbp-item.details {
-				.time {width: 90%;}
-		  }
+		@media (max-width:767px){padding-top:15px;
+			.cbp-filter-item{margin:0 5px 10px;padding:0 10px 0;}
+			.tab-title{font-size:17px;}
+			// .headBox h4{font-size:20px;}
 		}
+
 	}
 
-	.nye-menu{
-		// @include sec-default();background-color: #f1f0d1;
-		.menu-img{width:85%; @include center-block();}
-		.early-menu{width:80%; @include center-block();}
-	}
+	// .nye-menu{
+	// 	.menu-img{width:85%; @include center-block();}
+	// 	.early-menu{width:80%; @include center-block();}
+	// }
 }
 
 .valentines {

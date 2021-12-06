@@ -10,7 +10,7 @@
 }
 
 .announce-bar {
-    @include sec-default(); padding: 5px 20px;background-color: $yellow;text-align: center;
+    @include sec-default(); padding: 10px 20px;background-color: $yellow;text-align: center;
     background: -webkit-linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
     background: linear-gradient(190deg, rgba($yellow, .95), rgba($red, .85));
 
@@ -19,7 +19,7 @@
     }
     p.ah-text{width:30%;}
 
-    .links {float: right;width:70%;}
+    .links {width:70%;}//float: right;
     .ny-link {display:inline-block; color: white; padding: 0 20px; font-family: $open;
         &:hover {opacity: .5;}
     }
