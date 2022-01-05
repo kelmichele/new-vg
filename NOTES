@@ -2,6 +2,15 @@ JULY 14 2021 -- TEMP REPLACED YELP RESERVATIONS WITH PHONE:
 	footer, contact (pages), contact(layouts), nav, home, 
 
 
+CUSTOM WINE HEADER
+	<!-- <div class="custom-ww-intro">
+	  <div class="custom-ww-text">
+	    <h1>Winter Wine Dinner</h1>
+	    <h2>Hosted by United Johnson Brothers</h2>
+	    <h4>Tuesday, December 28th &nbsp;|&nbsp; 6pm <span>&nbsp;|&nbsp;</span><br> $100 per guest</h4>
+	  </div>
+	</div> -->
+
 
 BRUNCH WITH PDF's
 	<div id="menupage">
