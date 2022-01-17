@@ -40,21 +40,22 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
   position: relative; z-index: 0;
   &::before{@include before(); background-color: rgba($white, .9); height:100%; z-index: -2;}
 
-  h1{color: $red; font-weight: bold; text-transform: uppercase; 
-  	font-family: $raleway; margin-bottom:0px;
-  	a.tel{font-family: inherit; color: $navy;}
+  h1{color:$red;font-weight:bold;text-transform:uppercase;
+  	font-family:$raleway;margin-bottom:0px;
+  	a.tel{font-family:inherit;color:$navy;}
   }
-  h2{color: $navy; font-weight: bold; margin-bottom:0px; text-decoration: underline;}
-  h3{margin:0 0 15px; font-size: 18px; line-height: 1.6em; 
-  	b{font-family:$raleway; text-transform: uppercase; font-weight:800; text-decoration: underline;}
+  h2{color:$navy;font-weight:bold;margin-bottom:0px;text-decoration:underline;}
+  h3{margin:0 0 15px;font-size:17px;line-height:1.6em;text-transform:uppercase;font-weight:bold;margin-bottom:0;
+  	b{font-family:$raleway;text-transform:uppercase;font-weight:800;text-decoration:underline;}
   }
-  h4{color: $red; font-weight: bold; margin-bottom:0px;}
-  p{margin:0; font-size:17px; color:$black;}
-  p.up{text-transform: uppercase; font-size:16px; padding:5px 0 15px; letter-spacing: .3px;}
-  // a.tel{font-family: inherit; color: inherit;}
+  h4{color:$red;font-weight:bold;margin-bottom:0px;}
+  p{margin:0;font-size:17px;color:$black;}
+  p.up{text-transform:uppercase;font-size:16px;padding:5px 0 15px;letter-spacing:.3px;}
+  // a.tel{font-family:inherit;color:inherit;}
 
-  .item{@include sec-default(); margin-top:20px;
-  	p{padding-bottom: 0;}
+  .item{@include sec-default();margin-top:20px;
+  	&.uno{margin-top:10px;}
+  	p{padding-bottom:0;}
   }
 
   .deliverySec{@include sec-default();text-align:center;padding:15px 0;
@@ -69,7 +70,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	    }
 		}
 
-    @media screen and (max-width: 1200px){h1{font-size:29px;}}
+    @media screen and (max-width:1200px){h1{font-size:29px;}}
 
     @include bp(lg) {padding:40px 0 20px;
     	h1{font-size:25px;}
@@ -166,6 +167,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 		&.beer p {line-height: 1.8em; font-size: 15px; }
 	}
+
+	.cbp-caption.family .cbp-caption-defaultWrap{background-color:rgba(141,184,198,0.5);}
 }
 /***************************************/
 // #rev-slider.tp-banner {
@@ -685,12 +688,12 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 	.inline-events{text-align: center;}
 	.inline-event{width:40%; display: inline-block; margin: 10px 2%; float:none; vertical-align: top;}
-	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('nyd.jpg')); background-size: cover;padding:8% 0;
+	.inline-event.noimg{@include sec-bgimage(); background-image: url(image_path('wineglass.jpg')); background-size: cover;padding:8% 0;
 		position:relative;z-index:0;
 		&::before{@include before(); height:100%; background-color:rgba($white,.8);z-index:-2;}
 		&::after{@include before(); height:70%; width:70%;left:15%;top:15%; background-color:rgba($white,1);z-index:-1;box-shadow:0px 10px 20px rgba($black,.2);}
 		.btnrow{@include sec-default(); display:block;}
-		.btn{width:160px;font-size:15px; padding:5px 5px 6px; letter-spacing: 1px;
+		.btn{width:170px;font-size:14px; padding:5px 5px 6px; letter-spacing: 1px;
 			// background-color:$white;border:1px solid rgba($black,2);
 			background-color: $red;color:$white;box-shadow:0px 10px 20px rgba($black,.1);
 			&:hover{opacity: .8;}
