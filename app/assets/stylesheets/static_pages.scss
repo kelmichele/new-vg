@@ -57,30 +57,36 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
   	p{padding-bottom: 0;}
   }
 
-  .deliverySec{@include sec-default(); text-align: center; padding: 15px 0; 
-	hr{width: 30%; @include center-block(); margin: 20px auto; border-color: rgba($black,.15);}
-	.deliveryLogo{display:inline-block; width:30%; max-width:175px; margin: 0 1%;
-      &.narrow{margin-bottom: 20px;}
-      &.tall{max-width: 150px}
-    }
-	}
+  .deliverySec{@include sec-default();text-align:center;padding:15px 0;
+		hr{width:30%;@include center-block();margin:20px auto;border-color:rgba($black,.15);}
+		.dsInner{@include center-block();width:95%;max-width:560px;}
+		.deliveryLogo{display:inline-block;width:32%;max-width:175px;//margin:0 1%;vertical-align:top;
+				&.uber{float:left;}
+				&.waitr{float:right;}
 
-    @include bp(lg) {
-    	padding:40px 0 20px;
-    	h1{font-size:26px;}
+	      &.narrow{margin-top:6%;margin-top:9%;} // ONLY IF THERE IS A TALL LOGO TOO
+	      &.tall{max-width:140px;}
+	    }
+		}
+
+    @media screen and (max-width: 1200px){h1{font-size:29px;}}
+
+    @include bp(lg) {padding:40px 0 20px;
+    	h1{font-size:25px;}
     	h2{font-size:23px;margin-bottom:5px;}
-    	h3{font-size:17px; margin-bottom: 0px; width:85%; @include center-block();}
+    	h3{font-size:17px;margin-bottom:0px;width:85%;@include center-block();}
     	h4{font-size:18px;}
-    	p{font-size: 16px;width:85%; @include center-block();}
-    	p.up{font-size:15px; @include sec-default();}
+    	p{font-size:16px;width:85%;@include center-block();}
+    	p.up{font-size:15px;@include sec-default();}
     	.item{margin-top:12px;}
 
     	.deliverySec{
-    		hr{margin: 15px auto;}
-    		.deliveryLogo{max-width: 160px;
-		      &.tall{max-width: 130px;}
-		  }
-    	}
+    		hr{margin:15px auto;}
+				.dsInner{max-width:500px;}
+    		.deliveryLogo{max-width:150px;
+		      &.tall{max-width:120px;}
+			  }
+			}
     }
 
     @media screen and (max-width: 823px){ padding:25px 0 15px;
@@ -92,8 +98,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
     }
 
     @media screen and (max-width: 767px){
-    	.container{padding:0; max-width:90%;}
-    	h1{font-size: 22px;}
+    	.container{padding:0;max-width:90%;}
+    	h1{font-size:22px;}
     	h2{font-size:20px;}
     }
 
@@ -103,6 +109,11 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
     	h2{font-size:19px;}
     	h3{width:100%;}
     	p{width:90%;}
+
+    	.deliverySec{text-align:center;
+    		.deliveryLogo,.deliveryLogo.uber,.deliveryLogo.waitr{width:100%;display:block;float:none;margin:15px auto;}
+    		hr.last-ds{display:none;}
+		  }
     }
 }
 
@@ -358,22 +369,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 	@include bp(sm) {
 	    .cbp-l-caption-body .menu-item{ padding-left: 5px;}
-	}
-}
-
-.food-truck {
-	#page-title {height: 400px;}
-	.image-truck .title {
-	    background-color: rgba(0, 0, 0, 0.5);
-	    width: 45%;
-	    padding: 20px;
-	}
-
-	@include bp(md) {
-	  	.pt-bkg-image-truck .title {
-		    width: 100%;
-		    padding: 10px;
-	  	}
 	}
 }
 
@@ -1167,3 +1162,20 @@ $wgreen:#5f836f;
 }
 
 
+
+// NOT IN USE
+.food-truck {
+	#page-title {height: 400px;}
+	.image-truck .title {
+	    background-color: rgba(0, 0, 0, 0.5);
+	    width: 45%;
+	    padding: 20px;
+	}
+
+	@include bp(md) {
+	  	.pt-bkg-image-truck .title {
+		    width: 100%;
+		    padding: 10px;
+	  	}
+	}
+}
