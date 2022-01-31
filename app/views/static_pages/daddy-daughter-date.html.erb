@@ -2,51 +2,20 @@
 <% @page_description = "Show the most important girl in your life how special she is with a daddy-daughter Valentine's date to Villaggio Grille." %>
 
 
-<div class="pairing dd-date">
-  <div id="page-title" class="pt-bkg-image image-events">
-    <div class="overlay">
-      <div class="container">
-        <div class="row">
-          <div class="title-container less">
-            <h1>Daddy Daughter Valentines Dinner</h1>
-            <h2>Tuesday, February 9th | 6pm<br />$16 Per Daughter<br>Featuring Music From Cello Salad</h2>
-            <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="event dd-date">
+  <div class="simpleHeader">
+    <h1>Daddy Daughter <br>Valentines Dinner</h1>
+    <h2>Sunday, February 6th<br>6pm</h2>
+    <h3><a href="tel:+12512246500">Call For Reservations:<br> 251-224-6500 ext. 2</a></h3>
+    <p>Click menu below to view larger version.</p>
   </div>
 
-
-  <div class="page-content food-menus">
-    <div class="container no-padding">
-      <div class="menu-item val">
-        <h3>Starter</h3>
-        <h4>Fruit &amp;Cheese Appetizer</h4>
-        <p>Assorted Fresh Seasonal Fruits</p>
-      </div>
-
-      <div class="heart-border"><%=image_tag('heart-border2.png', alt: 'border image', class: 'img-responsive long') %></div>
-
-      <div class="menu-item val">
-        <h3>Entrées <br><span>Select one option</span></h3>
-
-        <h4>Heart Pizza</h4>
-        <p>Heart Shaped Pizza with Your Choice of Toppings: Cheese, Pepperoni, or Sausage</p>
-
-        <h4>Sliced NY Strip</h4>
-        <p>6oz New York Strip, with Butter Mashed Potatoes &amp; Green Beans</p>
-
-        <h4>Angel Alfredo</h4>
-        <p>Angel Hair Pasta with Alfredo Sauce &amp; Parmesan. Add-On Chicken or Shrimp.</p>
-      </div>
-
-      <div class="heart-border"><%=image_tag('heart-border2.png', alt: 'border image', class: 'img-responsive long') %></div>
-      
-      <div class="menu-item val">
-        <h3>Dessert</h3>
-        <h4>Chocolate Overload Cake</h4>
-        <p>Rich Chocolate Cake, Layers of Chocolate Cream &amp; Berries</p>
+  <div class="page-content pairing-1">
+    <div class="container">
+      <div class="row">
+        <%= link_to "daddy-daughter2022.pdf", target: '_blank', class: 'menu-link' do %>
+          <%= image_tag('daddy-daughter2022.png', class: 'img-responsive', alt: "Villaggio Grille's Daddy Daughter Valentines Menu") %>
+        <% end %>
       </div>
     </div>
   </div>
