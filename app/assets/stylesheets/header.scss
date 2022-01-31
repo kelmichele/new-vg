@@ -103,7 +103,7 @@ header {
 
     .dropdown li.menu-item{margin-left:0;display:block;padding:0;position:relative;width: 100%; border-top: none;border-bottom: 1px dotted rgba($light, .3);
         &:last-child {border-bottom: none;}
-        a{width:100%;display:block;padding:10px;color:$white;cursor:pointer;font-size:14px; line-height: 2em;
+        a{width:100%;display:block;padding:10px;color:$white;cursor:pointer;font-size:14px; line-height: 1.5em;
             &:hover{color:$yellow}
         }
     }
