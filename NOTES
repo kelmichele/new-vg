@@ -1,3 +1,8 @@
+OLD RESERVATIONS/ BOOK A TABLE LINK
+  <!-- <li class="menu-item"><= link_to "Book a Table", yelp_path, :target => '_blank' %></li> -->
+
+
+
 JULY 14 2021 -- TEMP REPLACED YELP RESERVATIONS WITH PHONE:
 	footer, contact (pages), contact(layouts), nav, home, 
 
