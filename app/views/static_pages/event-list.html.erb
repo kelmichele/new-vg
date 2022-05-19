@@ -13,8 +13,8 @@
   </div>
 
   <div class="page-content inline-events">
-    <!-- <h3 class="text-center">Check back soon for new events!</h3> -->
-    <h3 class="text-center">Select an event from the list below to visit the page and learn more.</h3><br>
+    <h3 class="text-center">Check back soon for new events!</h3>
+    <!-- <h3 class="text-center">Select an event from the list below to visit the page and learn more.</h3><br> -->
 
     <!-- <div class="inline-event one border">
       <= link_to "/pairing", class: "floatMid" do %>
@@ -22,7 +22,7 @@
       < end %>
     </div> -->
 
-    <div class="inline-event two noimg">
+    <!-- <div class="inline-event two noimg">
       <%= link_to '/events', class: 'floatMid' do %>
         <h3>April Wine Dinner</h3>
         <h4>April 21st &nbsp;|&nbsp; 6pm</h4>
@@ -36,13 +36,13 @@
         <h4>May 3rd &nbsp;|&nbsp; 6pm</h4>
         <div class="btnrow"><a href="/pairing" class="btn">Details & Menus</a></div>
       <% end %>
-    </div>
-
-    <!-- <div class="inline-event">
-      <= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
-        <=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
-      < end %>
     </div> -->
+
+    <div class="inline-event">
+      <%= link_to 'https://alwharf.com/calendar', target: "_blank" do %>
+        <%=image_tag('vg-wharf.jpg', alt: 'Upcoming events at The Wharf', class: 'img-responsive') %>
+      <% end %>
+    </div>
   </div>
 
 </div>
