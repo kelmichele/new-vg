@@ -916,8 +916,11 @@ $wgreen:#5f836f;
 }
 
 
-.drink-menu .cbp-item .menu-item.beer p{font-weight: bold;
-	span{font-size: 14px; line-height: 1.2em; font-weight: normal;}
+.drink-menu{ 
+	.cbp-item .menu-item.beer p{font-weight: bold;
+		span:not(.price){font-size: 14px; line-height: 1.2em; font-weight: normal;}
+	}
+	.row2{margin-top:20px;}
 }
 
 .nye {
@@ -1145,6 +1148,8 @@ $wgreen:#5f836f;
 .dinner-menu, .daily-menu, .brunch-menu{
 	.menu-item span{display:none;}
 }
+.drink-menu .menu-item:not(.beer) span{display:none;}
+.drink-menu .menu-item.beer span.price{display:none;}
 
 
 .about{
