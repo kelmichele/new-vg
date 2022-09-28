@@ -749,7 +749,11 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		padding: 30px 0 20px;
 		text-align: center;
 		h1, h2, h3, h4 {color: white; font-weight: bold;text-shadow: 0px 1px 2px black; letter-spacing: 1px;}
-		h2{font-size:23px; margin:20px 0;}
+		h2{font-size:23px;}// margin:20px 0;}
+		h1{margin-bottom:0;}
+		h4{font-size:25px;}
+		h4 span{color:inherit;font-size:inherit;font-weight:inherit;font-family: inherit;}
+		h4 br{display:none;}
 	}
 	.intro {
 		@include sec-default();
@@ -772,8 +776,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 			span{color:$black;}
 		}
 		h5 {font-size: 16px; margin-bottom: 7px;}
-		p{margin-bottom:0px; padding-bottom: 5px; color:$black; font-size:14px;
-			font-style: italic; font-weight: bold; text-shadow: 0px 1px 1px rgba($black, .2);
+		p{margin-bottom:0px; padding-bottom: 5px; color:$black;
+			font-style: italic; font-weight: bold;
 		}
 	}
 
@@ -809,10 +813,13 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		#page-title {height:auto;}
 		.pt-bkg-image.image-events {height: 150px;}
 		.overlay{background:rgba(0, 0, 0, 0.8);}
-		#page-title .title-container.less {
-			h1 {margin-top: 20px; font-size: 28px;}
-			h2{font-size: 19px; margin:12px 0;}
-			h4{font-size:17px;}
+		
+		#page-title .title-container.less {padding-top:10px !important;
+			h1 {margin-top: 20px; font-size: 25px !important;}
+			h2{font-size: 17px; margin:10px 0 12px;}
+			h4{font-size:19px;line-height:1.6em;}
+			h4 span{display:none;}
+			h4 br{display:block;}
 		}
 		.intro {padding-bottom: 15px;h3 {font-size: 17px;}h4 {font-size: 15px;}}
 		p.res{font-size:17px;}
