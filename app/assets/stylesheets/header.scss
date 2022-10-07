@@ -121,7 +121,7 @@ header{background-color:$white;
     .col-md-9.mega-tab{max-width:100%; text-align:center;}
     .megamenu-parent{@include center-block();
       li{margin:0 8px;}
-      li a{line-height:1.5em; margin-bottom:15px;padding-top:5px;}
+      li a{line-height:1.5em; margin-bottom:15px;}
     }
   }
 }
