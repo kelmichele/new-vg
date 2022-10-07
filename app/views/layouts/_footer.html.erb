@@ -69,6 +69,10 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="cbp-caption cbp-link">
+                                <%= link_to '/yelp', target: '_blank' do %><h4>Reservations</h4><% end %>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -137,6 +141,7 @@
                         </ul>
                     </li>
 
+                    <li><%= link_to "Reservations", yelp_path, :target => '_blank' %></li>
                     <li><%= link_to "Events", pairing_path %></li>
 
                     <li><%= link_to "Wine List", wine_list_path %></li>
