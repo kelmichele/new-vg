@@ -130,7 +130,7 @@
                 <ul class="nav menu">
                     <li><%= link_to "Home", root_path %></li>
 
-                    <li class="deeper parent"><a href="#">Menus <span class="toggle-icon fa fa-angle-down"></span></a>
+                    <li class="deeper parent"><a href="#"><span class="toggle-icon">Menus <span class="XXXtoggle-icon fa fa-angle-down"></span></a>
                         <ul style="display: none;" class="nav-child unstyled small">
                             <li><%= link_to "Daily Menu", daily_menu_path %></li>
                             <li><%= link_to "Dinner", dinner_menu_path %></li>
@@ -141,7 +141,7 @@
                         </ul>
                     </li>
 
-                    <li><%= link_to "Reservations", yelp_path, :target => '_blank' %></li>
+                    <li class="sig"><%= link_to "Reservations", yelp_path, :target => '_blank' %></li>
                     <li><%= link_to "Events", pairing_path %></li>
 
                     <li><%= link_to "Wine List", wine_list_path %></li>
