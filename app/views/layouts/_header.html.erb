@@ -1,77 +1,21 @@
 <div id="h-wrap">
-  <!-- <div class="announce-bar">
+  <div class="announce-bar">
     <div class="announce">
-      <p class="ah-text">Join us for New Year's Eve 2021!</p>
-      <div class="links">
-        %= link_to 'Details & Menu', new_years_eve_path, class: 'ny-link one' %>
-        <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246500"><= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
-      </div>
+      <div class="phone"><a href="tel:+12512246500" class="tel">251-224-6500 (ext. 2)</a></div>
+      <div class="yelp"><%= link_to "Yelp Online Reservations", yelp_path, :target => '_blank' %></div>
+      <!--  <div class="nye">
+        <p class="ah-text">Join us for New Year's Eve 2021!</p>
+        <div class="links">
+          %= link_to 'Details & Menu', new_years_eve_path, class: 'ny-link one' %>
+          <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246500"><= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
+        </div>
+      </div> -->
     </div>
   </div>
-  <div class="clearfix"></div> -->
+  <div class="clearfix"></div>
 
 
   <header class="header">
-    <div id="top-bar-wrapper" class="clearfix">
-      <div class="inner-tbw">
-        <div class="tb-col tbc1">
-          <i class="fa fa-phone"></i>
-          <a href="tel:+12512246500" class="tel">251-224-6500 (ext. 2)</a>
-        </div>
-
-        <div class="tb-col tbc2">
-          <div id="sign-up" class="signup">
-            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-            <div id="mc_embed_signup">
-              <form action="https://ginnylanebargrill.us10.list-manage.com/subscribe/post?u=fe0c421eb8ae1acbc885e39d3&amp;id=303b0e0335" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div id="mc_embed_signup_scroll">
-                  <label for="mce-EMAIL">Join Our Mailing List</label>
-                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe0c421eb8ae1acbc885e39d3_303b0e0335" tabindex="-1" value=""></div>
-                  <div class="clear sub-btn"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- <div class="col-md-4 Xcol-md-offset-4 xs-f"> -->
-        <div class="tb-col tbc3">
-          <ul id="social-links">
-            <li>
-              <%= link_to '/fb', target: '_blank' do %>
-                <i class="fa fa-facebook"></i>
-              <% end %>
-            </li>
-
-            <li>
-              <%= link_to '/insta', target: '_blank' do %>
-                <i class="fa fa-instagram"></i>
-              <% end %>
-            </li>
-
-            <li>
-              <%= link_to '/twitter', target: '_blank' do %>
-                <i class="fa fa-twitter"></i>
-              <% end %>
-            </li>
-
-            <li class="adv">
-              <div id="TA_socialButtonBubbles315" class="TA_socialButtonBubbles">
-                <ul id="RyzN41p0Q8j" class="TA_links r04oU5">
-                  <li id="qY8coROITv" class="UMF8YEGBm">
-                    <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g30753-d1074736-Reviews-Villaggio_Grille-Orange_Beach_Alabama.php"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x20_green-21693-2.png" /></a>
-                  </li>
-                </ul>
-              </div>
-              <script src="http://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=315&amp;locationId=1074736&amp;color=green&amp;size=sm&amp;lang=en_US&amp;display_version=2"></script></li>
-          </ul>
-        </div>        
-      </div>
-    </div>
-
     <div class="main-header">
       <div class="col-md-3 logo-block">
         <%= link_to(image_tag('villaggio-logo.png', alt: 'Villaggio Grille Logo', class: 'img-responsive logo-img'), root_path ) %>
@@ -94,6 +38,65 @@
           <h5>Main Menu</h5>
         </a>
       <!-- </div> -->
+    </div>
+
+    <div id="top-bar-wrapper" class="clearfix">
+      <div class="inner-tbw">
+        <div class="tb-col tbc1">
+          <a href="tel:+12512246500" class="tel">251-224-6500 (ext. 2)</a>
+        </div>
+
+        <div class="tb-col tbc2">
+          <div id="sign-up" class="signup">
+            <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+            <div id="mc_embed_signup">
+              <form action="https://ginnylanebargrill.us10.list-manage.com/subscribe/post?u=fe0c421eb8ae1acbc885e39d3&amp;id=303b0e0335" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <label for="mce-EMAIL">Join Our Mailing List</label>
+                  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fe0c421eb8ae1acbc885e39d3_303b0e0335" tabindex="-1" value=""></div>
+                  <div class="clear sub-btn"><input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tb-col tbc3">
+          <ul id="social-links">
+            <li>
+              <%= link_to '/fb', target: '_blank' do %>
+                <i class="fa fa-facebook"></i>
+              <% end %>
+            </li>
+
+            <li>
+              <%= link_to '/insta', target: '_blank' do %>
+                <i class="fa fa-instagram"></i>
+              <% end %>
+            </li>
+
+            <li>
+              <%= link_to '/twitter', target: '_blank' do %>
+                <i class="fa fa-twitter"></i>
+              <% end %>
+            </li>
+
+            <div class="clearfix socBreak"></div>
+
+            <li class="adv">
+              <div id="TA_socialButtonBubbles315" class="TA_socialButtonBubbles">
+                <ul id="RyzN41p0Q8j" class="TA_links r04oU5">
+                  <li id="qY8coROITv" class="UMF8YEGBm">
+                    <a target="_blank" href="http://www.tripadvisor.com/Restaurant_Review-g30753-d1074736-Reviews-Villaggio_Grille-Orange_Beach_Alabama.php"><img src="http://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x20_green-21693-2.png" /></a>
+                  </li>
+                </ul>
+              </div>
+              <script src="http://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=315&amp;locationId=1074736&amp;color=green&amp;size=sm&amp;lang=en_US&amp;display_version=2"></script></li>
+          </ul>
+        </div>        
+      </div>
     </div>
   </header>
 </div>
