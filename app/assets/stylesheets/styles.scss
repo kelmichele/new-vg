@@ -44,17 +44,24 @@ html{background:transparent;}
 body {
     background-image: url(image_path('zenbg.png'));
     background-repeat: repeat;
-    margin: 0 120px;
     font-size: 16px;
     line-height: 1.4em;
     color: $font-color;
 
+    // margin: 0 120px;
+    // @media (max-width:1235px){margin: 0 50px;}
+    // @include bp(md) {margin: 0 30px;}
+    // @include bp(sm) {margin: 0 5px;}
+    // @include bp(xs) {margin: 0 5px;}
+}
+
+.bodyWrap{margin: 0 120px;
     @media (max-width:1235px){margin: 0 50px;}
-    // @include bp(tb) {margin: 0 60px;}
     @include bp(md) {margin: 0 30px;}
     @include bp(sm) {margin: 0 5px;}
     @include bp(xs) {margin: 0 5px;}
 }
+
 .main-wrapper {@include sec-default (); background-color: $white; }
 .wrapper {padding: 0;}
 .page-content { @include sec-default; padding:40px 0;

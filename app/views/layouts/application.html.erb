@@ -37,12 +37,33 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
-      <div class="appWrap">
-    	  <%= render 'layouts/header' %>
-          <div class="main-wrapper">
-            <%= yield %>
+      <div class="abBanner">
+        <div class="inside">
+          <p class="ah-text">Join Us for New Year's Eve!</p>
+          
+          <div class="links">  
+            <%= link_to new_years_eve_path, class: 'ny-link one' do %>
+              <span>Click here for</span><br>
+              Details &amp; Menu
+            <% end %>
+
+            <div class="ny-link two">
+              <a href="tel: +12512246500">
+                <span>Call For Reservations:</span><br>
+                <%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+            </div>
           </div>
-        <%= render 'layouts/footer' %>
+        </div>
+      </div>
+
+      <div class="bodyWrap">
+        <div class="appWrap">
+      	  <%= render 'layouts/header' %>
+            <div class="main-wrapper">
+              <%= yield %>
+            </div>
+          <%= render 'layouts/footer' %>
+        </div>
       </div>
 	</body>
 </html>

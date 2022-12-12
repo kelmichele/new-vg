@@ -2,9 +2,133 @@ OLD RESERVATIONS/ BOOK A TABLE LINK
   <!-- <li class="menu-item"><= link_to "Book a Table", yelp_path, :target => '_blank' %></li> -->
 
 
-
 JULY 14 2021 -- TEMP REPLACED YELP RESERVATIONS WITH PHONE:
 	footer, contact (pages), contact(layouts), nav, home, 
+
+
+
+
+NYE WITH TABS
+	- replaced for 2023 bc of no extra details for courses...
+	<!-- <div class="intro">
+		          	    <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
+		          	  </div> -->
+		<% @page_title = "New Year's Eve" %>
+		<% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
+
+		<div class="events-listing-page">
+		  <div id="page-title" class="pt-bkg-image image-nye">
+		  	<div class="overlay">
+		      <div class="container">
+		        <div class="title-container less">
+		        	<h2>Join us for a Celebration</h2>
+		          <h1>New Year's Eve 2021</h1>
+				      <h3>Friday, December 31, 2021</h3>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="page-content faq-section">
+		    <div class="tabs nyTabs">
+		      <div id="js-filters-tabs" class="cbp-l-filters-big">
+		      	<div class="innerTabBtns"><div class="innerin">
+				      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
+			          <div class="tab-title">Details</div>
+			        </div>
+
+			        <div data-filter=".early" class="cbp-filter-item">
+			          <div class="tab-title">Early Bird Menu</div>
+			        </div>
+
+			        <div data-filter=".reg" class="cbp-filter-item ">
+			          <div class="tab-title">4-Course Menu</div>
+			        </div>
+			      </div></div>
+		      </div>
+
+		      <div class="container food-menus no-padding">
+		        <div id="faq" class="cbp cbp-l-grid-faq">
+		          <div class="cbp-item details">
+								<div class="dets">
+			          	<!-- <h5>Each seating is reservation only. Credit card is required to hold reservation.<br> -->
+			          	<!-- <hr class="hlf"> -->
+
+									<div class="time early-seat">
+										<h4><b>Early Bird Seating:</b></h4>
+										<p>3-Course Meal &amp; champagne toast</p>
+										<hr>
+										<p class="big">5pm<br> $65 per guest<br><a href="NYE2021-early.pdf" target="_blank" class="image-menu">View Menu</a></p>
+										<hr>
+		          	    <p class="res">Call For Reservations:<br>
+		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    </p>
+			              <div class="clearfix"></div>
+									</div>
+
+									<div class="time reg-seat">
+										<h4><b>Additional Seatings:</b></h4>
+										<p>4-Course Meal &amp; champagne toast</p>
+										<hr>
+										<p class="big">7pm &nbsp;&amp;&nbsp; 9:30pm <br> $100 per guest<br><a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">View Menu</a></p>
+										<hr>
+										<p class="res">Call For Reservations:<br>
+		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    </p>
+			              <div class="clearfix"></div>
+									</div>
+			          </div>
+			        </div>
+
+			        <div class="cbp-item early">
+			        	<div class="container food-menus no-padding">
+			        	  <div class="col-md-10 center-block col-sm-12"><!-- menuFluid -->
+			        	    <div class="service-box-2 headBox">
+			        	    	<h4>Early Bird Seating: 5pm - $65 per guest</h4>
+			        	    	<p class="ltext">Click the menu below to see larger version</p>
+			        	    	<p class="res">Call For Reservations:<br>
+		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+			          	    </p>
+			          	  </div>
+
+			        	    <div class="service-box-2">
+											<a href="NYE2021-early.pdf" target="_blank" class="image-menu">
+												<%= image_tag('NYE2021-early.jpg', alt: 'Villaggio Grille 2021 NYE Early Menu', class:'nye-menu') %>
+											</a>
+			        	    </div>
+			        	  </div>
+			        	</div>
+			        </div>
+
+		          <div class="cbp-item reg">
+		          	<div class="container food-menus no-padding">
+		          	  <div class="col-md-10 center-block col-sm-12">
+		          	  	<div class="service-box-2 headBox">
+			        	    	<h4>Seatings: 7pm &amp; 9:30pm - $100 per guest</h4>
+				        	    <p class="ltext">Click the menu below to see larger version</p>
+			        	    	<p class="res">Call For Reservations:<br>
+		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+			          	    </p>
+			          	  </div>
+
+		          	    <div class="service-box-2">
+											<a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">
+												<%= image_tag('NYE2021-dinner.jpg', alt: 'Villaggio Grille 2021 NYE Dinner Menu', class:'nye-menu') %>
+											</a>
+		          	    </div>
+		          	  </div>
+		          	</div>
+				      </div>
+
+			      </div>
+			    </div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12"><div class="hr hr-png-1"></div></div>
+
+
 
 
 CUSTOM WINE HEADER
