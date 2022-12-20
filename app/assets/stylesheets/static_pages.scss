@@ -939,17 +939,44 @@ $wgreen:#5f836f;
 	}
 	
 
+	h1,h2,h3,h4,p{
+		span{color:inherit;}
+		span.num{font-family:$open;}
+	}
+	p{color:$black;}
+	p.instr{margin-bottom:0;font-size:17px;font-style:italic;line-height:1.3em;}
+
 	.simpleTitle{text-align:center;padding:35px 0 20px;
 		h1, p{margin:0;}
-		h1{font-size:45px;font-weight:bold;text-transform:uppercase;
-			span{color:inherit;}
-		}
-		p, a{color:$black;font-family:$open;font-size:18px;}
-
+		h1{font-size:45px;font-weight:bold;text-transform:uppercase;color:$burg;}
+		p, a{color:$black;font-family:$open;font-size:19px;}
+		a:hover{opacity:.8;}
+		p.res{margin-bottom:5px;padding-bottom:0;}
+		p.instr{font-size:15px;color:#595959;}
 	}
 
-	p.instr{color:$black;margin-bottom:0;font-size:17px;font-style:italic;line-height:1.3em;}
 	.menuImg img{box-shadow: 0px 10px 30px rgba($black,.1);}
+
+	.il-event{display:inline-block;width:48%;
+		&.one{float:left;}
+		&.two{float:right;}
+
+		h4{margin-bottom:5px;font-size:28px;font-weight:bold;}
+		h4 span.num{font-weight:normal;}
+		p{font-size:20px;font-family:$open;}
+
+		a:hover h4, a:hover p{opacity:.8;}
+	}
+
+
+	@include bp(tw) {
+		.il-event{width:50%;
+			&.one{margin-left:-2%;}
+			&.two{margin-right:-2%;}
+			h4{font-size:25px;}
+			p{font-size:18px;}
+		}
+	}
 
 	@include bp(lg) {
 		.elp-nye::before{height:550px;}
@@ -958,6 +985,11 @@ $wgreen:#5f836f;
 			h1{font-size:38px;}
 		  h2{font-size:24px;}
 		  p, a{font-size:17px;}
+		}
+
+		.il-event{
+			h4{font-size:23px;}
+			p{font-size:17px;}
 		}
 	}
 	@include bp(br) {

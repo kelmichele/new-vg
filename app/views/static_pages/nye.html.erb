@@ -5,128 +5,39 @@
 <% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
 
 <div class="events-listing-page elp-nye">
-  <!-- <div id="page-title" class="pt-bkg-image image-nye">
-  	<div class="overlay">
-      <div class="container">
-        <div class="title-container less">
-        	<h2>Join us for a Celebration</h2>
-          <h1>New Year's Eve 2022</h1>
-		      <h3>Saturday, December 31, 2022</h3>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="fullSec simpleTitle">
-  	<!-- <h2>Join Us for a Celebration</h2> -->
     <h1>New Year's Eve <span class="num">2022</span></h1>
-    <h2>Saturday, December 31, 2022</h2>
+    <h2>Saturday, December <span class="num">31, 2022</span></h2>
 	  <p class="res">Call For Reservations: <a href="tel:+12512246500">251.224.6500</a> (ex. 2)</p>
-	  	<!-- <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span> -->
+  	<p class="instr">Click an option below to view a larger menu</p>
   </div>
 
   <div class="page-content XXfaq-section">
   	<div class="inside">
-	  	<p class="instr">Click on the menu below to view a larger version</p>
-	  	<a href="NewYearsMenu2023.pdf" target="_blank" class="menuImg">
-		  	<%= image_tag "nye-menu.jpg", class: "nye-menu", alt:"Villaggio's New Year's Eve Menu" %>
-		  </a>
+	  	<!-- <a href="NewYearsMenu2023.pdf" target="_blank" class="menuImg">
+		  	<= image_tag "nye-menu.jpg", class: "nye-menu", alt:"Villaggio's New Year's Eve Menu" %>
+		  </a> -->
+
+
+		  <div class="il-event one">
+		  	<a href="NewYearsMenu2023-early.pdf" target="_blank" class="menuImg">
+		  		<h4><span class="num">3</span>-Course Early Bird Seating</h4>
+		  		<p> 5pm &nbsp;&middot;&nbsp; $65 per guest</p>
+			  	<%= image_tag "NewYearsMenu2023-early.jpg", class: "nye-menu", alt:"Villaggio's New Year's Early Menu" %>
+			  </a>
+		  </div>
+
+		  <div class="il-event two">
+		  	<a href="NewYearsMenu-2023.pdf" target="_blank" class="menuImg">
+		  		<h4><span class="num">4</span>-Course Seating</h4>
+		  		<p>7pm &amp; 9pm &nbsp;&middot;&nbsp; $100 per guest</p>
+
+			  	<%= image_tag "NewYearsMenu-2023.jpg", class: "nye-menu", alt:"Villaggio's New Year's Eve Menu" %>
+			  </a>
+		  </div>
+
+
 		</div>
-
-
-    <!-- <div class="tabs nyTabs">
-      <div id="js-filters-tabs" class="cbp-l-filters-big">
-      	<div class="innerTabBtns"><div class="innerin">
-		      <div data-filter=".details" class="cbp-filter-item cbp-filter-item-active">
-	          <div class="tab-title">Details</div>
-	        </div>
-
-	        <div data-filter=".early" class="cbp-filter-item">
-	          <div class="tab-title">Early Bird Menu</div>
-	        </div>
-
-	        <div data-filter=".reg" class="cbp-filter-item ">
-	          <div class="tab-title">4-Course Menu</div>
-	        </div>
-	      </div></div>
-      </div>
-
-      <div class="container food-menus no-padding">
-        <div id="faq" class="cbp cbp-l-grid-faq">
-          <div class="cbp-item details">
-						<div class="dets">
-	          	// // <h5>Each seating is reservation only. Credit card is required to hold reservation.<br>
-	          	// // <hr class="hlf">
-
-							<div class="time early-seat">
-								<h4><b>Early Bird Seating:</b></h4>
-								<p>3-Course Meal &amp; champagne toast</p>
-								<hr>
-								<p class="big">5pm<br> $65 per guest<br><a href="NYE2021-early.pdf" target="_blank" class="image-menu">View Menu</a></p>
-								<hr>
-          	    <p class="res">Call For Reservations:<br>
-          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
-          	    </p>
-	              <div class="clearfix"></div>
-							</div>
-
-							<div class="time reg-seat">
-								<h4><b>Additional Seatings:</b></h4>
-								<p>4-Course Meal &amp; champagne toast</p>
-								<hr>
-								<p class="big">7pm &nbsp;&amp;&nbsp; 9:30pm <br> $100 per guest<br><a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">View Menu</a></p>
-								<hr>
-								<p class="res">Call For Reservations:<br>
-          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
-          	    </p>
-	              <div class="clearfix"></div>
-							</div>
-	          </div>
-	        </div>
-
-	        <div class="cbp-item early">
-	        	<div class="container food-menus no-padding">
-	        	  <div class="col-md-10 center-block col-sm-12">
-	        	    <div class="service-box-2 headBox">
-	        	    	<h4>Early Bird Seating: 5pm - $65 per guest</h4>
-	        	    	<p class="ltext">Click the menu below to see larger version</p>
-	        	    	<p class="res">Call For Reservations:<br>
-          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
-	          	    </p>
-	          	  </div>
-
-	        	    <div class="service-box-2">
-									<a href="NYE2021-early.pdf" target="_blank" class="image-menu">
-										<%= image_tag('NYE2021-early.jpg', alt: 'Villaggio Grille 2021 NYE Early Menu', class:'nye-menu') %>
-									</a>
-	        	    </div>
-	        	  </div>
-	        	</div>
-	        </div>
-
-          <div class="cbp-item reg">
-          	<div class="container food-menus no-padding">
-          	  <div class="col-md-10 center-block col-sm-12">
-          	  	<div class="service-box-2 headBox">
-	        	    	<h4>Seatings: 7pm &amp; 9:30pm - $100 per guest</h4>
-		        	    <p class="ltext">Click the menu below to see larger version</p>
-	        	    	<p class="res">Call For Reservations:<br>
-          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
-	          	    </p>
-	          	  </div>
-
-          	    <div class="service-box-2">
-									<a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">
-										<%= image_tag('NYE2021-dinner.jpg', alt: 'Villaggio Grille 2021 NYE Dinner Menu', class:'nye-menu') %>
-									</a>
-          	    </div>
-          	  </div>
-          	</div>
-		      </div>
-
-	      </div>
-	    </div>
-		</div> -->
 	</div>
 </div>
 

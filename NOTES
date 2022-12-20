@@ -10,6 +10,18 @@ JULY 14 2021 -- TEMP REPLACED YELP RESERVATIONS WITH PHONE:
 
 NYE WITH TABS
 	- replaced for 2023 bc of no extra details for courses...
+
+	<!-- <div id="page-title" class="pt-bkg-image image-nye">
+  	<div class="overlay">
+      <div class="container">
+        <div class="title-container less">
+        	<h2>Join us for a Celebration</h2>
+          <h1>New Year's Eve 2022</h1>
+		      <h3>Saturday, December 31, 2022</h3>
+        </div>
+      </div>
+    </div>
+  </div> -->
 	<!-- <div class="intro">
 		          	    <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
 		          	  </div> -->
