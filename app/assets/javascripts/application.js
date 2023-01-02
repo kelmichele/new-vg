@@ -24,5 +24,5 @@
 //= require include
 //= require jquery.themepunch.revolution.min
 //= require jquery.themepunch.tools.min
-//= require tether.min
-//= require bootstrap
+// require tether.min
+// require bootstrap

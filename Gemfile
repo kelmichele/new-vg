@@ -13,7 +13,7 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'uglifier', '>= 1.3.0', '< 2.6.2'
 gem 'coffee-rails', '~> 4.2'
-gem 'bootstrap'
+# gem 'bootstrap'
 
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
