@@ -20,7 +20,7 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier 
-  #KPKP -- UGLIFIER (above) STARTED FAILING 1/2/2023 -- tested updates failed...downgraded gem version
+  # KPKP -- UGLIFIER (above) STARTED FAILING 1/2/2023 -- tested updates failed...downgraded gem version
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
