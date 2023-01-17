@@ -19,14 +19,14 @@ Rails.application.routes.draw do
     # get '/nye', to: 'static_pages#nye'
     get '/new-years-eve', to: 'static_pages#nye'
     # get '/valentines', to: 'static_pages#valentines'
-    # get '/daddy-daughter-date', to: 'static_pages#daddy-daughter-date'
+    get '/daddy-daughter-date', to: 'static_pages#daddy-daughter-date'
     # get '/pairing', to: 'static_pages#event-list'
     get '/events', to: 'static_pages#event-list'
     get '/event-list', to: 'static_pages#event-list'
     get '/nye', to: 'static_pages#event-list'
     # get '/new-years-eve', to: 'static_pages#event-list'
     get '/valentines', to: 'static_pages#event-list'
-    get '/daddy-daughter-date', to: 'static_pages#event-list'
+    # get '/daddy-daughter-date', to: 'static_pages#event-list'
 
 
     get '/opentable', to: 'links#opentable'
