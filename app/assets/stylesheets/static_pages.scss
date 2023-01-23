@@ -619,7 +619,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 }
 .dinner-menu {.lunch-price, .lunch-only, .brunch-only, .no-dinner{display: none;}}
 .daily-menu {.dinner-price, .dinner-only, .brunch-only, .no-lunch{display: none;}}
-.brunch-menu .no-brunch{display: none;}
+.brunch-menu{.no-brunch, .dinner-only{display: none;}}
 
 .brunch-menu{
 	.page-content{padding:30px 0 10px;}

@@ -1,4 +1,7 @@
 <!-- %= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %>  -->
+<!-- -rmv from dinner, but not sure about brunch?- Lamb au Poivre
+Lamb Lollipop, With Silver Dollar, Cremini, & Shiitake Mushrooms, Basil Arancini Cake -->
+
 <div class="cbp-caption snacks">
   <div class="cbp-caption-defaultWrap"><h4>Starters</h4></div>
 
@@ -9,14 +12,14 @@
         <p>Lightly Fried Seasoned Calamari, Parmesan Cheese, Lemon, Citrus Sweet Chili</p>
       </div>
 
-      <div class="menu-item">
-        <h4>Chef Board <span> ... $16</span></h4>
-        <p>Artisanal Meats &amp; Cheese - 3 Cheeses &amp; 2 Meats with Accompaniments</p>
+      <div class="menu-item no-lunch">
+        <h4>Beef Carpaccio <span> ... $16</span></h4>
+        <p>Thinly Sliced Rare Beef Tenderloin over Arugula with Capers, Red Onions &amp; Horseradish Cream</p>
       </div>
 
       <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Oyster Duo <span> ... $22</span></h4>
-        <p>2 of each: Proscuitto Rockefeller, Gouda &amp; Green Onion</p>
+        <h4>Chef Board <span> ... $16</span></h4>
+        <p>Artisanal Meats &amp; Cheese - 3 Cheeses &amp; 2 Meats with Accompaniments</p>
       </div>
 
       <div class="menu-item">
@@ -24,16 +27,23 @@
         <p>Spanish Chorizo, White Wine Butter Sauce, Roasted Tomatoes, Toasted Baguette Slices, Herbs, Lemon</p>
       </div>
 
-      <div class="menu-item no-lunch">
-        <h4>Lamb au Poivre <span> ... $20</span></h4>
-        <p>Lamb Lollipop, with Silver Dollar, Cremini, &amp; Shiitake Mushrooms, Basil Arancini Cake</p>
+      <div class="menu-item dinner-only">
+        <h4>Baked Brie <span> ... $16</span></h4>
+        <p>Spiced Walnuts, Granny Smith Apples, Black Mission Figs, Honey &amp; Assorted Crackers</p>
       </div>
 
-      <div class="menu-item no-lunch">
-        <h4>Beef Carpaccio <span> ... $16</span></h4>
-        <p>Thinly Sliced Rare Beef Tenderloin over Arugula with Capers, Red Onions &amp; Horseradish Cream</p>
+      <div class="menu-item no-dinner">
+        <!-- ** DINNER MENU UPDATED 1/23 with dif oyster option -->
+        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Oyster Duo <span> ... $22</span></h4>
+        <p>2 of each: Proscuitto Rockefeller, Gouda &amp; Green Onion</p>
       </div>
-      
+
+      <div class="menu-item dinner-only">
+        <h4>Wood Fired Oysters (8) <span> ... $20</span></h4>
+        <p><b>Gorgonzola &amp; Shallot</b><br>Chili Butter with Focaccia Crumbles</p>
+        <p>—— OR ——</p>
+        <p><b>Prosciutto Rockefeller</b><br>Gouda &amp; Green Onion</p>
+      </div>
     </div>
   </div>
 </div>
@@ -43,42 +53,68 @@
 
   <div class="cbp-caption-activeWrap">
     <div class="cbp-l-caption-body">
-      <!-- <div class="menu-item"><p class="text-center">Add Chicken - $5 &nbsp; | &nbsp; Add Scallop - $6 &nbsp; | &nbsp; Add Shrimp - $8</p></div> -->
-      <!-- <div class="menu-item"><p class="text-center">Add Chicken <span>- $5</span> &nbsp; | &nbsp; Add Scallop <span>- $6</span> &nbsp; | &nbsp; Add Shrimp <span>- $8</span></p></div> -->
+      <!-- ** KPKP ** 1/23 just separating dinner until ... -->
 
-      <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Classic Spinach <span> ... $8</span></h4>
-        <p>Spinach, Mozzarella, Toasted Almonds, Heirloom Grape Tomato, Red Onion, Roasted Fig Vinaigrette<br>
-          <b>Add:</b> Salmon &middot; Scallops (2) &middot; Grilled or Blackened Chicken
-        </p>
+      <div class="no-dinner">
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Classic Spinach <span> ... $8</span></h4>
+          <p>Spinach, Mozzarella, Toasted Almonds, Heirloom Grape Tomato, Red Onion, Roasted Fig Vinaigrette<br>
+            <b>Add:</b> Salmon &middot; Scallops (2) &middot; Grilled or Blackened Chicken
+          </p>
+        </div>
+
+        <div class="menu-item">
+          <h4>Chopped Caesar <span> ... $8</span></h4>
+          <p>Romaine Hearts, Grape Tomatoes, Croutons, Pecorino Romano, Tossed in Caesar Dressing</p>
+        </div>
+
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Goat Cheese &amp; Walnut <span> ... $14</span></h4>
+          <p>Spring Mix, Dried Cherries, Spiced Walnuts, Goat Cheese, Roasted Fig Vinaigrette</p>
+        </div>
+
+        <div class="menu-item no-lunch">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Scallop &amp; Arugula <span> ... $16</span></h4>
+          <p>Butter Lettuce, Arugula, Seared Diver Scallops, Goat Cheese, Toasted Pumpkin Seed, Strawberries, Blueberries, Candied Bacon, Shallot Sherry Vinaigrette</p>
+        </div>
+
+        <div class="menu-item no-lunch">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Burrata &amp; Beet <span> ... $14</span></h4>
+          <p>Roasted Golden &amp; Red Beets, Sliced Burrata, Basil Pesto Oil, Heirloom Tomato </p>
+        </div>
+
+        <div class="menu-item lunch-only">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Blackened Salmon Salad <span> ... $16</span></h4>
+          <p>Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomatoes, Goat Cheese, tossed in Champagne Vinaigrette</p>
+        </div>
       </div>
 
-      <div class="menu-item">
-        <h4>Chopped Caesar <span> ... $8</span></h4>
-        <p>Romaine Hearts, Grape Tomatoes, Croutons, Pecorino Romano, Tossed in Caesar Dressing</p>
+      <div class="dinner-only">
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Villaggio House Salad <span> ... $9</span></h4>
+          <p>Dried Cherries, Spiced Walnuts, Goat Cheese, Roasted Fig Vinaigrette</p>
+        </div>
+
+        <div class="menu-item">
+          <h4>Grilled Caesar <span> ... $12</span></h4>
+          <p>Chargrilled Romaine, Cherry Heirloom Tomatoes, Bleu Cheese Crumbles, Bacon, Focaccia Croutons, Caesar Dressing</p>
+        </div>
+
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Spinach &amp; Chicken <span> ... $14</span></h4>
+          <p>Spinach, Cherry Heirloom Tomatoes, Red Onion, Feta, Bacon Vinaigrette, Focaccia Croutons</p>
+        </div>
+
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Caprese  <span> ... $14</span></h4>
+          <p>Yellow Beefsteak Tomatoes, Fresh Mozzarella, Basil Pesto, Olive Oil &amp; Fresh Basil</p>
+        </div>
+
+        <div class="menu-item">
+          <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Blackened Salmon Salad <span> ... $16</span></h4>
+          <p>Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomatoes, Goat Cheese, tossed in Champagne Vinaigrette</p>
+        </div>
       </div>
-
-      <div class="menu-item">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Goat Cheese &amp; Walnut <span> ... $14</span></h4>
-        <p>Spring Mix, Dried Cherries, Spiced Walnuts, Goat Cheese, Roasted Fig Vinaigrette</p>
-      </div>
-
-      <div class="menu-item no-lunch">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Scallop &amp; Arugula <span> ... $16</span></h4>
-        <p>Butter Lettuce, Arugula, Seared Diver Scallops, Goat Cheese, Toasted Pumpkin Seed, Strawberries, Blueberries, Candied Bacon, Shallot Sherry Vinaigrette</p>
-      </div>
-
-      <div class="menu-item no-lunch">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Burrata &amp; Beet <span> ... $14</span></h4>
-        <p>Roasted Golden &amp; Red Beets, Sliced Burrata, Basil Pesto Oil, Heirloom Tomato </p>
-      </div>
-
-
-      <div class="menu-item lunch-only">
-        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Blackened Salmon Salad <span> ... $16</span></h4>
-        <p>Salmon, Butter Lettuce, Arugula, Red Onion, Toasted Pumpkin Seeds, Dried Figs, Grape Tomatoes, Goat Cheese, tossed in Champagne Vinaigrette</p>
-      </div>
-
     </div>
   </div>
 </div>
