@@ -8,98 +8,25 @@
     </div>
   </div>
 
-  <div class="page-content food-menus">
+  <div class="page-content food-menus linkFull">
     <section class="tabs-example">
       <div class="tabs">
         <div class="container no-padding">
           <div class="col-md-8 col-md-offset-2 col-xs-12">
             <div id="accordeon" class="col-md-12 no-padding">
               <div class="cbp-item">
-                <%= render 'shared/newSnacks' %>
-
-                <div class="cbp-caption pastas">
-                  <div class="cbp-caption-defaultWrap"><h4>Pastas</h4></div>
+                <div class="cbp-caption second">
+                  <div class="cbp-caption-defaultWrap"><h4>Food & Bar</h4></div>
 
                   <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-                      <div class="menu-item">
-                        <h4>Seafood Pasta</h4>
-                        <p>Lump Lobster Meat, Gulf Shrimp, Crab, Fettuccine, House Made Alfredo & Fresh Basil</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Bolognese</h4>
-                        <p>Pappardelle Pasta with Ground Beef &amp; Pork, Smoked Bacon, Fresh Basil, Tomato Cream Sauce</p>
-                      </div>
-
-                      <!-- <div class="menu-item">
-                        <h4>Shrimp Sacchetti</h4>
-                        <p>Truffle Ricotta Sacchetti, Gulf Shrimp, Spanish Chorizo, Sun Dried Tomatoes, Peas, Chardonnay Cream</p>
-                      </div> -->
-
-                      <div class="menu-item">
-                        <h4>Braised Short Rib Ravioli</h4>
-                        <p>House Made Short Rib Ravioli, Wild Mushrooms, Baby Carrots, Pecorino Romano</p>
-                      </div>
-
-                      <!-- <div class="menu-item">
-                        <h4>Veal Piccata</h4>
-                        <p>Pan Fried Veal, Fettuccine, Lemon, Capers, Caramelized Onion, White Wine, Herbs</p>
-                      </div> -->
-
-                      <div class="menu-item">
-                        <h4>Spaghetti &amp; Meatballs</h4>
-                        <p>House Made Pork & Beef Meatballs, Roasted Herb Tomatoes, Basil, Oven Dried Heirloom Cherry Tomatoes</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Basil Chicken</h4>
-                        <p>Angel Hair, Grilled Chicken, Basil Pesto, Cream, Roasted Herb Tomatoes, Wild Mushrooms, Pecorino Romano</p>
-                      </div>                      
+                    <div class="cbp-l-caption-body menuLink">
+                      <%= link_to "DinnerMenu.pdf", target: '_blank', class: 'menu-item' do %>
+                        <p>Click the image below to see a larger version</p>
+                        <%= image_tag('menuDinner.png', class: 'img-responsive border', alt: "Villaggio Dinner Menu, Orange Beach, AL restaurant") %>
+                      <% end %>
                     </div>
                   </div>
                 </div>
-
-
-                <div class="cbp-caption entrees">
-                  <div class="cbp-caption-defaultWrap"><h4>Mains</h4></div>
-
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-
-                      <div class="menu-item">
-                        <h4>Black Angus Filet</h4>
-                        <p>Baked Gouda and Caramelized Onion Smashed Red Potatoes, Asparagus, Veal Demi<br><b>Oscar Style:</b> $10 &nbsp; | &nbsp; <b>Gorgonzola Cream:</b> $4</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Crab Encrusted Grouper</h4>
-                        <p>Truffle Mash, Corn Maque Choux, Hollandaise</p>
-                      </div>
-                      
-                      <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Pan Seared Diver Scallops</h4>
-                        <p>Spinach &amp; Peach Risotto, Walnut Brown Butter</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Bone-in Duroc Pork Chop</h4>
-                        <p>Baked Pancetta, Mushroom Mac &amp; Cheese, Green Beans, Peach Aioli</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Blackened Chilean Salmon</h4>
-                        <p>Sun Dried Tomato &amp; Gouda Risotto, Roasted Squash &amp; Zucchini, Creole Cream</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Truffle Shrimp</h4>
-                        <p>Honey, Truffle Glazed Gulf Shrimp, Roasted Tomato Risotto, Broccolini</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
 
                 <%= render "shared/menu-share" %>
               </div>

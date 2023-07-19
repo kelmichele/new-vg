@@ -22,3 +22,5 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+/app/views/static_pages/MENUSb4pdf.html.erb

@@ -1,3 +1,6 @@
+SWITCHED LUNCH & DINNER TO PDF'S -- 7/19/2023. old set up in static pages file, but gitignored
+
+
 BANNER IN APP.erb (for fw instead of header width)
 	<div class="abBanner">
     <div class="inside">

@@ -1,6 +1,4 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// New menu setup at bottom
 
 @import "variables";
 @import "mixins";
@@ -884,8 +882,6 @@ $wgreen:#5f836f;
 	}
 }
 
-
-
 .special-events .roaring20s {
 	#page-title.image-20s{background-color: $black;
 		// background-image: url(image_path('roaring.jpg')); background-size:50%; background-position: left center;
@@ -1268,8 +1264,6 @@ $wgreen:#5f836f;
 }
 
 
-
-
 //  HIDDEN PRICES
 .dinner-menu, .daily-menu, .brunch-menu{
 	.menu-item span{display:none;}
@@ -1312,19 +1306,19 @@ $wgreen:#5f836f;
 
 
 
-// NOT IN USE
-.food-truck {
-	#page-title {height: 400px;}
-	.image-truck .title {
-	    background-color: rgba(0, 0, 0, 0.5);
-	    width: 45%;
-	    padding: 20px;
+/***************************************/
+/******** NEW MENU PDF STYLE ***********/
+/***************************************/
+.food-menus.linkFull{
+	.menuLink{text-align:center;padding:0 15px;
+		p{text-transform:none;}
 	}
-
-	@include bp(md) {
-	  	.pt-bkg-image-truck .title {
-		    width: 100%;
-		    padding: 10px;
-	  	}
-	}
+	img{margin-top:15px;box-shadow:0px 10px 20px rgba($black,.1);}
+	.border{border:1px solid rgba($black,.1);}
 }
+
+
+
+
+
+
