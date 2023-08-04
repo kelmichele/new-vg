@@ -60,11 +60,10 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		hr{width:30%;@include center-block();margin:20px auto;border-color:rgba($black,.15);}
 		.dsInner{@include center-block();width:95%;max-width:560px;}
 		.deliveryLogo{display:inline-block;width:32%;max-width:175px;//margin:0 1%;vertical-align:top;
-				&.uber{float:left;}
-				&.waitr{float:right;}
-
 	      &.narrow{margin-top:6%;margin-top:9%;} // ONLY IF THERE IS A TALL LOGO TOO
 	      &.tall{max-width:140px;}
+	      &.pickup{float:left;margin-top:5%;}
+				&.waitr{float:right;}
 	    }
 		}
 
@@ -110,7 +109,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
     	p{width:90%;}
 
     	.deliverySec{text-align:center;
-    		.deliveryLogo,.deliveryLogo.uber,.deliveryLogo.waitr{width:100%;display:block;float:none;margin:15px auto;}
+    		.deliveryLogo,.deliveryLogo.pickup,.deliveryLogo.waitr{width:100%;display:block;float:none;margin:auto;}
+    		.deliveryLogo.tteat{margin:30px auto;}
     		hr.last-ds{display:none;}
 		  }
     }
