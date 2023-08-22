@@ -10,17 +10,17 @@
 
   <header class="header">
     <div class="main-header">
-      <div class="col-md-3 logo-block">
-        <%= link_to(image_tag('villaggio-logo.png', alt: 'Villaggio Grille Logo', class: 'img-responsive logo-img'), root_path ) %>
-      </div>
+      <div class="mh-wrap">
+        <div class="col-md-3 logo-block">
+          <%= link_to(image_tag('villaggio-logo.png', alt: 'Villaggio Grille Logo', class: 'img-responsive logo-img'), root_path ) %>
+        </div>
 
-      <div class="col-md-9 mega-tab">
-        <ul class="megamenu-parent menu-zoom hidden-xs">
-          <%= render 'shared/nav' %>
-        </ul>
-      </div>
+        <div class="col-md-9 mega-tab">
+          <ul class="megamenu-parent menu-zoom hidden-xs">
+            <%= render 'shared/nav' %>
+          </ul>
+        </div>
 
-      <!-- <div> -->
         <a href="#" id="offcanvas-toggler">
           <span>
             <div></div>
@@ -30,7 +30,7 @@
 
           <h5>Main Menu</h5>
         </a>
-      <!-- </div> -->
+      </div>
     </div>
 
     <div id="top-bar-wrapper" class="clearfix">

@@ -135,10 +135,11 @@ header{background-color:$white;}
 }
 
 
-.main-header{@include sec-default(); background-color:$white; padding:0px 15px 0 0;
+.main-header{@include sec-default(); background-color:$white;padding:10px;
   a{font-family:$play;}
-  .logo-img{padding:5px;}
 }
+.logo-block{margin:5px 0;}
+
 
 .megamenu-parent{list-style:none;padding:0;margin:0;z-index:9;display:block;float:right;
   li{display:inline-block;position:relative;padding:0;border-top:3px solid transparent; margin:0 15px;
@@ -160,14 +161,12 @@ header{background-color:$white;}
     }
   }
 }
-
 .megamenu-parent li.sig a{color:#7B2926 !important;}
 .offcanvas-menu li.sig a{color:$yellow !important;}
 
 .megamenu-parent li.yelp a{position:relative;z-index:0;
   &::before{content:"Yelp Online";position:absolute;z-index:-1;top:-5px;left:0;width:100%;height:20px;font-size:13px;font-family:$open;color:#000;text-align:center;}
 }
-
 
 
 #offcanvas-toggler{
@@ -233,13 +232,14 @@ h3.module-title{color:$white;}
   li.adv ul{padding-left:0;}
 }
 
-@media (max-width:1235px){
-  .main-header{padding-right:0;}
+@media (max-width:1235px){  
+  .main-header{text-align:center;padding:5px 0 0;}
+  .logo-block, .mega-tab{width:100%;max-width:100%;}
+  .logo-block{text-align:center;margin-top:10px;
+    a{width:100%;max-width:240px;@include center-block();}
+    .logo-img{@include sec-default();}
+  }
 
-  .col-md-3.logo-block{max-width:100%; text-align:center;margin-top:5px;}
-  .logo-block a{width:95%;max-width:240px; @include center-block();}
-  .logo-block .logo-img{width:100%;}
-  .col-md-9.mega-tab{max-width:100%; text-align:center;}
   .megamenu-parent{@include center-block();
     li{margin:0 8px;}
     li a{line-height:1.5em; margin-bottom:15px;}
@@ -248,19 +248,12 @@ h3.module-title{color:$white;}
   }
 }
 
-// @include bp(lg) {.main-header li a{font-size:15px;}}
-
-
-// @include bp(md) {
 @media (max-width:1100px){
-  .logo-img{margin-bottom:10px;}
+  .logo-block{margin-bottom:12px;}
   .mega-tab, .megamenu-parent{display:none;}
-
-  #offcanvas-toggler{display:block;}
-  // #offcanvas-toggler{@include center-block();width:35%;}
-
-
-  .logo-img{width:40%;}
+  #offcanvas-toggler{display:block;margin-top:5px;}
+}
+@media (max-width:989px){#offcanvas-toggler{margin-top:12px;}
 }
 
 

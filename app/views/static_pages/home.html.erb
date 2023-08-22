@@ -110,45 +110,41 @@
       </div>
     </div>
 
-    <div class="container-fluid">
-      <!-- <div class="row"> -->
-        <div class="col-md-12">
-          <ul class="service-boxes">
-            <div class="col-md-4 no-padding col-custom">
-              <li class="service-box-3">
-                <%= image_tag( 'v-icon8.png', alt: 'Villaggio Grille Menu Link', class: 'img-responsive v-icon') %>
-                <h4>Our Menus</h4>
-                <p>Just reading our menus will make your mouth water. Sandwiches, Pizzas, Seafood or Steaks, we know you will leave satisfied!</p>
-                <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
-                    View Menus
-                <% end %>
-              </li>
-            </div>
-
-            <div class="col-md-4 no-padding col-custom">
-              <li class="service-box-3">
-                <%= image_tag( 'v-icon.png', alt: 'Villaggio Grille Wine Menu Link', class: 'img-responsive v-icon') %>
-                <h4>Wine List</h4>
-                <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
-                <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
-                    View Wine List
-                <% end %>
-              </li>
-            </div>
-
-            <div class="col-md-4 no-padding col-custom">
-              <li class="service-box-3">
-                <%= image_tag( 'v-icon6.png', alt: 'Villaggio Grille Catering Menus Link', class: 'img-responsive v-icon') %>
-                <h4>Catering</h4>
-                <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
-                <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
-                   See More
-                <% end %>
-              </li>
-            </div>
-          </ul>
+    <div class="homeLinks">
+      <div class="inside">        
+        <div class="left">
+          <%=image_tag('pizza.jpg', alt: "Villaggio's wood fired pizza", class: 'fwImg img-responsive')%>
+          <%=image_tag('pizzaLong.jpg', alt: "Villaggio's wood fired pizza", class: 'mobImg img-responsive')%>
         </div>
-      <!-- </div> -->
+
+        <div class="right">
+          <div class="linkBox menu">
+            <h4>Our Menus</h4>
+            <p>Just reading our menus will make your mouth water. Sandwiches, pizzas, seafood, or steaks, we know you will leave satisfied!</p>
+            <%= link_to '/daily-menu', class: 'btn btn-small yellow' do %>
+                View Menus
+            <% end %>
+          </div>
+
+          <div class="linkBox wine">
+            <h4>Wine List</h4>
+            <p>We are the first to admit we take our wine seriously! The wide range of our wine menu just confirms it. Enjoy a glass by itself, or pair it with a delicious dish!</p>
+            <%= link_to '/wine-list', class: 'btn btn-small yellow' do %>
+                View Wine List
+            <% end %>
+          </div>
+
+          <div class="linkBox cater">
+            <h4>Catering</h4>
+            <p>We have everything you need to make any event a success. We offer different catering packages, a great staff, and beautiful venues.</p>
+            <%= link_to "https://wharfcateringgroup.com/", target: '_blank', class: 'btn btn-small yellow' do %>
+               See More
+            <% end %>
+          </div>
+        </div>        
+      </div>
     </div>
+
+
   </div>
 </div>
