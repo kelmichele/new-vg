@@ -827,9 +827,10 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	.page-content .hr{margin: 40px auto;}
 	.page-content .hr-dec .hr{margin: 30px auto;}
 
+	.course{width:96%;max-width:550px;@include center-block();}
+
 	//////// FOR MENUS w/ long items //////////
 	.long-menus .service-box-2{max-width:450px;@include center-block();}
-
 
 
 	//////// FOR MENUS w/ INLINE COURSES //////////

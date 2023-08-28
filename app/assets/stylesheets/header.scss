@@ -197,7 +197,7 @@ header{background-color:$white;}
       a{-webkit-transition:300ms; -o-transition:300ms; transition:300ms; padding:7px 0; padding-left:0px; color:$white; font-size:15px; line-height:1.5em;}
       a:hover{background:transparent;}
       &:first-child{margin-top:0}
-      &:last-child{border-bottom:0;}
+      li:last-child{border-bottom:0;}
 
       .nav-child{padding-left:10px;}
       span{color:#fff;}
