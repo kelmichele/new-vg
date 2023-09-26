@@ -1,8 +1,13 @@
 <div id="h-wrap">
   <div class="announce-bar">
-    <div class="fullSec constant">
-      <div class="phone"><a href="tel:+12512246500" class="tel">251-224-6500 (ext. 2)</a></div>
-      <div class="yelp"><%= link_to "Yelp Online Reservations", yelp_path, :target => '_blank' %></div>
+    <div class="constant">
+      <div class="abLink phone"><a href="tel:+12512246500" class="tel">251-224-6500 (ext. 2)</a></div>
+      <div class="abLink yelp">
+        <%= link_to yelp_path, :target => '_blank', class:'linky' do %>
+          <span>Make</span> Reservations
+        <% end %>
+      </div>
+      <div class="abLink toLink"><button class="linky" uk-toggle="target: #takeout">Delivery &amp; Takeout</button></div>
     </div>
   </div>
   <div class="clearfix"></div>

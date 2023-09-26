@@ -44,6 +44,32 @@
               <%= yield %>
             </div>
           <%= render 'layouts/footer' %>
+
+          <div id="takeout" class="uk-flex-top takeout-modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical umdTakeout">
+              <button class="uk-modal-close-default" type="button" uk-close></button>
+
+              <div class="dsInner">
+                <p>Order for Pickup or Delivery</p>
+
+                <div class="toItem pickup">
+                  <a href="https://wharfrestaurants.revelup.online/store/1" target="_blank" rel="noopener noreferrer" class="toLogo">
+                    <%= image_tag('takeout-pickup.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
+                  </a>
+                </div>
+                <div class="toItem tteat">
+                  <a href="https://www.timetoeatthebeach.com/order/restaurants" target="_blank" rel="noopener noreferrer" class="toLogo">
+                    <%= image_tag('takeout-eatBeach.png', alt: 'Time to Eat delivery logo and link', class: 'img-responsive fw') %>
+                  </a>
+                </div>
+                <div class="toItem asap">
+                  <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="toLogo">
+                    <%= image_tag('takeout-asap.png', alt: 'Asap logo for Villaggio delivery link', class: 'img-responsive fw') %>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 	</body>

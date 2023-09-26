@@ -122,32 +122,46 @@
 
 <!-- Off Canvas Menu -->
 <div class="offcanvas-menu">
-  <a class="close-offcanvas" href="#"><i class="fa fa-close"></i></a>
+  <!-- <a class="close-offcanvas" href="#"><i class="fa fa-close"></i></a> -->
+  <a class="close-offcanvas" href="#">X</a>
   <div class="offcanvas-inner">
     <div class="module">
       <div class="module-content">
         <ul class="nav menu">
           <li><%= link_to "Home", root_path %></li>
-          <li class="sig"><%= link_to "Reservations", yelp_path, :target => '_blank' %></li>
 
-          <li class="deeper parent"><a href="#"><span class="toggle-icon">Menus <span class="fa fa-angle-down"></span></a>
-            <ul style="display: none;" class="nav-child unstyled small">
+          <li class="momList menuList">
+            <span class="listHd">Quick Links</span>
+            <ul>
+              <li><%= link_to "Reservations", yelp_path, :target => '_blank' %></li>
+              <li><%= link_to "Delivery & Takeout", "/#togoOptions" %></li>
+              <li><%= link_to "Wine Dinners", pairing_path %></li>
+            </ul>
+          </li>
+
+          <li class="momList menuList">
+            <span class="listHd">Menus</span>
+            <ul>
               <li><%= link_to "Lunch", daily_menu_path %></li>
               <li><%= link_to "Dinner", dinner_menu_path %></li>
               <li><%= link_to "Brunch", brunch_menu_path %></li>
               <li><%= link_to "Family Meals", "/#family-meals" %></li>
               <li><%= link_to "Drink Menu", drink_menu_path %></li>
               <li><%= link_to "Happy Hour", happy_hour_path %></li>
+              <li><%= link_to "Wine List", wine_list_path %></li>
             </ul>
           </li>
 
-          <li><%= link_to "Wine Dinner", pairing_path %></li>
-          <li><%= link_to "Wine List", wine_list_path %></li>
-          <li><%= link_to "Catering", "https://wharfcateringgroup.com/", target: '_blank' %></li>
-          <li><%= link_to "About", about_path %></li>
-          <li><%= link_to "Contact", contact_path %></li>
-          <li><%= link_to "Get Directions", directions_path, :target => '_blank' %></li>
-          <li><a href="https://alwharf.com/calendar/" target="_blank">Events At The Wharf</a></li>
+          <li class="momList menuList">
+            <span class="listHd">Company</span>
+            <ul>
+              <li><%= link_to "Catering", "https://wharfcateringgroup.com/", target: '_blank' %></li>
+              <li><%= link_to "About", about_path %></li>
+              <li><%= link_to "Contact", contact_path %></li>
+              <li><%= link_to "Get Directions", directions_path, :target => '_blank' %></li>
+              <li><a href="https://alwharf.com/calendar/" target="_blank">Events At The Wharf</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
 
