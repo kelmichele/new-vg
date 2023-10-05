@@ -11,11 +11,7 @@ header{background-color:$white;}
 
 
 .announce-bar{@include sec-default();padding:10px 0;text-align:center;background-color:#F8F0EF;
-  // a{font-weight:bold;letter-spacing:1px;font-size:15px;}
-  // .constant a{color:$burg;opacity:.8;}
-  // .yelp a{text-transform:uppercase;}
-  // .phone{display:none;}
-  // .toLink{margin-top:15px;}
+  .constant{@include center-block();}
 
   .phone{display:none;}
   .yelp, .toLink{display:inline-block;width:auto;float:right;margin-left:15px;}
@@ -28,8 +24,9 @@ header{background-color:$white;}
 
 
   @media (min-width:1101px){
-    .yelp{margin-top:9px;}
+    .constant{width:95%;}
 
+    .yelp{margin-top:9px;}
     .linky{letter-spacing:1px;border:2px solid $red;background-color:$red;color:$white;
     }
     .toLink .linky{padding:10px 20px;}
