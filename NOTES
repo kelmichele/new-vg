@@ -13,9 +13,9 @@ BANNER IN APP.erb (for fw instead of header width)
         <% end %>
 
         <div class="ny-link two">
-          <a href="tel: +12512246500">
+          <a href="tel: +12512246510">
             <span>Call For Reservations:</span><br>
-            <%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+            <%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %></a>
         </div>
       </div>
     </div>
@@ -48,7 +48,7 @@ NYE WITH TABS
     </div>
   </div> -->
 	<!-- <div class="intro">
-		          	    <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
+		          	    <p class="res">For Reservations: <span><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
 		          	  </div> -->
 		<% @page_title = "New Year's Eve" %>
 		<% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
@@ -98,7 +98,7 @@ NYE WITH TABS
 										<p class="big">5pm<br> $65 per guest<br><a href="NYE2021-early.pdf" target="_blank" class="image-menu">View Menu</a></p>
 										<hr>
 		          	    <p class="res">Call For Reservations:<br>
-		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    	<a href="tel: +12512246510"><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
 		          	    </p>
 			              <div class="clearfix"></div>
 									</div>
@@ -110,7 +110,7 @@ NYE WITH TABS
 										<p class="big">7pm &nbsp;&amp;&nbsp; 9:30pm <br> $100 per guest<br><a href="NYE2021-dinner.pdf" target="_blank" class="image-menu">View Menu</a></p>
 										<hr>
 										<p class="res">Call For Reservations:<br>
-		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    	<a href="tel: +12512246510"><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
 		          	    </p>
 			              <div class="clearfix"></div>
 									</div>
@@ -124,7 +124,7 @@ NYE WITH TABS
 			        	    	<h4>Early Bird Seating: 5pm - $65 per guest</h4>
 			        	    	<p class="ltext">Click the menu below to see larger version</p>
 			        	    	<p class="res">Call For Reservations:<br>
-		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    	<a href="tel: +12512246510"><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
 			          	    </p>
 			          	  </div>
 
@@ -144,7 +144,7 @@ NYE WITH TABS
 			        	    	<h4>Seatings: 7pm &amp; 9:30pm - $100 per guest</h4>
 				        	    <p class="ltext">Click the menu below to see larger version</p>
 			        	    	<p class="res">Call For Reservations:<br>
-		          	    	<a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
+		          	    	<a href="tel: +12512246510"><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a>
 			          	    </p>
 			          	  </div>
 
@@ -202,7 +202,7 @@ SPECIAL EVENTS -- ROARING 20'S STYLE
 	  <div class="page-content">
 	    <div class="container food-menus no-padding">
 	      <div class="intro">
-	        <p class="res">For Reservations: <span><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
+	        <p class="res">For Reservations: <span><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</span></p>
 	      </div>
 
 	      <div class="row col-md-12">
@@ -297,7 +297,7 @@ NEW YEARS HEADER
       <p class="ah-text">Join us for New Year's Eve 2020!</p>
       <div class="links">
         <%= link_to 'Details & Menu', new_years_eve_path, class: 'ny-link one' %>
-        <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246500"><%= number_to_phone(2512246500, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
+        <div class="ny-link two"><p>For Reservations: <a href="tel: +12512246510"><%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %> (ex. 2)</a></p></div>
 
       </div>
     </div>
@@ -379,7 +379,7 @@ FAMILY MEALS -- FULL SECTION
 	<div id="family-meals" class="family-meals-full">
 	    <div class="container">
 	        <h1>We are open for to-go orders!<br/>Call
-	          <a href="+12512246500" class="tel">251-224-6500 (ext. 2)</a>
+	          <a href="+12512246510" class="tel">251-224-6510 (ext. 2)</a>
 	        </h1>
 	        <h2>Now Serving Takeout Family Meals</h2>
 	        <h3>Your choice of meal, served with family-sized salad &amp; bread with olive oil &amp; parmesan for four.</h3>
