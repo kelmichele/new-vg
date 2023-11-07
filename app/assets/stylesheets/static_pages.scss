@@ -972,12 +972,7 @@ $wgreen:#5f836f;
 	.row2{margin-top:20px;}
 }
 
-.elp-nye{text-align:center;//position:relative;z-index:0;
-	// &::before{@include before();z-index:-1;
-	// 	// background-color:rgba($yellow,.1);
-	// 	width:70%;left:15%;background-color:$black;height:600px;opacity: .4;
-	// 	width:100%;height:100%;left:0;
-	// }
+.elp-nye{text-align:center;
 	// FCF8E8   F8E017  B39C23
 
 	h1,h2,h3,p,a{font-family:$raleway;}
@@ -987,7 +982,10 @@ $wgreen:#5f836f;
 	}
 	p{padding-bottom:0;}
 
-	.simpleTitle{padding:40px 0 20px;background-color:$black;
+	.simpleTitle{padding:40px 0 20px;//background-color:$black;
+		background-image:url(image_path('glitter2.jpg')); background-position: top left;background-size:100%;position:relative;z-index:0;
+		&::before{@include before();z-index:-1;width:100%;height:100%;left:0;background-color:rgba($black,.85);}
+
 		h1, h2{color:$white;}
 		h1, p{margin:0;}
 		h1, p.h1{text-transform:uppercase;}
@@ -1010,7 +1008,8 @@ $wgreen:#5f836f;
 	}
 
 	.miStyle{width:95%;max-width:800px;@include center-block();}
-	.page-content{background-image:url(image_path('glitter2.jpg')); background-position: top left;background-size:100%;}
+	.page-content{background-image:url(image_path('glitter2.jpg')); background-position: top left;background-size:100%;
+	}
 
 	p.instr{font-size:16px;margin:0;padding:10px 0;font-style:italic;line-height:1.3em;color:$black;font-weight:bold;
 		background-color:#fff;
