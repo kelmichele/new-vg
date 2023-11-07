@@ -32,7 +32,7 @@
 
 
 .appWrap{width:100%;@include center-block();max-width:1500px;}
-.fullSec{@include sec-default();}
+.fullSec{@include sec-default();display:block;}
 
 .bpadding0 { padding-bottom: 0; }
 .tpadding0 { padding-top: 0; }

@@ -972,268 +972,94 @@ $wgreen:#5f836f;
 	.row2{margin-top:20px;}
 }
 
-.nye {
-	// 2022
-	.abBanner{display:none;}
-	.elp-nye{text-align:center;position:relative;z-index:0;
-		&::before{@include before();height:700px;background-color:rgba($nye,.4);z-index:-1;}
-		h1,h2,h3,p,a{font-family:$raleway;}
-	}
-	
+.elp-nye{text-align:center;//position:relative;z-index:0;
+	// &::before{@include before();z-index:-1;
+	// 	// background-color:rgba($yellow,.1);
+	// 	width:70%;left:15%;background-color:$black;height:600px;opacity: .4;
+	// 	width:100%;height:100%;left:0;
+	// }
+	// FCF8E8   F8E017  B39C23
 
+	h1,h2,h3,p,a{font-family:$raleway;}
 	h1,h2,h3,h4,p{
-		span{color:inherit;}
+		span, a{color:inherit;font-size:inherit;}
 		span.num{font-family:$open;}
 	}
-	p{color:$black;}
-	p.instr{margin-bottom:0;font-size:17px;font-style:italic;line-height:1.3em;}
+	p{padding-bottom:0;}
 
-	.simpleTitle{text-align:center;padding:35px 0 20px;
+	.simpleTitle{padding:40px 0 20px;background-color:$black;
+		h1, h2{color:$white;}
 		h1, p{margin:0;}
-		h1{font-size:45px;font-weight:bold;text-transform:uppercase;color:$burg;}
-		p, a{color:$black;font-family:$open;font-size:19px;}
+		h1, p.h1{text-transform:uppercase;}
+		p, a{font-size:19px;font-family:$open;}
+		p.h1, p.res{color:$nygold;}
+
+		p.h1{font-style:italic;letter-spacing:2px;}
+		h1{font-size:45px;font-weight:bold;}
+		h2{margin-bottom:2px;}
+		
 		a:hover{opacity:.8;}
-		p.res{margin-bottom:5px;padding-bottom:0;}
-		p.instr{font-size:15px;color:#595959;}
+		p.res{margin-bottom:5px;font-weight:bold;}
 	}
 
-	.il-event{display:inline-block;width:48%;
-		&.one{float:left;}
-		&.two{float:right;}
-
-		h4{margin-bottom:2px;font-size:28px;font-weight:bold;}
-		h4 span.num{font-weight:normal;}
-		p{font-size:20px;font-family:$open;padding-bottom:8px;}
-
-		a.btn:hover, a:hover h4, a:hover p{opacity:.75;}
-
-		.btn{font-size:13px;background:$burg;color:$white;font-family:$open;letter-spacing:2px;padding-top:5px;padding-bottom:5px;}
-		img{box-shadow: 0px 10px 30px rgba($black,.1);margin-top:15px;}
+	.seatings{margin-top:30px;}
+	.seat{display:inline-block;vertical-align:top;margin:10px 30px;
+		h4{font-size:23px;margin-bottom:2px;font-weight:bold;color:$nye;}
+		p{font-size:17px;font-family:$open;padding-bottom:8px;line-height:1.5em;color:$white;}
+		span{margin:0 5px;}
 	}
 
+	.miStyle{width:95%;max-width:800px;@include center-block();}
+	.page-content{background-image:url(image_path('glitter2.jpg')); background-position: top left;background-size:100%;}
 
-	@include bp(tw) {
-		.il-event{width:50%;
-			&.one{margin-left:-2%;}
-			&.two{margin-right:-2%;}
-			h4{font-size:25px;}
-			p{font-size:18px;}
-		}
+	p.instr{font-size:16px;margin:0;padding:10px 0;font-style:italic;line-height:1.3em;color:$black;font-weight:bold;
+		background-color:#fff;
 	}
+	.menuImgStyle{box-shadow:0 10px 30px rgba($black,.2);}
+
 
 	@include bp(lg) {
-		.elp-nye::before{height:550px;}
-
 		.simpleTitle{ 
 			h1{font-size:38px;}
 		  h2{font-size:24px;}
-		  p, a{font-size:17px;}
-		}
-
-		.il-event{
-			h4{font-size:23px;}
-			p{font-size:17px;}
 		}
 	}
 	@include bp(br) {
-		.simpleTitle{padding:20px 0 0;
+		.simpleTitle{padding:20px 0 5px;
 			h1{font-size:34px;}
 		  h2{font-size:21px;}
-		  p, a{font-size:16px;}
+		  p, a{font-size:18px;}
 		}
-	  p.instr{font-size:16px;}
-	}
-
-	@media (max-width:959px){
-		.il-event{
-			h4{font-size:21px;margin-bottom:1px;}
-		}
-	}
-	@include bp(og) {
-		.elp-nye::before{display:none;}
-
-		.simpleTitle{background-color:rgba($nye,.2);
-			h1{font-size:28px;}
-		  h2{font-size:19px;}
-		}
-
-	  .page-content{padding-top:0px;}
-	  p.instr{font-size:15px;}
-
-	  .inside.og{max-width:400px;}
-	  .il-event{@include sec-default(); margin-top:30px;background-color:#fafafa;padding:15px 5px;
-			&.one{margin-left:0;}
-			&.two{margin-right:0;}
+		.seat{
 			h4{font-size:20px;}
 			p{font-size:16px;}
-			img{max-width:250px;@include center-block();}
+		}
+	}
+
+	@include bp(og) {
+		.simpleTitle{
+			h1{font-size:28px;}
+		  h2{font-size:19px;}
+		  p, a{font-size:16px;}
 		}
 
+		.seatings{margin-top:10px;}
+		.seat{
+			h4{font-size:19px;}
+		}
+
+	  .page-content{padding-top:15px;}
+	  p.instr{font-size:15px;}
 	}
 
 	@media (max-width:500px) {
-		.elp-nye::before{height:300px;}
-
 		.simpleTitle{
 			h1{font-size:24px;}
 		  h2{font-size:18px;margin-bottom:10px;}
-		  p, a{font-size:15px;}
 		}
 
 	  p.instr{font-size:15px;}
-
-	  .il-event{
-			h4{font-size:19px;}
-			p{font-size:15px;}
-		}
 	}
-
-
-	// everything below is older and unused so far for 2022
-
-
-	#page-title.image-nye {height:auto;box-shadow: none;
-		.title-container {text-align:center; padding: 25px 0;
-			h1, h2, h3, h4, h5{ font-weight: bold; color: white; margin: 0; font-family: $raleway; text-shadow: 0px 1px 1px rgba($black, .8);}
-			h3 {font-size: 22px;}
-			h1{color: $nygold;}
-		}
-		// @include sec-bgimage(); background-image: url(image_path('fireworks.jpg')); background-position: center center;
-		@include sec-bgimage(); background-image: url(image_path('nyd.jpg')); background-position: center center;
-
-		@include bp(lg) {
-			.overlay {background:rgba(0,0,0,0.7);}
-			.title-container {
-				h1{font-size:35px;}
-				h2{font-size: 25px;}
-				h3 {font-size: 22px;}
-			}
-		}
-
-		@include bp(md) {
-			.overlay {background:rgba(0,0,0,0.7);}
-			.title-container {
-				h1{font-size:30px;}
-				h2{font-size: 22px;}
-				h3 {font-size: 19px;}
-			}
-		}
-	}
-
-	.faq-section{text-align:center;padding-top:20px;
-		p, a, h3, h4, h5 {font-family: $raleway; text-transform: uppercase; letter-spacing: .5px;}
-		h3, h4 {font-weight: bold; }
-		h2.inv{color: $nygold; font-size: 27px;}
-		h4 b {color: $red;}
-		h4 span, p span {color: rgba(black, .4); font-weight: normal;}
-		p.railway {font-weight: 600;font-size: 17px; color:$black;}
-		.service-box-2 { margin-bottom:20px;
-			h4{color: $red; margin-bottom: 0px; font-weight: bold; font-size: 19px;}
-			h5 {font-size: 16px; margin-bottom: 20px; text-transform: none;}
-			p{margin-bottom:0px;}
-		}
-	  hr.hlf {width: 40%; @include center-block();}
-	  h2 {color: $nygold; font-weight: bold; margin-bottom: 5px;}
-
-	  // #js-filters-tabs {border-bottom: 1px solid rgba($black,.1);}
-	  .innerTabBtns{max-width:800px;float:none;margin:auto;}
-	  .innerin{width:100%;border-bottom: 1px solid rgba($black,.1);}
-
-		.cbp-filter-item{margin:0 10px 10px; float:none;}
-	  .tab-title{font-family:$raleway;font-weight:bold;font-size:18px;letter-spacing:.5px;}
-	  .cbp-filter-item.cbp-filter-item-active {border:none;
-	  	.tab-title {color:#a90f40;text-decoration: underline;}
-	  }
-
-	  .res-link, .menu-link {@include sec-default(); margin: 20px 0;}
-	  .menu-btn {font-weight: bold; color: white; background-color: $red; padding:15px; font-size: 18px;
-	  	&:hover {opacity: .6;}
-	  }
-
-	  .cbp-item.details {@include sec-default();
-			h5 {font-size: 16px;}
-			.nyimg {@include center-block(); width: 10%;}
-			.time {display: inline-block; width: 40%; background-color: #f7f7f7; padding: 20px 20px; margin: 10px 1% 25px;
-				h4{margin-bottom: 5px;}
-				p.big{line-height: 2em; font-weight: 700; font-size: 18px; color:$black;}
-				p{color: $black; font-size: 16px; font-weight: 600; padding-bottom: 6px;}
-
-				p.res{font-weight: bold;font-size: 18px; text-transform: none;
-			  	a{font-family:$open; color: darken($red, 10%); font-weight:800; text-transform: none;}
-			  	a:hover {opacity: .6;}
-			  }
-
-			  .image-menu{color:$nygold;font-size:16px;padding:5px 10px;border:1px solid $nygold;
-			  	&:hover{opacity:.7;}
-			  }
-			}
-	  }
-
-	  .headBox{
-	  	h4{font-size:22px;font-weight:bold;color:$black;margin-bottom:10px;}
-	  	p{color:$black;}
-	  	a{text-transform:none;color:$burg;}
-	  	p.ltext{padding-bottom:5px;}
-	  }
-
-
-		.inline-service {@include sec-default();
-			h3{@include sec-default(); text-align: center; color: $hcolor; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5); margin-top:20px;}
-			.service-box-2 {
-				width: 45%; display: inline-block; padding: 5px 10px;
-				float:left; margin-left: 4%;
-				h4, h5{text-transform: none;}
-				h4{font-size: 18px; margin-top:20px;}
-				h5{font-size: 15px; margin-bottom: 10px;}
-			}
-
-		  .title-line {width: 10%; @include center-block(); height: 2px; border-bottom: 1px dashed rgba($black, .2); margin-bottom: 15px;}
-			&.three {width: 100%;
-				.service-box-2 {width: 30%; margin-left: 3%;}
-			}
-		}
-
-		@media (max-width:1200px){
-			.headBox h4{font-size:20px;}
-		}
-
-		@include bp(lg) {
-			.cbp-item.details {
-				.time {width:45%;}
-		  }
-
-		  .inline-service .service-box-2 {@include center-block(); width:90%; padding:0;}
-		}
-
-		@include bp(md) {
-			.cbp-item.details {
-				.res, .menu-btn { font-size: 16px;}
-				.time {@include center-block(); width: 90%; padding: 20px 10px;}
-		  }
-
-		  .inline-service {@include sec-default();
-		  	h3{ text-align: center; color: $hcolor; font-weight: bold; font-family: $raleway; margin-bottom:5px; text-shadow: 0px 1px 1px rgba($black, .5); margin-top:20px;}
-		  	.service-box-2 {width: 75%; @include center-block(); padding:5px 0;}
-
-		    .title-line {width: 10%; @include center-block(); height: 2px; border-bottom: 1px dashed rgba($black, .2); margin-bottom: 15px;}
-		  	&.three {width: 100%;
-		  		.service-box-2 {width: 30%; margin-left: 3%;}
-		  	}
-		  }
-		}
-
-		@media (max-width:767px){padding-top:15px;
-			.cbp-filter-item{margin:0 5px 10px;padding:0 10px 0;}
-			.tab-title{font-size:17px;}
-			// .headBox h4{font-size:20px;}
-		}
-
-	}
-
-	// .nye-menu{
-	// 	.menu-img{width:85%; @include center-block();}
-	// 	.early-menu{width:80%; @include center-block();}
-	// }
 }
 
 .valentines {
