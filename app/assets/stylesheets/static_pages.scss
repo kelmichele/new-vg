@@ -859,8 +859,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		.overlay{background:rgba(0, 0, 0, 0.8);}
 		
 		#page-title .title-container.less {padding-top:10px !important;
-			h1 {margin-top: 20px; font-size: 25px !important;}
-			h2{font-size: 17px; margin:10px 0 12px;}
+			h1 {margin-top: 20px; font-size: 25px !important;letter-spacing:.3px;}
+			h2{font-size: 17px; margin:10px 0 12px;letter-spacing:.3px;}
 			h4{font-size:19px;line-height:1.6em;}
 			h4 span{display:none;}
 			h4 br{display:block;}
@@ -1197,6 +1197,7 @@ $wgreen:#5f836f;
 	h3{font-size:22px;@include sec-default();margin:20px 0 10px;
 	 	text-transform: uppercase;font-weight:bold;
 	}
+	ul{padding-left:0;}
 	li{font-size:20px;margin-bottom:15px;}
 	li:last-child{margin-bottom:0;}
 	br{display: none;}
@@ -1225,7 +1226,7 @@ $wgreen:#5f836f;
 
 	@media (max-width:500px){
 		h1{font-size:25px;}
-		h2{font-size:19px;}
+		h2{font-size:18px;}
 		br.br3{display:block;}
 		.page-content{padding-top:15px;}
 	}
