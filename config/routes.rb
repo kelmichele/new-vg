@@ -25,7 +25,7 @@ Rails.application.routes.draw do
     # get '/new-years-eve', to: 'static_pages#pairing'
     get '/valentines', to: 'static_pages#pairing'
     get '/daddy-daughter-date', to: 'static_pages#pairing'
-    get '/thanksgiving', to: 'static_pages#thanksgiving'
+    get '/thanksgiving', to: 'static_pages#home'
     get '/holiday-pairing', to: 'static_pages#special-events'
 
 
