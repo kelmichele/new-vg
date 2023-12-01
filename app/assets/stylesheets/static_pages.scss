@@ -400,21 +400,31 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
     .specImg{max-width:270px;@include center-block();margin-top:20px;}
     .awardrow h4{font-size:19px;}
 
+
+  p.instr{color:$black;font-size:15px;text-align:center;}
+	.menuPageLink{width:95%;@include center-block();
+		img{box-shadow: 0 10px 20px rgba($black, .15);}
+	}
+	.menuPageLink+.menuPageLink{margin-top:20px;}
+
 	@media (max-width:1023px){
 		.wine-row-sm{max-width:100% ;}
 		.specImg{max-width:200px;}
     .awardrow h4{font-size:17px;margin-top:30px;}
 	}
 
+	@media (max-width:992px){
+		.menuPageLink{width:99%;max-width:450px;}
+	}
+
 	@include bp(md) {
-	    .cbp-l-caption-body .menu-item {
-    		h4 { font-size: 15px;}
-	    }
-		// .cbp-caption-expand .cbp-l-caption-body {padding-left:0;}
+    .cbp-l-caption-body .menu-item {
+  		h4 { font-size: 15px;}
+    }
 	}
 
 	@include bp(sm) {
-	    .cbp-l-caption-body .menu-item{ padding-left: 5px;}
+    .cbp-l-caption-body .menu-item{ padding-left: 5px;}
 	}
 }
 
@@ -965,11 +975,18 @@ $wgreen:#5f836f;
 }
 
 
-.drink-menu{ 
-	.cbp-item .menu-item.beer p{font-weight: bold;
-		span:not(.price){font-size: 14px; line-height: 1.2em; font-weight: normal;}
+.drink-menu{text-align: center;
+	p.instr{color:$black;}
+	
+	.menuPageLink{display:inline-block;width:47%;max-width:500px;margin:0 1%;
+		img{box-shadow: 0 10px 20px rgba($black, .15);}
 	}
-	.row2{margin-top:20px;}
+
+	@media (max-width:992px){
+		p.instr{font-size:15px;}
+		.menuPageLink{width:99%;max-width:450px;@include center-block();}
+		.menuPageLink+.menuPageLink{margin-top:20px;}
+	}
 }
 
 .elp-nye{text-align:center;

@@ -4,185 +4,27 @@
 <div id="menupage">
   <div id="page-title" class="pt-bkg-image image-bottle">
     <div class="overlay">
-      <div class="title-container"><section class="fancy-heading center"><h1>Drink Menu</h1></section></div>
+      <div class="title-container">
+        <section class="fancy-heading center">
+          <h1>Drink Menu</h1>
+        </section>
+      </div>
     </div>
   </div>
 
-  <div class="page-content food-menus">
+  <div class="page-content food-menus drinkmenu">
     <section class="tabs-example">
       <div class="tabs">
         <div class="container no-padding">
-          <div class="col-md-10 col-md-offset-1 col-xs-12">
-            <div id="accordeon" class="col-md-12 no-padding">
-              <div class="cbp-item">
-                <div class="cbp-caption first">
-                  <div class="cbp-caption-defaultWrap"><h4>Beer List</h4></div>
+          <p class="instr">Click one of the images below to see a larger version</p>
 
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-                      <div class="col-md-6">
-                        <div class="menu-item beer">
-                          <h4><b>Domestics <span class="price">...$4</span></b></h4>
-                          <p>Budweiser, Bud Light, Miller Lite, Coors Light, Blue Moon, Yuengling, Michelob Ultra, Odoul's N/A</p>
-                        </div>
-                      </div>
+          <%= link_to "DrinkMenu.pdf", target: '_blank', class: 'menuPageLink' do %>
+            <%= image_tag('menuBeer.png', class: 'img-responsive border', alt: "Villaggio Beer and Drink Menu, Orange Beach, AL restaurant") %>
+          <% end %>
 
-                      <div class="col-md-6">
-                        <div class="menu-item beer">
-                          <h4><b>Imports</b></h4>
-                          <p>
-                            Corona Extra<span class="price"> ... $4</span>,
-                            Peroni Nastro Azzurro<span class="price"> ... $4.5</span>,
-                            Birra Moretti<span class="price"> ... $4.5</span>,
-                            Stella Artois<span class="price"> ... $4</span>
-                          </p>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 row2">
-                        <div class="menu-item beer">
-                          <h4><b>Alabama Brews</b></h4>
-                          <p>Truck Stop Honey Brown Ale<br>
-                          <span>Back Forty Beer Co | Gadsden, AL | 6.0% ABV</span></p>
-
-                          <p>Kaleidoscope Kettle Sour<br>
-                          <span>Ghost Train Brewing Co | Birmingham, AL | 4.9% ABV</span></p>
-
-                          <p>Monkeynaut IPA <br>
-                          <span>Straight to Ale Brewing | Huntsville, AL | 7.25% ABV</span></p>
-
-                          <p>T-Minus <br>
-                          <span>Yellowhammer Brewing | Huntsville, AL | 5.0% ABV</span></p>
-
-                          <p>Yellow Hammer Gold <br>
-                          <span>Yellowhammer Brewing | Huntsville, AL | 5.0% ABV</span></p>
-                        </div>
-                      </div>
-
-                      <div class="col-md-6 row2">
-                        <div class="menu-item beer">
-                          <h4><b>Craft Brews</b></h4>
-
-                          <p>Riptide Amber Ale <span class="price">... $5.5</span><br>
-                          <span>Pensacola Bay Brewery | Pensacola, FL | 5.4% ABV</span></p>
-
-                          <p>Basecamp Blonde <span class="price">... $7</span><br>
-                          <span>Hutton & Smith Brewing Co. | Chattanooga, TN | 4.8% ABV</span></p>
-
-                          <p>Ciderboys <span class="price">... $6</span><br>
-                          <span>Rotating Flavor | Stevens Point, WI</span></p>
-
-                          <p>Buenavida Hard Seltzer <span class="price">... $6</span><br>
-                          <span>Rotating Flavors | Stone Brewing Escondido, CA</span></p>
-
-                          <p>One Claw Rye Pale Ale <span class="price">... $6.5</span><br>
-                          <span>Westbrook Brewing | Mt. Pleasant, SC | 5.5% ABV</span></p>
-
-                          <p>Something Cold Blonde Ale (16 oz Can) <br>
-                          <span>Edmund's Oast Brewing Co. | Charleston, South Carolina | 5.0% ABV</span></p>
-
-                          <p>Juice Bomb Hazy IPA <span class="price">... $7</span><br>
-                          <span>Sloop Brewing Co. East | Fishkill, NY | 6.8% ABV</span></p>
-
-                          <p>Kentucky Bourbon<br>
-                          <span>Barrel Ale Lexington Brewing | 8.2% ABV</span></p>
-
-                          <p>Happy Dad Hard Selzter<br>
-                          <span>Rotating Flavors | California | 5% ABV</span></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="cbp-caption fourth">
-                  <div class="cbp-caption-defaultWrap"><h4>Villaggio Cocktails</h4></div>
-
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-                      <div class="menu-item">
-                        <h4>Elijah Craig Old Fashioned <span>... $10</span></h4>
-                        <p>Elijah Craig Small Batch Kentucky Bourbon, Cocktail Cherries, Orange Slice, Bitters</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Smoke &amp; Honey </h4>
-                        <p>Montelobos Mezcal, Lunazul Reposado, Honey Simple Syrup, Fresh Lime Juice, Ginger Beer</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Orange Peach Blossom Martini</h4>
-                        <p>Ketel One Orange & Peach Vodka, Fresh Lime Juice, Agave Nectar</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Basil Berry Smash </h4>
-                        <p>Nolet Gin, Chambord, Fresh Lemon Juice, Simple Syrup, Basil</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Honey Bubble</h4>
-                        <p>Effen Blood Orange Vodka, Raspberry Puree, Cava</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Spicy Lunarita</h4>
-                        <p>Lunazul Blanco Tequila, Chile Poblano Liqueur, Muddled Jalapenos, Lime Juice, Agave Nectar</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Blueberry Coconut Mojito </h4>
-                        <p>Blue Chair Coconut Rum, Blueberry Puree, Fresh Lime Juice, Mint, Simple Syrup, Soda</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Bourbon Peach Tea</h4>
-                        <p>Bulleit Bourbon, Peach Puree, Freshly Made Tea, Honey Simple Syrup</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="cbp-caption fifth">
-                  <div class="cbp-caption-defaultWrap"><h4>Dessert Martinis</h4></div>
-                  
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-                      <div class="menu-item">
-                        <h4>German Chocolate <span>... $12</span></h4>
-                        <p>Blue Chair Coconut, Godiva White Chocolate Liquor, Frangelico, Cream</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Finesse <span>... $12</span></h4>
-                        <p>Smirnoff Strawberry Vodka, Blood Orange Vodka, Pineapple Juice, Strawberry Puree</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Southern Grind Espresso Martini <span>... $12</span></h4>
-                        <p>Cold Brew by Southern Grind, Kahlua, Vodka, Espresso Beans</p>
-                      </div>
-
-                      <div class="menu-item">
-                        <h4>Brandy on Main Street</h4>
-                        <p>Hennessy VS Cognac, Creme de Cocao, Baileys, Cream and Nutmeg</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="cbp-caption sixth">
-                  <div class="cbp-caption-defaultWrap"><h4>Nonalcoholic Drinks</h4></div>
-
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body">
-                      <div class="menu-item"><h5>Selection of Octavia Hot Loose Leaf Teas, &amp; Pepsi Products</h5></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <%= link_to "DrinkMenu.pdf#page=2", target: '_blank', class: 'menuPageLink' do %>
+            <%= image_tag('menuDessert.png', class: 'img-responsive border', alt: "Villaggio Dessert Menu") %>
+          <% end %>
         </div>
       </div>
     </section>
