@@ -36,12 +36,17 @@
 
 .bpadding0 { padding-bottom: 0; }
 .tpadding0 { padding-top: 0; }
-.tmargin0 { margin-top: 0; }
-.bmargin0 { margin-bottom: 0; }
-.bmargin1 { margin-bottom: 10px; }
-.bmargin2 { margin-bottom: 20px; }
-.bmargin3 { margin-bottom: 30px; }
-.bmargin4 { margin-bottom: 40px; }
+h1, h2, h3, h4, h5, p, div {
+  .tmargin0 { margin-top: 0; }
+  .tmargin1 { margin-top: 10px; }
+  .tmargin15 { margin-top: 15px; }
+  .tmargin2 { margin-top: 20px; }
+  .bmargin0 { margin-bottom: 0 !important; }
+  .bmargin1 { margin-bottom: 10px !important;}
+  .bmargin2 { margin-bottom: 20px !important;}
+  .bmargin3 { margin-bottom: 30px !important;}
+  .bmargin4 { margin-bottom: 40px !important;}
+}
 
 .pleft-0 { padding-left: 0px; }
 .pleft-1 { padding-left: 10px; }
