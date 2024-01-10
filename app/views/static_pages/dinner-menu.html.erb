@@ -8,35 +8,41 @@
     </div>
   </div>
 
-  <div class="page-content food-menus linkFull">
-    <section class="tabs-example">
-      <div class="tabs">
-        <div class="container no-padding">
-          <div class="col-md-8 col-md-offset-2 col-xs-12">
-            <div id="accordeon" class="col-md-12 no-padding">
-              <div class="cbp-item">
-                <div class="cbp-caption second">
-                  <div class="cbp-caption-defaultWrap"><h4>Full Dinner Menu</h4></div>
+  <div class="fullSec ipNav">
+    <a href="#dinner" data-uk-smooth-scroll>Dinner Menu</a>
+    <a href="#kids" data-uk-smooth-scroll>Kids Menu</a>
+    <a href="#dessert" data-uk-smooth-scroll>Dessert Menu</a>
+    <a href="#familyMeals" data-uk-smooth-scroll>Family Meals To Go</a>
+  </div>
 
-                  <div class="cbp-caption-activeWrap">
-                    <div class="cbp-l-caption-body menuLink">
-                      <%= link_to "DinnerMenu.pdf", target: '_blank', class: 'menu-item' do %>
-                        <p>Click the image below to see a larger version</p>
-                        <%= image_tag('menuDinner.png', class: 'img-responsive border', alt: "Villaggio Dinner Menu, Orange Beach, AL restaurant") %>
-                      <% end %>
-                    </div>
-                  </div>
-                </div>
+  <div class="page-content food-menus XXlinkFull nodrops">
+    <div class="fullSec newLay">
+      <div class="kpWrapXl">
 
-                <%= render "shared/menu-share" %>
+        <div class="right cbp-item">
+          <div id="dinner" class="cbp-caption second">
+            <div class="cbp-caption-defaultWrap"><h4>Dinner Menu</h4></div>
+
+            <div class="cbp-caption-activeWrap">
+              <div class="cbp-l-caption-body menuLink">
+                <p class="instr">Click the menu image below to see a larger version.</p>
+                <%= link_to "DinnerMenu.pdf", target: '_blank', class: 'menu-item menuImg' do %>
+                  <%= image_tag('menuDinner.png', class: 'img-responsive border', alt: "Villaggio Dinner Menu, Orange Beach, AL restaurant") %>
+                <% end %>
               </div>
             </div>
           </div>
 
-          <%= render "shared/disclaimer" %>
+          <%= render "shared/menu-share" %>
         </div>
+
+        <div class="left stickyNn fwImage"><%= image_tag('pasta.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
+
+        <%= render "shared/disclaimer" %>
+
+        <div class="mobImage"><%= image_tag('pasta.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
       </div>
-    </section>
+    </div>
   </div>
 </div>
 <div class="col-xs-12"><div class="hr hr-png-1"></div></div>

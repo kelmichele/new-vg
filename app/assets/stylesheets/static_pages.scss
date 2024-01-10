@@ -7,6 +7,25 @@
 .resphonelink:hover, .resphonelink:hover > *{opacity:.7;}
 h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inherit;font-family:inherit;}
 
+
+/***************************************/
+
+.fullSec{@include sec-default();display:block;
+	.left, .right, .item{display:inline-block;}
+	.left{float:left;}
+	.right{float:right;}
+	.item{vertical-align:top;}
+}
+
+.kpWrap, .kpWrapXl, .medDef{width:90%;max-width:1700px;@include center-block();}
+.kpWrapXl{width:95%;}
+.medDef{max-width:1000px;}
+
+.stickyCol{position:-webkit-sticky; position:sticky; top:40px;}
+@media (min-width:990px){.stickyNn{position:-webkit-sticky; position:sticky; top:40px;}}
+
+/***************************************/
+
 .sm-center-img {
 	width: 13%;
 	@include center-block();
@@ -116,8 +135,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		  }
     }
 }
-
-
 
 /***************************************/
 .cbp-item {
@@ -674,6 +691,89 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 .daily-menu {.dinner-price, .dinner-only, .brunch-only, .no-lunch{display: none;}}
 .brunch-menu{.no-brunch, .dinner-only{display: none;}}
 
+
+// 2024 DINNER UPDATE //
+.ipNav{padding:7px 20px;margin-bottom:30px;text-align:center;
+	a{font-size:17px;display:inline-block;vertical-align:top; margin:5px 15px;}
+	a:hover{opacity:.8;}
+
+	@media (max-width:989px){margin-bottom:15px;}
+	@media (max-width:767px){padding:5px 10px;
+		a{font-size:16px; margin:5px 7px;}
+	}
+}
+
+.nodrops{
+	.cbp-caption+.cbp-caption{margin-top:30px;}
+	.cbp-caption-activeWrap{background-color:transparent;padding-top:15px;}
+	.cbp-item .cbp-caption.family .cbp-caption-defaultWrap,
+	.cbp-caption-defaultWrap{background-color:transparent;}
+	.cbp-caption-defaultWrap{padding-left:0;margin-bottom:0;border-bottom:1px solid rgba($black, .2);
+		&::before{display:none;}
+		h4{font-size:28px;margin-bottom:0;padding-left:0;color:$burg;font-weight:bold;text-transform: uppercase;}
+	}
+
+	p{color:$black;}
+
+	@media (max-width:1200px){
+		.cbp-caption-defaultWrap h4{font-size:25px;}
+	}
+	@media (max-width:989px){
+		.cbp-item{text-align:center;}
+	}
+	@media (max-width:767px){
+		.cbp-caption-defaultWrap h4{font-size:22px;}
+		.cbp-caption-activeWrap{padding-top:10px;}
+		.menu-item h4{font-size:20px;}
+	}
+}
+
+.dinner-menu{
+	.ipNav{background-color:$burg;
+		p, a{color:$white;}
+	}
+
+	.page-content{padding-bottom:20px;}
+
+	.left{width:40%;margin-left:1%;}
+	.right{width:55%;margin-right:1%;}
+
+	p.instr{text-transform:none;}
+	.menuImg{padding:0; img{box-shadow:0px 10px 25px rgba($black, .2);}}
+	.disclaim{margin-top:50px;}
+	.mobImage{display:none;}
+
+	@media (max-width:1200px){
+		.page-content{padding-top:20px;}
+
+		.left{width:41%;margin-left:0;}
+		.right{width:57%;margin-right:0;}
+	}
+	@media (max-width:989px){
+		.kpWrapXl{max-width:700px;}
+		.left{display:none;}
+		.right{width:100%;}
+		.menuImg{width:94%;max-width:600px;@include center-block();}
+	
+		.disclaim{margin-top:0px;}
+
+		.mobImage{@include sec-default();display:block;margin-top:30px;
+			img{width:95%;max-width:600px;@include center-block();}
+		}
+	}
+	@media (max-width:767px){
+		.page-content{padding-top:0px;}
+		.kpWrapXl{max-width:550px;}
+		
+		#dinner{padding-bottom:10px;}
+		// .mobImage{margin-top:30px;
+		// 	img{max-width:600px;}
+		// }
+	}
+}
+// 2024 DINNER UPDATE //
+
+
 .brunch-menu{
 	.page-content{padding:30px 0 10px;}
 	.brunch-box{width:780px; @include center-block();}
@@ -722,7 +822,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		}
 	}
 }
-
 
 .event-list {
 	#page-title {margin-bottom:0px;
