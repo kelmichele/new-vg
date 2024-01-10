@@ -710,7 +710,9 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	.cbp-caption-defaultWrap{background-color:transparent;}
 	.cbp-caption-defaultWrap{padding-left:0;margin-bottom:0;border-bottom:1px solid rgba($black, .2);
 		&::before{display:none;}
-		h4{font-size:28px;margin-bottom:0;padding-left:0;color:$burg;font-weight:bold;text-transform: uppercase;}
+		h4{font-size:28px;margin-bottom:0;padding-left:0;color:$burg;font-weight:bold;text-transform: uppercase;
+			font-family: $open;
+		}
 	}
 
 	p{color:$black;}
@@ -720,11 +722,18 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 	@media (max-width:989px){
 		.cbp-item{text-align:center;}
+		.menu-item{
+			h4{font-size:20px;font-weight:bold;}
+			h4+p{margin-top:-3px;}
+		}
 	}
 	@media (max-width:767px){
 		.cbp-caption-defaultWrap h4{font-size:22px;}
 		.cbp-caption-activeWrap{padding-top:10px;}
-		.menu-item h4{font-size:20px;}
+	}
+	@media (max-width:639px){
+		.cbp-caption-defaultWrap h4{font-size:20px;}
+		.menu-item h4{font-size:19px;}
 	}
 }
 
@@ -753,6 +762,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		.kpWrapXl{max-width:700px;}
 		.left{display:none;}
 		.right{width:100%;}
+		#dinner{padding-bottom:10px;}
 		.menuImg{width:94%;max-width:600px;@include center-block();}
 	
 		.disclaim{margin-top:0px;}
@@ -764,11 +774,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	@media (max-width:767px){
 		.page-content{padding-top:0px;}
 		.kpWrapXl{max-width:550px;}
-		
-		#dinner{padding-bottom:10px;}
-		// .mobImage{margin-top:30px;
-		// 	img{max-width:600px;}
-		// }
 	}
 }
 // 2024 DINNER UPDATE //
