@@ -1,7 +1,7 @@
 <% @page_title = "Dinner Menu" %>
 <% @page_description = "Let the chefs at Villaggio Grille make your taste buds feel like royalty one bite at a time. Our dinner menu is full of incredible options for your whole table." %>
 
-<div id="menupage">
+<div id="menupage" class="nodrops">
   <div id="page-title" class="pt-bkg-image image-menus">
     <div class="overlay">
       <div class="title-container"><h1>Dinner Menu</h1></div>
@@ -15,10 +15,9 @@
     <a href="#familyMeals" data-uk-smooth-scroll>Family Meals To Go</a>
   </div>
 
-  <div class="page-content food-menus XXlinkFull nodrops">
+  <div class="page-content food-menus">
     <div class="fullSec newLay">
       <div class="kpWrapXl">
-
         <div class="right cbp-item">
           <div id="dinner" class="cbp-caption second">
             <div class="cbp-caption-defaultWrap"><h4>Dinner Menu</h4></div>
@@ -36,11 +35,11 @@
           <%= render "shared/menu-share" %>
         </div>
 
-        <div class="left stickyNn fwImage"><%= image_tag('pasta.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
+        <div class="left stickyNn fwImage"><%= image_tag('dinnerImage.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
 
         <%= render "shared/disclaimer" %>
 
-        <div class="mobImage"><%= image_tag('pasta.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
+        <div class="mobImage"><%= image_tag('dinnerImage.jpg', alt: 'Italian fusion restaurant in Orange Beach, AL', class:'img-responsive')%></div>
       </div>
     </div>
   </div>

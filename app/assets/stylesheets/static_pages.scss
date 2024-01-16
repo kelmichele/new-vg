@@ -692,7 +692,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 .brunch-menu{.no-brunch, .dinner-only{display: none;}}
 
 
-// 2024 DINNER UPDATE //
+//************ 2024 MENU (din/lunch) UPDATE ************//
 .ipNav{padding:7px 20px;margin-bottom:30px;text-align:center;
 	a{font-size:17px;display:inline-block;vertical-align:top; margin:5px 15px;}
 	a:hover{opacity:.8;}
@@ -716,6 +716,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 
 	p{color:$black;}
+	.disclaim p{color:#777;}
 
 	@media (max-width:1200px){
 		.cbp-caption-defaultWrap h4{font-size:25px;}
@@ -737,7 +738,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 }
 
-.dinner-menu{
+.dinner-menu, .nodrops{
 	.ipNav{background-color:$burg;
 		p, a{color:$white;}
 	}
@@ -776,7 +777,7 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		.kpWrapXl{max-width:550px;}
 	}
 }
-// 2024 DINNER UPDATE //
+//************ 2024 MENU (din/lunch) UPDATE ************//
 
 
 .brunch-menu{
@@ -1271,7 +1272,7 @@ $wgreen:#5f836f;
 	.image-row{@include sec-default();margin-bottom:30px;text-align:center;
 		&.mobile{display:none;}
 
-		.img-item{display:inline-block;width:24.5%;padding:0 1px;}
+		.img-item{display:inline-block;width:25%;padding:0 1px;float:left;}
 	}
 	.text-row{@include sec-default();padding:0 15px 0 20px;}
 
