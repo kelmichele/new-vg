@@ -7,6 +7,9 @@
 .resphonelink:hover, .resphonelink:hover > *{opacity:.7;}
 h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inherit;font-family:inherit;}
 
+.textCenter{text-align:center;}
+.textLeft{text-align:left;}
+.textRight{text-align:right;}
 
 /***************************************/
 
@@ -17,12 +20,50 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	.item{vertical-align:top;}
 }
 
+.simpleBanner{@include sec-default();padding:15px 0;text-align:center;background-color:$burg;
+	p, h4, h3, h2, h1{color:$white;padding:0;font-family:$open;
+		&:last-child{margin-bottom:5px;}
+	}
+	h3{font-size:32px;margin-bottom:2px;font-weight:bold;}
+	h4{font-size:21px;}
+	p{font-size:19px;}
+	span{color:inherit;}
+
+	&.light{background-color:#fafafa;
+		p, h4, h3, h2, h1{color:$burg;}
+	}
+
+	.flex{display:flex;align-content:center;align-items:center; justify-content:space-evenly;
+		&.centered{justify-content:center;grid-column-gap:30px;}
+		&.between{justify-content:space-between;}
+		&.around{justify-content:space-around;}
+	}
+
+	@media (max-width:991px){
+		h3{font-size:28px;}
+		h4{font-size:19px;}
+		p{font-size:17px;}
+	}
+	@media (max-width:850px){
+		h3{font-size:25px;}
+		h4{font-size:17px;}
+
+		.flex{flex-direction:column;}
+		.textLeft{text-align:center;}
+	}
+	@media (max-width:639px){
+		h3{font-size:22px;}
+	}
+}
+
 .kpWrap, .kpWrapXl, .medDef{width:90%;max-width:1700px;@include center-block();}
 .kpWrapXl{width:95%;}
 .medDef{max-width:1000px;}
 
 .stickyCol{position:-webkit-sticky; position:sticky; top:40px;}
 @media (min-width:990px){.stickyNn{position:-webkit-sticky; position:sticky; top:40px;}}
+
+.nocap{text-transform: none;}
 
 /***************************************/
 
@@ -485,21 +526,52 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 }
 
 .happy-hour {
-	#happyhour-page .page-content {
-	  	padding-top:20px;
-	  	h2, h3, h4, h6, p, span, a {font-family: $raleway;}
-		h3 { font-weight: bold; color: $yellow; font-size: 20px; margin-bottom: 5px; ;}
-		h2 {  color: $red; }
-		p { font-size: 16px; color: $navy; margin-bottom:0; padding-bottom:5px;}
-		.special { width: 100%; float: left; margin-bottom:10px; text-align: center; }
-		h4 { font-size: 20px; text-align: center; }
-		h4 span { font-size: 16px; color: $yellow; }
-		h6 a { color: $yellow; }
-		.food-menus { width:100%; float: left; padding-left: 15px; }
+	
+	#page-title .title-container, h1{margin-bottom:0;}
+
+	.simpleBanner{
+		&.tinis{
+			h4{margin-top:6px;font-weight:bold;}
+			span{margin-left:7px;margin-right:7px;}
+		}
+	}
+
+	.col{display:inline-block;width:46%;margin:0 2%;vertical-align:top;}
+
+	.mainWrap{@include sec-default();padding-top:30px;
+		.medDef{max-width:1200px;}
+  	h2, h3, h4, h6, p, span, a{font-family:$raleway;}
+		h3{font-weight:bold;color:$red;}
+		h4{font-size:20px;margin-bottom:5px;font-weight:bold;color:$yellow;}
+		p{font-size:16px;margin-bottom:0;padding-bottom:5px;color:$black;}
+		.fancy-heading.center{margin-bottom:20px;}
+	}
+	
+	.special{@include sec-default();margin-bottom:10px;text-align:center;}
+
+	@media (max-width:991px){
+		.col{@include sec-default();margin:0;}
+		.right{margin-top:20px;}
+
+		.mainWrap{padding-top:20px;
+			.fancy-heading.center{margin-bottom:10px;}
+		}
 	}
 
 	@include bp(md) {
 		.overlay {background: rgba($black, .6);}
+	}
+
+	@media (max-width:639px){
+		.col{@include sec-default();margin:0;}
+		.right{margin-top:20px;}
+
+		.mainWrap{padding-top:15px;
+			h3{font-size:21px;}
+			h4{font-size:18px;margin-bottom:5px;}
+			// p{font-size:16px;}
+			.fancy-heading.center{margin-bottom:10px;}
+		}
 	}
 }
 
