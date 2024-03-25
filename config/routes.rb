@@ -23,6 +23,10 @@ Rails.application.routes.draw do
     get '/thanksgiving', to: 'static_pages#home'
     get '/holiday-pairing', to: 'static_pages#home'
 
+    # KPKP ***** dual menus
+    get '/duallunch', to: 'links#dual_lunch'
+    get '/dualbrunch', to: 'links#dual_brunch'
+    get '/dualdinner', to: 'links#dual_dinner'
 
     get '/opentable', to: 'links#opentable'
     get '/gilbeys', to: 'links#gilbeys'

@@ -1,6 +1,18 @@
 class LinksController < ApplicationController
 	layout false 
 
+	def dual_lunch
+		redirect_to('/DualLunch.pdf')
+	end
+	
+	def dual_brunch
+		redirect_to('/DualBrunch.pdf')
+	end
+	
+	def dual_dinner
+		redirect_to('/DualDinner.pdf')
+	end
+
 	def opentable
     redirect_to('http://www.opentable.com/villaggio-grille-at-the-wharf-reservations-orange-beach?restref=91339')
 	end
