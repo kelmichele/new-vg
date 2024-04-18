@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   	get '/wine-list', to: 'static_pages#wine-list'
     get '/about', to: 'static_pages#about'
   	get '/food-truck', to: 'static_pages#food-truck'
-  	get '/menus', to: 'static_pages#menus'
+  	get '/menus', to: 'static_pages#daily-menu'
   	get '/happy-hour', to: 'static_pages#happy-hour'
     get '/contact', to: 'static_pages#contact'
     
