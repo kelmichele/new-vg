@@ -18,12 +18,12 @@
         <div class="container no-padding">
           <p class="instr">Click one of the images below to see a larger version</p>
 
-          <%= link_to "DrinkMenu.pdf", target: '_blank', class: 'menuPageLink' do %>
+          <%= link_to "DrinkMenu.pdf#page=3", target: '_blank', class: 'menuPageLink' do %>
             <%= image_tag('menuBeer.png', class: 'img-responsive border', alt: "Villaggio Beer and Drink Menu, Orange Beach, AL restaurant") %>
           <% end %>
 
-          <%= link_to "DrinkMenu.pdf#page=2", target: '_blank', class: 'menuPageLink' do %>
-            <%= image_tag('menuDessert.png', class: 'img-responsive border', alt: "Villaggio Dessert Menu") %>
+          <%= link_to "DrinkMenu.pdf#page=4", target: '_blank', class: 'menuPageLink' do %>
+            <%= image_tag('menuLiquor.png', class: 'img-responsive border', alt: "Villaggio cordials list") %>
           <% end %>
         </div>
       </div>
