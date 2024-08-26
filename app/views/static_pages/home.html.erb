@@ -67,16 +67,21 @@
       <div id="togoOptions" class="deliverySec">
         <div class="clearfix"></div><hr class="top"/>
           <div class="dsInner">
-            <a href="https://wharfrestaurants.revelup.online/store/1" target="_blank" rel="noopener noreferrer" class="deliveryLogo pickup">
-              <%= image_tag('takeout-pickup.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
-            </a>
-
-             <a href="https://www.timetoeatthebeach.com/order/restaurants" target="_blank" rel="noopener noreferrer" class="deliveryLogo tall tteat">
-              <%= image_tag('takeout-eatBeach.png', alt: 'Time to Eat delivery logo and link', class: 'img-responsive fw') %>
-            </a>
-            <a href="https://waitrapp.com/restaurants/al/orange-beach/villaggio-grille/16546" target="_blank" rel="noopener noreferrer" class="deliveryLogo narrow waitr">
-              <%= image_tag('takeout-asap.png', alt: 'Asap logo for Villaggio delivery link', class: 'img-responsive fw') %>
-            </a>
+            <div class="deliveryItem pickup">
+              <a href="https://wharfrestaurants.revelup.online/store/1" target="_blank" rel="noopener noreferrer" class="logoLink">
+                <%= image_tag('takeout-pickup.png', alt: 'Uber Eats logo for Villaggio delivery link', class: 'img-responsive fw') %>
+              </a>
+            </div>
+            <div class="deliveryItem tall tteat">
+               <a href="https://www.timetoeatthebeach.com/order/restaurants" target="_blank" rel="noopener noreferrer" class="logoLink">
+                <%= image_tag('takeout-eatBeach.png', alt: 'Time to Eat delivery logo and link', class: 'img-responsive fw') %>
+              </a>
+            </div>
+            <div class="deliveryItem dash dashText">
+              <a href="https://www.doordash.com/en-NZ/store/villaggio-grille-orange-beach-27866271" target="_blank" rel="noopener noreferrer" class="logoLink">
+                DOORDASH
+              </a>
+            </div>
           </div>
 
         <div class="clearfix"></div><hr class="last-ds" />

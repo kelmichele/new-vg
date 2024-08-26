@@ -119,62 +119,71 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
   .deliverySec{@include sec-default();text-align:center;padding:15px 0;
 		hr{width:30%;@include center-block();margin:20px auto;border-color:rgba($black,.15);}
-		.dsInner{@include center-block();width:95%;max-width:560px;}
-		.deliveryLogo{display:inline-block;width:32%;max-width:175px;//margin:0 1%;vertical-align:top;
-	      &.narrow{margin-top:6%;margin-top:9%;} // ONLY IF THERE IS A TALL LOGO TOO
-	      &.tall{max-width:140px;}
-	      &.pickup{float:left;margin-top:5%;}
-				&.waitr{float:right;}
-	    }
-		}
-
-    @media screen and (max-width:1200px){h1{font-size:29px;}}
-
-    @include bp(lg) {padding:40px 0 20px;
-    	h1{font-size:25px;}
-    	h2{font-size:23px;margin-bottom:5px;}
-    	h3{font-size:17px;margin-bottom:0px;width:85%;@include center-block();}
-    	h4{font-size:18px;}
-    	p{font-size:16px;width:85%;@include center-block();}
-    	p.up{font-size:15px;@include sec-default();}
-    	.item{margin-top:12px;}
-
-    	.deliverySec{
-    		hr{margin:15px auto;}
-				.dsInner{max-width:500px;}
-    		.deliveryLogo{max-width:150px;
-		      &.tall{max-width:120px;}
-			  }
+		.dsInner{width:95%;max-width:560px;@include center-block();}
+    .deliveryItem{width:31%; display:inline-block;vertical-align:top;text-align:center;
+    	.logoLink{@include center-block();}
+      &.tall .logoLink{max-width:140px;}
+      &.pickup{margin-top:31px;}
+			&.dashText{margin-top:55px;font-size:22px;font-weight:bold;letter-spacing:2px;
+				a{color:$dash;}
 			}
-    }
+			&:first-child{float:left;}
+			&:last-child{float:right;}
+			&:nth-child(2){margin-left:2%;}
 
-    @media screen and (max-width: 823px){ padding:25px 0 15px;
-    	h1{font-size: 24px;}
-    	h2{font-size:21px;}
-    	h3{font-size: 16px;}
-    	h4{font-size:17px;}
-    	p{font-size: 15px; padding-bottom: 8px;}
+	    a:hover{opacity:.8;}
     }
+	}
 
-    @media screen and (max-width: 767px){
-    	.container{padding:0;max-width:90%;}
-    	h1{font-size:22px;}
-    	h2{font-size:20px;}
-    }
+  @media screen and (max-width:1200px){h1{font-size:29px;}}
 
-    @media screen and (max-width: 500px){
-    	hr.top, br.large{display:none;}
-    	h1{font-size: 21px;}
-    	h2{font-size:19px;}
-    	h3{width:100%;}
-    	p{width:90%;}
+  @include bp(lg) {padding:40px 0 20px;
+  	h1{font-size:25px;}
+  	h2{font-size:23px;margin-bottom:5px;}
+  	h3{font-size:17px;margin-bottom:0px;width:85%;@include center-block();}
+  	h4{font-size:18px;}
+  	p{font-size:16px;width:85%;@include center-block();}
+  	p.up{font-size:15px;@include sec-default();}
+  	.item{margin-top:12px;}
 
-    	.deliverySec{text-align:center;
-    		.deliveryLogo,.deliveryLogo.pickup,.deliveryLogo.waitr{width:100%;display:block;float:none;margin:auto;}
-    		.deliveryLogo.tteat{margin:30px auto;}
-    		hr.last-ds{display:none;}
-		  }
-    }
+  	.deliverySec hr{width:80%;margin:15px auto;}
+  }
+
+  @media screen and (max-width: 823px){ padding:25px 0 15px;
+  	h1{font-size: 24px;}
+  	h2{font-size:21px;}
+  	h3{font-size: 16px;}
+  	h4{font-size:17px;}
+  	p{font-size: 15px; padding-bottom: 8px;}
+  }
+
+  @media screen and (max-width: 767px){
+  	.container{padding:0;max-width:90%;}
+  	h1{font-size:22px;}
+  	h2{font-size:20px;}
+
+  	.deliverySec .deliveryItem:nth-child(2){margin-left:0;}
+  }
+
+  @media screen and (max-width:575px){
+  	.deliverySec{
+  		.deliveryItem{@include sec-default();
+  			.logoLink{max-width:150px;}
+	      &.pickup{margin-top:0px;margin-bottom:25px;}
+	      &.dashText{margin-top:35px;}
+  		}
+  		hr.last-ds{margin-bottom:0px;}
+	  }
+
+  }
+
+  @media screen and (max-width: 500px){
+  	hr.top, br.large{display:none;}
+  	h1{font-size: 21px;}
+  	h2{font-size:19px;}
+  	h3{width:100%;}
+  	p{width:90%;}
+  }
 }
 
 /***************************************/
