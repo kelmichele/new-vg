@@ -979,7 +979,8 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 }
 
-.special-events, .pairing {
+.special-events, 
+.pairing {
 	.pt-bkg-image.image-events {height:auto;}
 	.overlay{background:rgba(0, 0, 0, 0.7);}
 
@@ -1077,7 +1078,37 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 }
 
-// CUSTOMs FOR WINTER
+// CUSTOMS FOR PINK TIE - can rmv class when done
+.custStylePTA{
+	h1{line-height:1.1em;}
+	h1 span{font-size:30px;color:inherit;}
+	h4.one{margin-top:20px;margin-bottom:5px;}
+	br.br55{display:none;}
+
+	p.res.dets{line-height:1.4em;font-weight:normal;padding-bottom:0;margin-bottom:5px;}
+
+	@media (max-width:992px){
+		h1 span{font-size:25px;}
+		#page-title .title-container.less h4{font-size:20px;}
+	}
+	@media (max-width:768px){
+		h1 span{font-size:20px;}
+		#page-title .title-container.less h4.one{font-size:19px;}
+		#page-title .title-container.less h4.two{font-size:17px;}
+		#page-title .title-container.less h4 br.rules{display:none;}
+		#page-title .title-container.less h4 span.rules{display:inline;}
+	}
+	@media (max-width:550px){
+		br.br55{display:block;}
+		span.dot.d1{display:none;}
+	}
+	@media (max-width:390px){
+		#page-title .title-container.less h4 br.rules{display:block;}
+		#page-title .title-container.less h4 span.rules{display:none;}
+	}
+}
+
+// CUSTOMS FOR WINTER
 $wgreen:#5f836f;
 .pairing .winterWine{//@include sec-default();position:relative;z-index:0;
 	// &::before,&::after{@include after();width:10px;background-color:$wgreen;}
