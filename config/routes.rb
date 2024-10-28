@@ -20,7 +20,7 @@ Rails.application.routes.draw do
     get '/new-years-eve', to: 'static_pages#home' #nye
     get '/valentines', to: 'static_pages#home' #valentines
     get '/daddy-daughter-date', to: 'static_pages#home' #daddy-daughter-date
-    get '/thanksgiving', to: 'static_pages#home'
+    get '/thanksgiving', to: 'static_pages#thanksgiving'
     get '/holiday-pairing', to: 'static_pages#home'
 
     # KPKP ***** dual menus
