@@ -14,10 +14,10 @@
   </div>
 
   <div class="fullSec ipNav">
-    <a href="#starters" data-uk-smooth-scroll>Starters</a>
+    <%# <a href="#starters" data-uk-smooth-scroll>Starters</a>
     <a href="#salads" data-uk-smooth-scroll>Salads</a>
-    <a href="#pizza" data-uk-smooth-scroll>Wood Fired Pizzas</a>
-    <a href="#brunch" data-uk-smooth-scroll>Brunch Plates</a>
+    <a href="#pizza" data-uk-smooth-scroll>Wood Fired Pizzas</a> %>
+    <a href="#brunch" data-uk-smooth-scroll>Brunch Menu</a>
     <a href="#kids" data-uk-smooth-scroll>Kids Menu</a>
     <a href="#dessert" data-uk-smooth-scroll>Dessert Menu</a>
     <a href="#familyMeals" data-uk-smooth-scroll>Family Meals To Go</a>
@@ -27,62 +27,15 @@
     <div class="fullSec newLay">
       <div class="kpWrapXl">
         <div class="right cbp-item">
-          <%= render 'shared/newSnacks' %>
-
           <div id="brunch" class="cbp-caption plates">
-            <div class="cbp-caption-defaultWrap"><h4>Brunch Plates</h4></div>
+            <div class="cbp-caption-defaultWrap"><h4>Brunch Menu</h4></div>
 
             <div class="cbp-caption-activeWrap">
-              <div class="cbp-l-caption-body">
-                <div class="menu-item">
-                  <h4>Villaggio Benedict</h4>
-                  <p>Prosciutto, Fried Green Tomato, Two Poached Eggs, Béarnaise Sauce, English Muffins, Roasted Garlic Grits, Sautéed Green Beans</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4>Crab Cake Benedict</h4>
-                  <p>Two Petite Crab Cakes, Two Poached Eggs, English Muffins, Béarnaise Sauce, Roasted Garlic Grits, and Sautéed Green Beans</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Steak and Eggs</h4>
-                  <p>Grilled NY Strip, Two Fried Eggs, Sweet Potato Hash, Green Beans, Demi Glace</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4>Southern Comfort</h4>
-                  <p>Two Scrambled Eggs, Smoked Bacon Strips, Sweet Potato Hash, Biscuits with Sausage Gravy</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Brunch Salmon</h4>
-                  <p>Grilled Salmon, Sweet Potato Hash, Sautéed Green Beans, White Wine Butter</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Shrimp and Grits</h4>
-                  <p>Gulf Shrimp with Bacon Tomato Chardonnay Cream Sauce, Served over Roasted Garlic Grits</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4>Chicken or Shrimp Alfredo</h4>
-                  <p>Over Fettucine Pasta and Alfredo</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4>Italian Club</h4>
-                  <p>Chicken, Prosciutto, Spring Mix, Tomato, Garlic Aioli, Served on Ciabatta Bread</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4><%= image_tag( 'gluten.jpg', alt: 'Villaggio Grille Gluten Free Options', class: 'img-responsive') %> Pan Seared Grouper</h4>
-                  <p>Mushroom &amp; Pea Risotto, Green Beans, Beurre Blanc</p>
-                </div>
-
-                <div class="menu-item">
-                  <h4>Lasagna</h4>
-                  <p>Smoked Bacon, Ground Beef and Pork, Ricotta and Marinara Sauce</p>
-                </div>
+              <div class="cbp-l-caption-body menuLink">
+                <p class="instr">Click the menu image below to see a larger version.</p>
+                <%= link_to "BrunchMenu.pdf", target: '_blank', class: 'menu-item menuImg' do %>
+                  <%= image_tag('menuBrunch.png', class: 'img-responsive border', alt: "Villaggio Brunch Menu, Orange Beach, AL restaurant") %>
+                <% end %>
               </div>
             </div>
           </div>
