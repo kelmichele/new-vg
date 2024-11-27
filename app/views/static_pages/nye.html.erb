@@ -1,32 +1,39 @@
 <% @page_title = "New Year's Eve" %>
 <% @page_description = "Spend New Year's Eve at Villaggio Grille! With multiple seatings and a special, holiday menu, we will make your year!" %>
 
-<div class="events-listing-page elp-nye fullSec">
-  <div class="fullSec simpleTitle">
-    <p class="h1">Celebrate with us</p>
-    <h1>New Year's Eve 2023</h1>
-    <h2>Sunday, December 31</h2>
-	  <p class="res">Reservations Required: <a href="tel:+12512246510">251.224.6510</a></p>
 
-	  <div class="fullSec seatings">
-		  <div class="seat s1">
-		  	<h4>Champagne Toast Dinner <br/>
-		  	3-Course Early Seating </h4>
-		  	<p class="price">5pm <span>&middot;</span> $65 Per Guest</p>
-			</div>
-		  <div class="seat s2">
-				<h4>Four Course Seating </h4>
-				<p class="price">7:30pm &amp; 9:30pm <br/>$100 Per Guest <span>&middot;</span> Add Wine Pairing $50</p>
-			</div>
-	  </div>
+<div id="menupage" class="nodrops">
+	<div class="page-content food-menus">
+	  <div class="fullSec newLay">
+	  	<div class="mobileHd">
+    		<div class="inside">
+    			<h1>Spend New Years With Us!</h1>
+			    <h2>Sunday, December 31</h2>
+				  <p class="res">For Reservations: <a href="tel:+12512246510">251.224.6510</a></p>
+          <p class="instr">Click the menu to see a larger version</p>
+    		</div>
+  		</div>
+	    <div class="kpWrapXl">
+	    	<div class="left stickyNn fwImage">
+	    		<div class="text">
+  			    <h2>Sunday, December 31</h2>
+					  <p class="res">For Reservations: <a href="tel:+12512246510">251.224.6510</a></p>
+            <p class="instr">Click the menu to see a larger version</p>
+	    		</div>
+	      	<h1><%= image_tag('nye1.jpg', alt: 'Villaggio New Years Eve Celebration', class:'img-responsive')%></h1>
+      	</div>
+
+	      <div class="right cbp-item">
+	        <div class="cbp-caption-activeWrap">
+	          <div class="cbp-l-caption-body menuLink">
+	            <%# <p class="instr">Click the menu image below to see a larger version.</p> %>
+	            <a href="NewYearsEveMenu.pdf" target="_blank" class="menu-item menuImg"><%= image_tag "menuNye.png", alt:"Villaggio's New Year's Eve Menu", class: 'img-responsive border' %></a>
+	          </div>
+	        </div>
+	      </div>
+        <div class="clearfix"></div>
+	    </div>
+    </div>
   </div>
-
-  <div class="fullSec page-content">
-  	<div class="inside miStyle">
-	  	<p class="instr">Click the menu below to see larger version</p>
-	  	<a href="NewYearsEveMenu.pdf" target="_blank" class="menuImgStyle"><%= image_tag "nyeMenu.png", alt:"Villaggio's New Year's Eve Menu" %></a>
-		</div>
-	</div>
 </div>
-
 <div class="col-xs-12"><div class="hr hr-png-1"></div></div>

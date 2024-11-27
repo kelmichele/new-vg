@@ -24,3 +24,4 @@
 .byebug_history
 
 /app/views/static_pages/MENUSb4pdf.html.erb
+app/assets/images/oldSlides
