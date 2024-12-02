@@ -25,11 +25,23 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	// &.group2 .groupItem{width:48%;}
 	// &.group2 .i2{float:right;}
 
-	@media (min-width:990px){
+	@media (min-width:768px){
 		.groupItem{display:inline-block;}
 		&.group3 .groupItem{width:31%;}
 		&.group2 .groupItem{width:48%;}
 		&.group2 .i2{float:right;}
+	}
+	@media (max-width:989px){
+		&.mobNn{
+			.sectionWrap{max-width:500px;}
+			.groupItem{width:100%;}
+			.groupItem+.groupItem{margin-top:20px;}
+		}
+	}
+	@media (max-width:767px){
+		.sectionWrap{max-width:500px;}
+		.groupItem{width:100%;}
+		.groupItem+.groupItem{margin-top:20px;}
 	}
 }
 
@@ -454,16 +466,47 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 
 
-	.nyeHome{padding:50px 0;background-color:rgba($nye, .2);text-align:center;
-		h3{font-size:33px;font-weight:bold;margin:0;}
-		h4{font-size:25px;margin-bottom:10px;}
-		p{color:$black;padding-bottom:0;}
-		p a{color:$burg;font-weight:bold;}
+	.nyeHome{padding:40px 0 60px;text-align:center;
+		background-color:#FFFFF7;
+	  background-image: linear-gradient(#FFFFF7, #fff, #FFFBE5);
+
+		.sectionWrap{max-width:1200px;}
+		h3{font-size:33px;font-weight:bold;margin:0; color:darken($nye, 5%);}
+		h4{margin-bottom:10px;font-family:$open;}
+		h4 br{display:none;}
+		p{padding-bottom:0;}
 		span{color:inherit;}
+		.textBox{
+			p{color:$black;}
+			p a{color:$burg;font-weight:bold;}
+			span.instr{font-style:italic;color:#777;}
+		}
 
-		.groupStyle{margin-top:30px;}
-		.groupItem{box-shadow:0px 10px 30px rgba($black, .1);}
+		.groupStyle{margin-top:40px;}
+		img{box-shadow:0px 10px 30px rgba($black, .1);}
+		h5{font-size:20px;font-weight:bold;margin-bottom:3px;}
 
+
+		@media (max-width:989px){padding:20px 0 40px;
+			h3{font-size:28px;}
+			h4{font-size:19px;}
+			p{font-size:15px;line-height:1.4em;}
+			h5{font-size:19px;}
+		}
+		@media (max-width:767px){padding:15px 0 20px;
+			.sectionWrap{max-width:450px;}
+			.groupStyle{margin-top:20px;}
+			h3{font-size:24px;}
+			h4{font-size:17px;}
+			h5{font-size:18px;}
+			.textBox p{font-size:14px;}
+		}
+
+		@media (max-width:500px){
+			h3{font-size:20px;}
+			h4{font-size:16px;}
+			h5{font-size:17px;}
+		}
 	}
 }
 
@@ -918,9 +961,11 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 
 	h1{margin-bottom:2px;}
 	h2{font-size:22px;font-family:$body;}
+	h2 br{display:none;}
 	p{margin:0;padding:0;color:$black;}
 	p a{color:$burg;font-weight:bold;}
 	span{color:inherit;}
+	span.instr{font-size:15px;font-style:italic;}
 	.menuImg:hover{opacity:.85;}
 
 	@media (max-width:989px){
@@ -937,11 +982,15 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	}
 	@media (max-width:500px){
 		.simpleTitle{padding:15px 0;}
-		h1{font-size:22px;}
-		h2{font-size:17px;}
-		p{font-size:14px;}
+		h1{font-size:21px;line-height:1.3em;margin-bottom:5px;}
+		h2{font-size:17px;
+			span{display:none;}
+			br{display:block;}
+		}
+		p, span.instr{font-size:14px;}
 	}
 }
+.simpleMenuPage.xmas h1{color:$red;}
 //************ 2024 MENU (din/lunch) UPDATE ************//
 
 

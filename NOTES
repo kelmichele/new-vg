@@ -1,3 +1,22 @@
+FAM MEAL AND REVIEW SLIDES -- REMOVED FOR HOLIDAYS. RE-ADD IMMEDIATELY AFTER
+<li class="reviewSlide">
+  <%=image_tag('family-bg.jpg', alt: 'Villaggio Grille bar and dining room background', class: 'img-responsive') %>
+  <div class="uk-position-center uk-position-small uk-text-center uk-light rs-box">
+    <div class="rs-bg">
+      <%=image_tag('rating.png', alt: 'Villaggio Grille 5 star review', class: 'icon') %>
+      <p class="auth">Alex Whitaker</p>
+      <p class="rs-intro">"Each piece of shrimp, scallop and crab were cooked to perfection, not under or overdone in the slightest. And though not listed on the menu, the fresh basil in the sauce worked wonderfully in concert with the other flavors<span class="no-sm">, bringing a light refreshment to match the heavier richness of the alfredo.</span>
+      <span class="only-sm">...</span>
+      "
+    </p>
+      <button class="vg-btn" type="button" uk-toggle="target: #full-review">Read Full Review</button>
+    </div>
+  </div>
+</li>
+<li><a href="#family-meals">
+  <%=image_tag('family-meal-slide.jpg', alt: 'Villaggio Grille Family Meals, Takeout in Orange Beach, Al', class: 'img-responsive')%>
+</a></li>
+
 SWITCHED LUNCH & DINNER TO PDF'S -- 7/19/2023. old set up in static pages file, but gitignored
 
 

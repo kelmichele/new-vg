@@ -7,24 +7,14 @@
         <li><a href="/pairing">
           <%=image_tag('slideHolidayWine.jpg', alt: "View Villaggio's upcoming wine dinner", class: 'img-responsive')%>
         </a></li>
-        
-        <li class="reviewSlide">
-          <%=image_tag('family-bg.jpg', alt: 'Villaggio Grille bar and dining room background', class: 'img-responsive') %>
-          <div class="uk-position-center uk-position-small uk-text-center uk-light rs-box">
-            <div class="rs-bg">
-              <%=image_tag('rating.png', alt: 'Villaggio Grille 5 star review', class: 'icon') %>
-              <p class="auth">Alex Whitaker</p>
-              <p class="rs-intro">"Each piece of shrimp, scallop and crab were cooked to perfection, not under or overdone in the slightest. And though not listed on the menu, the fresh basil in the sauce worked wonderfully in concert with the other flavors<span class="no-sm">, bringing a light refreshment to match the heavier richness of the alfredo.</span>
-              <span class="only-sm">...</span>
-              "
-            </p>
-              <button class="vg-btn" type="button" uk-toggle="target: #full-review">Read Full Review</button>
-            </div>
-          </div>
-        </li>
-        <li><a href="#family-meals">
-          <%=image_tag('family-meal-slide.jpg', alt: 'Villaggio Grille Family Meals, Takeout in Orange Beach, Al', class: 'img-responsive')%>
+        <li><a href="/christmas">
+          <%=image_tag('slideXmas.jpg', alt: "View Villaggio's Christmas dinner menu", class: 'img-responsive')%>
         </a></li>
+        <li><a href="#nye" data-uk-smooth-scroll>
+          <%=image_tag('slideNye.jpg', alt: "View Villaggio's New Year's menu", class: 'img-responsive')%>
+        </a></li>
+        
+        <%# REPLACE FAMILY MEAL AND REVIEWS SLIDES %>
       </ul>
 
       <div class="uk-light">
@@ -116,6 +106,34 @@
       </div>
     </div>
   </div>
+
+  <div id="nye" class="fullSec nyeHome">
+    <div class="inside">
+      <div class="textBox">
+        <h3>Celebrate New Years With Us!</h3>
+        <h4>December 31, 2024</h4>
+        <p class="res">
+          Reservations Recommended: <a href="tel:+12512246510">251.224.6510</a><br>
+          <span class="instr">Select a menu below to see a larger version</span>
+        </p>
+      </div>
+    </div>
+    <div class="groupStyle group2">
+      <div class="sectionWrap kpWrapXl">
+        <div class="groupItem i1">
+          <h5>Early Bird 3-Course Dinner</h5>
+          <p>$65 per guest<span class="dot">&nbsp;&middot;&nbsp;</span> Seating Starting at 4:30pm</p>
+          <a href="NYE-earlyBird.pdf" target="_blank" class="menu-item menuImg"><%= image_tag "menuNyeEarly.png", alt:"Villaggio's Early Bird New Year's Eve Menu", class: 'img-responsive border' %></a>
+        </div>
+        <div class="groupItem i2">
+          <h5>4-Course Dinner</h5>
+          <p>$100 per guest<span class="dot">&nbsp;&middot;&nbsp;</span> Seating Starting at 7pm</p>
+          <a href="NewYearsEveMenu.pdf" target="_blank" class="menu-item menuImg"><%= image_tag "menuNye.png", alt:"Villaggio's New Year's Eve Menu", class: 'img-responsive border' %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <div class="page-content">
