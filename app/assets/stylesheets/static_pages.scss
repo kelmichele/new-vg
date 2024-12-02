@@ -19,6 +19,19 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	.right{float:right;}
 	.item{vertical-align:top;}
 }
+.groupStyle{
+	// .groupItem{display:inline-block;}
+	// &.group3 .groupItem{width:31%;}
+	// &.group2 .groupItem{width:48%;}
+	// &.group2 .i2{float:right;}
+
+	@media (min-width:990px){
+		.groupItem{display:inline-block;}
+		&.group3 .groupItem{width:31%;}
+		&.group2 .groupItem{width:48%;}
+		&.group2 .i2{float:right;}
+	}
+}
 
 .simpleBanner{@include sec-default();padding:15px 0;text-align:center;background-color:$burg;
 	p, h4, h3, h2, h1{color:$white;padding:0;font-family:$open;
@@ -388,8 +401,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		@media (max-width:823px){padding-top:15px;}
 	}
 
-
-
 	.intro-title h1 { text-transform: uppercase; text-shadow: 1px 2px 3px rgba($gray, .8);}
 	ul.service-boxes {padding: 0 10px; margin-top:35px; @include center-block();}
 	li.service-box-3 {
@@ -432,8 +443,6 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		li.service-box-3 {width:90%;}
 		.service-box-3 .v-icon{height:45px;}
 	}
-
-
 	@include bp(md) {
 		.col-xs-img, .col-xs-img2 {display: inline-block; width: 50%; }
 		.col-xs-img2 {float: right;width: 30%;}
@@ -442,6 +451,19 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 		.col-xs-img, .col-xs-img2 {float: none; @include center-block(); width: 60%; }
 		.col-xs-img2 {width: 40%; padding-top:15px;}
 		li.service-box-3 {width:100%;}
+	}
+
+
+	.nyeHome{padding:50px 0;background-color:rgba($nye, .2);text-align:center;
+		h3{font-size:33px;font-weight:bold;margin:0;}
+		h4{font-size:25px;margin-bottom:10px;}
+		p{color:$black;padding-bottom:0;}
+		p a{color:$burg;font-weight:bold;}
+		span{color:inherit;}
+
+		.groupStyle{margin-top:30px;}
+		.groupItem{box-shadow:0px 10px 30px rgba($black, .1);}
+
 	}
 }
 
@@ -885,6 +907,39 @@ h5.inheritA a{font-weight:inherit;font-size:inherit;font-style:inherit;color:inh
 	@media (max-width:767px){
 		h1{font-size:25px;}
 		h2{font-size:19px;}
+	}
+}
+
+.simpleMenuPage{text-align:center;
+	.simpleTitle{padding:40px 0 30px;background-color:#f1f2f4;}
+	.menuGroup{padding-bottom:40px;position:relative;z-index:0;
+		&::before{@include before();height:30%;background-color:#f1f2f4;z-index:-1;}
+	}
+
+	h1{margin-bottom:2px;}
+	h2{font-size:22px;font-family:$body;}
+	p{margin:0;padding:0;color:$black;}
+	p a{color:$burg;font-weight:bold;}
+	span{color:inherit;}
+	.menuImg:hover{opacity:.85;}
+
+	@media (max-width:989px){
+		.simpleTitle{padding:20px 0;}
+		.menuGroup{padding-bottom:20px;}
+		h1{font-size:30px;}
+		h2{font-size:20px;margin-bottom:10px;}
+	}
+	@media (max-width:767px){
+		.simpleTitle{padding:15px 0;}
+		h1{font-size:25px;}
+		h2{font-size:18px;}
+		p{font-size:15px;}
+	}
+	@media (max-width:500px){
+		.simpleTitle{padding:15px 0;}
+		h1{font-size:22px;}
+		h2{font-size:17px;}
+		p{font-size:14px;}
 	}
 }
 //************ 2024 MENU (din/lunch) UPDATE ************//
