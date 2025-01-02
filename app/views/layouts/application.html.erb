@@ -39,24 +39,6 @@
 
       <div class="bodyWrap">
         <div class="appWrap">
-          <div class="abBanner">
-            <div class="inside">
-              <p class="ah-text">Join Us for New Year's Eve!</p>
-              
-              <div class="links">  
-                <a href="/#nye" class="ny-link one">
-                  <span>Click here for</span><br>
-                  Details &amp; Menu
-                </a>
-
-                <div class="ny-link two">
-                  <a href="tel: +12512246510">
-                    <span>Call For Reservations:</span><br>
-                    <%= number_to_phone(2512246510, pattern: /(\d{3})(\d{3})(\d{4})$/,delimiter: "-", class: 'tel') %></a>
-                </div>
-              </div>
-            </div>
-          </div>
       	  <%= render 'layouts/header' %>
             <div class="main-wrapper">
               <%= yield %>
