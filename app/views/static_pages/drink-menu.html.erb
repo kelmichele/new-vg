@@ -1,7 +1,7 @@
 <% @page_title = "Drink Menu" %>
 <% @page_description = "Come enjoy a cold drink at Villaggio Grille. Let our bartenders entertain you for a while, or grab a drink to walk the docks of the Wharf's marina with. Either way, include our drink menu in your day, and you won't be sorry!" %>
 
-<div id="menupage">
+<div id="menupage" class="nodrops">
   <div id="page-title" class="pt-bkg-image image-bottle">
     <div class="overlay">
       <div class="title-container">
@@ -12,8 +12,57 @@
     </div>
   </div>
 
-  <div class="page-content food-menus drinkmenu">
-    <section class="tabs-example">
+
+  <%# <div class="fullSec ipNav">
+    <a href="#redWine" data-uk-smooth-scroll>Red Wine</a>
+    <a href="#whiteWine" data-uk-smooth-scroll>White Wine</a>
+    <a href="#drinks" data-uk-smooth-scroll>Beer &amp; Cocktails</a>
+  </div> %>
+
+  <div class="page-content food-menus drinkmenu_X">
+    <div class="fullSec newLay">
+      <div class="kpWrapXl sectionWrap">
+        <div class="feature group cbp-item">
+          <p class="instr text-center bmargin0">Click any menu image below to see a larger version.</p>
+          <div id="redWine" class="cbp-caption second">
+            <%# <div class="cbp-caption-activeWrap"> %>
+              <div class="cbp-l-caption-body menuLink">
+                <%= link_to "DrinkMenu.pdf#page=2", target: '_blank', class: 'menuPageLink' do %>
+                  <%= image_tag('menuRedWine.png', class: 'img-responsive border', alt: "Villaggio's Red Wine List") %>
+                <% end %>
+
+                <%= link_to "DrinkMenu.pdf", target: '_blank', class: 'menuPageLink' do %>
+                  <%= image_tag('menuWhiteWine.png', class: 'img-responsive border', alt: "Villaggio's White Wine List") %>
+                <% end %>
+
+                <%= link_to "DrinkMenu.pdf#page=3", target: '_blank', class: 'menuPageLink' do %>
+                  <%= image_tag('menuBeer.png', class: 'img-responsive border', alt: "Villaggio Beer and Drink Menu, Orange Beach, AL restaurant") %>
+                <% end %>
+
+                <%= link_to "DrinkMenu.pdf#page=4", target: '_blank', class: 'menuPageLink' do %>
+                  <%= image_tag('menuLiquor.png', class: 'img-responsive border', alt: "Villaggio cordials list") %>
+                <% end %>
+              </div>
+            <%# </div> %>
+          </div>
+        </div>
+
+        <div class="side stickyNn group fwImage_xx">
+          <div class="kpWrap sideWrap">
+            <h4 class="text-center">Villaggio Grille is the Wine Spectator Award Winner of: 2009, 2010, 2011, 2012, 2013, 2015, 2021, 2023</h4>
+            <a href="https://www.winespectator.com/restaurants/1568/villaggio-grille" target="_blank" class="specImg">
+              <%= image_tag( 'spectator23.jpg', alt: 'Villaggio Grille wine spectator award', class: 'img-responsive') %>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <section style="display:none" class="tabs-example">
       <div class="tabs">
         <div class="container no-padding">
           <p class="instr">Click one of the images below to see a larger version</p>
@@ -28,6 +77,10 @@
         </div>
       </div>
     </section>
+
+
+
+
   </div>
 </div>
 <div class="col-md-12"><div class="hr hr-png-10"></div></div>

@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   	get '/dinner-menu', to: 'static_pages#dinner-menu'
   	get '/brunch-menu', to: 'static_pages#brunch-menu'
   	get '/drink-menu', to: 'static_pages#drink-menu'
-  	get '/wine-list', to: 'static_pages#wine-list'
+  	get '/wine-list', to: 'static_pages#drink-menu'
     get '/about', to: 'static_pages#about'
   	get '/food-truck', to: 'static_pages#food-truck'
   	get '/menus', to: 'static_pages#daily-menu'
